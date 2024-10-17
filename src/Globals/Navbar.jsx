@@ -106,7 +106,7 @@ function Navbar() {
   
 
   return (
-    <div className="bg-lightBlue shadow-md">
+    <div className="bg-deep-ocean-blue shadow-md">
       {isMobile ? (
         <div className="nav__mobile-container p-4 flex justify-between items-center relative">
           {activeSubMenu === 'programs' ? (
