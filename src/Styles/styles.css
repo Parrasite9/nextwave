@@ -1,0 +1,29 @@
+/* src/styles/styles.css */
+
+/* Buttons */
+.btn {
+    @apply px-6 py-2 rounded-md font-semibold transition-colors duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-deep-ocean-blue text-brand-white hover:bg-aqua-blue;
+  }
+  
+  .btn-secondary {
+    @apply bg-aqua-blue text-brand-white hover:bg-deep-ocean-blue;
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    @apply text-deep-ocean-blue hover:text-aqua-blue px-4 py-2;
+  }
+  
+  /* Headers */
+  .header {
+    @apply text-deep-ocean-blue font-bold;
+  }
+  
+  .subheader {
+    @apply text-aqua-blue font-semibold;
+  }
+  
