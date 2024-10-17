@@ -45,7 +45,7 @@ function Navbar() {
   const renderNavLinks = (links) => {
     // console.log("Rendering main nav links: ", links);
     return (
-      <ul className={`flex ${isMobile ? 'flex-col space-y-2' : 'flex-row space-x-6 items-center'}`}>
+      <ul className={`flex ${isMobile ? 'flex-col space-y-2' : 'flex-row space-x-6 items-center'} text-white`}>
         {links.map((link, index) => {
           // console.log(`Rendering main link: ${link.name} with key: ${link.name}-${index}`);
     
@@ -60,7 +60,7 @@ function Navbar() {
               {link.name === 'Programs' ? (
                 <span 
                   onClick={() => isMobile && link.subLinks ? handleSubMenuToggle(index) : null}
-                  className="text-white hover:text-orange-400 transition duration-300 cursor-pointer"
+                  className="text-white hover:text-aqua-blue transition duration-300 cursor-pointer"
                 >
                   {link.name}
                 </span>
@@ -68,7 +68,7 @@ function Navbar() {
                 <Link 
                   to={link.path} 
                   onClick={() => isMobile && link.subLinks ? handleSubMenuToggle(index) : null}
-                  className="text-white hover:text-orange-400 transition duration-300"
+                  className="text-white hover:text-aqua-blue transition duration-300"
                 >
                   {link.name}
                 </Link>
@@ -119,10 +119,10 @@ function Navbar() {
               />
               
               {/* Full-screen overlay for Programs submenu */}
-              <nav className="fixed inset-0 bg-white flex flex-col justify-center items-center z-40">
+              {/* <nav className="fixed inset-0 bg-deep-ocean-blue flex flex-col justify-center items-center z-40">
                 <ul className="space-y-4 ">
                   {navLinks.find(link => link.name === 'Programs').subLinks.map((subLink, subIndex) => (
-                    <li key={`${subLink.name}-${subLink.path}-${subIndex}`}>  {/* Ensure unique key */}
+                    <li key={`${subLink.name}-${subLink.path}-${subIndex}`}>
                       <Link 
                         to={subLink.path} 
                         className="text-white hover:text-blue-600 text-lg"
@@ -132,14 +132,14 @@ function Navbar() {
                     </li>
                   ))}
                 </ul>
-              </nav>
+              </nav> */}
 
             </>
           ) : (
             // Regular mobile menu with hamburger or exit icon
             <>
               <div className='flex justify-between items-center'>
-                <img src="/logo.png" alt="Logo" className="h-8 w-auto z-50" />
+                <img src="/images/logo/logo.png" alt="Logo" className="h-12 w-auto z-50" />
               </div>
 
               {/* MOBILE MENU TOGGLE BUTTON */}
@@ -147,7 +147,7 @@ function Navbar() {
                 <>
                   <ClearIcon onClick={toggleMenu} className="z-50 absolute top-4 right-4" />
                   
-                  <nav className="fixed inset-0 bg-white flex flex-col justify-center items-center z-40">
+                  <nav className="fixed inset-0 bg-deep-ocean-blue flex flex-col justify-center items-center z-40">
                     <ul className="space-y-4">
                       {navLinks.map((link, index) => (
                         <li key={`${link.name}-${index}`}> {/* Updated key */}
@@ -162,7 +162,7 @@ function Navbar() {
                             <Link 
                               to={link.path} 
                               onClick={toggleMenu} 
-                              className="text-gray-700 hover:text-blue-600 text-lg"
+                              className="text-white hover:text-blue-600 text-lg"
                             >
                               {link.name}
                             </Link>
@@ -174,14 +174,14 @@ function Navbar() {
 
                     {/* DONATE BUTTON CONTAINER  */}
                     <div className='donate__button-container mt-10 z-50'>
-                      <button className='bg-blue-600 text-white px-8 py-2 rounded-md px-20'>Donate</button>
+                      <button className='btn-cta px-20'>Donate</button>
                     </div>
 
                   </nav>
 
                 </>
               ) : (
-                <MenuIcon onClick={toggleMenu} className="z-50 text-orange-400" />
+                <MenuIcon onClick={toggleMenu} className="z-50 text-white" />
               )}
             </>
           )}
@@ -194,7 +194,7 @@ function Navbar() {
             {/* LOGO CONTAINER  */}
             <div className="logo__container">
               <Link to="/">
-                <img src="/logo.png" alt="Logo" className="h-12 w-auto h-10" />
+                <img src="/images/logo/logo.png" alt="Logo" className="h-13 w-auto" />
               </Link>
             </div>
 
@@ -205,7 +205,9 @@ function Navbar() {
 
             {/* DONATE BUTTON CONTAINER  */}
             <div className='donate__button-container'>
-              <button className='bg-brightOrange text-white px-8 py-2 rounded-md'>Donate</button>
+              {/* <button className='bg-sea-green text-white px-8 py-2 rounded-md'>Donate</button> */}
+              <button className='btn-cta'>Donate</button>
+
             </div>
           </nav>
         </div>

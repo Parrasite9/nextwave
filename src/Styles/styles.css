@@ -3,27 +3,41 @@
 /* Buttons */
 .btn {
     @apply px-6 py-2 rounded-md font-semibold transition-colors duration-300;
-  }
-  
-  .btn-primary {
-    @apply bg-deep-ocean-blue text-brand-white hover:bg-aqua-blue;
-  }
-  
-  .btn-secondary {
-    @apply bg-aqua-blue text-brand-white hover:bg-deep-ocean-blue;
-  }
-  
-  /* Navbar Links */
-  .nav-link {
+}
+
+.btn-primary {
+    @apply bg-deep-ocean-blue text-white hover:bg-aqua-blue;
+}
+
+.btn-secondary {
+    @apply bg-aqua-blue text-white hover:bg-deep-ocean-blue;
+}
+
+/* CTA Button */
+.btn-cta {
+    @apply bg-sea-green text-white hover:bg-hover-sea-green px-8 py-2 rounded-md;
+}
+
+/* Navbar Links */
+.nav-link {
     @apply text-deep-ocean-blue hover:text-aqua-blue px-4 py-2;
-  }
-  
-  /* Headers */
-  .header {
+}
+
+/* Headers */
+.header {
     @apply text-deep-ocean-blue font-bold;
-  }
-  
-  .subheader {
+}
+
+.subheader {
     @apply text-aqua-blue font-semibold;
-  }
-  
+}
+
+/* Color Definitions */
+:root {
+    --deep-ocean-blue: #005f99;
+    --aqua-blue: #00c3e3;
+    --soft-gray: #f0f4f8;
+    --brand-white: #ffffff;
+    --sea-green: #2ED573;
+    --hover-sea-green: #28B463;
+}
