@@ -46,14 +46,14 @@ function Footer() {
   const programsLink = navLinks.find((link) => link.name === 'Programs');
 
   return (
-    <footer className="bg-darkGreen text-white py-16">
+    <footer className="bg-deep-ocean-blue text-white py-16">
       <div className="container mx-auto px-6">
         {isMobile ? (
           /* Mobile Layout */
           <div className="flex flex-col items-start gap-8">
             {/* Logo/Title Section */}
             <div className="w-full mb-6">
-              <img src='/logo.png' alt="Logo" className="w-1/2 h-1/2" />
+              <img src='/images/logo/logo.png' alt="Logo" className="w-1/2 h-1/2" />
               <p className="text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quis architecto repudiandae illo quisquam laudantium!
               </p>
