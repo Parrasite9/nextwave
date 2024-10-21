@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Home = () => {
+const Hero = () => {
   return (
-    <div className='home-container px-4'>
+    <div className='hero-container px-4'>
       {/* TEXT AND IMAGE SECTION  */}
       <div className="hero grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         {/* TEXT SECTION */}
@@ -16,14 +16,15 @@ const Home = () => {
           <p className='pb-4'>
             Maximize your ROI with websites designed to convert.
           </p>
-          <button className='btn-cta mb-4'>Book a Consultation</button>
+          <button className='btn-cta mb-4'>Text Me About A Project</button>
 
           {/* TRUST BADGES */}
-          <div className="hidden lg:block trustbadges grid grid-cols-2 gap-4 place-items-center">
+          <div className="hidden trustbadges grid grid-cols-2 gap-4 place-items-center
+                          lg:block lg:flex">
             <img name="trustseal" alt="Moneyback Guarantee" src="https://trustlock.co/wp-content/uploads/2019/01/money-back-guarantee-badge-RECTANGLE-3.png" 
-                className='w-4/5 h-auto md:w-2/3' />
+                className='w-4/5 h-auto md:w-2/3 lg:w-1/3 xl:w-1/5' />
             <img name="trustseal" alt="SSL Checkout" src="https://trustlock.co/wp-content/uploads/2019/01/ssl-checkout-trust-seal.png" 
-                className='w-4/5 h-auto md:w-2/3' />
+                className='w-4/5 h-auto md:w-2/3 lg:w-1/3 xl:w-1/5' />
           </div>
         </div>
 
@@ -38,4 +39,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero
