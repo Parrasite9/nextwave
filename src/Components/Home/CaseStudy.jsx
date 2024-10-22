@@ -14,12 +14,12 @@ function CaseStudy() {
                         <img src={casestudy.poster} alt={casestudy.title} />
                         <h3 className='header py-2'>{casestudy.name}</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptates consectetur dolores porro iusto molestiae?</p>
-                        <div className="view__caseStudy flex justify-end">
-                            <Link to={`casestudy/${casestudy.name}`}>
+                        {/* <div className="view__caseStudy flex justify-end"> */}
+                            <Link className='view__caseStudy flex justify-end' to={`casestudy/${casestudy.name}`}>
                                 <p className='mr-4'>View More</p>
                                 <EastIcon />
                             </Link>
-                        </div>
+                        {/* </div> */}
                     </div>
                 ))}
             </div>
