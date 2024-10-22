@@ -1,6 +1,7 @@
 import React from 'react'
 import {CaseStudyData} from '../index'
 import EastIcon from '@mui/icons-material/East';
+import { Link } from 'react-router-dom';
 
 function CaseStudy() {
   return (
@@ -14,8 +15,10 @@ function CaseStudy() {
                         <h3 className='header py-2'>{casestudy.name}</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptates consectetur dolores porro iusto molestiae?</p>
                         <div className="view__caseStudy flex justify-end">
-                            <p className='mr-4'>View More</p>
-                            <EastIcon />
+                            <Link to={`casestudy/${casestudy.name}`}>
+                                <p className='mr-4'>View More</p>
+                                <EastIcon />
+                            </Link>
                         </div>
                     </div>
                 ))}
