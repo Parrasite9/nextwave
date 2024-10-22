@@ -1,10 +1,11 @@
 import React from 'react'
-import { Hero } from '../Components'
+import { CaseStudy, Hero } from '../Components'
 
 function Home() {
   return (
     <div>
         <Hero />
+        <CaseStudy />
       
     </div>
   )

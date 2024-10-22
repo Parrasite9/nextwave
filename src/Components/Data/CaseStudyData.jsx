@@ -1,4 +1,4 @@
-export default CaseStudyData = [
+const CaseStudyData = [
     {
         poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
         image: [
@@ -34,7 +34,75 @@ export default CaseStudyData = [
     },
 
     {
-        poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
+        poster: '/images/casestudy/studioone/studioone_mockup.jpg',
+        image: [
+            {
+                image: '',
+            },
+            {
+                image: '',
+            },
+            {
+                image: '',
+            },
+            {
+                image: '',
+            },
+        ],
+        seo: '',
+        name: '',
+        timeline: '',
+        title: '',
+        teaser: '',
+        price: '$$',
+        intro: '',
+        role: '',
+        problem: '',
+        goal: '',
+        impact: '',
+        ideation: '',
+        testing: '',
+        final: '',
+        development: '',
+        future: '',    
+    },
+
+    {
+        poster: '/images/casestudy/theorangerv/theorangerv_mockup.jpg',
+        image: [
+            {
+                image: '',
+            },
+            {
+                image: '',
+            },
+            {
+                image: '',
+            },
+            {
+                image: '',
+            },
+        ],
+        seo: '',
+        name: '',
+        timeline: '',
+        title: '',
+        teaser: '',
+        price: '$$',
+        intro: '',
+        role: '',
+        problem: '',
+        goal: '',
+        impact: '',
+        ideation: '',
+        testing: '',
+        final: '',
+        development: '',
+        future: '',    
+    },
+
+    {
+        poster: '/images/casestudy/wayoutkids/wayout_mockup.jpg',
         image: [
             {
                 image: '',
@@ -74,3 +142,6 @@ export default CaseStudyData = [
         id: imgIndex + 1,  // Assign dynamic ids to images
     })),
 }));
+
+
+export default CaseStudyData;
