@@ -18,10 +18,13 @@ const CaseStudyData = [
         colors: {
             primary: '#a100ff',     // Your primary color
             secondary: '#ff00c3',   // Your secondary color
+            ctaButton: '#ff00c3',
+            ctaButtonText: '#f2f2f2',
+            priceTimeBackground: '#333',
         },    
         seo: 'Lingerie subscription website redesign',
         name: 'SeductiveBox',
-        timeline: '4 Weeks',
+        timeline: 'Built In 4 Weeks',
         title: 'eCommerce Lingerie Store With Insane Growth',
         teaser: '{name} underwent a complete website redesign that shifted focus to its female audience, resulting in a 733% revenue growth. By revamping the user experience and streamlining the checkout process, we helped turn traffic into loyal subscribers.',
         price: '$$',

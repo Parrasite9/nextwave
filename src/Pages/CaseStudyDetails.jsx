@@ -65,23 +65,30 @@ function CaseStudyDetails() {
             <p className='pb-4'>{renderTeaser(caseStudy.teaser, caseStudy.name)}</p>
 
 
-            <div className="price__and__time flex">
+            <div className="price__and__time flex space-x-4">
                 {/* Render the price in dollar signs */}
-                <div className="price pr-4">
+                <div className="price py-1 px-4 border-2 border-deep-ocean-blue  bg-deep-ocean-blue  text-white">
                     {[...Array(totalDollarSigns)].map((_, index) => (
                         <span
                         key={index}
                         className={index < currentPriceLevel ? 'text-opacity-100' : 'text-opacity-50'}
-                        style={{ opacity: index < currentPriceLevel ? 1 : 0.5, color: caseStudy.colors.primary}}
+                        style={{ opacity: index < currentPriceLevel ? 1 : 0.5, }}
                         >
                         $
                         </span>
                     ))}
                 </div>
-                <p className='pb-4'>{caseStudy.timeline}</p>
+
+                <div className="time__container">
+                <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white'
+                        // style={{ backgroundColor: `${caseStudy.colors.primary}90` }}
+ 
+                >{caseStudy.timeline}</p>
+
+                </div>
             </div>
 
-            <button>Build Me One!</button>
+            <button className='py-3 px-8 mt-4 rounded-xl text-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}} >Build Me One!</button>
             
         </div>
 
