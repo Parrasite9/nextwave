@@ -4,15 +4,19 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
         ],
         colors: {
@@ -45,15 +49,19 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
         ],
         seo: '',
@@ -79,15 +87,19 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
         ],
         seo: '',
@@ -113,15 +125,19 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
             {
                 image: '',
+                alt: '',
             },
         ],
         seo: '',
