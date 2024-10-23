@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import { CaseStudyData } from '../Components'
+import CaseStudySwiper from '../Components/Swipers/CaseStudySwiper';
 
 function CaseStudyDetails() {
 
@@ -91,6 +92,14 @@ function CaseStudyDetails() {
             <button className='py-3 px-8 mt-4 rounded-xl text-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}} >Build Me One!</button>
             
         </div>
+
+
+        {/* ============================
+        ========= SWIPER  ==========
+        ============================ */}
+
+        <CaseStudySwiper />
+
 
       
     </div>

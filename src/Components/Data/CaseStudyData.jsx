@@ -3,20 +3,16 @@ const CaseStudyData = [
         poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
         image: [
             {
-                image: '',
-                alt: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D1.png',
             },
             {
-                image: '',
-                alt: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D2.png',
             },
             {
-                image: '',
-                alt: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D3.png',
             },
             {
-                image: '',
-                alt: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D4.png',
             },
         ],
         colors: {
@@ -49,19 +45,15 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
         ],
         seo: '',
@@ -87,19 +79,15 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
         ],
         seo: '',
@@ -125,19 +113,15 @@ const CaseStudyData = [
         image: [
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
             {
                 image: '',
-                alt: '',
             },
         ],
         seo: '',
@@ -163,6 +147,7 @@ const CaseStudyData = [
     image: item.image.map((img, imgIndex) => ({
         ...img,
         id: imgIndex + 1,  // Assign dynamic ids to images
+        alt: img.image.split('/').pop().split('.')[0].replace(/_/g, ' '),  // Dynamic alt based on file name
     })),
 }));
 
