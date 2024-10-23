@@ -15,11 +15,15 @@ const CaseStudyData = [
                 image: '',
             },
         ],
+        colors: {
+            primary: '#a100ff',     // Your primary color
+            secondary: '#ff00c3',   // Your secondary color
+        },    
         seo: 'Lingerie subscription website redesign',
         name: 'SeductiveBox',
         timeline: '4 Weeks',
         title: 'eCommerce Lingerie Store With Insane Growth',
-        teaser: 'Transforming a lingerie subscription service into a seamless, female-focused user experience, resulting in a substantial increase in conversions and customer satisfaction.',
+        teaser: '{name} underwent a complete website redesign that shifted focus to its female audience, resulting in a 733% revenue growth. By revamping the user experience and streamlining the checkout process, we helped turn traffic into loyal subscribers.',
         price: '$$',
         intro: 'At our agency, we partnered with SeductiveBox to completely redesign their website and improve conversion rates for their eCommerce lingerie subscription service. By focusing on better communication with their target audience and revamping the checkout process, we were able to help SeductiveBox significantly scale their business',
         role: 'We were responsible for the full design and development of the SeductiveBox website, utilizing a comprehensive approach to ensure both the frontend and backend were optimized for performance and user experience. The project was built with React and deployed to the AWS Cloud.',
