@@ -32,6 +32,12 @@
     @apply text-aqua-blue font-semibold;
 }
 
+
+.caseStudyHeader {
+    @apply font-bold text-2xl;
+    color: var(--deep-ocean-blue); /* Default fallback color */
+}
+
 /* Color Definitions */
 :root {
     --deep-ocean-blue: #005f99;

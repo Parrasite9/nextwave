@@ -15,7 +15,7 @@ function CaseStudyDetails() {
 
     if (!caseStudy) {
         return (
-            <p>No Case Study Found</p>
+            <p className='mb-8'>No Case Study Found</p>
         )
     }
 
@@ -60,7 +60,7 @@ function CaseStudyDetails() {
       </Helmet>
 
 
-        <div className="caseStudy__hero ">
+        <div className="caseStudy__hero mb-8">
             <p className='pb-4' style={{color: caseStudy.colors.secondary}}>{caseStudy.seo}</p>
             <h1 className=' pb-4 font-bold text-2xl' style={{color: caseStudy.colors.primary}}>{caseStudy.title}</h1>
             <p className='pb-4'>{renderTeaser(caseStudy.teaser, caseStudy.name)}</p>
@@ -99,6 +99,35 @@ function CaseStudyDetails() {
         ============================ */}
 
         <CaseStudySwiper />
+
+
+
+        <div className="caseStudyInfo">
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
+            <p className='mb-8'>{caseStudy.title}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Our Role</h2>
+            <p className='mb-8'>{caseStudy.role}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>The Problem</h2>
+            <p className='mb-8'>{caseStudy.problem}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>The Goal</h2>
+            <p className='mb-8'>{caseStudy.goal}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Impact</h2>
+            <p className='mb-8'>{caseStudy.impact}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Ideation</h2>
+            <p className='mb-8'>{caseStudy.ideation}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Testing</h2>
+            <p className='mb-8'>{caseStudy.testing}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Development</h2>
+            <p className='mb-8'>{caseStudy.development}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Final</h2>
+            <p className='mb-8'>{caseStudy.final}</p>
+            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Future</h2>
+            <p className='mb-8'>{caseStudy.future}</p>
+            
+
+        
+
+        </div>
 
 
       

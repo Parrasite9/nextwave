@@ -30,7 +30,7 @@ const DynamicSwiper = ({ data, config, showProgress = false }) => {
       loop={config.loop}
       slidesPerView={config.slidesPerView}
       autoplay={{
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
         ...config.autoplay,
       }}
