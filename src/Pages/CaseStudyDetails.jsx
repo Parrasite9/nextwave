@@ -115,10 +115,11 @@ function CaseStudyDetails() {
 
         <div className="parent grid grid-cols-1 lg:grid-cols-5 gap-4">
             {/* CASESTUDY NAVLINKS */}
-            <div className="caseStudy_navbar hidden sticky top-4 lg:block">
+            <div className="caseStudy_navbar hidden top-4 lg:block sticky h-screen">
                 <nav>
                     <ul className='space-y-2'>
                         <li><a href="#intro">Intro</a></li>
+                        <li><a href="#role">Role</a></li>
                         <li><a href="#problem">Problem</a></li>
                         <li><a href="#goal">Goal</a></li>
                         <li><a href="#impact">Impact</a></li>
@@ -147,7 +148,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.problem.headerDetail}</p>
                             {caseStudy.problem.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -163,7 +164,7 @@ function CaseStudyDetails() {
 
                             {caseStudy.goal.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -179,7 +180,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.impact.headerDetail}</p>
                             {caseStudy.impact.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -194,7 +195,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.ideation.headerDetail}</p>
                             {caseStudy.ideation.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -209,7 +210,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.testing.headerDetail}</p>
                             {caseStudy.testing.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -224,7 +225,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.development.headerDetail}</p>
                             {caseStudy.development.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -239,7 +240,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.final.headerDetail}</p>
                             {caseStudy.final.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -254,7 +255,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.future.headerDetail}</p>
                             {caseStudy.future.subheaders.map((subheader, index) => (
                                 <div className="caseStudy_subheaders">
-                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
                             ))}
@@ -265,7 +266,7 @@ function CaseStudyDetails() {
 
             {/* Video in Column 5 (if exists) */}
             {caseStudy.hasVideo && (
-                <div className="div3 sticky top-4 lg:col-span-1">
+                <div className="div3 sticky h-screen top-4 lg:col-span-1">
                     <video controls className="w-full">
                         <source src={caseStudy.videoPath} type="video/mp4" />
                     </video>
