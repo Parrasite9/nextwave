@@ -9,3 +9,7 @@
 @import "./Styles/styles.css";
 
 @tailwind utilities;
+
+html {
+    @apply scroll-smooth;
+}
