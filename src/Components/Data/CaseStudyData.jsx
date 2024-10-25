@@ -30,6 +30,8 @@ const CaseStudyData = [
         price: '$$',
         intro: 'SeductiveBox was a lingerie subscription service facing major conversion challenges. Their website was not effectively communicating with their target female audience, which led to low subscription rates. We set out to revamp the user experience, leading to incredible results in just 4 weeks.',
         role: 'We led the entire project, handling both the design and development. The redesign was focused on creating a seamless and intuitive user experience for the target audience. We used React for the frontend and deployed the final product on AWS Cloud. Heatmap tracking allowed us to optimize the user journey further.',
+        hasVideo: false,
+        videoPath: '',
         problem: {
             header: 'SeductiveBox\’s website was not converting traffic into subscriptions effectively.',
             headerDetail: 'Despite attracting consistent web traffic, SeductiveBox faced a significant issue with converting that traffic into paid subscriptions. The website\’s messaging and design were not resonating with the target female audience, leading to a high bounce rate and abandoned checkouts.',
@@ -140,37 +142,143 @@ const CaseStudyData = [
     },
 
     {
-        poster: '/images/casestudy/studioone/studioone_mockup.jpg',
+        poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
         image: [
             {
-                image: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D1.png',
             },
             {
-                image: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D2.png',
             },
             {
-                image: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D3.png',
             },
             {
-                image: '',
+                image: '/images/casestudy/seductivebox/Desktop/Home_D4.png',
             },
         ],
+        colors: {
+            primary: '#a100ff',     // Your primary color
+            secondary: '#ff00c3',   // Your secondary color
+            ctaButton: '#ff00c3',
+            ctaButtonText: '#f2f2f2',
+            priceTimeBackground: '#333',
+        },    
         seo: '',
-        name: 'Studio No. 1',
+        name: '',
         timeline: '',
         title: '',
         teaser: '',
         price: '$$',
         intro: '',
         role: '',
-        problem: '',
-        goal: '',
-        impact: '',
-        ideation: '',
-        testing: '',
-        final: '',
-        development: '',
-        future: '',    
+        problem: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '.',
+                },
+            ],
+        },
+        goal: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+            ],
+        },
+        impact: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+            ],
+        },
+        ideation: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+            ],
+        },
+        testing: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+            ],
+        },
+        final: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+            ],
+        },
+        development: {
+            header: '',
+            headerDetail: '',
+            subheaders: [
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+                {
+                    subheader: '',
+                    subHeaderDetail: '',
+                },
+            ],
+        },
+        future: {
+            header: '',
+            headerDetail: '',
+            subheaders: [],
+        },
     },
 
     {

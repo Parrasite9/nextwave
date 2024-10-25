@@ -100,130 +100,181 @@ function CaseStudyDetails() {
 
         <CaseStudySwiper />
 
+        <div className="video lg:hidden">
+            {caseStudy.hasVideo ? (
+                <>
+                    <video controls className="w-full">
+                        <source src={caseStudy.videoPath} type="video/mp4" />
+                    </video>
+                </>
+            ) : (
+                <></>
+            )}
+        </div>
 
 
-        <div className="caseStudyInfo">
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
-            <p className='mb-8'>{caseStudy.title}</p>
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Our Role</h2>
-            <p className='mb-8'>{caseStudy.role}</p>
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>The Problem</h2>
+        <div className="parent grid grid-cols-1 lg:grid-cols-5 gap-4">
+            {/* CASESTUDY NAVLINKS */}
+            <div className="caseStudy_navbar hidden sticky top-4 lg:block">
+                <nav>
+                    <ul className='space-y-2'>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#problem">Problem</a></li>
+                        <li><a href="#goal">Goal</a></li>
+                        <li><a href="#impact">Impact</a></li>
+                        <li><a href="#ideation">Ideation</a></li>
+                        <li><a href="#testing">Testing</a></li>
+                        <li><a href="#final">Final</a></li>
+                        <li><a href="#development">Development</a></li>
+                        <li><a href="#future">Future</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-            {/* MAPPING THROUGH THE PROBLEMS  */}
-            {caseStudy.problem && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.problem.header}</h2>
-                    <p className='mb-8'>{caseStudy.problem.headerDetail}</p>
-                    {caseStudy.problem.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
+            {/* CASE STUDY INFO  */}
+            <div className={`div2 ${caseStudy.hasVideo ? 'lg:col-span-3' : 'lg:col-span-4'}`}>
+                <div className="caseStudyInfo">
+                    <h2 id='intro' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
+                    <p className='mb-8'>{caseStudy.title}</p>
+                    <h2 id='role' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Our Role</h2>
+                    <p className='mb-8'>{caseStudy.role}</p>
+                    <h2 id='problem' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>The Problem</h2>
+
+                    {/* MAPPING THROUGH THE PROBLEMS  */}
+                    {caseStudy.problem && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.problem.header}</h2>
+                            <p className='mb-8'>{caseStudy.problem.headerDetail}</p>
+                            {caseStudy.problem.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}
+
+                    {/* MAPPING THROUGH THE GOALS  */}
+                    <h2 id='goal' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Goal</h2>
+                    {caseStudy.goal && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.goal.header}</h2>
+                            <p className='mb-8'>{caseStudy.goal.headerDetail}</p>
+
+                            {caseStudy.goal.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}
+
+
+                    {/* MAPPING THROUGH THE IMPACT  */}
+                    <h2 id='impact' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Impact</h2>
+                    {caseStudy.impact && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.impact.header}</h2>
+                            <p className='mb-8'>{caseStudy.impact.headerDetail}</p>
+                            {caseStudy.impact.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}
+
+                    {/* MAPPING THROUGH THE IDEATION  */}
+                    <h2 id='ideation' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Ideation</h2>
+                    {caseStudy.ideation && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.ideation.header}</h2>
+                            <p className='mb-8'>{caseStudy.ideation.headerDetail}</p>
+                            {caseStudy.ideation.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>            
+                    )}
+
+                    {/* MAPPING THROUGH THE TESTING */}
+                    <h2 id='testing' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Testing</h2>
+                    {caseStudy.testing && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.testing.header}</h2>
+                            <p className='mb-8'>{caseStudy.testing.headerDetail}</p>
+                            {caseStudy.testing.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}
+
+                    {/* MAPPING THROUGH THE DEVELOPMENT  */}
+                    <h2 id='development' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Development</h2>
+                    {caseStudy.development && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.development.header}</h2>
+                            <p className='mb-8'>{caseStudy.development.headerDetail}</p>
+                            {caseStudy.development.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}
+
+                    {/* MAPPING THROUGH THE FINAL  */}
+                    <h2 id='final' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Final Design</h2>
+                    {caseStudy.final && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.final.header}</h2>
+                            <p className='mb-8'>{caseStudy.final.headerDetail}</p>
+                            {caseStudy.final.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}
+
+                    {/* MAPPING THROUGH THE FUTURE  */}
+                    <h2 id='future' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Future</h2>
+                    {caseStudy.future && (
+                        <section>
+                            <h2 className='mb-4'>{caseStudy.future.header}</h2>
+                            <p className='mb-8'>{caseStudy.future.headerDetail}</p>
+                            {caseStudy.future.subheaders.map((subheader, index) => (
+                                <div className="caseStudy_subheaders">
+                                    <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
+                                    <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                </div>
+                            ))}
+                        </section>
+                    )}            
+                </div>
+            </div>
+
+            {/* Video in Column 5 (if exists) */}
+            {caseStudy.hasVideo && (
+                <div className="div3 sticky top-4 lg:col-span-1">
+                    <video controls className="w-full">
+                        <source src={caseStudy.videoPath} type="video/mp4" />
+                    </video>
+                </div>
             )}
 
-            {/* MAPPING THROUGH THE GOALS  */}
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Goal</h2>
-            {caseStudy.goal && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.goal.header}</h2>
-                    <p className='mb-8'>{caseStudy.goal.headerDetail}</p>
-
-                    {caseStudy.goal.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
-            )}
+                
 
 
-            {/* MAPPING THROUGH THE IMPACT  */}
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Impact</h2>
-            {caseStudy.impact && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.impact.header}</h2>
-                    <p className='mb-8'>{caseStudy.impact.headerDetail}</p>
-                    {caseStudy.impact.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
-            )}
-
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Ideation</h2>
-            {caseStudy.ideation && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.ideation.header}</h2>
-                    <p className='mb-8'>{caseStudy.ideation.headerDetail}</p>
-                    {caseStudy.ideation.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>            
-            )}
-
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Testing</h2>
-            {caseStudy.testing && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.testing.header}</h2>
-                    <p className='mb-8'>{caseStudy.testing.headerDetail}</p>
-                    {caseStudy.testing.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
-            )}
-
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Development</h2>
-            {caseStudy.development && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.development.header}</h2>
-                    <p className='mb-8'>{caseStudy.development.headerDetail}</p>
-                    {caseStudy.development.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
-            )}
-
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Final Design</h2>
-            {caseStudy.final && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.final.header}</h2>
-                    <p className='mb-8'>{caseStudy.final.headerDetail}</p>
-                    {caseStudy.final.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
-            )}
-
-            <h2 className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Future</h2>
-            {caseStudy.future && (
-                <section>
-                    <h2 className='mb-4'>{caseStudy.future.header}</h2>
-                    <p className='mb-8'>{caseStudy.future.headerDetail}</p>
-                    {caseStudy.future.subheaders.map((subheader, index) => (
-                        <div className="caseStudy_subheaders">
-                            <h3 className='mb-4' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
-                            <p className='mb-8'>{subheader.subHeaderDetail}</p>
-                        </div>
-                    ))}
-                </section>
-            )}            
         </div>
 
 
