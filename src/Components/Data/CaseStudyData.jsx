@@ -24,7 +24,7 @@ const CaseStudyData = [
         },    
         seo: 'Lingerie subscription website redesign',
         name: 'SeductiveBox',
-        timeline: 'Feb - Mar 2023',
+        timeline: 'Built In 4 Weeks',
         title: 'Increasing subscription revenue by 733% with SeductiveBox\’s website redesign',
         teaser: 'SeductiveBox underwent a full redesign focused on targeting its core female audience, resulting in a 733% increase in monthly revenue.',
         price: '$$',

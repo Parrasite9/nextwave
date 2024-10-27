@@ -60,13 +60,13 @@ function CaseStudyDetails() {
       </Helmet>
 
 
-        <div className="caseStudy__hero mb-8">
-            <p className='pb-4' style={{color: caseStudy.colors.secondary}}>{caseStudy.seo}</p>
-            <h1 className=' pb-4 font-bold text-2xl' style={{color: caseStudy.colors.primary}}>{caseStudy.title}</h1>
-            <p className='pb-4'>{renderTeaser(caseStudy.teaser, caseStudy.name)}</p>
+        <div className="caseStudy__hero mb-8 lg:w-2/3 lg:pt-16">
+            <p className='inline-block py-2 mb-2 px-2 border rounded-lg text-xs md:text-sm lg:text-md' style={{color: caseStudy.colors.secondary, borderColor: caseStudy.colors.primary}}>{caseStudy.seo}</p>
+            <h1 className=' pb-4 font-bold text-2xl lg:text-4xl' style={{color: caseStudy.colors.primary}}>{caseStudy.title}</h1>
+            <p className='pb-4 lg:text-lg'>{renderTeaser(caseStudy.teaser, caseStudy.name)}</p>
 
 
-            <div className="price__and__time flex space-x-4">
+            <div className="price__and__time flex space-x-4 lg:py-4">
                 {/* Render the price in dollar signs */}
                 <div className="price py-1 px-4 border-2 border-deep-ocean-blue  bg-deep-ocean-blue  text-white">
                     {[...Array(totalDollarSigns)].map((_, index) => (
@@ -81,15 +81,17 @@ function CaseStudyDetails() {
                 </div>
 
                 <div className="time__container">
-                <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white'
-                        // style={{ backgroundColor: `${caseStudy.colors.primary}90` }}
- 
-                >{caseStudy.timeline}</p>
-
+                    <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white'
+                            // style={{ backgroundColor: `${caseStudy.colors.primary}90` }}
+    
+                    >{caseStudy.timeline}</p>
                 </div>
-            </div>
 
-            <button className='py-3 px-8 mt-4 rounded-xl text-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}} >Build Me One!</button>
+            </div>
+            
+            <div className="build__button lg:pb-20">
+                <button className='py-3 px-8 mt-4 rounded-xl text-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}} >Build Me One!</button>
+            </div>
             
         </div>
 
