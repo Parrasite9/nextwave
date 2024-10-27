@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import { CaseStudyData } from '../Components'
 import CaseStudySwiper from '../Components/Swipers/CaseStudySwiper';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 function CaseStudyDetails() {
 
@@ -102,13 +103,33 @@ function CaseStudyDetails() {
 
         <CaseStudySwiper />
 
-        <div className="video lg:hidden">
+        <div className="video lg:hidden" style={{ background: caseStudy.colors.customGradient }}>
             {caseStudy.hasVideo ? (
-                <>
+                <div className='video__and__details'>
                     <video controls className="w-full">
                         <source src={caseStudy.videoPath} type="video/mp4" />
                     </video>
-                </>
+                    <div className="videoDetails__container">
+                        <h2 className='mt-4 pb-4 font-bold text-2xl lg:text-4xl' style={{color: caseStudy.colors.primary}}>Let's Talk About Your Website Project!</h2>
+                        <button className='py-3 px-8 mt-4 rounded-xl text-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}}>Book A Zoom Call</button>
+                        <div className="icons__and__text__container">
+                            <div className='icon__and__text flex mt-4'>
+                                <CheckCircleIcon className='mr-4'/>
+                                <p>No Pressure</p>
+                            </div>
+                            <div className='icon__and__text flex mt-4'>
+                                <CheckCircleIcon className='mr-4'/>
+                                <p>Get Pricing Quote</p>
+                            </div>
+                            <div className='icon__and__text flex mt-4'>
+                                <CheckCircleIcon className='mr-4' />
+                                <p>See More Site Examples</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             ) : (
                 <></>
             )}
@@ -137,7 +158,7 @@ function CaseStudyDetails() {
             {/* CASE STUDY INFO  */}
             <div className={`div2 ${caseStudy.hasVideo ? 'lg:col-span-3' : 'lg:col-span-4'}`}>
                 <div className="caseStudyInfo">
-                    <h2 id='intro' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
+                    <h2 id='intro' className='caseStudyHeader my-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
                     <p className='mb-8'>{caseStudy.title}</p>
                     <h2 id='role' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Our Role</h2>
                     <p className='mb-8'>{caseStudy.role}</p>

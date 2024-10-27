@@ -21,6 +21,8 @@ const CaseStudyData = [
             ctaButton: '#ff00c3',
             ctaButtonText: '#f2f2f2',
             priceTimeBackground: '#333',
+            customGradient: 'linear-gradient(36deg, #a100ff, #ff00c3 62%)',
+
         },    
         seo: 'Lingerie subscription website redesign',
         name: 'SeductiveBox',
