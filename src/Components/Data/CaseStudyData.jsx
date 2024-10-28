@@ -22,6 +22,8 @@ const CaseStudyData = [
             ctaButtonText: '#f2f2f2',
             priceTimeBackground: '#333',
             customGradient: 'linear-gradient(36deg, #a100ff, #ff00c3 62%)',
+            white: '#f2f2f2',
+            black: '#333'
 
         },    
         seo: 'Lingerie subscription website redesign',
