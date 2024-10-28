@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 import { CaseStudyData } from '../Components'
@@ -9,16 +9,14 @@ function CaseStudyDetails() {
 
     const { name } = useParams()
     const caseStudy = CaseStudyData.find((study) => study.name === name)
+    const [activeSection, setActiveSection] = useState('');
+    const [hoveredSection, setHoveredSection] = useState(null);
 
     const totalDollarSigns = 5;  // Maximum number of dollar signs
     const currentPriceLevel = caseStudy.price.length;  // Get the number of dollar signs in the price (e.g., 2 for "$$")
   
 
-    if (!caseStudy) {
-        return (
-            <p className='mb-8'>No Case Study Found</p>
-        )
-    }
+
 
         // Function to render the teaser with the name styled
         const renderTeaser = (teaser, name) => {
@@ -35,6 +33,32 @@ function CaseStudyDetails() {
             ));
         };
 
+        useEffect(() => {
+            if (!caseStudy) return;
+            
+            const handleScroll = () => {
+                const sections = document.querySelectorAll('.caseStudySection');
+                let current = '';
+    
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    if (window.scrollY >= sectionTop - 60) {
+                        current = section.getAttribute('id');
+                    }
+                });
+    
+                setActiveSection(current);
+            };
+    
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }, [caseStudy]);
+
+        if (!caseStudy) {
+            return (
+                <p className='mb-8'>No Case Study Found</p>
+            )
+        }
 
   return (
     <div className='p-8'>
@@ -62,14 +86,14 @@ function CaseStudyDetails() {
 
 
         <div className="caseStudy__hero mb-8 lg:w-2/3 lg:pt-16">
-            <p className='inline-block py-2 mb-2 px-2 border rounded-lg text-xs md:text-sm lg:text-md' style={{color: caseStudy.colors.secondary, borderColor: caseStudy.colors.primary}}>{caseStudy.seo}</p>
-            <h1 className=' pb-4 font-bold text-2xl lg:text-4xl' style={{color: caseStudy.colors.primary}}>{caseStudy.title}</h1>
-            <p className='pb-4 lg:text-lg'>{renderTeaser(caseStudy.teaser, caseStudy.name)}</p>
+            <p className='inline-block py-2 mb-2 px-2 border rounded-lg text-xs md:text-sm lg:text-md xl:text-lg' style={{color: caseStudy.colors.secondary, borderColor: caseStudy.colors.primary}}>{caseStudy.seo}</p>
+            <h1 className=' pb-4 font-bold text-2xl lg:text-4xl xl:text-6xl' style={{color: caseStudy.colors.primary}}>{caseStudy.title}</h1>
+            <p className='pb-4 lg:text-lg xl:text-xl'>{renderTeaser(caseStudy.teaser, caseStudy.name)}</p>
 
 
             <div className="price__and__time flex space-x-4 lg:py-4">
                 {/* Render the price in dollar signs */}
-                <div className="price py-1 px-4 border-2 border-deep-ocean-blue  bg-deep-ocean-blue  text-white">
+                <div className="price py-1 px-4 border-2 border-deep-ocean-blue  bg-deep-ocean-blue text-white xl:text-xl">
                     {[...Array(totalDollarSigns)].map((_, index) => (
                         <span
                         key={index}
@@ -82,7 +106,7 @@ function CaseStudyDetails() {
                 </div>
 
                 <div className="time__container">
-                    <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white'
+                    <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white xl:text-xl'
                             // style={{ backgroundColor: `${caseStudy.colors.primary}90` }}
     
                     >{caseStudy.timeline}</p>
@@ -91,7 +115,7 @@ function CaseStudyDetails() {
             </div>
             
             <div className="build__button lg:pb-20">
-                <button className='py-3 px-8 mt-4 rounded-xl text-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}} >Build Me One!</button>
+                <button className='py-3 px-8 mt-4 rounded-xl text-white xl:text-xl' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}} >Build Me One!</button>
             </div>
             
         </div>
@@ -138,22 +162,47 @@ function CaseStudyDetails() {
 
         <div className="parent grid grid-cols-1 lg:grid-cols-5 gap-4">
             {/* CASESTUDY NAVLINKS */}
-            <div className="caseStudy_navbar hidden top-4 lg:block sticky h-screen">
-                <nav>
-                    <ul className='space-y-2'>
-                        <li><a href="#intro">Intro</a></li>
-                        <li><a href="#role">Role</a></li>
-                        <li><a href="#problem">Problem</a></li>
-                        <li><a href="#goal">Goal</a></li>
-                        <li><a href="#impact">Impact</a></li>
-                        <li><a href="#ideation">Ideation</a></li>
-                        <li><a href="#testing">Testing</a></li>
-                        <li><a href="#final">Final</a></li>
-                        <li><a href="#development">Development</a></li>
-                        <li><a href="#future">Future</a></li>
-                    </ul>
-                </nav>
-            </div>
+            {/* CASE STUDY NAVIGATION */}
+        <div className="caseStudy_navbar hidden top-4 lg:block sticky h-screen">
+          <nav>
+            <ul className='space-y-2'>
+              {[
+                'intro',
+                'role',
+                'problem',
+                'goal',
+                'impact',
+                'ideation',
+                'testing',
+                'final',
+                'development',
+                'future',
+              ].map((section) => (
+                <li key={section}>
+                  <a
+                    href={`#${section}`}
+                    className={`px-2 py-1 transition-colors duration-300`}
+                    onMouseEnter={() => setHoveredSection(section)}
+                    onMouseLeave={() => setHoveredSection(null)}
+                    style={{
+                      color:
+                        activeSection === section
+                          ? 'white'
+                          : hoveredSection === section
+                          ? caseStudy.colors.secondary
+                          : 'inherit',
+                      backgroundColor:
+                        activeSection === section ? caseStudy.colors.primary : 'transparent',
+                    }}
+                  >
+                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+
 
             {/* CASE STUDY INFO  */}
             <div className={`div2 ${caseStudy.hasVideo ? 'lg:col-span-3' : 'lg:col-span-4'}`}>
@@ -297,7 +346,22 @@ function CaseStudyDetails() {
 
                     <div className="videoDetails__container pb-8 flex flex-col justify-center items-center">
                         <h2 className='mt-4 pb-4 font-bold text-center xl:text-2xl' style={{color: caseStudy.colors.white}}>Let's Talk About Your Website Project!</h2>
-                        <button className='py-3 px-8 mt-4 rounded-xl text-white border-2 border-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}}>Book A Zoom Call</button>
+                        <button className='py-3 px-8 mt-4 rounded-xl text-white border-2 border-white transition-colors duration-300' 
+                            style={{
+                                backgroundColor: caseStudy.colors.ctaButton,
+                                color: caseStudy.colors.ctaButtonText
+                            }}
+                            onMouseEnter={(e) => {
+                                e.target.style.backgroundColor = 'white';
+                                e.target.style.color = caseStudy.colors.primary;
+                            }}
+                            onMouseLeave={(e) => {
+                                e.target.style.backgroundColor = caseStudy.colors.ctaButton;
+                                e.target.style.color = caseStudy.colors.ctaButtonText;
+                            }}
+                        >
+                            Book A Zoom Call
+                        </button>
                         <div className="icons__and__text__container">
                             <div className='icon__and__text flex mt-4'>
                                 <CheckCircleIcon className='mr-4 text-green-400'/>
