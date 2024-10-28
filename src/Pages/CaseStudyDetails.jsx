@@ -269,6 +269,9 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.ideation.header}</h2>
                                 <p className='mb-8'>{caseStudy.ideation.headerDetail}</p>
+                                {caseStudy.ideation.image && (
+                                    <img className='mb-8' src={caseStudy.ideation.imageUrl} alt="Ideation Image" />
+                                )}
                                 {caseStudy.ideation.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`ideation-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -284,6 +287,9 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.testing.header}</h2>
                                 <p className='mb-8'>{caseStudy.testing.headerDetail}</p>
+                                {caseStudy.testing.image && (
+                                    <img className='mb-8' src={caseStudy.testing.imageUrl} alt="Testing Image" />
+                                )}
                                 {caseStudy.testing.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`testing-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -299,6 +305,9 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.development.header}</h2>
                                 <p className='mb-8'>{caseStudy.development.headerDetail}</p>
+                                {caseStudy.development.image && (
+                                    <img className='mb-8' src={caseStudy.development.imageUrl} alt="Development Image" />
+                                )}
                                 {caseStudy.development.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`development-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -314,6 +323,9 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.final.header}</h2>
                                 <p className='mb-8'>{caseStudy.final.headerDetail}</p>
+                                {caseStudy.final.image && (
+                                    <img className='mb-8' src={caseStudy.final.imageUrl} alt="Final Image" />
+                                )}
                                 {caseStudy.final.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`final-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
