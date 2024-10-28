@@ -296,7 +296,7 @@ function CaseStudyDetails() {
                     </video>
 
                     <div className="videoDetails__container pb-8 flex flex-col justify-center items-center">
-                        <h2 className='mt-4 pb-4 font-bold text-2xl text-center' style={{color: caseStudy.colors.white}}>Let's Talk About Your Website Project!</h2>
+                        <h2 className='mt-4 pb-4 font-bold text-center xl:text-2xl' style={{color: caseStudy.colors.white}}>Let's Talk About Your Website Project!</h2>
                         <button className='py-3 px-8 mt-4 rounded-xl text-white border-2 border-white' style={{backgroundColor: caseStudy.colors.ctaButton, color: caseStudy.colors.ctaButtonText}}>Book A Zoom Call</button>
                         <div className="icons__and__text__container">
                             <div className='icon__and__text flex mt-4'>
