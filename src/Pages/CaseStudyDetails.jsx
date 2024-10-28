@@ -251,6 +251,9 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.impact.header}</h2>
                                 <p className='mb-8'>{caseStudy.impact.headerDetail}</p>
+                                {caseStudy.impact.image && (
+                                    <img className='mb-8' src={caseStudy.impact.imageUrl} alt="Impact Image" />
+                                )}
                                 {caseStudy.impact.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`impact-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>

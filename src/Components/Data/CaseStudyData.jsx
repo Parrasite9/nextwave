@@ -71,6 +71,8 @@ const CaseStudyData = [
         impact: {
             header: 'A 733% increase in monthly revenue.',
             headerDetail: 'The results of the redesign were immediately evident, as SeductiveBox saw a 733% increase in monthly revenue due to improved user engagement and conversion rates.',
+            image: true,
+            imageUrl: '/images/casestudy/seductivebox/CaseStudy/impact.jpg',
             subheaders: [
                 {
                     subheader: 'Significant boost in conversions.',
