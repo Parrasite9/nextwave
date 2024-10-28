@@ -291,7 +291,7 @@ function CaseStudyDetails() {
             {caseStudy.hasVideo && (
                 <div className="div3 sticky max-h-[500px] top-4 border-2 rounded-xl" style={{ background: caseStudy.colors.customGradient }} >
                     {/* style={{ background: caseStudy.colors.customGradient }} */}
-                    <video controls>
+                    <video controls className='w-full'>
                         <source src={caseStudy.videoPath} type="video/mp4" />
                     </video>
 
