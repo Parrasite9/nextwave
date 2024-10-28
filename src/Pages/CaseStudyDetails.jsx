@@ -177,7 +177,7 @@ function CaseStudyDetails() {
                 'final',
                 'development',
                 'future',
-              ].map((section) => (
+            ].map((section) => (
                 <li key={section}>
                   <a
                     href={`#${section}`}
@@ -219,7 +219,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.problem.header}</h2>
                             <p className='mb-8'>{caseStudy.problem.headerDetail}</p>
                             {caseStudy.problem.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`problem-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -235,7 +235,7 @@ function CaseStudyDetails() {
                             <p className='mb-8'>{caseStudy.goal.headerDetail}</p>
 
                             {caseStudy.goal.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`goals-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -251,7 +251,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.impact.header}</h2>
                             <p className='mb-8'>{caseStudy.impact.headerDetail}</p>
                             {caseStudy.impact.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`impact-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -266,7 +266,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.ideation.header}</h2>
                             <p className='mb-8'>{caseStudy.ideation.headerDetail}</p>
                             {caseStudy.ideation.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`ideation-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -281,7 +281,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.testing.header}</h2>
                             <p className='mb-8'>{caseStudy.testing.headerDetail}</p>
                             {caseStudy.testing.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`testing-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -296,7 +296,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.development.header}</h2>
                             <p className='mb-8'>{caseStudy.development.headerDetail}</p>
                             {caseStudy.development.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`development-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -311,7 +311,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.final.header}</h2>
                             <p className='mb-8'>{caseStudy.final.headerDetail}</p>
                             {caseStudy.final.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`final-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>
@@ -326,7 +326,7 @@ function CaseStudyDetails() {
                             <h2 className='mb-4'>{caseStudy.future.header}</h2>
                             <p className='mb-8'>{caseStudy.future.headerDetail}</p>
                             {caseStudy.future.subheaders.map((subheader, index) => (
-                                <div className="caseStudy_subheaders">
+                                <div className="caseStudy_subheaders" key={`future-${index}`}>
                                     <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                     <p className='mb-8'>{subheader.subHeaderDetail}</p>
                                 </div>

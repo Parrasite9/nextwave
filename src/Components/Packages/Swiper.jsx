@@ -35,10 +35,11 @@ const DynamicSwiper = ({ data, config, showProgress = false }) => {
         ...config.autoplay,
       }}
       onAutoplayTimeLeft={onAutoplayTimeLeft}
-      {...config}
-    >
+      {...(showProgress ? { onAutoplayTimeLeft } : {})}  // Conditionally include the prop
+      {...config}    
+      >
       {data.map((item, index) => (
-        <SwiperSlide key={index}>{item.content}</SwiperSlide>
+        <SwiperSlide key={`slide-${index}`}>{item.content}</SwiperSlide>
       ))}
 
       {/* Conditionally render the progress circle */}
