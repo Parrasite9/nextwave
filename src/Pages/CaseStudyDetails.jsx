@@ -126,7 +126,7 @@ function CaseStudyDetails() {
             ========= SWIPER  ==========
             ============================ */}
 
-            <CaseStudySwiper />
+            <CaseStudySwiper caseStudy={caseStudy} />
 
             <div className="video lg:hidden border-2 rounded-xl" style={{ background: caseStudy.colors.customGradient }}>
                 {caseStudy.hasVideo ? (

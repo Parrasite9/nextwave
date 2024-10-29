@@ -20,7 +20,7 @@ const CaseStudyData = [
             secondary: '#ff00c3',   // Your secondary color
             ctaButton: '#ff00c3',
             ctaButtonText: '#f2f2f2',
-            priceTimeBackground: '#333',
+            // priceTimeBackground: '#333',
             customGradient: 'linear-gradient(36deg, #a100ff, #ff00c3 62%)',
             white: '#f2f2f2',
             black: '#333'
@@ -148,141 +148,150 @@ const CaseStudyData = [
     },
 
     {
-        poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
+        poster: '/images/casestudy/studioone/studioone_mockup.jpg',
         image: [
             {
-                image: '/images/casestudy/seductivebox/Desktop/Home_D1.png',
+                image: '/images/casestudy/studioone/Desktop/Home_D1.png',
             },
             {
-                image: '/images/casestudy/seductivebox/Desktop/Home_D2.png',
+                image: '/images/casestudy/studioone/Desktop/Home_D2.png',
             },
             {
-                image: '/images/casestudy/seductivebox/Desktop/Home_D3.png',
+                image: '/images/casestudy/studioone/Desktop/Home_D3.png',
             },
             {
-                image: '/images/casestudy/seductivebox/Desktop/Home_D4.png',
+                image: '/images/casestudy/studioone/Desktop/Home_D4.png',
             },
         ],
         colors: {
-            primary: '#a100ff',     // Your primary color
-            secondary: '#ff00c3',   // Your secondary color
-            ctaButton: '#ff00c3',
+            primary: '#163c5d',     // Your primary color
+            secondary: '#0074b7',   // Your secondary color
+            ctaButton: '#163c5d',
             ctaButtonText: '#f2f2f2',
-            priceTimeBackground: '#333',
+            // priceTimeBackground: '#333',
         },    
-        seo: '',
-        name: '',
-        timeline: '',
-        title: '',
-        teaser: '',
+        seo: 'beauty salon website, central booking, Studio No. 1',
+        name: 'Studio No. 1',
+        timeline: '2 weeks',
+        title: 'Creating a Unified Booking Platform for Studio No. 1',
+        teaser: 'Studio No. 1’s new website simplifies the booking process for clients, providing a single platform that represents their independent contractors under one cohesive brand.',
         price: '$$',
-        intro: '',
-        role: '',
+        intro: 'Studio No. 1, a beauty salon housing independent contractors, needed a unified platform to streamline the booking process and create a professional, team-oriented online presence.',
+        role: 'Freelance developer responsible for the full project design and development.',
+        hasVideo: false,
+        videoPath: '',
         problem: {
-            header: '',
-            headerDetail: '',
+            header: 'Decentralized Booking & Lack of Team Cohesion',
+            headerDetail: 'Studio No. 1 had 15+ independent booking sites for each contractor, creating confusion for clients and making it difficult to maintain a professional, cohesive online presence.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Multiple Independent Booking Sites',
+                    subHeaderDetail: 'Each contractor at Studio No. 1 managed their own booking system, making it hard for clients to locate and book services in one place.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '.',
+                    subheader: 'Inconsistent Branding',
+                    subHeaderDetail: 'Without a unified site, the brand appeared fragmented, reducing the salon’s overall professional image.',
                 },
             ],
         },
+        
         goal: {
-            header: '',
-            headerDetail: '',
+            header: 'Build a Centralized Booking Hub for All Team Members',
+            headerDetail: 'The primary goal was to feature all team members prominently and allow clients to easily book services from their preferred contractor or discover new services from other team members.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Feature All Contractors in One Place',
+                    subHeaderDetail: 'Create a website where clients can view all team members and their services without navigating away from the main site.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Simplify Booking Process',
+                    subHeaderDetail: 'Redirect clients seamlessly to each contractor’s personal booking page, making the experience smooth and efficient.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Foster a Unified Brand',
+                    subHeaderDetail: 'Promote a professional image by representing all contractors under the Studio No. 1 brand on a single platform.',
                 },
             ],
         },
+        
         impact: {
-            header: '',
-            headerDetail: '',
+            header: 'Enhanced Client Experience & Improved Professional Image',
+            headerDetail: 'The new platform improved client satisfaction by making it easy to book with preferred contractors and strengthened Studio No. 1’s brand image.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Increased Booking Efficiency',
+                    subHeaderDetail: 'Clients now have quick access to all team members, streamlining their booking process and improving overall satisfaction.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Strengthened Brand Cohesion',
+                    subHeaderDetail: 'Studio No. 1’s unified platform presented a cohesive, professional image that represented all contractors as part of a team.',
                 },
             ],
         },
+        
         ideation: {
-            header: '',
-            headerDetail: '',
+            header: 'Developing the Platform Layout & Features',
+            headerDetail: 'Early planning focused on how to organize each contractor’s page and ensure an intuitive user experience that emphasized Studio No. 1’s team approach.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Centralized Navigation',
+                    subHeaderDetail: 'Designed navigation so users could find each contractor quickly from the homepage without multiple clicks.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Consistent Design for Independent Pages',
+                    subHeaderDetail: 'Maintained cohesive branding throughout all contractor pages to enhance the perception of unity within the salon.',
                 },
             ],
         },
+        
         testing: {
-            header: '',
-            headerDetail: '',
+            header: 'User Feedback & Interface Adjustments',
+            headerDetail: 'Testing involved gathering feedback from clients and contractors to ensure ease of use and smooth navigation across the platform.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Client Feedback on Navigation',
+                    subHeaderDetail: 'Tested with real clients to confirm that navigating to contractor pages was intuitive and seamless.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Contractor Feedback on Booking Redirects',
+                    subHeaderDetail: 'Verified that redirects to personal booking systems were functioning correctly for each contractor’s page.',
                 },
             ],
         },
+        
         final: {
-            header: '',
-            headerDetail: '',
+            header: 'Polished, User-Friendly Platform Launch',
+            headerDetail: 'The final product delivered an easy-to-navigate website with a strong, cohesive design that provided quick access to each contractor’s booking page.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Unified Team Presentation',
+                    subHeaderDetail: 'Each contractor’s profile is prominently displayed, creating a professional team atmosphere and easy access for clients.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Streamlined Booking Process',
+                    subHeaderDetail: 'Clients can book with their preferred team member directly from the Studio No. 1 website, avoiding the need to navigate multiple sites.',
                 },
             ],
         },
+        
         development: {
-            header: '',
-            headerDetail: '',
+            header: 'Building & Deploying the Website',
+            headerDetail: 'The project was developed from scratch, with a focus on creating a centralized platform that maintains each contractor’s individual booking link.',
             subheaders: [
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Full-Stack Development',
+                    subHeaderDetail: 'Handled front-end and back-end development to deliver a functional, visually consistent platform.',
                 },
                 {
-                    subheader: '',
-                    subHeaderDetail: '',
+                    subheader: 'Smooth Integration of Booking Links',
+                    subHeaderDetail: 'Ensured that each contractor’s personal booking link was integrated seamlessly for a fluid client experience.',
                 },
             ],
         },
+        
         future: {
-            header: '',
-            headerDetail: '',
+            header: 'Potential for Additional Features',
+            headerDetail: 'While the project scope was limited to centralizing booking, the platform could be expanded to include additional salon features like service descriptions or promotional events.',
             subheaders: [],
         },
     },

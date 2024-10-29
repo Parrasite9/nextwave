@@ -15,10 +15,10 @@ const imageSwiperConfig = {
   }
 };
 
-const CaseStudySwiper = () => {
+const CaseStudySwiper = ({caseStudy}) => {
   // Assuming you want to display images from the first case study
-  const imageData = CaseStudyData[0].image.map((img) => ({
-    content: <img className="w-full mb-8 border-2" src={img.image} alt={img.alt} />,
+  const imageData = caseStudy.image.map((img, index) => ({
+    content: <img key={`slide-image-${index}`} className="w-full mb-8 border-2" src={img.image} alt={img.alt || `Slide ${index+ 1}`} />,
   }));
 
   return (
