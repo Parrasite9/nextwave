@@ -71,8 +71,10 @@ const CaseStudyData = [
         impact: {
             header: 'A 733% increase in monthly revenue.',
             headerDetail: 'The results of the redesign were immediately evident, as SeductiveBox saw a 733% increase in monthly revenue due to improved user engagement and conversion rates.',
-            image: true,
-            imageUrl: '/images/casestudy/seductivebox/CaseStudy/impact.jpg',
+            mediaType: 'image',
+            mediaUrl: '/images/casestudy/seductivebox/CaseStudy/impact.jpg',
+            // image: true,
+            // mediaType: '/images/casestudy/seductivebox/CaseStudy/impact.jpg',
             subheaders: [
                 {
                     subheader: 'Significant boost in conversions.',
@@ -177,7 +179,7 @@ const CaseStudyData = [
         teaser: 'Studio No. 1’s new website simplifies the booking process for clients, providing a single platform that represents their independent contractors under one cohesive brand.',
         price: '$$',
         intro: 'Studio No. 1, a beauty salon housing independent contractors, needed a unified platform to streamline the booking process and create a professional, team-oriented online presence.',
-        role: 'Freelance developer responsible for the full project design and development.',
+        role: 'We were responsible for the full project design and development.',
         hasVideo: false,
         videoPath: '',
         problem: {
@@ -232,6 +234,8 @@ const CaseStudyData = [
         ideation: {
             header: 'Developing the Platform Layout & Features',
             headerDetail: 'Early planning focused on how to organize each contractor’s page and ensure an intuitive user experience that emphasized Studio No. 1’s team approach.',
+            mediaType:'video',
+            mediaUrl: '/images/casestudy/studioone/CaseStudy/ideation.mp4',
             subheaders: [
                 {
                     subheader: 'Centralized Navigation',

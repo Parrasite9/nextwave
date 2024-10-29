@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { CaseStudyData } from '../Components'
+import VideoPlayer from '../Components/Video/VideoPlayer';
 import CaseStudySwiper from '../Components/Swipers/CaseStudySwiper';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
@@ -32,6 +33,27 @@ function CaseStudyDetails() {
                 </React.Fragment>
             ));
         };
+
+        function renderMedia(sectionData) {
+            const { mediaType, mediaUrl } = sectionData;
+          
+            if (!mediaType || !mediaUrl) return null;
+          
+            if (mediaType === 'image') {
+              return (
+                <img
+                  className='mb-8'
+                  src={mediaUrl}
+                  alt={`${sectionData.header} Image`}
+                />
+              );
+            } else if (mediaType === 'video') {
+              return <VideoPlayer videoSrc={mediaUrl} />;
+            }
+          
+            return null;
+          }
+          
 
         useEffect(() => {
             if (!caseStudy) return;
@@ -251,9 +273,8 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.impact.header}</h2>
                                 <p className='mb-8'>{caseStudy.impact.headerDetail}</p>
-                                {caseStudy.impact.image && (
-                                    <img className='mb-8' src={caseStudy.impact.imageUrl} alt="Impact Image" />
-                                )}
+                                {renderMedia(caseStudy.impact)}
+
                                 {caseStudy.impact.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`impact-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -269,9 +290,8 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.ideation.header}</h2>
                                 <p className='mb-8'>{caseStudy.ideation.headerDetail}</p>
-                                {caseStudy.ideation.image && (
-                                    <img className='mb-8' src={caseStudy.ideation.imageUrl} alt="Ideation Image" />
-                                )}
+                                {renderMedia(caseStudy.ideation)}
+
                                 {caseStudy.ideation.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`ideation-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -287,9 +307,8 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.testing.header}</h2>
                                 <p className='mb-8'>{caseStudy.testing.headerDetail}</p>
-                                {caseStudy.testing.image && (
-                                    <img className='mb-8' src={caseStudy.testing.imageUrl} alt="Testing Image" />
-                                )}
+                                {renderMedia(caseStudy.testing)}
+
                                 {caseStudy.testing.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`testing-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -305,9 +324,8 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.development.header}</h2>
                                 <p className='mb-8'>{caseStudy.development.headerDetail}</p>
-                                {caseStudy.development.image && (
-                                    <img className='mb-8' src={caseStudy.development.imageUrl} alt="Development Image" />
-                                )}
+                                {renderMedia(caseStudy.development)}
+
                                 {caseStudy.development.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`development-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
@@ -323,9 +341,8 @@ function CaseStudyDetails() {
                             <section>
                                 <h2 className='mb-4'>{caseStudy.final.header}</h2>
                                 <p className='mb-8'>{caseStudy.final.headerDetail}</p>
-                                {caseStudy.final.image && (
-                                    <img className='mb-8' src={caseStudy.final.imageUrl} alt="Final Image" />
-                                )}
+                                {renderMedia(caseStudy.final)}
+
                                 {caseStudy.final.subheaders.map((subheader, index) => (
                                     <div className="caseStudy_subheaders" key={`final-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
