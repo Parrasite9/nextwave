@@ -48,7 +48,7 @@ function CaseStudyDetails() {
                 />
               );
             } else if (mediaType === 'video') {
-              return <VideoPlayer videoSrc={mediaUrl} />;
+              return <VideoPlayer className='mb-8' videoSrc={mediaUrl} />;
             }
           
             return null;

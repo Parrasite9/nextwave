@@ -1,7 +1,7 @@
 // VideoComponent.jsx
 import React, { useRef, useEffect } from 'react';
 
-function VideoPlayer({ videoSrc }) {
+function VideoPlayer({ videoSrc, className }) {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -39,15 +39,16 @@ function VideoPlayer({ videoSrc }) {
   }, []);
 
   return (
+    <div className={className}>
     <video
       ref={videoRef}
       src={videoSrc}
       loop
       muted
       playsInline
-    //   controls
       style={{ width: '100%' }}
     />
+    </div>
   );
 }
 
