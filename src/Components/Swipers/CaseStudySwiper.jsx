@@ -1,6 +1,5 @@
 import React from 'react';
 import DynamicSwiper from '../Packages/Swiper';  // Assuming this is the Swiper component
-import CaseStudyData from '../Data/CaseStudyData';  // Import your case study data
 
 const imageSwiperConfig = {
   slidesPerView: 1.25,
