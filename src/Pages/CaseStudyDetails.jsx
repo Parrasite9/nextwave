@@ -132,7 +132,7 @@ function CaseStudyDetails() {
                         <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white xl:text-xl'
                                 // style={{ backgroundColor: `${caseStudy.colors.primary}90` }}
         
-                        >{caseStudy.timeline}</p>
+                        >Built in {caseStudy.timeline}</p>
                     </div>
 
                 </div>
