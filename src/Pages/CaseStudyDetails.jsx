@@ -245,6 +245,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`problem-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
@@ -261,6 +262,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`goals-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
@@ -279,6 +281,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`impact-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
@@ -314,6 +317,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`testing-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
@@ -331,6 +335,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`development-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
@@ -348,6 +353,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`final-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
@@ -363,6 +369,7 @@ function CaseStudyDetails() {
                                     <div className="caseStudy_subheaders" key={`future-${index}`}>
                                         <h3 className='mb-4 text-lg font-semibold' style={{color: caseStudy.colors.secondary}}>{subheader.subheader}</h3>
                                         <p className='mb-8'>{subheader.subHeaderDetail}</p>
+                                        {renderMedia(subheader)}
                                     </div>
                                 ))}
                             </section>
