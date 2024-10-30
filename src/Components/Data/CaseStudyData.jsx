@@ -234,12 +234,14 @@ const CaseStudyData = [
         ideation: {
             header: 'Developing the Platform Layout & Features',
             headerDetail: 'Early planning focused on how to organize each contractor’s page and ensure an intuitive user experience that emphasized Studio No. 1’s team approach.',
-            mediaType:'video',
-            mediaUrl: '/images/casestudy/studioone/CaseStudy/ideation.mp4',
+            mediaType:'image',
+            mediaUrl: '/images/casestudy/studioone/CaseStudy/earlyDesign.jpg',
             subheaders: [
                 {
                     subheader: 'Centralized Navigation',
                     subHeaderDetail: 'Designed navigation so users could find each contractor quickly from the homepage without multiple clicks.',
+                    mediaType:'video',
+                    mediaUrl: '/images/casestudy/studioone/CaseStudy/ideation.mp4',        
                 },
                 {
                     subheader: 'Consistent Design for Independent Pages',
@@ -266,6 +268,8 @@ const CaseStudyData = [
         final: {
             header: 'Polished, User-Friendly Platform Launch',
             headerDetail: 'The final product delivered an easy-to-navigate website with a strong, cohesive design that provided quick access to each contractor’s booking page.',
+            mediaType:'image',
+            mediaUrl: '/images/casestudy/studioone/CaseStudy/final.jpg',
             subheaders: [
                 {
                     subheader: 'Unified Team Presentation',
