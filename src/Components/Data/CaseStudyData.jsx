@@ -1,4 +1,5 @@
 const CaseStudyData = [
+    // SEDUCTIVEBOX 
     {
         poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
         image: [
@@ -149,6 +150,7 @@ const CaseStudyData = [
         },
     },
 
+    // STUDIO NO 1 
     {
         poster: '/images/casestudy/studioone/studioone_mockup.jpg',
         image: [
@@ -304,39 +306,154 @@ const CaseStudyData = [
         },
     },
 
+    // THE ORANGE RV 
     {
         poster: '/images/casestudy/theorangerv/theorangerv_mockup.jpg',
         image: [
-            {
-                image: '',
-            },
-            {
-                image: '',
-            },
-            {
-                image: '',
-            },
-            {
-                image: '',
-            },
+            { image: '/images/casestudy/theorangerv/Desktop/Home_D1.png' },
+            { image: '/images/casestudy/theorangerv/Desktop/Home_D2.jpg' },
+            { image: '/images/casestudy/theorangerv/Desktop/Home_D3.jpg' },
+            { image: '/images/casestudy/theorangerv/Desktop/Home_D4.jpg' },
         ],
-        seo: '',
-        name: 'The Orange RV',
-        timeline: '',
-        title: '',
-        teaser: '',
+        colors: {
+            primary: '#fe4500',     // Example color inspired by Orange Dreamsicle
+            secondary: '#3b82f6',   // Complementary orange color
+            ctaButton: '#34a853',
+            ctaButtonText: '#f2f2f2',
+        },    
+        seo: 'RV inventory website, professional RV showcase, TheOrangeRV',
+        name: 'TheOrangeRV',
+        timeline: '2 weeks',
+        title: 'Professional Online Inventory for TheOrangeRV',
+        teaser: 'TheOrangeRV’s new prototype website offers a professional platform to showcase inventory, helping to elevate brand presence and streamline browsing for potential customers.',
         price: '$$',
-        intro: '',
-        role: '',
-        problem: '',
-        goal: '',
-        impact: '',
-        ideation: '',
-        testing: '',
-        final: '',
-        development: '',
-        future: '',    
+        intro: 'TheOrangeRV is an RV business that previously relied on Facebook Marketplace for advertisements and inventory display. This prototype was developed to show the business how an online platform could improve their brand and provide a streamlined inventory experience for customers.',
+        role: 'Handled all aspects of design, development, and deployment as the sole developer and designer.',
+        hasVideo: false,
+        videoPath: '',
+        
+        problem: {
+            header: 'No Dedicated Online Platform',
+            headerDetail: 'TheOrangeRV previously relied on Facebook Marketplace for all advertising and inventory displays, which limited its professional appeal and customer engagement.',
+            subheaders: [
+                {
+                    subheader: 'Lack of Professional Website',
+                    subHeaderDetail: 'Without a website, the business relied on third-party platforms that limited their ability to customize their brand presentation.',
+                },
+                {
+                    subheader: 'Fragmented Brand Image',
+                    subHeaderDetail: 'Using a marketplace didn’t allow for a cohesive and distinctive brand image, making it harder to build credibility with customers.',
+                },
+            ],
+        },
+        
+        goal: {
+            header: 'Create a Professional Inventory Showcase Platform',
+            headerDetail: 'The main objective was to design a prototype website that showcased TheOrangeRV’s inventory, boosted brand credibility, and streamlined customer browsing.',
+            subheaders: [
+                {
+                    subheader: 'Centralized Inventory Showcase',
+                    subHeaderDetail: 'Develop a website where all RVs could be displayed professionally, providing detailed views of each item for potential buyers.',
+                },
+                {
+                    subheader: 'Enhance Brand Credibility',
+                    subHeaderDetail: 'Create a unified and professional-looking platform to represent TheOrangeRV as a credible, established business.',
+                },
+                {
+                    subheader: 'Provide a Streamlined User Experience',
+                    subHeaderDetail: 'Offer a clean and organized layout, allowing potential customers to easily browse and filter available RVs by key criteria.',
+                },
+            ],
+        },
+        
+        impact: {
+            header: 'Prototype Delivered to Demonstrate Brand Potential',
+            headerDetail: 'The self-initiated prototype showed the potential for improved branding and customer engagement, providing a foundational concept for an official website.',
+            subheaders: [
+                {
+                    subheader: 'Enhanced Professional Image',
+                    subHeaderDetail: 'The site demonstrated how a professional online presence could strengthen brand identity and attract more customers.',
+                },
+                {
+                    subheader: 'Streamlined Customer Browsing',
+                    subHeaderDetail: 'By showcasing the RVs in a central and organized platform, the prototype illustrated a clear, user-friendly browsing experience.',
+                },
+            ],
+        },
+        
+        ideation: {
+            header: 'Design Inspired by Orange Dreamsicle',
+            headerDetail: 'To align with the name TheOrangeRV, the color palette was inspired by the bright, memorable orange hues of the Orange Dreamsicle.',
+            // mediaType: 'image',
+            // mediaUrl: '/images/casestudy/theorangerv/CaseStudy/earlyDesign.jpg',
+            subheaders: [
+                {
+                    subheader: 'Unique Color Palette',
+                    subHeaderDetail: 'The orange color scheme provided a memorable and visually cohesive experience aligned with the brand name.',
+                    // mediaType: 'image',
+                    // mediaUrl: '/images/casestudy/theorangerv/CaseStudy/colorPalette.jpg',
+                },
+                {
+                    subheader: 'Inventory Filters',
+                    subHeaderDetail: 'Integrated filters based on price, year, and sleeping capacity to make browsing easier and more relevant for customers.',
+                },
+            ],
+        },
+        
+        testing: {
+            header: 'Internal Testing & Assessment',
+            headerDetail: 'While cloud-deployed, the prototype was tested internally due to the need for client approval before wider testing could occur.',
+            subheaders: [
+                {
+                    subheader: 'Cloud Deployment for Accessibility',
+                    subHeaderDetail: 'Deployed to AWS Cloud to allow for easy access and functionality testing from various devices.',
+                },
+                {
+                    subheader: 'No External User Testing',
+                    subHeaderDetail: 'Full external testing was not conducted, as approval was not secured from the business owner.',
+                },
+            ],
+        },
+        
+        final: {
+            header: 'Polished Prototype Launch',
+            headerDetail: 'The final prototype provided a visually cohesive and easy-to-navigate platform for viewing RV inventory, fully showcasing the brand potential for TheOrangeRV.',
+            mediaType: 'image',
+            mediaUrl: '/images/casestudy/theorangerv/CaseStudy/finalDesign.jpg',
+            subheaders: [
+                {
+                    subheader: 'Consistent Brand Presentation',
+                    subHeaderDetail: 'The cohesive orange theme helped establish a unique brand identity tied to the name TheOrangeRV.',
+                },
+                {
+                    subheader: 'Functional Inventory Display',
+                    subHeaderDetail: 'The organized inventory and filtering options made it easy for users to find relevant RVs quickly.',
+                },
+            ],
+        },
+        
+        development: {
+            header: 'React and AWS for Core Development',
+            headerDetail: 'The project was developed in React for a responsive frontend and deployed on AWS Cloud to ensure scalability and accessibility.',
+            subheaders: [
+                {
+                    subheader: 'React for Dynamic Frontend',
+                    subHeaderDetail: 'Used React to build a fast, responsive interface that would scale easily for future functionality.',
+                },
+                {
+                    subheader: 'AWS Cloud Deployment',
+                    subHeaderDetail: 'Deployed the prototype on AWS, making it accessible from various devices and locations.',
+                },
+            ],
+        },
+        
+        future: {
+            header: 'Potential Next Steps',
+            headerDetail: 'If the owner decides to proceed, the prototype can be enhanced with updated inventory, high-quality images, and improved product display features.',
+            subheaders: [],
+        },
     },
+    
 
     {
         poster: '/images/casestudy/wayoutkids/wayout_mockup.jpg',
@@ -383,3 +500,150 @@ const CaseStudyData = [
 
 
 export default CaseStudyData;
+
+// TEMPLATE 
+// {
+//     poster: '',
+//     image: [
+//         { image: '' },
+//         { image: '' },
+//         { image: '' },
+//         { image: '' },
+//     ],
+//     colors: {
+//         primary: '',
+//         secondary: '',
+//         ctaButton: '',
+//         ctaButtonText: '',
+//     },    
+//     seo: '',
+//     name: '',
+//     timeline: '',
+//     title: '',
+//     teaser: '',
+//     price: '',
+//     intro: '',
+//     role: '',
+//     hasVideo: false,
+//     videoPath: '',
+//     problem: {
+//         header: '',
+//         headerDetail: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     goal: {
+//         header: '',
+//         headerDetail: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     impact: {
+//         header: '',
+//         headerDetail: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     ideation: {
+//         header: '',
+//         headerDetail: '',
+//         mediaType: '',
+//         mediaUrl: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//                 mediaType: '',
+//                 mediaUrl: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     testing: {
+//         header: '',
+//         headerDetail: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     final: {
+//         header: '',
+//         headerDetail: '',
+//         mediaType: '',
+//         mediaUrl: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     development: {
+//         header: '',
+//         headerDetail: '',
+//         subheaders: [
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//             {
+//                 subheader: '',
+//                 subHeaderDetail: '',
+//             },
+//         ],
+//     },
+    
+//     future: {
+//         header: '',
+//         headerDetail: '',
+//         subheaders: [],
+//     },
+// },
