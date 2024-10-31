@@ -1,4 +1,168 @@
 const CaseStudyData = [
+
+        // WAYOUT KIDS 
+        {
+            poster: '/images/casestudy/wayoutkids/wayout_mockup.jpg',
+            image: [
+                { image: '/images/casestudy/wayoutkids/Desktop/Home_D1.png' },
+                { image: '/images/casestudy/wayoutkids/Desktop/Home_D2.png' },
+                { image: '/images/casestudy/wayoutkids/Desktop/Home_D3.png' },
+                { image: '/images/casestudy/wayoutkids/Desktop/Home_D4.png' },
+            ],
+            colors: {
+                primary: '#FFA500',      // Example color inspired by children's themes
+                secondary: '#0047FF',    // Complementary vibrant green
+                ctaButton: '#28A745',
+                ctaButtonText: '#FFFFFF',
+            },
+            seo: 'WayOut Kids nonprofit website, children’s charity website, WayOut Kids donation site',
+            name: 'WayOut Kids',
+            shortDescription: 'See how we revitalized WayOut Kids\' online presence with a bold homepage redesign that boosts credibility and drives donations.',
+            timeline: '2 weeks',
+            title: 'Homepage Redesign for WayOut Kids Nonprofit',
+            teaser: 'The homepage redesign for WayOut Kids brings a bold, visually organized look to highlight their mission, boost credibility, and drive donations and engagement.',
+            price: '$$',
+            intro: 'WayOut Kids, a nonprofit organization, needed a more professional, clean, and appealing homepage to support their mission and encourage donations. Previously, their website was cluttered and unfocused, lacking the impact needed for a strong online presence.',
+            role: 'Handled all aspects of design, development, and deployment as the sole developer and designer.',
+            hasVideo: false,
+            videoPath: '',
+        
+            problem: {
+                header: 'Outdated and Cluttered Website',
+                headerDetail: 'The original WayOut Kids website was visually unappealing, overly cluttered, and didn’t effectively communicate the organization’s goals, diminishing its professional image.',
+                subheaders: [
+                    {
+                        subheader: 'Unprofessional and Crowded Layout',
+                        subHeaderDetail: 'The previous design had too much content crammed into one space, making it hard for users to navigate and diminishing the nonprofit’s credibility.',
+                    },
+                    {
+                        subheader: 'Lack of Clear CTAs and Focus',
+                        subHeaderDetail: 'With no clear layout or calls-to-action, the website failed to direct users toward supporting the mission, donating, or getting involved.',
+                        mediaType: 'image',
+                        mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/problem.jpg',
+                    },
+                ],
+            },
+        
+            goal: {
+                header: 'Create a Clean, Professional Homepage to Drive Support',
+                headerDetail: 'The redesign aimed to create a professional, organized homepage that would increase donations and support by effectively communicating WayOut Kids’ mission and impact.',
+                subheaders: [
+                    {
+                        subheader: 'Make the Mission and Goals Clear',
+                        subHeaderDetail: 'Create a focused layout with bold visual elements to showcase the organization’s purpose, values, and impact.',
+                    },
+                    {
+                        subheader: 'Encourage Donations and Involvement',
+                        subHeaderDetail: 'Add clear, prominent call-to-action buttons for donations and volunteer opportunities.',
+                    },
+                    {
+                        subheader: 'Enhance Credibility',
+                        subHeaderDetail: 'Establish a professional design that reflects WayOut Kids’ commitment and credibility as a children’s nonprofit.',
+                    },
+                ],
+            },
+        
+            impact: {
+                header: 'Prototype Showcased Potential for Professional Image',
+                headerDetail: 'The redesign prototype, though not yet deployed, demonstrated a professional and engaging look for the nonprofit, supporting donations and credibility.',
+                subheaders: [
+                    {
+                        subheader: 'Enhanced Visual Appeal',
+                        subHeaderDetail: 'The new design offered a clean, engaging layout that would provide WayOut Kids with a more credible and appealing online presence.',
+                    },
+                    {
+                        subheader: 'Improved Usability',
+                        subHeaderDetail: 'A simplified, organized layout improved usability, making it easier for visitors to find key information and donate.',
+                    },
+                    {
+                        subheader: 'Stronger Call-to-Action Placement',
+                        subHeaderDetail: 'Clear, prominent CTAs for donations and support were strategically placed to drive visitor engagement.',
+                    },
+                    {
+                        subheader: 'Brand Cohesion',
+                        subHeaderDetail: 'The prototype introduced a vibrant, cohesive color scheme aligned with the child-focused mission of the nonprofit.',
+                    },
+                    {
+                        subheader: 'Feedback-Ready Foundation',
+                        subHeaderDetail: 'Designed to receive future feedback, the prototype was structured to easily incorporate stakeholder input and user testing.',
+                        mediaType: 'image',
+                        mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/hero.jpg',
+    
+                    },
+                ],
+            },
+        
+            ideation: {
+                header: 'Colorful, Child-Centric Design Inspired by School Memories',
+                headerDetail: 'The ideation phase focused on a playful, colorful layout inspired by childhood school memories, such as multi-colored school supplies, aligning with the mission’s child focus.',
+                mediaType: 'image',
+                mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/earlyDesign.jpg',
+                subheaders: [
+                    {
+                        subheader: 'Multi-Colored Layout',
+                        subHeaderDetail: 'Designed sections in bright colors reminiscent of childhood, giving the site a warm, playful look suitable for a child-focused nonprofit.',
+                    },
+                    {
+                        subheader: 'Bold Hero Section with Quick Links',
+                        subHeaderDetail: 'Created a bold hero section displaying main areas of involvement with clickable CTAs, offering “quick links” to guide users based on interest.',
+                    },
+                ],
+            },
+        
+            testing: {
+                header: 'Presentation to Nonprofit Stakeholders',
+                headerDetail: 'Although formal testing was not conducted, the prototype was presented to the nonprofit, who confirmed that it aligned with their vision for a bold, engaging homepage.',
+                subheaders: [
+                    {
+                        subheader: 'Stakeholder Feedback',
+                        subHeaderDetail: 'The nonprofit expressed that the bold design captured the professional and engaging look they had in mind for WayOut Kids.',
+                    },
+                ],
+            },
+        
+            final: {
+                header: 'Bold and Clean Homepage Design',
+                headerDetail: 'The final homepage prototype delivered a visually organized, bold design that aligned with the organization’s mission and engaged visitors with clear calls-to-action.',
+                mediaType: 'image',
+                mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/finalDesign.jpg',
+                subheaders: [
+                    {
+                        subheader: 'Complete Visual Overhaul',
+                        subHeaderDetail: 'The redesign replaced clutter with a clean, professional look that supported WayOut Kids’ mission and objectives.',
+                        mediaType: 'video',
+                        mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/final.mp4',
+                    },
+                    {
+                        subheader: 'Dynamic Events Section',
+                        subHeaderDetail: 'Added a dynamic events section displaying the closest upcoming events to keep the content relevant and engaging.',
+                    },
+                ],
+            },
+        
+            development: {
+                header: 'React and AWS Cloud for Core Development',
+                headerDetail: 'The homepage prototype was developed with React and deployed on AWS Cloud, providing a scalable, responsive design and accessible platform.',
+                subheaders: [
+                    {
+                        subheader: 'React for a Responsive Frontend',
+                        subHeaderDetail: 'Utilized React to create a fast, responsive, and dynamic interface suitable for engaging a diverse audience.',
+                    },
+                    {
+                        subheader: 'AWS Cloud Deployment',
+                        subHeaderDetail: 'Deployed on AWS Cloud for secure, scalable access and easy sharing for stakeholder presentations.',
+                    },
+                ],
+            },
+        
+            future: {
+                header: 'Potential for Full Site Development',
+                headerDetail: 'If the project proceeds, the next steps would include completing the full site with event information, real images, and additional service details.',
+                subheaders: [],
+            },
+        },
+
+
     // SEDUCTIVEBOX 
     {
         poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
@@ -29,6 +193,7 @@ const CaseStudyData = [
         },    
         seo: 'Lingerie subscription website redesign',
         name: 'SeductiveBox',
+        shortDescription: 'Discover how our female-focused redesign skyrocketed SeductiveBox\'s revenue by 733%, enhancing engagement and conversions.',
         timeline: '4 Weeks',
         title: 'Increasing subscription revenue by 733% with SeductiveBox\’s website redesign',
         teaser: 'SeductiveBox underwent a full redesign focused on targeting its core female audience, resulting in a 733% increase in monthly revenue.',
@@ -176,6 +341,7 @@ const CaseStudyData = [
         },    
         seo: 'beauty salon website, central booking, Studio No. 1',
         name: 'Studio No. 1',
+        shortDescription: 'Learn how we unified Studio No. 1\'s booking system into a seamless platform, simplifying client bookings and strengthening their brand.',
         timeline: '2 weeks',
         title: 'Creating a Unified Booking Platform for Studio No. 1',
         teaser: 'Studio No. 1’s new website simplifies the booking process for clients, providing a single platform that represents their independent contractors under one cohesive brand.',
@@ -323,6 +489,7 @@ const CaseStudyData = [
         },    
         seo: 'RV inventory website, professional RV showcase, TheOrangeRV',
         name: 'TheOrangeRV',
+        shortDescription: 'Explore how we elevated TheOrangeRV\'s brand with a professional website showcasing their inventory and improving customer experience.',
         timeline: '2 weeks',
         title: 'Professional Online Inventory for TheOrangeRV',
         teaser: 'TheOrangeRV’s new prototype website offers a professional platform to showcase inventory, helping to elevate brand presence and streamline browsing for potential customers.',
@@ -457,166 +624,7 @@ const CaseStudyData = [
         },
     },
     
-    // WAYOUT KIDS 
-    {
-        poster: '/images/casestudy/wayoutkids/wayout_mockup.jpg',
-        image: [
-            { image: '/images/casestudy/wayoutkids/Desktop/Home_D1.png' },
-            { image: '/images/casestudy/wayoutkids/Desktop/Home_D2.png' },
-            { image: '/images/casestudy/wayoutkids/Desktop/Home_D3.png' },
-            { image: '/images/casestudy/wayoutkids/Desktop/Home_D4.png' },
-        ],
-        colors: {
-            primary: '#FFA500',      // Example color inspired by children's themes
-            secondary: '#0047FF',    // Complementary vibrant green
-            ctaButton: '#28A745',
-            ctaButtonText: '#FFFFFF',
-        },
-        seo: 'WayOut Kids nonprofit website, children’s charity website, WayOut Kids donation site',
-        name: 'WayOut Kids',
-        timeline: '2 weeks',
-        title: 'Homepage Redesign for WayOut Kids Nonprofit',
-        teaser: 'The homepage redesign for WayOut Kids brings a bold, visually organized look to highlight their mission, boost credibility, and drive donations and engagement.',
-        price: '$$',
-        intro: 'WayOut Kids, a nonprofit organization, needed a more professional, clean, and appealing homepage to support their mission and encourage donations. Previously, their website was cluttered and unfocused, lacking the impact needed for a strong online presence.',
-        role: 'Handled all aspects of design, development, and deployment as the sole developer and designer.',
-        hasVideo: false,
-        videoPath: '',
-    
-        problem: {
-            header: 'Outdated and Cluttered Website',
-            headerDetail: 'The original WayOut Kids website was visually unappealing, overly cluttered, and didn’t effectively communicate the organization’s goals, diminishing its professional image.',
-            subheaders: [
-                {
-                    subheader: 'Unprofessional and Crowded Layout',
-                    subHeaderDetail: 'The previous design had too much content crammed into one space, making it hard for users to navigate and diminishing the nonprofit’s credibility.',
-                },
-                {
-                    subheader: 'Lack of Clear CTAs and Focus',
-                    subHeaderDetail: 'With no clear layout or calls-to-action, the website failed to direct users toward supporting the mission, donating, or getting involved.',
-                    mediaType: 'image',
-                    mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/problem.jpg',
-                },
-            ],
-        },
-    
-        goal: {
-            header: 'Create a Clean, Professional Homepage to Drive Support',
-            headerDetail: 'The redesign aimed to create a professional, organized homepage that would increase donations and support by effectively communicating WayOut Kids’ mission and impact.',
-            subheaders: [
-                {
-                    subheader: 'Make the Mission and Goals Clear',
-                    subHeaderDetail: 'Create a focused layout with bold visual elements to showcase the organization’s purpose, values, and impact.',
-                },
-                {
-                    subheader: 'Encourage Donations and Involvement',
-                    subHeaderDetail: 'Add clear, prominent call-to-action buttons for donations and volunteer opportunities.',
-                },
-                {
-                    subheader: 'Enhance Credibility',
-                    subHeaderDetail: 'Establish a professional design that reflects WayOut Kids’ commitment and credibility as a children’s nonprofit.',
-                },
-            ],
-        },
-    
-        impact: {
-            header: 'Prototype Showcased Potential for Professional Image',
-            headerDetail: 'The redesign prototype, though not yet deployed, demonstrated a professional and engaging look for the nonprofit, supporting donations and credibility.',
-            subheaders: [
-                {
-                    subheader: 'Enhanced Visual Appeal',
-                    subHeaderDetail: 'The new design offered a clean, engaging layout that would provide WayOut Kids with a more credible and appealing online presence.',
-                },
-                {
-                    subheader: 'Improved Usability',
-                    subHeaderDetail: 'A simplified, organized layout improved usability, making it easier for visitors to find key information and donate.',
-                },
-                {
-                    subheader: 'Stronger Call-to-Action Placement',
-                    subHeaderDetail: 'Clear, prominent CTAs for donations and support were strategically placed to drive visitor engagement.',
-                },
-                {
-                    subheader: 'Brand Cohesion',
-                    subHeaderDetail: 'The prototype introduced a vibrant, cohesive color scheme aligned with the child-focused mission of the nonprofit.',
-                },
-                {
-                    subheader: 'Feedback-Ready Foundation',
-                    subHeaderDetail: 'Designed to receive future feedback, the prototype was structured to easily incorporate stakeholder input and user testing.',
-                    mediaType: 'image',
-                    mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/hero.jpg',
 
-                },
-            ],
-        },
-    
-        ideation: {
-            header: 'Colorful, Child-Centric Design Inspired by School Memories',
-            headerDetail: 'The ideation phase focused on a playful, colorful layout inspired by childhood school memories, such as multi-colored school supplies, aligning with the mission’s child focus.',
-            mediaType: 'image',
-            mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/earlyDesign.jpg',
-            subheaders: [
-                {
-                    subheader: 'Multi-Colored Layout',
-                    subHeaderDetail: 'Designed sections in bright colors reminiscent of childhood, giving the site a warm, playful look suitable for a child-focused nonprofit.',
-                },
-                {
-                    subheader: 'Bold Hero Section with Quick Links',
-                    subHeaderDetail: 'Created a bold hero section displaying main areas of involvement with clickable CTAs, offering “quick links” to guide users based on interest.',
-                },
-            ],
-        },
-    
-        testing: {
-            header: 'Presentation to Nonprofit Stakeholders',
-            headerDetail: 'Although formal testing was not conducted, the prototype was presented to the nonprofit, who confirmed that it aligned with their vision for a bold, engaging homepage.',
-            subheaders: [
-                {
-                    subheader: 'Stakeholder Feedback',
-                    subHeaderDetail: 'The nonprofit expressed that the bold design captured the professional and engaging look they had in mind for WayOut Kids.',
-                },
-            ],
-        },
-    
-        final: {
-            header: 'Bold and Clean Homepage Design',
-            headerDetail: 'The final homepage prototype delivered a visually organized, bold design that aligned with the organization’s mission and engaged visitors with clear calls-to-action.',
-            mediaType: 'image',
-            mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/finalDesign.jpg',
-            subheaders: [
-                {
-                    subheader: 'Complete Visual Overhaul',
-                    subHeaderDetail: 'The redesign replaced clutter with a clean, professional look that supported WayOut Kids’ mission and objectives.',
-                    mediaType: 'video',
-                    mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/final.mp4',
-                },
-                {
-                    subheader: 'Dynamic Events Section',
-                    subHeaderDetail: 'Added a dynamic events section displaying the closest upcoming events to keep the content relevant and engaging.',
-                },
-            ],
-        },
-    
-        development: {
-            header: 'React and AWS Cloud for Core Development',
-            headerDetail: 'The homepage prototype was developed with React and deployed on AWS Cloud, providing a scalable, responsive design and accessible platform.',
-            subheaders: [
-                {
-                    subheader: 'React for a Responsive Frontend',
-                    subHeaderDetail: 'Utilized React to create a fast, responsive, and dynamic interface suitable for engaging a diverse audience.',
-                },
-                {
-                    subheader: 'AWS Cloud Deployment',
-                    subHeaderDetail: 'Deployed on AWS Cloud for secure, scalable access and easy sharing for stakeholder presentations.',
-                },
-            ],
-        },
-    
-        future: {
-            header: 'Potential for Full Site Development',
-            headerDetail: 'If the project proceeds, the next steps would include completing the full site with event information, real images, and additional service details.',
-            subheaders: [],
-        },
-    },
     
 ].map((item, index) => ({
     ...item,
@@ -648,6 +656,7 @@ export default CaseStudyData;
 //     },    
 //     seo: '',
 //     name: '',
+//     shortDescription: '',
 //     timeline: '',
 //     title: '',
 //     teaser: '',
