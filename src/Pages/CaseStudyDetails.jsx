@@ -186,7 +186,7 @@ function CaseStudyDetails() {
             <div className="parent grid grid-cols-1 lg:grid-cols-5 gap-4">
                 {/* CASESTUDY NAVLINKS */}
                 {/* CASE STUDY NAVIGATION */}
-            <div className="caseStudy_navbar hidden top-4 lg:block sticky h-screen">
+            <div className="caseStudy_navbar hidden top-4 lg:block sticky h-screen max-h-[500px]">
             <nav>
                 <ul className='space-y-2'>
                 {[
@@ -197,8 +197,8 @@ function CaseStudyDetails() {
                     'impact',
                     'ideation',
                     'testing',
-                    'final',
                     'development',
+                    'final',
                     'future',
                 ].map((section) => (
                     <li key={section}>
@@ -210,12 +210,12 @@ function CaseStudyDetails() {
                         style={{
                         color:
                             activeSection === section
-                            ? 'white'
+                            ? caseStudy.colors.primary
                             : hoveredSection === section
                             ? caseStudy.colors.secondary
                             : 'inherit',
-                        backgroundColor:
-                            activeSection === section ? caseStudy.colors.primary : 'transparent',
+                        // backgroundColor:
+                        //     activeSection === section ? caseStudy.colors.primary : 'transparent',
                         }}
                     >
                         {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -230,11 +230,11 @@ function CaseStudyDetails() {
                 {/* CASE STUDY INFO  */}
                 <div className={`div2 ${caseStudy.hasVideo ? 'lg:col-span-3' : 'lg:col-span-4'}`}>
                     <div className="caseStudyInfo">
-                        <h2 id='intro' className='caseStudyHeader my-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
+                        <h2 id='intro' className='caseStudyHeader caseStudySection my-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Intro</h2>
                         <p className='mb-8'>{caseStudy.title}</p>
-                        <h2 id='role' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Our Role</h2>
+                        <h2 id='role' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Our Role</h2>
                         <p className='mb-8'>{caseStudy.role}</p>
-                        <h2 id='problem' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>The Problem</h2>
+                        <h2 id='problem' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>The Problem</h2>
 
                         {/* MAPPING THROUGH THE PROBLEMS  */}
                         {caseStudy.problem && (
@@ -252,7 +252,7 @@ function CaseStudyDetails() {
                         )}
 
                         {/* MAPPING THROUGH THE GOALS  */}
-                        <h2 id='goal' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Goal</h2>
+                        <h2 id='goal' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Goal</h2>
                         {caseStudy.goal && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.goal.header}</h2>
@@ -270,7 +270,7 @@ function CaseStudyDetails() {
 
 
                         {/* MAPPING THROUGH THE IMPACT  */}
-                        <h2 id='impact' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Impact</h2>
+                        <h2 id='impact' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Impact</h2>
                         {caseStudy.impact && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.impact.header}</h2>
@@ -288,7 +288,7 @@ function CaseStudyDetails() {
                         )}
 
                         {/* MAPPING THROUGH THE IDEATION  */}
-                        <h2 id='ideation' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Ideation</h2>
+                        <h2 id='ideation' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Ideation</h2>
                         {caseStudy.ideation && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.ideation.header}</h2>
@@ -306,7 +306,7 @@ function CaseStudyDetails() {
                         )}
 
                         {/* MAPPING THROUGH THE TESTING */}
-                        <h2 id='testing' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Testing</h2>
+                        <h2 id='testing' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Testing</h2>
                         {caseStudy.testing && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.testing.header}</h2>
@@ -324,7 +324,7 @@ function CaseStudyDetails() {
                         )}
 
                         {/* MAPPING THROUGH THE DEVELOPMENT  */}
-                        <h2 id='development' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Development</h2>
+                        <h2 id='development' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Development</h2>
                         {caseStudy.development && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.development.header}</h2>
@@ -342,7 +342,7 @@ function CaseStudyDetails() {
                         )}
 
                         {/* MAPPING THROUGH THE FINAL  */}
-                        <h2 id='final' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Final Design</h2>
+                        <h2 id='final' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Final Design</h2>
                         {caseStudy.final && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.final.header}</h2>
@@ -360,7 +360,7 @@ function CaseStudyDetails() {
                         )}
 
                         {/* MAPPING THROUGH THE FUTURE  */}
-                        <h2 id='future' className='caseStudyHeader mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Future</h2>
+                        <h2 id='future' className='caseStudyHeader caseStudySection mb-4 decoration: underline' style={{color: caseStudy.colors.primary}}>Future</h2>
                         {caseStudy.future && (
                             <section>
                                 <h2 className='mb-4'>{caseStudy.future.header}</h2>
