@@ -3,6 +3,7 @@ const CaseStudyData = [
         // WAYOUT KIDS 
         {
             poster: '/images/casestudy/wayoutkids/wayout_mockup.jpg',
+            lgPoster: '/images/casestudy/wayoutkids/wayoutlg.jpg',
             image: [
                 { image: '/images/casestudy/wayoutkids/Desktop/Home_D1.png' },
                 { image: '/images/casestudy/wayoutkids/Desktop/Home_D2.png' },
@@ -166,6 +167,7 @@ const CaseStudyData = [
     // SEDUCTIVEBOX 
     {
         poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
+        lgPoster: '/images/casestudy/seductivebox/seductiveboxlg.jpg',
         image: [
             {
                 image: '/images/casestudy/seductivebox/Desktop/Home_D1.png',
@@ -318,6 +320,7 @@ const CaseStudyData = [
     // STUDIO NO 1 
     {
         poster: '/images/casestudy/studioone/studioone_mockup.jpg',
+        lgPoster: '/images/casestudy/studioone/studioonelg.jpg',
         image: [
             {
                 image: '/images/casestudy/studioone/Desktop/Home_D1.png',
@@ -475,6 +478,7 @@ const CaseStudyData = [
     // THE ORANGE RV 
     {
         poster: '/images/casestudy/theorangerv/theorangerv_mockup.jpg',
+        lgPoster: '/images/casestudy/theorangerv/orangelg.jpg',
         image: [
             { image: '/images/casestudy/theorangerv/Desktop/Home_D1.png' },
             { image: '/images/casestudy/theorangerv/Desktop/Home_D2.jpg' },
@@ -642,7 +646,8 @@ export default CaseStudyData;
 // TEMPLATE 
 // {
 //     poster: '',
-//     image: [
+// lgPoster: '/images/casestudy/123/456.jpg',//     
+// image: [
 //         { image: '' },
 //         { image: '' },
 //         { image: '' },
