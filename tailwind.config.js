@@ -14,6 +14,11 @@ module.exports = {
         'soft-gray': '#f0f4f8',
         'sea-green': '#2ED573',
         'hover-sea-green': '#28B463',
+        'test': '#99005f',
+        'test2': '#5f9900',
+        'test3': '#f3faff',
+        'test4': '#8098a9',
+
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, rgba(0,95,153,1) 10%, rgba(184,209,226,1) 20%, rgba(212,227,237,1) 30%, rgba(243,247,248,1) 40%)',

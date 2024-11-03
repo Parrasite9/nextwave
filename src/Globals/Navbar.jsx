@@ -10,24 +10,10 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 // Define your navigation links
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Events', path: '/events' },
-  {
-    name: 'Programs',
-    subLinks: [
-      { name: 'Be Aware', path: '/programs/be-aware' },
-      { name: 'Clean Record', path: '/programs/clean-record' },
-      { name: 'Daycare Fundraiser', path: '/programs/daycare-fundraiser' },
-      { name: 'Digital Steam', path: '/programs/digital-steam' },
-      { name: 'Go Green', path: '/programs/go-green' },
-      { name: 'I Like To Read', path: '/programs/i-like-to-read' },
-      { name: 'Power Words', path: '/programs/power-words' },
-      { name: 'Summer Camp', path: '/programs/summer-camp' },
-    ],
-  },
-  { name: 'TV Show', path: '/tv-show' },
-  { name: 'Products', path: '/products' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Case Studies', path: '#caseStudy' },
+  { name: 'Services', path: '#services' },
+  { name: 'About', path: '#about' },
+  { name: 'Contact', path: '#contact' },
 ];
 
 
