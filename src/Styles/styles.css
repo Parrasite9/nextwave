@@ -1,49 +1,89 @@
 /* src/styles/styles.css */
 
+/* Root Color Variables */
+:root {
+    --soft-navy: #19375f;          /* Dark blue for primary text */
+    --cool-white: #f7f9fb;         /* Softer white background */
+    --warm-gray: #e6e9ed;          /* Light gray for borders, backgrounds */
+    --yale-blue: #0D3B66;          /* Primary blue for buttons and text accents */
+    --lemon-chiffon: #FAF0CA;      /* Light cream for sections */
+    --sandy-brown: #EE964B;        /* Warm orange for CTAs */
+    --naples-yellow: #F4D35E;      /* Soft yellow for secondary accents */
+    --tomato: #F95738;             /* Reserved red-orange for errors or alerts */
+}
+
+/* General Styles */
+body {
+    @apply bg-cool-white text-soft-navy; /* Softer white background and primary text */
+}
+
 /* Buttons */
 .btn {
     @apply px-6 py-2 rounded-md font-semibold transition-colors duration-300;
 }
 
 .btn-primary {
-    @apply bg-deep-ocean-blue text-white hover:bg-aqua-blue;
+    @apply bg-yale-blue text-cool-white hover:bg-sandy-brown;
 }
 
 .btn-secondary {
-    @apply bg-aqua-blue text-white hover:bg-deep-ocean-blue;
+    @apply bg-naples-yellow text-soft-navy hover:bg-sandy-brown;
 }
 
 /* CTA Button */
 .btn-cta {
-    @apply bg-sea-green text-white hover:bg-hover-sea-green px-8 py-2 rounded-md;
+    @apply bg-sandy-brown text-white hover:bg-naples-yellow hover:text-black px-8 py-2 rounded-md;
 }
 
 /* Navbar Links */
 .nav-link {
-    @apply text-deep-ocean-blue hover:text-aqua-blue px-4 py-2;
+    @apply text-soft-navy hover:text-yale-blue px-4 py-2;
 }
 
 /* Headers */
 .header {
-    @apply text-deep-ocean-blue font-bold;
+    @apply text-soft-navy font-bold;
 }
 
 .subheader {
-    @apply text-aqua-blue font-semibold;
+    @apply text-yale-blue font-semibold;
 }
-
 
 .caseStudyHeader {
     @apply font-bold text-2xl;
-    color: var(--deep-ocean-blue); /* Default fallback color */
+    color: var(--soft-navy); /* Default fallback color */
 }
 
-/* Color Definitions */
-:root {
-    --deep-ocean-blue: #005f99;
-    --aqua-blue: #00c3e3;
-    --soft-gray: #f0f4f8;
-    --brand-white: #ffffff;
-    --sea-green: #2ED573;
-    --hover-sea-green: #28B463;
+/* Section Backgrounds */
+.section-primary {
+    @apply bg-cool-white text-soft-navy;
+}
+
+.section-secondary {
+    @apply bg-lemon-chiffon text-soft-navy;
+}
+
+/* Accent Text */
+.text-accent {
+    @apply text-sandy-brown;
+}
+
+/* Accent Backgrounds */
+.bg-accent {
+    @apply bg-sandy-brown text-cool-white;
+}
+
+/* Borders */
+.border-secondary {
+    @apply border border-warm-gray;
+}
+
+/* Error Text */
+.text-error {
+    @apply text-tomato;
+}
+
+/* Small Accents */
+.small-accent {
+    color: var(--tomato); /* Reserved for small visual accents */
 }

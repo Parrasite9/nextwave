@@ -8,17 +8,16 @@ module.exports = {
         logo: ['Red Hat Display', 'sans-serif'],    // For logos and headers
         body: ['Lato', 'Open Sans', 'sans-serif'],  // For body text and subheadings
       },
+      /* Colors */
       colors: {
-        'deep-ocean-blue': '#005f99',
-        'aqua-blue': '#00c3e3',
-        'soft-gray': '#f0f4f8',
-        'sea-green': '#2ED573',
-        'hover-sea-green': '#28B463',
-        'test': '#99005f',
-        'test2': '#5f9900',
-        'test3': '#f3faff',
-        'test4': '#8098a9',
-
+        'soft-navy': '#19375f',
+        'cool-white': '#f7f9fb',
+        'warm-gray': '#e6e9ed',
+        'yale-blue': '#0D3B66',
+        'lemon-chiffon': '#FAF0CA',
+        'sandy-brown': '#EE964B',
+        'naples-yellow': '#F4D35E',
+        'tomato': '#F95738',
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, rgba(0,95,153,1) 10%, rgba(184,209,226,1) 20%, rgba(212,227,237,1) 30%, rgba(243,247,248,1) 40%)',

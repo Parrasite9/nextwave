@@ -29,13 +29,13 @@ function Navbar() {
   };
 
   const renderNavLinks = (links) => (
-    <ul className={`flex ${isMobile ? 'flex-col space-y-4' : 'flex-row space-x-6'} items-center text-white`}>
+    <ul className={`flex ${isMobile ? 'flex-col space-y-4' : 'flex-row space-x-6'} items-center`}>
       {links.map((link, index) => (
         <li key={index} className="py-2 md:py-0">
           <Link
             to={link.path}
             onClick={() => isMobile && setIsMenuOpen(false)}
-            className="text-white hover:text-aqua-blue transition duration-300"
+            className=" hover:text-aqua-blue transition duration-300"
           >
             {link.name}
           </Link>
@@ -45,7 +45,7 @@ function Navbar() {
   );
 
   return (
-    <div className="bg-deep-ocean-blue shadow-md">
+    <div className="">
       {isMobile ? (
         // Mobile Navbar
         <div className="p-4 flex justify-between items-center">

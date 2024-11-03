@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='hero-container relative px-4'>
+    <div className='hero-container relative px-8'>
       {/* TEXT AND IMAGE SECTION  */}
       <div className="hero grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
         {/* TEXT SECTION */}
@@ -30,7 +30,7 @@ const Hero = () => {
 
         {/* IMAGE SECTION */}
         <div className="image__section flex justify-center">
-          <img className='w-full h-auto' src="/images/hero/herosvg.gif" alt="mobile_hero" />
+          <img className='w-full h-auto' src="/images/hero/herosvg3.gif" alt="mobile_hero" />
         </div>
       </div>
 
