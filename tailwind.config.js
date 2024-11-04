@@ -18,6 +18,8 @@ module.exports = {
         'sandy-brown': '#EE964B',
         'naples-yellow': '#F4D35E',
         'tomato': '#F95738',
+        'bright-teal': '#4A90E2',
+        'sky-blue': '#5BC0EB',  
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, rgba(0,95,153,1) 10%, rgba(184,209,226,1) 20%, rgba(212,227,237,1) 30%, rgba(243,247,248,1) 40%)',

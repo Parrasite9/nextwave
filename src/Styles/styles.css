@@ -6,6 +6,8 @@
     --cool-white: #f7f9fb;         /* Softer white background */
     --warm-gray: #e6e9ed;          /* Light gray for borders, backgrounds */
     --yale-blue: #0D3B66;          /* Primary blue for buttons and text accents */
+    --bright-teal: #4A90E2;
+    --sky-blue: #5BC0EB;
     --lemon-chiffon: #FAF0CA;      /* Light cream for sections */
     --sandy-brown: #EE964B;        /* Warm orange for CTAs */
     --naples-yellow: #F4D35E;      /* Soft yellow for secondary accents */
@@ -46,7 +48,7 @@ body {
 }
 
 .subheader {
-    @apply text-yale-blue font-semibold;
+    @apply text-bright-teal font-semibold;
 }
 
 .caseStudyHeader {
