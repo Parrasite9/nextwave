@@ -14,6 +14,21 @@
     --tomato: #F95738;             /* Reserved red-orange for errors or alerts */
 }
 
+/* Custom divider with text */
+.divider {
+    @apply flex justify-center items-center my-4;
+  }
+  
+.divider-line {
+    @apply h-px bg-sandy-brown w-1/5 md:w-1/3;
+}
+
+.divider-text {
+    @apply px-4 text-2xl md:text-3xl font-bold text-center;
+}
+  
+  
+
 /* General Styles */
 body {
     @apply bg-cool-white text-soft-navy; /* Softer white background and primary text */
