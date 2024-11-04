@@ -10,7 +10,7 @@ const services2 = () => {
       {/* Mobile Version */}
       <div className="block md:hidden">
         <div className="services2__text__container px-4 py-4">
-          <h3 className="mt-10 text-vDeepBlue font-semibold">services2 Us</h3>
+          <h3 className="mt-10 text-vDeepBlue font-semibold">Web Design & Development</h3>
           <h2 className="font-bold text-darkGreen text-2xl mb-8">
             Growing a Community of Learners for Life.
           </h2>
@@ -147,16 +147,13 @@ const services2 = () => {
           <div className="col-start-2 col-end-3 row-start-1 row-end-2">
             <div className="services2__text__container">
               <h3 className="mt-10 text-vDeepBlue font-semibold xl:text-xl">
-                services2 Us
+                Web Design & Development
               </h3>
               <h2 className="font-bold text-darkGreen text-2xl mb-8 xl:text-3xl">
-                Growing a Community of Learners for Life.
+                Crafting Digital Experiences That Connect and Convert
               </h2>
               <p className="mb-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-                consequuntur saepe cumque illo fugit asperiores ipsam dolore!
-                Culpa quidem quibusdam placeat hic, similique impedit adipisci
-                illum laboriosam quas fugit maiores.
+              At NextWave, we believe in building websites that go beyond aesthetics. Our goal is to create digital spaces that not only look stunning but are strategically developed to drive results. From the initial design to the final line of code, we work with you to develop a site that supports your business goals and elevates user experience.
               </p>
 
               {/* TEXT AND FONT GRID */}
@@ -174,10 +171,9 @@ const services2 = () => {
                 {/* Text 1 */}
                 <div className="row-start-1 col-start-2 col-end-6 flex items-center">
                   <div className="services2__icon__text p-5">
-                    <h2 className="font-semibold mb-2">Flexible Classes</h2>
+                    <h2 className="font-semibold mb-2">User-Centric Design</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Hic accusantium iure atque neque adipisci non.
+                      Our designs prioritize user experience, creating intuitive, seamless interactions that keep users engaged and returning.
                     </p>
                   </div>
                 </div>
@@ -195,10 +191,9 @@ const services2 = () => {
                 {/* Text 2 */}
                 <div className="row-start-2 col-start-2 col-end-6 flex items-center">
                   <div className="services2__icon__text p-5">
-                    <h2 className="font-semibold mb-2">Educator Support</h2>
+                    <h2 className="font-semibold mb-2">Ongoing Support & Growth</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Hic accusantium iure atque neque adipisci non.
+                      Our team provides continual support, ensuring your website adapts as your business grows and meets the needs of your expanding audience.
                     </p>
                   </div>
                 </div>
