@@ -1,12 +1,12 @@
 import React from 'react'
-import { CaseStudy, Hero, Services } from '../Components'
+import { CaseStudy, Hero, ServicesSection } from '../Components'
 
 function Home() {
   return (
     <div>
         <Hero />
         <CaseStudy />
-        <Services />
+        <ServicesSection />
     </div>
   )
 }
