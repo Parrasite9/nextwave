@@ -93,7 +93,7 @@ const Services = () => {
             </div>
 
             {/* Image 2 */}
-            <div className="md:flex md:items-center md:justify-center md:row-start-1 md:row-end-5 md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-4">
+            <div className="hidden md:block md:flex md:items-center md:justify-center md:row-start-1 md:row-end-5 md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-4">
               <img
                 className="w-full h-auto object-cover mb-2 md:mb-0"
                 src="/images/services/seo.svg"
@@ -102,7 +102,7 @@ const Services = () => {
             </div>
 
             {/* Image 3 */}
-            <div className="md:row-start-2 md:row-end-5 md:col-start-3 md:col-end-5 lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4 lg:flex lg:items-center lg:justify-center">
+            <div className="hidden md:block md:row-start-2 md:row-end-5 md:col-start-3 md:col-end-5 lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4 lg:flex lg:items-center lg:justify-center">
               <img
                 className="w-full h-auto object-cover mb-2 md:mb-0"
                 src="/images/services/searching.svg"

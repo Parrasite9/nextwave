@@ -78,7 +78,7 @@ const Services3 = () => {
         <div className="order-2 md:order-1 flex items-center">
           <div className="grid grid-cols-1 gap-0 py-12 md:px-0 md:py-0 md:grid-cols-4 md:grid-rows-7 md:gap-2 lg:grid-cols-9 lg:grid-rows-6 lg:gap-2">
             {/* Image 1 */}
-            <div className="md:flex md:items-center md:justify-center md:row-start-5 md:row-end-8 md:col-start-1 md:col-end-5 lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7">
+            <div className="hidden md:block md:flex md:items-center md:justify-center md:row-start-5 md:row-end-8 md:col-start-1 md:col-end-5 lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7">
               <img
                 className="w-2/3 object-cover my-2 md:my-0"
                 src="/images/services/cloud2.svg"
@@ -96,7 +96,7 @@ const Services3 = () => {
             </div>
 
             {/* Image 3 */}
-            <div className="md:row-start-2 md:row-end-5 md:col-start-3 md:col-end-5 lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4 lg:flex lg:items-center lg:justify-center">
+            <div className="hidden md:block md:row-start-2 md:row-end-5 md:col-start-3 md:col-end-5 lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4 lg:flex lg:items-center lg:justify-center">
               <img
                 className="w-2/3 object-cover mb-2 md:mb-0"
                 src="/images/services/email.svg"
