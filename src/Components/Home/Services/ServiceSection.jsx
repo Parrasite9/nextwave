@@ -1,5 +1,5 @@
 import React from 'react'
-import { Services, Services2 } from '../..'
+import { Services, Services2, Services3 } from '../..'
 import { FaServicestack } from 'react-icons/fa';
 
 function ServiceSection() {
@@ -13,6 +13,7 @@ function ServiceSection() {
 
         <Services2 />
         <Services />
+        <Services3 />
     </div>
   )
 }
