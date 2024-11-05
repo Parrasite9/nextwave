@@ -5,7 +5,7 @@ import { FaServicestack } from 'react-icons/fa';
 function ServiceSection() {
   return (
     <div>
-        <div className="divider">
+        <div id='services' className="divider">
             <div className="divider-line"></div>
             <span className='divider-text'>Our Services</span>
             <div className="divider-line"></div>
