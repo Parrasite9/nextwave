@@ -10,15 +10,12 @@ const Services = () => {
       {/* Mobile Version */}
       <div className="block md:hidden">
         <div className="services__text__container px-4 py-4">
-          <h3 className="mt-10 text-vDeepBlue font-semibold">services Us</h3>
+          <h3 className="mt-10 text-sky-blue font-semibold">Online Presence & Visibility</h3>
           <h2 className="font-bold text-darkGreen text-2xl mb-8">
-            Growing a Community of Learners for Life.
+            Optimizing Your Reach for Maximum Impact
           </h2>
           <p className="mb-10">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-            consequuntur saepe cumque illo fugit asperiores ipsam dolore! Culpa
-            quidem quibusdam placeat hic, similique impedit adipisci illum
-            laboriosam quas fugit maiores.
+            At NextWave, we use proven digital strategies to amplify your online presence. From SEO to data-driven content creation, we help you reach a wider audience, attract valuable traffic, and convert visitors into loyal customers.
           </p>
 
           {/* TEXT AND FONT GRID */}
@@ -36,10 +33,9 @@ const Services = () => {
             {/* Text 1 */}
             <div className="row-start-1 col-start-2 col-end-6 flex items-center">
               <div className="services__icon__text p-5">
-                <h2 className="font-semibold mb-2">Flexible Classes</h2>
+                <h2 className="font-semibold mb-2">Search Engine Optimization</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                  accusantium iure atque neque adipisci non.
+                  Boost your visibility on search engines with targeted keywords, on-page optimization, and link-building strategies designed to attract organic traffic.
                 </p>
               </div>
             </div>
@@ -57,10 +53,9 @@ const Services = () => {
             {/* Text 2 */}
             <div className="row-start-2 col-start-2 col-end-6 flex items-center">
               <div className="services__icon__text p-5">
-                <h2 className="font-semibold mb-2">Educator Support</h2>
+                <h2 className="font-semibold mb-2">Analytics & Insights</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                  accusantium iure atque neque adipisci non.
+                  Leverage Google Analytics to gain insights into user behavior, optimize engagement, and measure the performance of your digital strategies in real time.
                 </p>
               </div>
             </div>
@@ -115,17 +110,13 @@ const Services = () => {
           <div className="col-start-1 col-end-2 row-start-1 row-end-2">
             {/* Content for Text Container */}
             <div className="services__text__container">
-              <h3 className="mt-10 text-vDeepBlue font-semibold xl:text-xl">
-                services Us
+              <h3 className="mt-10 text-sky-blue font-semibold xl:text-xl">
+                Online Presence & Visibility
               </h3>
               <h2 className="font-bold text-darkGreen text-2xl mb-8 xl:text-3xl">
-                Growing a Community of Learners for Life.
-              </h2>
+                Optimizing Your Reach for Maximum Impact              </h2>
               <p className="mb-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-                consequuntur saepe cumque illo fugit asperiores ipsam dolore!
-                Culpa quidem quibusdam placeat hic, similique impedit adipisci
-                illum laboriosam quas fugit maiores.
+                At NextWave, we use proven digital strategies to amplify your online presence. From SEO to data-driven content creation, we help you reach a wider audience, attract valuable traffic, and convert visitors into loyal customers.
               </p>
 
               {/* TEXT AND FONT GRID */}
@@ -143,10 +134,9 @@ const Services = () => {
                 {/* Text 1 */}
                 <div className="row-start-1 col-start-2 col-end-6 flex items-center">
                   <div className="services__icon__text p-5">
-                    <h2 className="font-semibold mb-2">Flexible Classes</h2>
+                    <h2 className="font-semibold mb-2">Search Engine Optimization</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Hic accusantium iure atque neque adipisci non.
+                      Boost your visibility on search engines with targeted keywords, on-page optimization, and link-building strategies designed to attract organic traffic.
                     </p>
                   </div>
                 </div>
@@ -164,10 +154,9 @@ const Services = () => {
                 {/* Text 2 */}
                 <div className="row-start-2 col-start-2 col-end-6 flex items-center">
                   <div className="services__icon__text p-5">
-                    <h2 className="font-semibold mb-2">Educator Support</h2>
+                    <h2 className="font-semibold mb-2">Analytics & Integration</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Hic accusantium iure atque neque adipisci non.
+                      Leverage Google Analytics to gain insights into user behavior, optimize engagement, and measure the performance of your digital strategies in real time.
                     </p>
                   </div>
                 </div>
@@ -192,8 +181,8 @@ const Services = () => {
               {/* Image 1 */}
               <div className="lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7">
                 <img
-                  className="w-full h-full object-cover"
-                  src="/images/services/design.svg"
+                  className="w-3/4 h-auto object-cover"
+                  src="/images/services/analytics.svg"
                   alt="services Image 1"
                 />
               </div>
@@ -202,7 +191,7 @@ const Services = () => {
               <div className="lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-4">
                 <img
                   className="w-full h-full object-cover"
-                  src="/images/services/landingPage.svg"
+                  src="/images/services/seo.svg"
                   alt="services Image 2"
                 />
               </div>
@@ -211,7 +200,7 @@ const Services = () => {
               <div className="lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4">
                 <img
                   className="w-full h-full object-cover"
-                  src="/images/services/mobileDev.svg"
+                  src="/images/services/searching.svg"
                   alt="services Image 3"
                 />
               </div>
