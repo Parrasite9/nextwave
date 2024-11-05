@@ -7,7 +7,11 @@ function CaseStudy() {
   return (
     <div className='caseStudy__container'>
         <div className="caseStudy__content px-8">
-            <h2 className='header text-center text-xl my-4 md:text-2xl'>Our Success Stories</h2>
+            <div id='services' className="divider">
+                <div className="divider-line"></div>
+                    <span className='divider-text'>Our Success Stories</span>
+                <div className="divider-line"></div>
+            </div>
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
                 {CaseStudyData.slice(0, 4).map((casestudy) => (
                     <div key={casestudy.id} className="individual__study flex flex-col justify-between">
