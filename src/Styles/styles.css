@@ -40,7 +40,7 @@ body {
 }
 
 .btn-primary {
-    @apply bg-yale-blue text-cool-white hover:bg-sandy-brown;
+    @apply bg-sky-blue text-cool-white hover:bg-sandy-brown;
 }
 
 .btn-secondary {
