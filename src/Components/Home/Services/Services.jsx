@@ -81,7 +81,7 @@ const Services = () => {
         </div>
 
         {/* Image Container */}
-        <div className="order-2">
+        <div className="order-2 flex flex-col justify-center">
           <div className="grid grid-cols-1 gap-0 py-12 md:px-0 md:py-0 md:grid-cols-4 md:grid-rows-7 md:gap-2 lg:grid-cols-9 lg:grid-rows-6 lg:gap-2">
             {/* Image 1 */}
             <div className="md:row-start-5 md:row-end-8 md:col-start-1 md:col-end-5 lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7 flex justify-center items-center">
