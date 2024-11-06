@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import useIsMobile from '../hooks/ScreenSizeUpdate';
 
 // Icons for mobile menu
@@ -9,10 +9,10 @@ import ClearIcon from '@mui/icons-material/Clear';
 // Navigation links
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Case Studies', path: '#caseStudy' },
-  { name: 'Services', path: '#services' },
-  { name: 'About', path: '#about' },
-  { name: 'Contact', path: '#contact' },
+  { name: 'Case Studies', path: '/#casestudy' },
+  { name: 'Services', path: '/#services' },
+  { name: 'Pricing', path: '/#pricing' },
+  { name: 'Contact', path: '/#contact' },
 ];
 
 function Navbar() {
@@ -33,6 +33,7 @@ function Navbar() {
       {links.map((link, index) => (
         <li key={index} className="py-2 md:py-0">
           <Link
+            smooth
             to={link.path}
             onClick={() => isMobile && setIsMenuOpen(false)}
             className="hover:text-bright-teal transition duration-300"

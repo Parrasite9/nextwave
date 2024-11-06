@@ -1,13 +1,13 @@
 import React from 'react'
 import {CaseStudyData} from '../index'
 import EastIcon from '@mui/icons-material/East';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function CaseStudy() {
   return (
-    <div className='caseStudy__container'>
+    <div id='casestudy' className='caseStudy__container'>
         <div className="caseStudy__content px-8">
-            <div id='services' className="divider">
+            <div className="divider">
                 <div className="divider-line"></div>
                     <span className='divider-text'>Our Success Stories</span>
                 <div className="divider-line"></div>
