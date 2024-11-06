@@ -16,7 +16,7 @@
 
 /* Custom divider with text */
 .divider {
-    @apply flex justify-center items-center my-4;
+    @apply flex justify-center items-center my-4 md:my-8 lg:my-10 2xl:my-12;
   }
   
 .divider-line {
