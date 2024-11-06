@@ -54,10 +54,10 @@ function Navbar() {
           {/* Menu Toggle Button */}
           {isMenuOpen ? (
             <>
-              <ClearIcon onClick={toggleMenu} className="absolute top-4 right-4 z-50" />
+              <ClearIcon onClick={toggleMenu} className="absolute text-yale-blue top-4 right-4 z-50" />
               
               {/* Mobile menu modal */}
-              <div className="fixed top-16 left-0 w-full h-full bg-deep-ocean-blue z-40 flex flex-col justify-center items-center py-8 space-y-6">
+              <div className="fixed top-16 left-0 w-full h-full bg-cool-white z-40 flex flex-col justify-center items-center py-8 space-y-6">
                 {renderNavLinks(navLinks)}
                 <button className="btn-cta">Request A Proposal</button>
               </div>
