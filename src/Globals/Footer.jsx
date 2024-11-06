@@ -1,6 +1,6 @@
 // src/components/Footer.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import useIsMobile from '../hooks/ScreenSizeUpdate';
 
 // ICONS
@@ -9,8 +9,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 // Navigation links array
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Case Studies', path: '/about' },
-  { name: 'Services', path: '/events' },
+  { name: 'Case Studies', path: '/#casestudy' },
+  { name: 'Services', path: '/#services' },
   {
     name: 'Legal',
     subLinks: [
@@ -19,7 +19,7 @@ const navLinks = [
       { name: 'Cookie Policy', path: '/cookie-policy' },
     ],
   },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Contact', path: '/#contact' },
 ];
 
 const getCurrentYear = () => {
