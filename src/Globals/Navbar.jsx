@@ -35,7 +35,7 @@ function Navbar() {
           <Link
             to={link.path}
             onClick={() => isMobile && setIsMenuOpen(false)}
-            className=" hover:text-aqua-blue transition duration-300"
+            className="hover:text-bright-teal transition duration-300"
           >
             {link.name}
           </Link>
