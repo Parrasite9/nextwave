@@ -17,29 +17,29 @@ function CaseStudy() {
                     <div key={casestudy.id} className="individual__study flex flex-col justify-between">
                         <Link className='view__caseStudy flex justify-end' to={`casestudy/${casestudy.name}`}>
                             {/* <img className='relative cursor-pointer lg:transition-transform lg:duration-300 lg:transform lg:hover:-translate-y-2' src={casestudy.poster} alt={casestudy.title} /> */}
-                {/* Wrapper for the image and overlay */}
-                <div className='relative'>
-                  {/* Image with hover effect for large screens */}
-                  {/* IMAGE FOR SMALL DEVICES  */}
-                  <img
-                    className='cursor-pointer lg:hidden'
-                    src={casestudy.poster}
-                    alt={casestudy.title}
-                  />
+                            {/* Wrapper for the image and overlay */}
+                            <div className='relative'>
+                                {/* Image with hover effect for large screens */}
+                                {/* IMAGE FOR SMALL DEVICES  */}
+                                <img
+                                    className='cursor-pointer lg:hidden'
+                                    src={casestudy.poster}
+                                    alt={casestudy.title}
+                                />
 
-                  {/* IMAGE FOR LG DEVICE  */}
-                    <img
-                    className='hidden lg:block cursor-pointer lg:transition-transform lg:duration-300 lg:transform lg:hover:-translate-y-2'
-                    src={casestudy.lgPoster}
-                    alt={casestudy.title}
-                  />
-                  {/* Overlay for large screens */}
-                  <div className="hidden lg:flex lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full lg:bg-gradient-to-t lg:from-black/70 lg:to-transparent lg:flex-col lg:items-center lg:justify-center lg:text-white lg:opacity-0 lg:hover:opacity-100 lg:transition-opacity lg:duration-300">
-                    <p className='text-lg font-bold mb-2'>View More</p>
-                    <div className="border-t-2 border-deep-ocean-blue w-10 mt-2"></div>
-                    <EastIcon className='mt-2 text-2xl' />
-                  </div>
-                </div>
+                                {/* IMAGE FOR LG DEVICE  */}
+                                <img
+                                    className='hidden lg:block cursor-pointer lg:transition-transform lg:duration-300 lg:transform lg:hover:-translate-y-2'
+                                    src={casestudy.lgPoster}
+                                    alt={casestudy.title}
+                                />
+                                {/* Overlay for large screens */}
+                                    <div className="hidden lg:flex lg:absolute lg:top-0 lg:left-0 lg:w-full lg:h-full lg:bg-gradient-to-t lg:from-black/70 lg:to-transparent lg:flex-col lg:items-center lg:justify-center lg:text-white lg:opacity-0 lg:hover:opacity-100 lg:transition-opacity lg:duration-300">
+                                        <p className='text-lg font-bold mb-2'>View More</p>
+                                        <div className="border-t-2 border-sky-blue w-10 mt-2"></div>
+                                            <EastIcon className='mt-2 text-2xl' />
+                                    </div>
+                                </div>
                         </Link>
                         <div className="caseStudy__description lg:hidden">
                             <h3 className='header py-2'>{casestudy.name}</h3>

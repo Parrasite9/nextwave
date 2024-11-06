@@ -144,7 +144,7 @@ function PricingTable() {
               {/* Professional Plan */}
               <div className="bg-white shadow-xl rounded-lg p-6 border-2 border-blue-600 relative">
                 <div className="absolute top-0 right-0 mt-2 mr-2 bg-blue-600 text-white text-sm px-2 py-1 rounded-md">
-                  Most popular
+                  Most Popular
                 </div>
                 <div className="flex items-center mb-4">
                   <span className="text-2xl">💪</span>
