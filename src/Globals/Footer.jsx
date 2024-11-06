@@ -59,7 +59,7 @@ function Footer() {
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-lemon-chiffon">
+                    <Link to={link.path} className="hover:text-sky-blue">
                       {link.name}
                     </Link>
                   </li>
@@ -74,7 +74,7 @@ function Footer() {
                 <ul className="space-y-2">
                   {legalLink.subLinks.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <Link to={subLink.path} className="hover:text-lemon-chiffon">
+                      <Link to={subLink.path} className="hover:text-sky-blue">
                         {subLink.name}
                       </Link>
                     </li>
@@ -89,7 +89,7 @@ function Footer() {
               <ul className="space-y-2">
                 {supportLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-lemon-chiffon">
+                    <Link to={link.path} className="hover:text-sky-blue">
                       {link.name}
                     </Link>
                   </li>
@@ -132,7 +132,7 @@ function Footer() {
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-lemon-chiffon">
+                    <Link to={link.path} className="hover:text-sky-blue">
                       {link.name}
                     </Link>
                   </li>
@@ -147,7 +147,7 @@ function Footer() {
                 <ul className="space-y-2">
                   {legalLink.subLinks.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <Link to={subLink.path} className="hover:text-lemon-chiffon">
+                      <Link to={subLink.path} className="hover:text-sky-blue">
                         {subLink.name}
                       </Link>
                     </li>
@@ -162,7 +162,7 @@ function Footer() {
               <ul className="space-y-2">
                 {supportLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-lemon-chiffon">
+                    <Link to={link.path} className="hover:text-sky-blue">
                       {link.name}
                     </Link>
                   </li>
