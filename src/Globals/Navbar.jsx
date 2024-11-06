@@ -59,7 +59,7 @@ function Navbar() {
               {/* Mobile menu modal */}
               <div className="fixed top-16 left-0 w-full h-full bg-deep-ocean-blue z-40 flex flex-col justify-center items-center py-8 space-y-6">
                 {renderNavLinks(navLinks)}
-                <button className="btn-cta">Donate</button>
+                <button className="btn-cta">Request A Proposal</button>
               </div>
             </>
           ) : (
@@ -78,8 +78,8 @@ function Navbar() {
             {/* Nav Links */}
             {renderNavLinks(navLinks)}
 
-            {/* Donate Button */}
-            <button className="btn-cta">Donate</button>
+            {/* CTA  Button */}
+            <button className="btn-cta">Request A Proposal</button>
           </nav>
         </div>
       )}
