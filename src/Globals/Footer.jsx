@@ -3,31 +3,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useIsMobile from '../hooks/ScreenSizeUpdate';
 
-// ICONS 
+// ICONS
 import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import XIcon from '@mui/icons-material/X';
+
 // Navigation links array
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Events', path: '/events' },
+  { name: 'Case Studies', path: '/about' },
+  { name: 'Services', path: '/events' },
   {
-    name: 'Programs',
+    name: 'Legal',
     subLinks: [
-      { name: 'Be Aware', path: '/programs/be-aware' },
-      { name: 'Clean Record', path: '/programs/clean-record' },
-      { name: 'Daycare Fundraiser', path: '/programs/daycare-fundraiser' },
-      { name: 'Digital Steam', path: '/programs/digital-steam' },
-      { name: 'Go Green', path: '/programs/go-green' },
-      { name: 'I Like To Read', path: '/programs/i-like-to-read' },
-      { name: 'Power Words', path: '/programs/power-words' },
-      { name: 'Summer Camp', path: '/programs/summer-camp' },
+      { name: 'Terms and Conditions', path: '/terms-and-conditions' },
+      { name: 'Privacy Policy', path: '/privacy-policy' },
+      { name: 'Cookie Policy', path: '/cookie-policy' },
     ],
   },
-  { name: 'TV Show', path: '/tv-show' },
-  { name: 'Products', path: '/products' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -40,22 +31,25 @@ function Footer() {
 
   // Categorize links into sections
   const quickLinks = navLinks.filter(
-    (link) => link.name !== 'Programs' && link.name !== 'Contact'
+    (link) => link.name !== 'Legal' && link.name !== 'Contact'
   );
   const supportLinks = navLinks.filter((link) => link.name === 'Contact');
-  const programsLink = navLinks.find((link) => link.name === 'Programs');
+  const legalLink = navLinks.find((link) => link.name === 'Legal');
 
   return (
-    <footer className="bg-deep-ocean-blue text-white py-16">
+    <footer className="bg-soft-navy text-white py-20">
       <div className="container mx-auto px-6">
         {isMobile ? (
           /* Mobile Layout */
           <div className="flex flex-col items-start gap-8">
             {/* Logo/Title Section */}
             <div className="w-full mb-6">
-              <img src='/images/logo/logo.png' alt="Logo" className="w-1/2 h-1/2" />
-              <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quis architecto repudiandae illo quisquam laudantium!
+              <Link to="/">
+                <img src="/images/logo/logo.png" alt="Logo" className="w-1/2 h-1/2" />
+              </Link>
+              <p className="text-white mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quis
+                architecto repudiandae illo quisquam laudantium!
               </p>
             </div>
 
@@ -65,7 +59,7 @@ function Footer() {
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-sunnyYellow">
+                    <Link to={link.path} className="hover:text-lemon-chiffon">
                       {link.name}
                     </Link>
                   </li>
@@ -73,14 +67,14 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Programs Section */}
-            {programsLink && (
+            {/* Legal Section */}
+            {legalLink && (
               <div className="w-full mb-6">
-                <h4 className="text-xl font-bold mb-4">Programs</h4>
+                <h4 className="text-xl font-bold mb-4">Legal</h4>
                 <ul className="space-y-2">
-                  {programsLink.subLinks.map((subLink, subIndex) => (
+                  {legalLink.subLinks.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <Link to={subLink.path} className="hover:text-sunnyYellow">
+                      <Link to={subLink.path} className="hover:text-lemon-chiffon">
                         {subLink.name}
                       </Link>
                     </li>
@@ -95,7 +89,7 @@ function Footer() {
               <ul className="space-y-2">
                 {supportLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-sunnyYellow">
+                    <Link to={link.path} className="hover:text-lemon-chiffon">
                       {link.name}
                     </Link>
                   </li>
@@ -104,7 +98,7 @@ function Footer() {
             </div>
 
             {/* Follow Us Section */}
-            <div className="w-1/5 mb-6">
+            <div className="w-full mb-6">
               <h4 className="text-xl font-bold mb-4">Follow Us</h4>
               <div className="flex space-x-6">
                 <a
@@ -114,30 +108,6 @@ function Footer() {
                   className="hover:text-blue-400"
                 >
                   <FacebookIcon />
-                </a>
-                <a
-                  href="https://www.instagram.com/rodneyraccoon/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-500"
-                >
-                  <InstagramIcon />
-                </a>
-                <a
-                  href="https://twitter.com/rodneyraccoon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-400"
-                >
-                  <XIcon />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCM7cVq9o39nF-m_vwqxQkiw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-500"
-                >
-                  <YouTubeIcon />
                 </a>
               </div>
             </div>
@@ -147,12 +117,12 @@ function Footer() {
           <div className="flex flex-row justify-between items-start gap-8">
             {/* Logo/Title Section */}
             <div className="w-1/5 mb-6">
-              {/* <h4 className="text-xl font-bold mb-4">WayOut Kids</h4> */}
-              <Link to='/'>
-                <img src='/logo.png' alt="Logo" className="w-4/5 h-auto" />
+              <Link to="/">
+                <img src="/images/logo/logo.png" alt="Logo" className="w-4/5 h-auto" />
               </Link>
-              <p className="text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea harum rem at, repellat voluptate.
+              <p className="text-white mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea harum rem at,
+                repellat voluptate.
               </p>
             </div>
 
@@ -162,7 +132,7 @@ function Footer() {
               <ul className="space-y-2">
                 {quickLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-sunnyYellow">
+                    <Link to={link.path} className="hover:text-lemon-chiffon">
                       {link.name}
                     </Link>
                   </li>
@@ -170,14 +140,14 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Programs Section */}
-            {programsLink && (
+            {/* Legal Section */}
+            {legalLink && (
               <div className="w-1/5 mb-6">
-                <h4 className="text-xl font-bold mb-4">Programs</h4>
+                <h4 className="text-xl font-bold mb-4">Legal</h4>
                 <ul className="space-y-2">
-                  {programsLink.subLinks.map((subLink, subIndex) => (
+                  {legalLink.subLinks.map((subLink, subIndex) => (
                     <li key={subIndex}>
-                      <Link to={subLink.path} className="hover:text-sunnyYellow">
+                      <Link to={subLink.path} className="hover:text-lemon-chiffon">
                         {subLink.name}
                       </Link>
                     </li>
@@ -192,7 +162,7 @@ function Footer() {
               <ul className="space-y-2">
                 {supportLinks.map((link, index) => (
                   <li key={index}>
-                    <Link to={link.path} className="hover:text-sunnyYellow">
+                    <Link to={link.path} className="hover:text-lemon-chiffon">
                       {link.name}
                     </Link>
                   </li>
@@ -212,37 +182,13 @@ function Footer() {
                 >
                   <FacebookIcon />
                 </a>
-                <a
-                  href="https://www.instagram.com/rodneyraccoon/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-500"
-                >
-                  <InstagramIcon />
-                </a>
-                <a
-                  href="https://twitter.com/rodneyraccoon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-400"
-                >
-                  <XIcon />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCM7cVq9o39nF-m_vwqxQkiw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-500"
-                >
-                  <YouTubeIcon />
-                </a>
               </div>
             </div>
           </div>
         )}
 
         {/* Bottom Disclaimer */}
-        <div className="text-center text-white text-sm mt-8 border-t border-sunnyYellow pt-4">
+        <div className="text-center text-white text-sm mt-8 border-t border-lemon-chiffon pt-10">
           © {getCurrentYear()} WayOut Kids. All rights reserved.
         </div>
       </div>
