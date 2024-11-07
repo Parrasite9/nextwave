@@ -50,7 +50,7 @@ function Navbar() {
       {isMobile ? (
         // Mobile Navbar
         <div className="p-4 flex justify-between items-center">
-          <img src="/images/logo/logoDark.jpg" alt="Logo" className="h-auto w-1/3" />
+          <img src="/images/logo/logoDark.png" alt="Logo" className="h-auto w-1/3" />
           
           {/* Menu Toggle Button */}
           {isMenuOpen ? (
@@ -73,7 +73,7 @@ function Navbar() {
           <nav className="flex items-center py-4 justify-between">
             {/* Logo */}
             <Link to="/">
-              <img src="/images/logo/logoDark.jpg" alt="Logo" className="h-13 w-auto" />
+              <img src="/images/logo/logoDark.png" alt="Logo" className="h-13 w-auto" />
             </Link>
 
             {/* Nav Links */}

@@ -45,7 +45,7 @@ function Footer() {
             {/* Logo/Title Section */}
             <div className="w-full mb-6">
               <Link to="/">
-                <img src="/images/logo/logo.png" alt="Logo" className="w-1/2 h-1/2" />
+                <img src="/images/logo/logoLight.png" alt="Logo" className="w-1/2 h-1/2" />
               </Link>
               <p className="text-white mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quis
@@ -118,7 +118,7 @@ function Footer() {
             {/* Logo/Title Section */}
             <div className="w-1/5 mb-6">
               <Link to="/">
-                <img src="/images/logo/logo.png" alt="Logo" className="w-4/5 h-auto" />
+                <img src="/images/logo/logoLight.png" alt="Logo" className="w-4/5 h-auto" />
               </Link>
               <p className="text-white mt-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea harum rem at,
