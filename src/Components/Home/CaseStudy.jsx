@@ -1,7 +1,8 @@
 import React from 'react'
 import {CaseStudyData} from '../index'
 import EastIcon from '@mui/icons-material/East';
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 function CaseStudy() {
   return (

@@ -53,6 +53,12 @@ function CaseStudyDetails() {
           
             return null;
           }
+
+        // Scroll to top when component mounts
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, []);
+
           
 
         useEffect(() => {
@@ -116,7 +122,7 @@ function CaseStudyDetails() {
 
                 <div className="price__and__time flex space-x-4 lg:py-4">
                     {/* Render the price in dollar signs */}
-                    <div className="price py-1 px-4 border-2 border-deep-ocean-blue  bg-deep-ocean-blue text-white xl:text-xl">
+                    <div className="price py-1 px-4 border-2 border-soft-navy bg-soft-navy rounded-lg text-white xl:text-xl">
                         {[...Array(totalDollarSigns)].map((_, index) => (
                             <span
                             key={index}
@@ -129,7 +135,7 @@ function CaseStudyDetails() {
                     </div>
 
                     <div className="time__container">
-                        <p className='px-4 py-1 border-2 border-deep-ocean-blue bg-deep-ocean-blue text-white xl:text-xl'
+                        <p className='px-4 py-1 border-2 border-soft-navy bg-soft-navy rounded-lg text-white xl:text-xl'
                                 // style={{ backgroundColor: `${caseStudy.colors.primary}90` }}
         
                         >Built in {caseStudy.timeline}</p>
