@@ -73,7 +73,7 @@ function Navbar() {
           <nav className="flex items-center py-4 justify-between">
             {/* Logo */}
             <Link to="/">
-              <img src="/images/logo/logoDark.png" alt="Logo" className="h-13 w-auto" />
+              <img src="/images/logo/logoDark.png" alt="Logo" className="h-auto w-full" />
             </Link>
 
             {/* Nav Links */}
