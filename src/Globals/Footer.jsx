@@ -11,6 +11,7 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'Case Studies', path: '/#casestudy' },
   { name: 'Services', path: '/#services' },
+  { name: 'Pricing', path: '/#pricing' },
   {
     name: 'Legal',
     subLinks: [
@@ -120,9 +121,8 @@ function Footer() {
               <Link to="/">
                 <img src="/images/logo/logoLight.png" alt="Logo" className="w-4/5 h-auto" />
               </Link>
-              <p className="text-white mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ea harum rem at,
-                repellat voluptate.
+              <p className="text-white text-sm mt-4">
+                NextWave is your partner in crafting digital solutions that don’t just look good but perform. Specializing in web design, development, and growth strategies, we’re here to help businesses reach new heights. Let’s ride the next wave of success together.
               </p>
             </div>
 
