@@ -1,6 +1,26 @@
 import React from 'react';
+import emailjs from 'emailjs-com'
 
 function Contact() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(
+          'service_rqhjx8e', // Contact Us Form | EmailJS Service ID
+          'template_zvm735r', // Contact Us Form | EmailJS Template ID
+          e.target,
+          'MQagYNMitudcU9bur' // Public API
+        ).then((result) => {
+          console.log('Email sent successfully!', result.text);
+        }).catch((error) => {
+          console.error('Error sending email:', error);
+        });
+    
+        e.target.reset(); // Reset the form after submission
+      };
+
+
   return (
     <section id='contact' className="py-16 bg-lemon-chiffon">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,16 +85,16 @@ function Contact() {
           {/* Right Side - Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="pl-2 text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
-            <form action="#" method="POST" className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="fullName" className="pl-2 block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className="pl-2 block text-sm font-medium text-gray-700">
                   Your name <span className='text-tomato'>*</span>
                 </label>
                 <input
                   required
                   type="text"
-                  name="fullName"
-                  id="fullName"
+                  name="user_name"
+                  id="name"
                   placeholder="Your name"
                   className="pl-2 py-1 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                 />
@@ -87,7 +107,7 @@ function Contact() {
                 <input
                   required
                   type="email"
-                  name="email"
+                  name="user_email"
                   id="email"
                   placeholder="Email address"
                   className="pl-2 py-1 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
@@ -100,7 +120,7 @@ function Contact() {
                 </label>
                 <input
                   type="tel"
-                  name="phone"
+                  name="user_phone"
                   id="phone"
                   placeholder="222-333-4444"
                   className="pl-2 py-1 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
@@ -113,7 +133,7 @@ function Contact() {
                 </label>
                 <textarea
                   required
-                  name="message"
+                  name="user_message"
                   id="message"
                   placeholder="Write your message"
                   rows="4"
