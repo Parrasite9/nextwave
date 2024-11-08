@@ -19,7 +19,7 @@ function Contact() {
       setPhone(value);
 
           // Validate the phone number format
-      if (value.length === 12) {
+      if (value.length === 0 || value.length === 12) {
             setPhoneError('');
         } else {
             setPhoneError('Please enter a valid 10-digit phone number (e.g., 123-456-7890)');
@@ -32,7 +32,7 @@ function Contact() {
 
         // Validate the phone number before sending
         const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
-        if (!phonePattern.test(phone)) {
+        if (phone && !phonePattern.test(phone)) {
             setPhoneError('Please enter a valid 10-digit phone number (e.g., 123-456-7890).');
             return;
         }
