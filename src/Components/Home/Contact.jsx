@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com'
 
 function Contact() {
 
+    const [phone, setPhone] = useState('');
+    const [phoneError, setPhoneError] = useState('');
+
+    const handlePhoneChange = (e) => {
+      let value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+  
+      // Automatically insert dashes
+      if (value.length > 3 && value.length <= 6) {
+        value = `${value.slice(0, 3)}-${value.slice(3)}`;
+      } else if (value.length > 6) {
+        value = `${value.slice(0, 3)}-${value.slice(3, 6)}-${value.slice(6, 10)}`;
+      }
+  
+      setPhone(value);
+
+          // Validate the phone number format
+      if (value.length === 12) {
+            setPhoneError('');
+        } else {
+            setPhoneError('Please enter a valid 10-digit phone number (e.g., 123-456-7890)');
+        }
+      };
+  
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // Validate the phone number before sending
+        const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+        if (!phonePattern.test(phone)) {
+            setPhoneError('Please enter a valid 10-digit phone number (e.g., 123-456-7890).');
+            return;
+        }
     
         emailjs.sendForm(
           'service_rqhjx8e', // Contact Us Form | EmailJS Service ID
@@ -18,6 +49,7 @@ function Contact() {
         });
     
         e.target.reset(); // Reset the form after submission
+        setPhone('');
       };
 
 
@@ -122,9 +154,15 @@ function Contact() {
                   type="tel"
                   name="user_phone"
                   id="phone"
+                  value={phone}
+                  onChange={handlePhoneChange}
                   placeholder="222-333-4444"
-                  className="pl-2 py-1 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                />
+                  className={`pl-2 py-1 mt-1 block w-full border ${
+                        phoneError ? 'border-red-500' : 'border-gray-300'
+                    } rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500`}                
+                  />
+                  {phoneError && <p className="text-red-500 text-sm mt-1">{phoneError}</p>}
+  
               </div>
 
               <div>
