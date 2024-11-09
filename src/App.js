@@ -1,11 +1,15 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import SharedLayout from './Globals/SharedLayout';
 import { CaseStudyDetails, CollectWebsiteURL, Contact } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
+import usePageView from './Components/Google/PageView';
 
 function App() {
+  usePageView();
+  
   return (
     <Router>
       {/* Include GoogleAnalytics to push page_view events */}
@@ -16,6 +20,7 @@ function App() {
           <Route path="/casestudy/:name" element={<CaseStudyDetails />} />
           <Route path="/free-google-report" element={<CollectWebsiteURL />} />
           <Route path="/contact" element={<Contact />} />
+          {/* Add other routes as needed */}
         </Routes>
       </SharedLayout>
     </Router>
