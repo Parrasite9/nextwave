@@ -9,7 +9,6 @@ function Home() {
         <ServicesSection />
         <PricingTable />
         <Signup />
-        <Contact />
     </div>
   )
 }

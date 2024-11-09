@@ -12,7 +12,7 @@ const navLinks = [
   { name: 'Case Studies', path: '/#casestudy' },
   { name: 'Services', path: '/#services' },
   { name: 'Pricing', path: '/#pricing' },
-  { name: 'Contact', path: '/#contact' },
+  { name: 'Contact', path: '/contact' },
 ];
 
 function Navbar() {
