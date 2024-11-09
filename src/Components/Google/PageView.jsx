@@ -13,6 +13,8 @@ const usePageView = () => {
       page_location: window.location.href,
     });
   }, [location]);
+
+  return null;
 };
 
 export default usePageView;
