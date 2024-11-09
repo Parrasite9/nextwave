@@ -18,3 +18,5 @@ function GoogleAnalytics() {
 }
 
 export default GoogleAnalytics;
+
+//THIS IS A WORKING VERSION
