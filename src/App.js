@@ -10,6 +10,7 @@ import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 function App() {
   return (
     <Router>
+      {/* Include Google Analytics here to track all routes */}
       <GoogleAnalytics />
       <SharedLayout>
         <Routes>
