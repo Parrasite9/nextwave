@@ -358,15 +358,13 @@ function PricingTable() {
                     </p>
                   </div>
                 </div>
-                <a
-                  id='starter-bundle-button'
-                  href="https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  id="starter-bundle-button"
+                  onClick={() => window.location.href = "https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card"}
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
                   Get Started
-                </a>
+                </button>
                 <ul className="mt-6 space-y-4">
                   {/* List of features */}
                   <li className="flex items-center">
