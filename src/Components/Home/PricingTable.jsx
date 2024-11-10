@@ -360,11 +360,22 @@ function PricingTable() {
                 </div>
                 <button
                   id="starter-bundle-button"
-                  onClick={() => window.location.href = "https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card"}
+                  onClick={() => {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                      event: 'custom_button_click',
+                      button_name: 'Get Started',
+                      eventCallback: function() {
+                        window.location.href = "https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card";
+                      },
+                      eventTimeout: 500 // Adjust the timeout as needed
+                    });
+                  }}
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
                   Get Started
                 </button>
+
                 <ul className="mt-6 space-y-4">
                   {/* List of features */}
                   <li className="flex items-center">
