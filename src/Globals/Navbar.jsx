@@ -60,7 +60,10 @@ function Navbar() {
               {/* Mobile menu modal */}
               <div className="fixed top-16 left-0 w-full h-full bg-cool-white z-40 flex flex-col justify-center items-center py-8 space-y-6">
                 {renderNavLinks(navLinks)}
-                <button className="btn-cta">Request A Proposal</button>
+                <button className="btn-cta"
+                    onClick={() => window.open('https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card', '_blank')}>
+                      Request A Proposal
+                </button>
               </div>
             </>
           ) : (

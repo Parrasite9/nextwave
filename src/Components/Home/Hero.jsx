@@ -16,7 +16,7 @@ const Hero = () => {
           <p className='pb-4 md:text-xl'>
             Maximize your ROI with websites designed to convert.
           </p>
-          <button className='btn-cta mb-4 md:text-2xl md:py-3'>Text Us About A Project</button>
+          <button id='text-us-button' className='btn-cta mb-4 md:text-2xl md:py-3'>Text Us About A Project</button>
 
           {/* TRUST BADGES */}
           <div className="hidden trustbadges grid grid-cols-2 gap-4 place-items-center
