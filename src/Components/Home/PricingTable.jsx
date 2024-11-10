@@ -361,7 +361,7 @@ function PricingTable() {
                 <a
                   id='starter-bundle-button'
                   href="https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card"                  
-                  className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+                  className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 starter-bundle-button"
                 >
                   Get Started
                 </a>
