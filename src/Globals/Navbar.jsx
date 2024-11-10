@@ -80,7 +80,10 @@ function Navbar() {
             {renderNavLinks(navLinks)}
 
             {/* CTA  Button */}
-            <button className="btn-cta">Request A Proposal</button>
+            <button className="btn-cta"
+                    onClick={() => window.open('https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card', '_blank')}>
+                      Request A Proposal
+            </button>
           </nav>
         </div>
       )}
