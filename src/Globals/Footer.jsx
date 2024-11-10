@@ -49,8 +49,7 @@ function Footer() {
                 <img src="/images/logo/logoLight.png" alt="Logo" className="w-1/2 h-1/2" />
               </Link>
               <p className="text-white mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quis
-                architecto repudiandae illo quisquam laudantium!
+                NextWave is your partner in crafting digital solutions that don’t just look good but perform. Specializing in web design, development, and growth strategies, we’re here to help businesses reach new heights. Let’s ride the next wave of success together.
               </p>
             </div>
 
