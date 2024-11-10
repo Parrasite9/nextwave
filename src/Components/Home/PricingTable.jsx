@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga4';
 
 function PricingTable() {
   const [showProjectBased, setShowProjectBased] = useState(true);
@@ -7,19 +8,36 @@ function PricingTable() {
     setShowProjectBased(e.target.id === 'project-based');
   };
 
-  const handleStarterBundleClick = () => {
+  const handleStarterBundleClick = async () => {
     console.log('Button clicked');
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: 'custom_button_click',
-      button_name: 'Get Started',
-    });
-    console.log('DataLayer event pushed');
-    setTimeout(() => {
-      console.log('Navigating to external link');
+  
+    try {
+      // Push event to GTM's data layer
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'custom_button_click',
+        button_name: 'Get Started',
+      });
+  
+      console.log('Event pushed to dataLayer');
+  
+      // Introduce a short delay to allow GTM to process the event
+      await new Promise((resolve) => setTimeout(resolve, 500));
+  
+      // Redirect to the external link
       window.location.href = "https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card";
-    }, 300);
+    } catch (error) {
+      console.error('Error sending event:', error);
+    }
   };
+  
+  
+  
+  
+  
+  
+  
+  
   
   
 
@@ -96,13 +114,13 @@ function PricingTable() {
                     <span className="ml-1 text-gray-500">Starting Rate</span>
                   </div>
                 </div>
-                <a
+                <button
                   id='essential-button'
-                  href="#"
+                  onClick={handleStarterBundleClick}
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
-                  Book a Consultation
-                </a>
+                  Get Started
+                </button>
                 <p className="mt-4 text-sm text-gray-500">
                   Ideal for a 3-section landing page and essential features.
                 </p>
@@ -178,13 +196,13 @@ function PricingTable() {
                     <span className="ml-1 text-gray-500">Starting Rate</span>
                   </div>
                 </div>
-                <a
+                <button
                   id='professional-button'
-                  href="#"
+                  onClick={handleStarterBundleClick}
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
-                  Book a Consultation
-                </a>
+                  Get Started
+                </button>
                 <p className="mt-4 text-sm text-gray-500">
                   Ideal for businesses ready to expand their digital reach.
                 </p>
@@ -272,13 +290,13 @@ function PricingTable() {
                     <span className="ml-1 text-gray-500">Schedule a Call</span>
                   </div>
                 </div>
-                <a
+                <button
                   id='custom-single-button'
-                  href="#"
+                  onClick={handleStarterBundleClick}
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
-                  No Pressure Zoom Call
-                </a>
+                  Get Started
+                </button>
                 <p className="mt-4 text-sm text-gray-500">
                   Perfect for custom builds, e-commerce, and large projects.
                 </p>
@@ -375,12 +393,12 @@ function PricingTable() {
                   </div>
                 </div>
                 <button
-                  id="starter-bundle-button"
                   onClick={handleStarterBundleClick}
-                  className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+                  className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 starter-bundle-button"
                 >
                   Get Started
                 </button>
+
 
 
                 <ul className="mt-6 space-y-4">
@@ -501,13 +519,13 @@ function PricingTable() {
                     </p>
                   </div>
                 </div>
-                <a
+                <button
                   id='growth-bundle-button'
-                  href="#"
+                  onClick={handleStarterBundleClick}
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
                   Get Started
-                </a>
+                </button>
                 <ul className="mt-6 space-y-4">
                   {/* List of features */}
                   <li className="flex items-center">
@@ -640,13 +658,13 @@ function PricingTable() {
                             </p>
                         </div>
                     </div>
-                    <a
+                    <button
                       id='custom-bundle-button'
-                        href="#"
-                        className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+                      onClick={handleStarterBundleClick}
+                      className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                     >
-                        Contact Us
-                    </a>
+                      Contact Us
+                    </button>
                     <p className="mt-4 text-sm text-gray-500">
                         Build a package that's perfect for your business.
                     </p>
