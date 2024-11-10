@@ -81,6 +81,7 @@ function PricingTable() {
                   </div>
                 </div>
                 <a
+                  id='essential-button'
                   href="#"
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
@@ -162,6 +163,7 @@ function PricingTable() {
                   </div>
                 </div>
                 <a
+                  id='professional-button'
                   href="#"
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
@@ -255,6 +257,7 @@ function PricingTable() {
                   </div>
                 </div>
                 <a
+                  id='custom-single-button'
                   href="#"
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
@@ -356,6 +359,7 @@ function PricingTable() {
                   </div>
                 </div>
                 <a
+                  id='starter-bundle-button'
                   href="#"
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
@@ -480,6 +484,7 @@ function PricingTable() {
                   </div>
                 </div>
                 <a
+                  id='growth-bundle-button'
                   href="#"
                   className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                 >
@@ -618,6 +623,7 @@ function PricingTable() {
                         </div>
                     </div>
                     <a
+                      id='custom-bundle-button'
                         href="#"
                         className="block w-full text-center bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
                     >
