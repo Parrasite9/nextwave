@@ -94,7 +94,7 @@ function Signup() {
     e.preventDefault();
   
     if (validateStep2()) {
-      // Identify the user in Klaviyo
+      // Identify the user in Klaviyo (if needed for tracking)
       window._learnq.push(['identify', {
         '$email': formData.email,
         '$first_name': formData.fname,
@@ -103,45 +103,49 @@ function Signup() {
         'Website': formData.website,
       }]);
   
-      // Track the form submission event
+      // Track the form submission event (if needed)
       window._learnq.push(['track', 'Form Submitted', {
         'Form Name': 'Signup Form',
         'Variant ID': variant?.id || 'Default',
       }]);
   
-      // Optional: Subscribe the user to a specific Klaviyo list
+      // Subscribe the user to your list using the Lambda function
       subscribeToKlaviyoList();
   
       console.log("Form Submitted:", formData);
       setStep(3);
     }
   };
+  
 
   const subscribeToKlaviyoList = async () => {
     try {
-      const response = await fetch('https://a.klaviyo.com/api/v2/list/Xd7TLu/subscribe', {
+      const response = await fetch('https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          api_key: 'pk_62711d1b60fb52f5c59ee936bfb7c9fe72',
-          profiles: [{
-            email: formData.email,
-            first_name: formData.fname,
-            last_name: formData.lname,
-            'Business Name': formData.businessName,
-            'Website': formData.website,
-          }],
+          email: formData.email,
+          firstName: formData.fname,
+          lastName: formData.lname,
+          businessName: formData.businessName,
+          website: formData.website,
         }),
       });
   
       const data = await response.json();
-      console.log('Successfully subscribed:', data);
+  
+      if (response.ok) {
+        console.log('Successfully subscribed:', data);
+      } else {
+        console.error('Error subscribing:', data.error);
+      }
     } catch (error) {
       console.error('Error subscribing:', error);
     }
   };
+  
   
   
 
