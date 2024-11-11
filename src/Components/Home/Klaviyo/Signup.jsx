@@ -86,6 +86,8 @@ function Signup() {
   const handleNextStep = (e) => {
     e.preventDefault();
     if (validateStep1()) {
+      // Send the email to Klaviyo
+      subscribeToKlaviyoList('step1');
       setStep(2);
     }
   };
@@ -109,29 +111,63 @@ function Signup() {
         'Variant ID': variant?.id || 'Default',
       }]);
   
-      // Subscribe the user to your list using the Lambda function
-      subscribeToKlaviyoList();
+      // Update the user's profile in Klaviyo
+      subscribeToKlaviyoList('step2');
   
       console.log("Form Submitted:", formData);
       setStep(3);
     }
   };
-  
+    
 
-  const subscribeToKlaviyoList = async () => {
+//   const subscribeToKlaviyoList = async () => {
+//     try {
+//       const response = await fetch('https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//           email: formData.email,
+//           firstName: formData.fname,
+//           lastName: formData.lname,
+//           businessName: formData.businessName,
+//           website: formData.website,
+//         }),
+//       });
+  
+//       const data = await response.json();
+  
+//       if (response.ok) {
+//         console.log('Successfully subscribed:', data);
+//       } else {
+//         console.error('Error subscribing:', data.error);
+//       }
+//     } catch (error) {
+//       console.error('Error subscribing:', error);
+//     }
+//   };
+
+  const subscribeToKlaviyoList = async (step) => {
     try {
+      let payload = {
+        email: formData.email,
+      };
+  
+      if (step === 'step2') {
+        // Include additional data for Step 2
+        payload.firstName = formData.fname;
+        payload.lastName = formData.lname;
+        payload.businessName = formData.businessName;
+        payload.website = formData.website;
+      }
+  
       const response = await fetch('https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          email: formData.email,
-          firstName: formData.fname,
-          lastName: formData.lname,
-          businessName: formData.businessName,
-          website: formData.website,
-        }),
+        body: JSON.stringify(payload),
       });
   
       const data = await response.json();
@@ -145,6 +181,7 @@ function Signup() {
       console.error('Error subscribing:', error);
     }
   };
+  
   
   
   
