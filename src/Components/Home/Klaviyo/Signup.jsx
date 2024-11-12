@@ -195,7 +195,7 @@ function Signup() {
   
 
   return (
-    <div className="signup__container bg-lemon-chiffon py-12 px-6 sm:px-10 lg:px-16 flex justify-center items-center">
+    <div id='signup' className="signup__container bg-lemon-chiffon py-12 px-6 sm:px-10 lg:px-16 flex justify-center items-center">
       <div className="w-full max-w-5xl bg-white p-8 rounded-lg shadow-lg">
         {/* Step 1 */}
         {variant && step === 1 && (
