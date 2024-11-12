@@ -55,15 +55,28 @@ function Signup() {
     const randomVariant = FORM_VARIANTS[Math.floor(Math.random() * FORM_VARIANTS.length)];
     setVariant(randomVariant);
   
-    // Scroll to the #signup section if the URL includes the hash
-    const hash = window.location.hash;
-    if (hash === '#signup') {
-      const element = document.getElementById('signup');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Check if the user arrived with the #signup hash in the URL
+    const handleHashScroll = () => {
+      if (window.location.hash === '#signup') {
+        const element = document.getElementById('signup');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
-    }
+    };
+  
+    // Only run on initial load
+    handleHashScroll();
+  
+    // Listen for changes to the URL hash
+    window.addEventListener('hashchange', handleHashScroll);
+  
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('hashchange', handleHashScroll);
+    };
   }, []);
+  
   
 
   const validateEmail = (email) => {
