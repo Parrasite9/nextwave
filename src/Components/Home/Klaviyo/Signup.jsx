@@ -51,9 +51,20 @@ function Signup() {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
+    // Randomly select a form variant
     const randomVariant = FORM_VARIANTS[Math.floor(Math.random() * FORM_VARIANTS.length)];
     setVariant(randomVariant);
+  
+    // Scroll to the #signup section if the URL includes the hash
+    const hash = window.location.hash;
+    if (hash === '#signup') {
+      const element = document.getElementById('signup');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   }, []);
+  
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
