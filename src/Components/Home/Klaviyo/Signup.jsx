@@ -119,21 +119,26 @@ function Signup() {
     }
   };
     
-
-//   const subscribeToKlaviyoList = async () => {
+//   const subscribeToKlaviyoList = async (step) => {
 //     try {
+//       let payload = {
+//         email: formData.email,
+//       };
+  
+//       if (step === 'step2') {
+//         // Include additional data for Step 2
+//         payload.firstName = formData.fname;
+//         payload.lastName = formData.lname;
+//         payload.businessName = formData.businessName;
+//         payload.website = formData.website;
+//       }
+  
 //       const response = await fetch('https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe', {
 //         method: 'POST',
 //         headers: {
 //           'Content-Type': 'application/json',
 //         },
-//         body: JSON.stringify({
-//           email: formData.email,
-//           firstName: formData.fname,
-//           lastName: formData.lname,
-//           businessName: formData.businessName,
-//           website: formData.website,
-//         }),
+//         body: JSON.stringify(payload),
 //       });
   
 //       const data = await response.json();
@@ -150,19 +155,25 @@ function Signup() {
 
   const subscribeToKlaviyoList = async (step) => {
     try {
+      const utmParams = new URLSearchParams({
+        utm_source: 'klaviyo',
+        utm_medium: step === 'step2' ? 'form' : 'email',
+        utm_campaign: 'google_business_report_form',
+        utm_content: `variant_${variant?.id || 'default'}`,
+      });
+  
       let payload = {
         email: formData.email,
       };
   
       if (step === 'step2') {
-        // Include additional data for Step 2
         payload.firstName = formData.fname;
         payload.lastName = formData.lname;
         payload.businessName = formData.businessName;
         payload.website = formData.website;
       }
   
-      const response = await fetch('https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe', {
+      const response = await fetch(`https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe?${utmParams.toString()}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -171,7 +182,6 @@ function Signup() {
       });
   
       const data = await response.json();
-  
       if (response.ok) {
         console.log('Successfully subscribed:', data);
       } else {
@@ -181,8 +191,6 @@ function Signup() {
       console.error('Error subscribing:', error);
     }
   };
-  
-  
   
   
 
