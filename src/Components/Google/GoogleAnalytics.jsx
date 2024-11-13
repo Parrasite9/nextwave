@@ -11,20 +11,30 @@ const GoogleAnalytics = () => {
     const searchParams = new URLSearchParams(location.search);
     const campaignParams = {};
 
-    // Extract UTM parameters
-    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id'].forEach((key) => {
-      const value = searchParams.get(key);
+    // Map UTM parameters to GA4's expected parameter names
+    const utmToGaMapping = {
+      utm_source: 'campaign_source',
+      utm_medium: 'campaign_medium',
+      utm_campaign: 'campaign_name',
+      utm_term: 'campaign_term',
+      utm_content: 'campaign_content',
+      utm_id: 'campaign_id',
+    };
+
+    Object.keys(utmToGaMapping).forEach((utmKey) => {
+      const value = searchParams.get(utmKey);
       if (value) {
-        campaignParams[key] = value;
+        campaignParams[utmToGaMapping[utmKey]] = value;
       }
     });
 
-    // Send pageview event with UTM parameters as event parameters
-    ReactGA.event('page_view', {
+    // Send page_view event with campaign parameters
+    ReactGA.gtag('event', 'page_view', {
       page_title: document.title,
       page_location: window.location.href,
       page_path: location.pathname + location.search,
-      ...campaignParams, // Spread UTM parameters directly into event data
+      debug_mode: true, // Enable debug mode
+      ...campaignParams, // Include campaign parameters
     });
   }, [location]);
 

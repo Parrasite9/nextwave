@@ -11,9 +11,9 @@ import usePageView from './Components/Google/PageView';
 
 function App() {
   // Track page views
-  useEffect(() => {
-    ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
+  // }, []);
 
 
   // Move the hook inside the Router
