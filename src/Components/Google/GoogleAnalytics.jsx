@@ -28,8 +28,8 @@ const GoogleAnalytics = () => {
       }
     });
 
-    // Send page_view event with campaign parameters
-    ReactGA.gtag('event', 'page_view', {
+    // Send config command with campaign parameters
+    ReactGA.gtag('config', 'G-3F5ESK7TMC', {
       page_title: document.title,
       page_location: window.location.href,
       page_path: location.pathname + location.search,

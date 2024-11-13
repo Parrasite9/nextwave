@@ -1,25 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ReactGA from 'react-ga4';
-import UsePageView from './Components/Google/PageView';
 import Home from './Pages/Home';
 import SharedLayout from './Globals/SharedLayout';
 import { CaseStudyDetails, CollectWebsiteURL, Contact } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
-import usePageView from './Components/Google/PageView';
 
 
 function App() {
-  // Track page views
-  // useEffect(() => {
-  //   ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
-  // }, []);
-
 
   // Move the hook inside the Router
   return (
     <Router>
-      {/* <UsePageView /> */}
       <GoogleAnalytics />
       <SharedLayout>
         <Routes>
