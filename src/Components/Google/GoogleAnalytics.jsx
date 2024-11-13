@@ -19,13 +19,12 @@ const GoogleAnalytics = () => {
       }
     });
 
-    // Send pageview with campaign parameters
-    ReactGA.send({
-      hitType: 'pageview',
-      page: location.pathname + location.search, // Path and query string
-      location: window.location.href,            // Full URL
-      title: document.title,
-      campaign: campaignParams,                  // UTM parameters
+    // Send pageview event with UTM parameters as event parameters
+    ReactGA.event('page_view', {
+      page_title: document.title,
+      page_location: window.location.href,
+      page_path: location.pathname + location.search,
+      ...campaignParams, // Spread UTM parameters directly into event data
     });
   }, [location]);
 

@@ -9,12 +9,6 @@ import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import usePageView from './Components/Google/PageView';
 
 
-// Initialize GA with your Measurement ID
-ReactGA.initialize('G-3F5ESK7TMC');
-
-// Track initial page load
-ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-
 function App() {
   // Track page views
   useEffect(() => {
@@ -25,7 +19,7 @@ function App() {
   // Move the hook inside the Router
   return (
     <Router>
-      <UsePageView />
+      {/* <UsePageView /> */}
       <GoogleAnalytics />
       <SharedLayout>
         <Routes>
