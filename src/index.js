@@ -5,12 +5,11 @@ import './index.css';
 import App from './App';
 import ReactGA from 'react-ga4';
 
-// Initialize ReactGA with your GA4 Measurement ID
-ReactGA.initialize('G-3F5ESK7TMC'); // Replace with your GA4 Measurement ID
+// Initialize ReactGA with debug mode enabled
+ReactGA.initialize('G-3F5ESK7TMC', { debug: true });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // You can keep React.StrictMode if you wish
   <React.StrictMode>
     <App />
   </React.StrictMode>
