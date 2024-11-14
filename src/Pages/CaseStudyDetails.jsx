@@ -23,12 +23,17 @@ function CaseStudyDetails() {
     useEffect(() => {
         const foundCaseStudy = CaseStudyData.find((study) => study.name === name);
         
+        console.log("URL Parameter (name):", name); // Check if useParams is working
+        console.log("Fetched Case Study Data:", foundCaseStudy); // Check if data is being found
+        
         if (foundCaseStudy) {
             setCaseStudy(foundCaseStudy);
         } else {
+            console.log("Case Study Not Found, redirecting to 404...");
             navigate('/404');
         }
     }, [name, navigate]);
+    
 
     // Calculate currentPriceLevel only if caseStudy is defined
     const currentPriceLevel = caseStudy ? caseStudy.price.length : 0;
