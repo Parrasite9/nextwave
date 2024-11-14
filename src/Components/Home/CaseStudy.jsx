@@ -16,7 +16,7 @@ function CaseStudy() {
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
                 {CaseStudyData.slice(0, 4).map((casestudy) => (
                     <div key={casestudy.id} className="individual__study flex flex-col justify-between">
-                        <Link className='view__caseStudy flex justify-end' to={`casestudy/${casestudy.name}`}>
+                        <Link className='view__caseStudy flex justify-end' to={`/casestudy/${encodeURIComponent(casestudy.name)}`}>
                             {/* <img className='relative cursor-pointer lg:transition-transform lg:duration-300 lg:transform lg:hover:-translate-y-2' src={casestudy.poster} alt={casestudy.title} /> */}
                             {/* Wrapper for the image and overlay */}
                             <div className='relative'>
@@ -45,7 +45,7 @@ function CaseStudy() {
                         <div className="caseStudy__description lg:hidden">
                             <h3 className='header py-2'>{casestudy.name}</h3>
                             <p>{casestudy.shortDescription}</p>
-                            <Link className='view__caseStudy flex justify-end md:mt-4' to={`casestudy/${casestudy.name}`}>
+                            <Link className='view__caseStudy flex justify-end md:mt-4' to={`/casestudy/${encodeURIComponent(casestudy.name)}`}>
                                 {/* <p className='mr-4'>View More</p> */}
                                 <button className='mr-4 text-deep-ocean-blue'>View More</button>
                                 <EastIcon className='text-deep-ocean-blue' />
