@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import CaseStudyContext from '../Components/Data/CaseStudyContext';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
-import { CaseStudyData } from '../Components'
 import VideoPlayer from '../Components/Video/VideoPlayer';
 import CaseStudySwiper from '../Components/Swipers/CaseStudySwiper';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
@@ -9,7 +9,11 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 function CaseStudyDetails() {
 
     const { name } = useParams()
+    console.log("useParam().name:", name);
+  
     const navigate = useNavigate();
+    const { caseStudies } = useContext(CaseStudyContext);
+
     // const caseStudy = CaseStudyData.find((study) => study.name === name)
     const [activeSection, setActiveSection] = useState('');
     const [hoveredSection, setHoveredSection] = useState(null);
@@ -21,8 +25,13 @@ function CaseStudyDetails() {
 
     // Fetch the case study based on the `name` parameter
     useEffect(() => {
-        const foundCaseStudy = CaseStudyData.find((study) => study.name === name);
-        
+        const cleanName = name.split('?')[0];
+        console.log("Clean Name:", cleanName);
+
+        const foundCaseStudy = caseStudies.find(
+            (study) => study.name === cleanName
+        );
+
         console.log("URL Parameter (name):", name); // Check if useParams is working
         console.log("Fetched Case Study Data:", foundCaseStudy); // Check if data is being found
         
