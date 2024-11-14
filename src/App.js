@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import SharedLayout from './Globals/SharedLayout';
 import { CaseStudyDetails, CollectWebsiteURL, Contact } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
+import NotFound from './Pages/NotFound';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
           <Route path="/casestudy/:name" element={<CaseStudyDetails />} />
           <Route path="/free-google-report" element={<CollectWebsiteURL />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/404" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </SharedLayout>
     </Router>
