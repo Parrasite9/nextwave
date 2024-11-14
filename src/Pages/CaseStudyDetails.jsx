@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { CaseStudyData } from '../Components'
 import VideoPlayer from '../Components/Video/VideoPlayer';
@@ -9,14 +9,29 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 function CaseStudyDetails() {
 
     const { name } = useParams()
-    const caseStudy = CaseStudyData.find((study) => study.name === name)
+    const navigate = useNavigate();
+    // const caseStudy = CaseStudyData.find((study) => study.name === name)
     const [activeSection, setActiveSection] = useState('');
     const [hoveredSection, setHoveredSection] = useState(null);
+    // State to store the current case study
+    const [caseStudy, setCaseStudy] = useState(null);
 
     const totalDollarSigns = 5;  // Maximum number of dollar signs
-    const currentPriceLevel = caseStudy.price.length;  // Get the number of dollar signs in the price (e.g., 2 for "$$")
-  
 
+
+    // Fetch the case study based on the `name` parameter
+    useEffect(() => {
+        const foundCaseStudy = CaseStudyData.find((study) => study.name === name);
+        
+        if (foundCaseStudy) {
+            setCaseStudy(foundCaseStudy);
+        } else {
+            navigate('/404');
+        }
+    }, [name, navigate]);
+
+    // Calculate currentPriceLevel only if caseStudy is defined
+    const currentPriceLevel = caseStudy ? caseStudy.price.length : 0;
 
 
         // Function to render the teaser with the name styled
