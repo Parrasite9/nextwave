@@ -18,7 +18,7 @@ function App() {
         <SharedLayout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/casestudy/:name/*" element={<CaseStudyDetails />} />
+            <Route path="/casestudy/:slug" element={<CaseStudyDetails />} />
             <Route path="/free-google-report" element={<CollectWebsiteURL />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/404" element={<NotFound />} />

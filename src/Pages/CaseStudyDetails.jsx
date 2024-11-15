@@ -8,8 +8,8 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 function CaseStudyDetails() {
 
-    const { name } = useParams()
-    console.log("useParam().name:", name);
+    const { slug } = useParams()
+    console.log("useParam().slug:", slug);
   
     const navigate = useNavigate();
     const { caseStudies } = useContext(CaseStudyContext);
@@ -25,14 +25,14 @@ function CaseStudyDetails() {
 
     // Fetch the case study based on the `name` parameter
     useEffect(() => {
-        const cleanName = name.split('?')[0];
-        console.log("Clean Name:", cleanName);
+        const cleanSlug = slug.split('?')[0];
+        console.log("Clean slug:", cleanSlug);
 
         const foundCaseStudy = caseStudies.find(
-            (study) => study.name === cleanName
+            (study) => study.slug === cleanSlug
         );
 
-        console.log("URL Parameter (name):", name); // Check if useParams is working
+        console.log("URL Parameter (slug):", slug); // Check if useParams is working
         console.log("Fetched Case Study Data:", foundCaseStudy); // Check if data is being found
         
         if (foundCaseStudy) {
@@ -41,7 +41,7 @@ function CaseStudyDetails() {
             console.log("Case Study Not Found, redirecting to 404...");
             navigate('/404');
         }
-    }, [name, navigate]);
+    }, [slug, navigate, caseStudies]);
     
 
     // Calculate currentPriceLevel only if caseStudy is defined
@@ -132,14 +132,7 @@ function CaseStudyDetails() {
                 <meta property="og:title" content={caseStudy.title} />
                 <meta property="og:description" content={caseStudy.teaser} />
                 <meta property="og:image" content={caseStudy.poster} />
-
-                {/* ==============================================
-                ==============================================
-                =========== UPDATE THIS LINE =================
-                ==============================================
-                ============================================== */}
-
-                <meta property="og:url" content={`https://mywebsite.com/case-study/${caseStudy.name}`} />
+                <meta property="og:url" content={`https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}`} />
             </Helmet>
 
 

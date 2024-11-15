@@ -1,3 +1,5 @@
+import { generateSlug } from '../../Globals/Utils';
+
 const CaseStudyData = [
 
         // WAYOUT KIDS 
@@ -20,6 +22,7 @@ const CaseStudyData = [
             name: 'WayOut Kids',
             shortDescription: 'See how we revitalized WayOut Kids\' online presence with a bold homepage redesign that boosts credibility and drives donations.',
             timeline: '2 weeks',
+            slug: generateSlug('wayout kids'),
             title: 'Homepage Redesign for WayOut Kids Nonprofit',
             teaser: 'The homepage redesign for WayOut Kids brings a bold, visually organized look to highlight their mission, boost credibility, and drive donations and engagement.',
             price: '$$',
@@ -197,6 +200,7 @@ const CaseStudyData = [
         name: 'SeductiveBox',
         shortDescription: 'Discover how our female-focused redesign skyrocketed SeductiveBox\'s revenue by 733%, enhancing engagement and conversions.',
         timeline: '4 Weeks',
+        slug: generateSlug('seductivebox'),
         title: 'Increasing subscription revenue by 733% with SeductiveBox\’s website redesign',
         teaser: 'SeductiveBox underwent a full redesign focused on targeting its core female audience, resulting in a 733% increase in monthly revenue.',
         price: '$$',
@@ -346,6 +350,7 @@ const CaseStudyData = [
         name: 'Studio No. 1',
         shortDescription: 'Learn how we unified Studio No. 1\'s booking system into a seamless platform, simplifying client bookings and strengthening their brand.',
         timeline: '2 weeks',
+        slug: generateSlug('studio no 1'),
         title: 'Creating a Unified Booking Platform for Studio No. 1',
         teaser: 'Studio No. 1’s new website simplifies the booking process for clients, providing a single platform that represents their independent contractors under one cohesive brand.',
         price: '$$',
@@ -495,6 +500,7 @@ const CaseStudyData = [
         name: 'TheOrangeRV',
         shortDescription: 'Explore how we elevated TheOrangeRV\'s brand with a professional website showcasing their inventory and improving customer experience.',
         timeline: '2 weeks',
+        slug: generateSlug('theorangerv'),
         title: 'Professional Online Inventory for TheOrangeRV',
         teaser: 'TheOrangeRV’s new prototype website offers a professional platform to showcase inventory, helping to elevate brand presence and streamline browsing for potential customers.',
         price: '$$',
@@ -663,6 +669,7 @@ export default CaseStudyData;
 //     name: '',
 //     shortDescription: '',
 //     timeline: '',
+//     slug: generateSlug(''),
 //     title: '',
 //     teaser: '',
 //     price: '',
