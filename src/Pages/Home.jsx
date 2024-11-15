@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
         <Hero />
-        <CaseStudiesList />
+        <CaseStudy />
         <ServicesSection />
         <PricingTable />
         <Signup />
