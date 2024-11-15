@@ -10,7 +10,7 @@ import { generateSlug } from '../Globals/Utils';
 function CaseStudyDetails() {
 
     const { slug } = useParams()
-    console.log("useParam().slug:", slug);
+    // console.log("useParam().slug:", slug);
   
     const navigate = useNavigate();
     const { caseStudies } = useContext(CaseStudyContext);
@@ -30,14 +30,14 @@ function CaseStudyDetails() {
 
     useEffect(() => {
         const cleanSlug = slug.split('?')[0].toLowerCase();
-        console.log("Clean slug:", cleanSlug);
+        // console.log("Clean slug:", cleanSlug);
     
         const foundCaseStudy = caseStudies.find(
             (study) => study.slug.toLowerCase() === cleanSlug
         );
     
-        console.log("URL Parameter (slug):", slug);
-        console.log("Fetched Case Study Data:", foundCaseStudy);
+        // console.log("URL Parameter (slug):", slug);
+        // console.log("Fetched Case Study Data:", foundCaseStudy);
     
         if (foundCaseStudy) {
             setCaseStudy(foundCaseStudy);
@@ -51,7 +51,7 @@ function CaseStudyDetails() {
                 // Redirect to the correct slug
                 navigate(`/casestudy/${nameCaseStudy.slug}`, { replace: true });
             } else {
-                console.log("Case Study Not Found, rendering NotFound component...");
+                // console.log("Case Study Not Found, rendering NotFound component...");
                 setIsNotFound(true);
             }
         }
