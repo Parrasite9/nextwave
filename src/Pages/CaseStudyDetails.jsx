@@ -5,6 +5,7 @@ import { HelmetProvider, Helmet } from 'react-helmet-async';
 import VideoPlayer from '../Components/Video/VideoPlayer';
 import CaseStudySwiper from '../Components/Swipers/CaseStudySwiper';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { generateSlug } from '../Globals/Utils';
 
 function CaseStudyDetails() {
 
@@ -19,29 +20,43 @@ function CaseStudyDetails() {
     const [hoveredSection, setHoveredSection] = useState(null);
     // State to store the current case study
     const [caseStudy, setCaseStudy] = useState(null);
+    const [isNotFound, setIsNotFound] = useState(false);
+
 
     const totalDollarSigns = 5;  // Maximum number of dollar signs
 
 
     // Fetch the case study based on the `name` parameter
+
     useEffect(() => {
-        const cleanSlug = slug.split('?')[0];
+        const cleanSlug = slug.split('?')[0].toLowerCase();
         console.log("Clean slug:", cleanSlug);
-
+    
         const foundCaseStudy = caseStudies.find(
-            (study) => study.slug === cleanSlug
+            (study) => study.slug.toLowerCase() === cleanSlug
         );
-
-        console.log("URL Parameter (slug):", slug); // Check if useParams is working
-        console.log("Fetched Case Study Data:", foundCaseStudy); // Check if data is being found
-        
+    
+        console.log("URL Parameter (slug):", slug);
+        console.log("Fetched Case Study Data:", foundCaseStudy);
+    
         if (foundCaseStudy) {
             setCaseStudy(foundCaseStudy);
         } else {
-            console.log("Case Study Not Found, redirecting to 404...");
-            navigate('/404');
+            // Attempt to find a case study by name (fallback)
+            const nameCaseStudy = caseStudies.find(
+                (study) => generateSlug(study.name) === cleanSlug
+            );
+        
+            if (nameCaseStudy) {
+                // Redirect to the correct slug
+                navigate(`/casestudy/${nameCaseStudy.slug}`, { replace: true });
+            } else {
+                console.log("Case Study Not Found, rendering NotFound component...");
+                setIsNotFound(true);
+            }
         }
     }, [slug, navigate, caseStudies]);
+  
     
 
     // Calculate currentPriceLevel only if caseStudy is defined

@@ -1,6 +1,6 @@
 // src/Components/CaseStudiesList.jsx
 import React, { useContext } from 'react';
-import CaseStudyContext from './Data/CaseStudyContext';
+import CaseStudyContext from '../Components/Data/CaseStudyContext';
 import CaseStudyLink from './CaseStudyLink';
 
 function CaseStudiesList() {
