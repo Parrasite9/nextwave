@@ -48,6 +48,7 @@ function Signup({ onFormSubmit }) {
     businessName: '',
     website: '',
   });
+  const [showBooking, setShowBooking] = useState(false);
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
@@ -148,6 +149,7 @@ function Signup({ onFormSubmit }) {
   
       console.log("Form Submitted:", formData);
       setStep(3);
+      setShowBooking(true); // Added this line to display the booking iframe
     }
   };
     
@@ -284,6 +286,19 @@ function Signup({ onFormSubmit }) {
             </p>
           </div>
         )}
+
+        {showBooking && (
+        <div className="mt-8 text-center">
+            <p className="text-xl">Book your FREE strategy call below!</p>
+            <iframe
+            src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
+            frameBorder="0"
+            style={{ width: '750px', height: '560px' }}
+            className="mt-4"
+            />
+        </div>
+        )}
+
       </div>
     </div>
   );
