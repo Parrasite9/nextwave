@@ -301,33 +301,34 @@ function Signup({ onFormSubmit }) {
 
         {/* Success Message and Booking Iframe */}
         {step === 3 && (
-            <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 mt-8">
-                {/* Success Message */}
-                <div className="flex-1 text-center lg:text-left bg-white p-6 rounded-lg shadow-lg">
-                    <h2 className="text-2xl font-bold text-bright-teal">Empowering Your Next Move 🌐</h2>
-                    <p className="mt-4 text-gray-700">
-                        You’re one step closer to gaining the insights needed to drive real growth.
-                        Please check your email and confirm your subscription to receive your report.
-                        If you don’t see it, check your spam folder!
-                    </p>
-                </div>
+    <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 mt-8">
+        {/* Success Message */}
+        <div className="flex-1 text-center lg:text-left bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-bright-teal">Empowering Your Next Move 🌐</h2>
+            <p className="mt-4 text-gray-700">
+                You’re one step closer to gaining the insights needed to drive real growth.
+                Please check your email and confirm your subscription to receive your report.
+                If you don’t see it, check your spam folder!
+            </p>
+        </div>
 
-                {/* Booking Iframe */}
-                {showBooking && (
-                    <div className="flex-1 mt-8 lg:mt-0 text-center">
-                        <p className="text-xl mb-4">Book your FREE strategy call below!</p>
-                        <div className="w-full overflow-hidden">
-                            <iframe
-                                src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
-                                frameBorder="0"
-                                className="w-full"
-                                style={{ height: '600px', maxWidth: '100%', borderRadius: '8px' }}
-                            />
-                        </div>
-                    </div>
-                )}
+        {/* Booking Iframe */}
+        {showBooking && (
+            <div className="flex-1 mt-8 lg:mt-0 text-center">
+                <p className="text-xl mb-4">Book your FREE strategy call below!</p>
+                <div className="w-full h-[600px] lg:h-auto overflow-hidden rounded-lg">
+                    <iframe
+                        src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
+                        frameBorder="0"
+                        allowFullScreen
+                        className="w-full h-full object-cover"
+                    />
+                </div>
             </div>
         )}
+    </div>
+)}
+
 
 
 
