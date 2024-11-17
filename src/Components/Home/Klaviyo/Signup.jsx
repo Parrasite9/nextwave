@@ -38,7 +38,7 @@ const FORM_VARIANTS = [
     },
   ];
 
-function Signup() {
+function Signup({ onFormSubmit }) {
   const [step, setStep] = useState(1);
   const [variant, setVariant] = useState(null);
   const [formData, setFormData] = useState({
@@ -77,12 +77,18 @@ function Signup() {
     };
   }, []);
   
-  
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
+
+  // Updated website validation to accept domains like "testing.com" or "www.example.org"
+  const validateWebsite = (website) => {
+    const websiteRegex = /^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/;
+    return websiteRegex.test(website);
+  };
+  
 
   const validateStep1 = () => {
     const newErrors = {};
@@ -98,7 +104,9 @@ function Signup() {
     if (!formData.fname) newErrors.fname = 'First Name is required';
     if (!formData.lname) newErrors.lname = 'Last Name is required';
     if (!formData.businessName) newErrors.businessName = 'Business Name is required';
-    if (!formData.website) newErrors.website = 'Website is required. Please format as http://www.example.com';
+    if (!formData.website || !validateWebsite(formData.website)) {
+        newErrors.website = 'Please enter a valid website (e.g., example.com)';
+    }    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -143,39 +151,6 @@ function Signup() {
     }
   };
     
-//   const subscribeToKlaviyoList = async (step) => {
-//     try {
-//       let payload = {
-//         email: formData.email,
-//       };
-  
-//       if (step === 'step2') {
-//         // Include additional data for Step 2
-//         payload.firstName = formData.fname;
-//         payload.lastName = formData.lname;
-//         payload.businessName = formData.businessName;
-//         payload.website = formData.website;
-//       }
-  
-//       const response = await fetch('https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(payload),
-//       });
-  
-//       const data = await response.json();
-  
-//       if (response.ok) {
-//         console.log('Successfully subscribed:', data);
-//       } else {
-//         console.error('Error subscribing:', data.error);
-//       }
-//     } catch (error) {
-//       console.error('Error subscribing:', error);
-//     }
-//   };
 
   const subscribeToKlaviyoList = async (step) => {
     try {
@@ -286,12 +261,12 @@ function Signup() {
             />
             {errors.businessName && <p className="text-red-500 text-sm">{errors.businessName}</p>}
             <input
-              type="url"
-              name="website"
-              value={formData.website}
-              onChange={handleChange}
-              placeholder="Business Website (e.g., http://www.example.com)"
-              className="w-full px-4 py-3 border rounded-lg focus:outline-none"
+                type="text"
+                name="website"
+                value={formData.website}
+                onChange={handleChange}
+                placeholder="Business Website (e.g., example.com)"
+                className="w-full px-4 py-3 border rounded-lg focus:outline-none"
             />
             {errors.website && <p className="text-red-500 text-sm">{errors.website}</p>}
             <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
