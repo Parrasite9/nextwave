@@ -299,8 +299,8 @@ function Signup({ onFormSubmit }) {
         </div>
         )} */}
 
-        {/* Success Message and Booking Iframe */}
-        {step === 3 && (
+    {/* Success Message and Booking Iframe */}
+    {step === 3 && (
         <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 mt-8">
             {/* Success Message */}
             <div className="flex-1 text-center lg:text-left bg-white p-6 rounded-lg shadow-lg">
@@ -314,18 +314,21 @@ function Signup({ onFormSubmit }) {
 
             {/* Booking Iframe */}
             {showBooking && (
-            <div className="flex-1 mt-8 lg:mt-0 text-center">
+            <div className="flex-1 mt-8 lg:mt-0 text-center overflow-hidden">
                 <p className="text-xl mb-4">Book your FREE strategy call below!</p>
+                <div className="relative w-full h-0 pb-[75%] lg:pb-[60%] overflow-hidden">
                 <iframe
-                src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
-                frameBorder="0"
-                style={{ width: '100%', height: '560px' }}
-                className="rounded-lg shadow-lg"
+                    src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
+                    frameBorder="0"
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={{ borderRadius: '8px' }}
                 />
+                </div>
             </div>
             )}
         </div>
-        )}
+    )}
+
 
 
       </div>
