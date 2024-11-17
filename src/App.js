@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import SharedLayout from './Globals/SharedLayout';
-import { CaseStudyDetails, CollectWebsiteURL, Contact } from './Components';
+import { CaseStudyDetails, CollectWebsiteURL, Contact, GetWebsite } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import NotFound from './Pages/NotFound';
 import { CaseStudyProvider } from './Components/Data/CaseStudyContext';
@@ -23,6 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
+            <Route path='/get-website' element={<GetWebsite />} />
           </Routes>
         </SharedLayout>
       </CaseStudyProvider>

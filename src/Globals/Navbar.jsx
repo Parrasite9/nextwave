@@ -46,12 +46,14 @@ function Navbar() {
   );
 
   return (
-    <div className="">
+    <div className="mobile_navbar_container">
       {isMobile ? (
         // Mobile Navbar
         <div className="p-4 flex justify-between items-center">
-          <img src="/images/logo/logoDark.png" alt="Logo" className="h-auto w-1/3" />
-          
+          <Link to='/'>
+            <img src="/images/logo/logoDark.png" alt="Logo" className="h-auto w-1/3" />
+          </Link>
+
           {/* Menu Toggle Button */}
           {isMenuOpen ? (
             <>
