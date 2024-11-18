@@ -137,6 +137,14 @@ function Signup({ onFormSubmit }) {
         'Business Name': formData.businessName,
         'Website': formData.website,
       }]);
+
+      // Log the initial booking status to Klaviyo
+      window._learnq.push(['identify', {
+        '$email': formData.email,
+        'initial_zoom_booking_status': 'pending'
+      }]);
+      console.log("Booking status set to 'pending' in Klaviyo");
+  
   
       // Track the form submission event (if needed)
       window._learnq.push(['track', 'Form Submitted', {
@@ -167,12 +175,16 @@ function Signup({ onFormSubmit }) {
         email: formData.email,
         initial_zoom_booking_status: 'pending',
       };
+
+      console.log("Step 1 - Payload before step 2:", payload);
+
   
       if (step === 'step2') {
         payload.firstName = formData.fname;
         payload.lastName = formData.lname;
         payload.businessName = formData.businessName;
         payload.website = formData.website;
+        console.log("Step 2 - Payload with additional data:", payload);
       }
   
       const response = await fetch(`https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe?${utmParams.toString()}`, {
