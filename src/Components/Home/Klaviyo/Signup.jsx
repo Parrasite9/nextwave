@@ -136,15 +136,8 @@ function Signup({ onFormSubmit }) {
         '$last_name': formData.lname,
         'Business Name': formData.businessName,
         'Website': formData.website,
-      }]);
-
-      // Log the initial booking status to Klaviyo
-      window._learnq.push(['identify', {
-        '$email': formData.email,
         'initial_zoom_booking_status': 'pending'
-      }]);
-      console.log("Booking status set to 'pending' in Klaviyo");
-  
+      }]);  
   
       // Track the form submission event (if needed)
       window._learnq.push(['track', 'Form Submitted', {
