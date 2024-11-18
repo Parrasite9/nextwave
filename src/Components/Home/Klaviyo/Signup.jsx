@@ -136,7 +136,7 @@ function Signup({ onFormSubmit }) {
         '$last_name': formData.lname,
         'Business Name': formData.businessName,
         'Website': formData.website,
-        'initial_zoom_booking_status': 'pending'
+        'initial_zoom_booking_status': 'not_booked_yet'
       }]);  
   
       // Track the form submission event (if needed)
@@ -166,7 +166,7 @@ function Signup({ onFormSubmit }) {
   
       let payload = {
         email: formData.email,
-        initial_zoom_booking_status: 'pending',
+        initial_zoom_booking_status: 'not_booked_yet',
       };
 
       console.log("Step 1 - Payload before step 2:", payload);
