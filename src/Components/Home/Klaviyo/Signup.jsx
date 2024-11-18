@@ -165,6 +165,7 @@ function Signup({ onFormSubmit }) {
   
       let payload = {
         email: formData.email,
+        initial_zoom_booking_status: 'pending',
       };
   
       if (step === 'step2') {
