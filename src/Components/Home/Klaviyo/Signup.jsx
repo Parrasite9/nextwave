@@ -147,10 +147,45 @@ function Signup({ onFormSubmit }) {
   
       // Update the user's profile in Klaviyo
       subscribeToKlaviyoList('step2');
+
+      // Update the user's profile in Klaviyo via API for immediate segment re-evaluation
+      updateProfileInKlaviyo();
   
       console.log("Form Submitted:", formData);
       setStep(3);
       setShowBooking(true); // Added this line to display the booking iframe
+    }
+  };
+
+  const updateProfileInKlaviyo = async () => {
+    const payload = {
+      properties: {
+        $email: formData.email,
+        $first_name: formData.fname,
+        $last_name: formData.lname,
+        "Business Name": formData.businessName,
+        "Website": formData.website,
+        initial_zoom_booking_status: "not_booked_yet",
+      },
+    };
+
+    try {
+      const response = await fetch('https://a.klaviyo.com/api/identify', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Profile updated via API:', data);
+      } else {
+        console.error('Failed to update profile via API:', await response.text());
+      }
+    } catch (error) {
+      console.error('Error updating profile via API:', error);
     }
   };
     
