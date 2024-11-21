@@ -9,7 +9,7 @@
       },
       "sections": [
         {
-          "heading": "Main Point 1: User Experience",
+          "heading": "User Experience",
           "subsections": [
             {
               "title": "Why User Experience Matters",
@@ -17,6 +17,13 @@
                 "First Impressions Count: Research shows it takes only 0.05 seconds for users to form an opinion about your website. A clunky or slow site leaves a bad impression.",
                 "High Bounce Rates: According to Google, 53% of mobile users leave a site that takes longer than 3 seconds to load.",
                 "Navigation Issues: Websites that require constant zooming or have broken layouts frustrate users, leading to lost trust."
+              ]
+            },
+            {
+              "title": "Specific Example: Midland Coffee Co.",
+              "content": [
+                "Midland Coffee Co. saw a 40% drop in mobile visitors after launching a site that wasn’t responsive. Users struggled with tiny buttons and slow load times, leading to high bounce rates.",
+                "After redesigning their website to be mobile-friendly, they experienced a 25% increase in mobile orders within three months. Customers loved the clean design and easy-to-use interface."
               ]
             },
             {
@@ -30,7 +37,7 @@
           ]
         },
         {
-          "heading": "Main Point 2: SEO Benefits",
+          "heading": "SEO Benefits",
           "subsections": [
             {
               "title": "What Is Mobile-First Indexing?",
@@ -41,14 +48,22 @@
             {
               "title": "Local SEO Advantages",
               "content": [
-                "Boost Visibility: A mobile-optimized site improves your ranking in local searches. For example, when someone searches for 'web design in Midland,' a mobile-friendly site increases your chances of appearing at the top.",
+                "Boost Visibility: A mobile-optimized site improves your ranking in local searches. For example, when someone searches for 'best gym in Midland,' a mobile-friendly site increases your chances of appearing at the top.",
                 "Drive In-Store Visits: According to Google, 76% of people who search for something nearby visit a business within a day."
+              ]
+            },
+            {
+              "title": "Customer Pain Points",
+              "content": [
+                "Frustration with Slow Loading Times: 'I was looking for a local plumber on my phone, but the site took forever to load. I gave up and called someone else.'",
+                "Difficulty Finding Contact Info: 'A bakery’s website didn’t work well on my phone. I couldn’t find their phone number without scrolling everywhere.'",
+                "Non-Clickable Features: 'I tried to book an appointment on a salon’s website, but the button didn’t work on mobile.'"
               ]
             },
             {
               "title": "Practical Tips for Mobile SEO",
               "content": [
-                "Use local keywords in your meta tags and headings (e.g., 'Midland web design').",
+                "Use local keywords in your meta tags and headings (e.g., 'Midland ice cream').",
                 "Optimize your Google Business Profile with mobile-friendly features like directions and click-to-call buttons.",
                 "Regularly test your website’s mobile performance using tools like Google’s Mobile-Friendly Test."
               ]
@@ -60,14 +75,20 @@
           }
         },
         {
-          "heading": "Section 3: Why Midland-Odessa Businesses Should Act Now",
+          "heading": "Why Midland-Odessa Businesses Should Act Now",
           "subsections": [
             {
               "title": "Industry Examples",
               "content": [
                 "Restaurant Websites: Customers searching for menus or locations expect fast, clear navigation.",
-                "Service Providers: Whether it’s plumbing or web design, easy contact forms and click-to-call features are vital.",
+                "Service Providers: Whether it’s plumbing or cooking classes, easy contact forms and click-to-call features are vital.",
                 "Retail Stores: E-commerce sites with mobile-friendly product pages see higher conversions."
+              ]
+            },
+            {
+              "title": "Case Study: Odessa Hardware",
+              "content": [
+                "Odessa Hardware increased in-store visits by 30% after optimizing their website for mobile users. Customers appreciated the ability to browse inventory and call directly from their phones."
               ]
             }
           ]

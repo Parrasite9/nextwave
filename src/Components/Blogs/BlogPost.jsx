@@ -12,10 +12,10 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="blog-post">
+    <div className="blog-post px-8 mb-8">
       {/* Blog Title */}
-      <h1>{blog.title}</h1>
-      <p className="text-sm text-gray-600">
+      <h1 className="header text-xl mb-4 md:text-2xl lg:text-3xl">{blog.title}</h1>
+      <p className="text-sm text-gray-600 md:text-lg">
         Published on {blog.date} by {blog.author}
       </p>
 
@@ -26,13 +26,13 @@ const BlogPost = () => {
       {blog.sections.map((section, index) => (
         <div key={index} className="mt-6">
           {/* Section Heading */}
-          <h2 className="text-xl font-bold">{section.heading}</h2>
+          <h2 className="text-xl font-bold header lg:text-2xl">{section.heading}</h2>
 
           {/* Subsections */}
           {section.subsections.map((subsection, subIndex) => (
             <div key={subIndex} className="mt-4">
               {/* Subsection Title */}
-              <h3 className="text-lg font-semibold">{subsection.title}</h3>
+              <h3 className="text-lg font-semibold subheader lg:text-xl">{subsection.title}</h3>
               {/* Subsection Content */}
               {subsection.content.map((point, pointIndex) => (
                 <p key={pointIndex} className="mt-2">
