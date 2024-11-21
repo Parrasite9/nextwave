@@ -6,6 +6,8 @@ import { CaseStudyDetails, CollectWebsiteURL, Contact, GetWebsite } from './Comp
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import NotFound from './Pages/NotFound';
 import { CaseStudyProvider } from './Components/Data/CaseStudyContext';
+import BlogPost from './Components/Blogs/BlogPost';
+import BlogList from './Components/Blogs/BlogList';
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <CaseStudyProvider>
         <SharedLayout>
           <Routes>
+            {/* CORE PAGES  */}
             <Route path="/" element={<Home />} />
             <Route path="/casestudy/:slug" element={<CaseStudyDetails />} />
             <Route path="/free-google-report" element={<CollectWebsiteURL />} />
@@ -24,6 +27,10 @@ function App() {
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
             <Route path='/get-website' element={<GetWebsite />} />
+
+            {/* BLOGS  */}
+            <Route path='/blogs' element={<BlogList />} />
+            <Route path='/blog/:slug' element={<BlogPost />} />
           </Routes>
         </SharedLayout>
       </CaseStudyProvider>
