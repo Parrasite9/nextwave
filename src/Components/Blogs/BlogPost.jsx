@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import blogsData from "../Blogs/Blogs.json";
 import { generateSlug } from "../../Globals/Utils";
@@ -7,59 +7,145 @@ const BlogPost = () => {
   const { slug } = useParams();
   const blog = blogsData.find((b) => generateSlug(b.title) === slug);
 
+  const [activeSection, setActiveSection] = useState("");
+  const detailsRef = useRef(null);
+
+  useEffect(() => {
+    if (!blog) return;
+
+    const handleScroll = () => {
+      const sections = document.querySelectorAll(".blog-section");
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 60) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [blog]);
+
   if (!blog) {
     return <h2>Blog not found</h2>;
   }
 
   return (
-    <div className="blog-post px-8 mb-8">
-      {/* Blog Title */}
-      <h1 className="header text-xl mb-4 md:text-2xl lg:text-3xl">{blog.title}</h1>
-      <p className="text-sm text-gray-600 md:text-lg">
-        Published on {blog.date} by {blog.author}
-      </p>
+    <div>
+      {/* Hero Section */}
+      <div className="hero bg-gray-100 px-8 py-12 text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-4">
+        <div className="lg:flex lg:flex-col lg:justify-center">
+        {/* <div className="max-w-4xl mx-auto"> */}
 
-      {/* Blog Introduction */}
-      <p className="mt-4">{blog.content.introduction}</p>
+          <h1 className="text-3xl lg:text-5xl font-bold mb-4 xl:text-6xl">{blog.title}</h1>
+          <p className="text-sm text-gray-600 md:text-lg mb-4">
+            Published on {blog.date} by {blog.author}
+          </p>
+          <p className="text-lg md:text-xl">{blog.content.introduction}</p>
+        </div>
+        <div className="blog__hero__img">
+            <img src={blog.titleImg.heroImg} alt={blog.titleImg.heroAlt} />
+        </div>
+      </div>
 
-      {/* Blog Sections */}
-      {blog.sections.map((section, index) => (
-        <div key={index} className="mt-6">
-          {/* Section Heading */}
-          <h2 className="text-xl font-bold header lg:text-2xl">{section.heading}</h2>
-
-          {/* Subsections */}
-          {section.subsections.map((subsection, subIndex) => (
-            <div key={subIndex} className="mt-4">
-              {/* Subsection Title */}
-              <h3 className="text-lg font-semibold subheader lg:text-xl">{subsection.title}</h3>
-              {/* Subsection Content */}
-              {subsection.content.map((point, pointIndex) => (
-                <p key={pointIndex} className="mt-2">
-                  {point}
-                </p>
+      {/* Details Section */}
+      <div
+        ref={detailsRef}
+        className="parent grid grid-cols-1 lg:grid-cols-5 gap-4"
+      >
+        {/* Side Navigation */}
+        <div className="blog-navbar hidden lg:block sticky top-4 max-h-[500px]">
+          <nav>
+            <ul className="px-8 space-y-2">
+              {blog.sections.map((section, index) => (
+                <li key={index}>
+                  <a
+                    href={`#${generateSlug(section.heading)}`}
+                    className={`px-2 py-1 transition-colors duration-300 ${
+                      activeSection === generateSlug(section.heading)
+                        ? "text-blue-500 font-bold"
+                        : "text-gray-700"
+                    }`}
+                  >
+                    {section.heading}
+                  </a>
+                </li>
               ))}
+            </ul>
+          </nav>
+        </div>
+
+        {/* Blog Content */}
+        <div className="blog-content lg:col-span-4 px-8 mb-8">
+          {/* Blog Sections */}
+          {blog.sections.map((section, index) => (
+            <div
+              key={index}
+              id={generateSlug(section.heading)}
+              className="blog-section mt-6"
+            >
+              <h2 className="text-xl font-bold header lg:text-2xl">{section.heading}</h2>
+
+              {section.subsections.map((subsection, subIndex) => (
+                <div key={subIndex} className="mt-4">
+                  <h3 className="text-lg font-semibold subheader lg:text-xl">
+                    {subsection.title}
+                  </h3>
+                  {subsection.content.map((point, pointIndex) => {
+                    if (typeof point === "object" && point.bold) {
+                      return (
+                        <p key={pointIndex} className="mt-2">
+                          <strong>{point.text}</strong> {point.suffix}
+                        </p>
+                      );
+                    }
+
+                    if (typeof point === "object" && point.link) {
+                      return (
+                        <p key={pointIndex} className="mt-2">
+                          {point.text}{" "}
+                          <a
+                            href={point.link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 underline"
+                          >
+                            {point.link.text}
+                          </a>{" "}
+                          {point.end}
+                        </p>
+                      );
+                    }
+
+                    return <p key={pointIndex} className="mt-2">{point}</p>;
+                  })}
+                </div>
+              ))}
+
+              {section.image && (
+                <div className="mt-4">
+                  <img
+                    src={section.image.src}
+                    alt={section.image.alt}
+                    className="w-full"
+                  />
+                </div>
+              )}
             </div>
           ))}
 
-          {/* Section Image */}
-          {section.image && (
-            <div className="mt-4">
-              <img
-                src={section.image.src}
-                alt={section.image.alt}
-                className="w-full"
-              />
-            </div>
-          )}
+          {/* Blog Conclusion */}
+          <p className="mt-6">{blog.conclusion}</p>
+
+          {/* Call-to-Action */}
+          <p className="mt-6 text-lg font-bold">{blog.cta}</p>
         </div>
-      ))}
-
-      {/* Blog Conclusion */}
-      <p className="mt-6">{blog.conclusion}</p>
-
-      {/* Call-to-Action */}
-      <p className="mt-6 text-lg font-bold">{blog.cta}</p>
+      </div>
     </div>
   );
 };
