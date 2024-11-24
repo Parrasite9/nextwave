@@ -4,6 +4,10 @@
       "title": "Why Every Midland Business Needs a Mobile-Friendly Website",
       "author": "NextWave | Web Studio",
       "date": "2024-11-20",
+      "titleImg": {
+        "heroImg": "/images/blogs/responsive.png",
+        "heroAlt": "responsive-img"
+    },
       "content": {
         "introduction": "A mobile-friendly website is no longer a luxury—it’s a necessity. As of 2024, over 60% of web traffic comes from mobile devices, and this trend continues to grow. For businesses in Midland-Odessa, this is especially critical because many customers search for services on their phones while on the go. If your website isn’t optimized for mobile users, you’re not just losing potential traffic—you’re losing customers."
       },
@@ -102,6 +106,10 @@
         "title": "How Local SEO Can Help Your Midland-Odessa Business Rank Higher on Google",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "titleImg": {
+            "heroImg": "/images/blogs/optimization.png",
+            "heroAlt": "optimization-img"
+        },
         "content": {
           "introduction": "Imagine searching for 'coffee shop near me' or 'emergency plumber in Midland.' In both cases, the results you see are powered by Local SEO. For small businesses in Midland-Odessa, being visible in local search results can mean the difference between thriving and being overlooked. Local SEO focuses on optimizing your online presence to attract more customers from relevant local searches."
         },
@@ -209,6 +217,10 @@
         "title": "Top 5 Signs It’s Time to Redesign Your Website",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "titleImg": {
+            "heroImg": "/images/blogs/redesign.png",
+            "heroAlt": "redesign-img"
+        },
         "content": {
           "introduction": "Your website is your digital storefront—it’s often the first impression potential customers have of your business. But as technology evolves and user expectations shift, even the best websites can become outdated. A clunky design, slow load times, or poor mobile compatibility might be costing you customers without you even realizing it. In this blog, we’ll cover the top five signs it’s time to give your website a makeover and how a redesign can boost your business."
         },
@@ -316,6 +328,10 @@
         "title": "How to Boost Your Local Business with Google Business Profile Optimization",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "titleImg": {
+            "heroImg": "/images/blogs/businessProfile.png",
+            "heroAlt": "businessProfile-img"
+        },
         "content": {
           "introduction": "For local businesses, visibility is everything. If customers can’t find you online, they’ll find your competitors instead. That’s where Google Business Profile (GBP) comes in. This free tool lets you showcase your business, appear in local search results, and engage with customers—all from one platform. In this blog, we’ll explore why Google Business Profile is so essential for local businesses and how optimizing it can drive more traffic, leads, and sales for your business."
         },
@@ -454,7 +470,7 @@
         "date": "2024-11-22",
         "titleImg": {
             "heroImg": "/images/blogs/webDesign.png",
-            "heroAlt": "redesign-img"
+            "heroAlt": "webDesign-img"
         },
         "content": {
           "introduction": "The world of web design is evolving faster than ever. In 2025, businesses that prioritize innovative and user-centric designs will set themselves apart in the digital landscape."
@@ -528,7 +544,7 @@
         ],
         "conclusion": "2025 is shaping up to be a transformative year for web design. By embracing trends like immersive 3D experiences, AI-powered personalization, and sustainability-focused design, your business can deliver exceptional digital experiences that captivate users and drive results.",
         "cta": "Need help preparing your website for 2025? Contact NextWave | Web Studio today for a free consultation. Let us bring these trends to life and set your business apart."
-      }
+    }
       
       
       
