@@ -104,3 +104,8 @@ body {
 .small-accent {
     color: var(--tomato); /* Reserved for small visual accents */
 }
+
+.card-bg {
+    @apply bg-lemon-chiffon hover:bg-warm-gray;
+  }
+  
