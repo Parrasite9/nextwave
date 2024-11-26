@@ -15,7 +15,7 @@ const BlogList = () => {
         <h1 className="header text-center text-2xl mb-4">Our Blog</h1>
         <div className="list__of__blogs grid grid-cols-2 gap-4 mb-8 lg:grid-cols-4">
         {blogs.map((blog) => (
-          <div key={blog.id} className="blog-preview flex flex-col justify-between border-4 p-2 cursor-pointer">
+          <div key={blog.id} className="blog-preview flex flex-col justify-between border-4 p-2 cursor-pointer hover:shadow-lg hover:shadow-gray-500/50 transition-shadow duration-200">
             <h2 className="font-bold">{blog.title}</h2>
             {/* <p>By {blog.author} on {blog.date}</p> */}
             {/* Use blog.content.introduction instead */}
