@@ -28,12 +28,12 @@ const BlogList = () => {
                     </Link>
                     {/* Card Content */}
                     <h2 className="font-bold text-lg font-bold text-soft-navy mb-2 md:text-xl lg:text-2xl">
-                    {blog.title}
+                        {blog.title}
                     </h2>
                     <p className="text-sm text-warm-gray italic">By {blog.author} on {blog.date}</p>
                     <p>{blog.content.introduction.substring(0, 100)}...</p>
                     <Link className="text-sky-blue" to={`/blog/${generateSlug(blog.title)}`}>
-                    Read More
+                        Read More
                     </Link>
                 </div>
             ))}

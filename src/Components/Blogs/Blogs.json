@@ -1,105 +1,103 @@
 [
     {
-      "id": 1,
-      "title": "Why Every Midland Business Needs a Mobile-Friendly Website",
-      "author": "NextWave | Web Studio",
-      "date": "2024-11-20",
-      "titleImg": {
-        "heroImg": "/images/blogs/responsive.png",
-        "heroAlt": "responsive-img"
-    },
-      "content": {
-        "introduction": "A mobile-friendly website is no longer a luxury—it’s a necessity. As of 2024, over 60% of web traffic comes from mobile devices, and this trend continues to grow. For businesses in Midland-Odessa, this is especially critical because many customers search for services on their phones while on the go. If your website isn’t optimized for mobile users, you’re not just losing potential traffic—you’re losing customers."
-      },
-      "sections": [
-        {
-          "heading": "User Experience",
-          "subsections": [
-            {
-              "title": "Why User Experience Matters",
-              "content": [
-                "First Impressions Count: Research shows it takes only 0.05 seconds for users to form an opinion about your website. A clunky or slow site leaves a bad impression.",
-                "High Bounce Rates: According to Google, 53% of mobile users leave a site that takes longer than 3 seconds to load.",
-                "Navigation Issues: Websites that require constant zooming or have broken layouts frustrate users, leading to lost trust."
-              ]
-            },
-            {
-              "title": "Specific Example: Midland Coffee Co.",
-              "content": [
-                "Midland Coffee Co. saw a 40% drop in mobile visitors after launching a site that wasn’t responsive. Users struggled with tiny buttons and slow load times, leading to high bounce rates.",
-                "After redesigning their website to be mobile-friendly, they experienced a 25% increase in mobile orders within three months. Customers loved the clean design and easy-to-use interface."
-              ]
-            },
-            {
-              "title": "How Mobile Optimization Helps",
-              "content": [
-                "Responsive Design: Ensures your website adjusts seamlessly to any screen size.",
-                "Fast Loading: Compress images and use efficient code to reduce loading times.",
-                "Simplified Navigation: Clear menus and clickable buttons improve the overall experience."
-              ]
-            }
-          ]
+        "id": 1,
+        "title": "Why Every Midland Business Needs a Mobile-Friendly Website",
+        "author": "NextWave | Web Studio",
+        "date": "2024-11-20",
+        "titleImg": {
+          "heroImg": "/images/blogs/responsive.png",
+          "heroAlt": "responsive-img"
         },
-        {
-          "heading": "SEO Benefits",
-          "subsections": [
-            {
-              "title": "What Is Mobile-First Indexing?",
-              "content": [
-                "Google primarily evaluates the mobile version of your site when determining rankings. If your website isn’t mobile-friendly, you could be invisible to potential customers."
-              ]
-            },
-            {
-              "title": "Local SEO Advantages",
-              "content": [
-                "Boost Visibility: A mobile-optimized site improves your ranking in local searches. For example, when someone searches for 'best gym in Midland,' a mobile-friendly site increases your chances of appearing at the top.",
-                "Drive In-Store Visits: According to Google, 76% of people who search for something nearby visit a business within a day."
-              ]
-            },
-            {
-              "title": "Customer Pain Points",
-              "content": [
-                "Frustration with Slow Loading Times: 'I was looking for a local plumber on my phone, but the site took forever to load. I gave up and called someone else.'",
-                "Difficulty Finding Contact Info: 'A bakery’s website didn’t work well on my phone. I couldn’t find their phone number without scrolling everywhere.'",
-                "Non-Clickable Features: 'I tried to book an appointment on a salon’s website, but the button didn’t work on mobile.'"
-              ]
-            },
-            {
-              "title": "Practical Tips for Mobile SEO",
-              "content": [
-                "Use local keywords in your meta tags and headings (e.g., 'Midland ice cream').",
-                "Optimize your Google Business Profile with mobile-friendly features like directions and click-to-call buttons.",
-                "Regularly test your website’s mobile performance using tools like Google’s Mobile-Friendly Test."
-              ]
-            }
-          ],
-          "image": {
-            "src": "/path-to-image.jpg",
-            "alt": "Mobile-friendly website mockup"
+        "content": {
+          "introduction": "A mobile-friendly website is no longer a luxury—it’s a necessity. As of 2024, over 60% of web traffic comes from mobile devices, and this trend continues to grow. For businesses in Midland-Odessa, this is especially critical because many customers search for services on their phones while on the go. If your website isn’t optimized for mobile users, you’re not just losing potential traffic—you’re losing customers."
+        },
+        "sections": [
+          {
+            "heading": "User Experience",
+            "subsections": [
+              {
+                "title": "Why User Experience Matters",
+                "content": [
+                  { "text": "First Impressions Count:", "bold": true, "suffix": " Research shows it takes only 0.05 seconds for users to form an opinion about your website. A clunky or slow site leaves a bad impression." },
+                  { "text": "High Bounce Rates:", "bold": true, "suffix": " According to Google, 53% of mobile users leave a site that takes longer than 3 seconds to load." },
+                  { "text": "Navigation Issues:", "bold": true, "suffix": " Websites that require constant zooming or have broken layouts frustrate users, leading to lost trust." }
+                ]
+              },
+              {
+                "title": "Specific Example: Midland Coffee Co.",
+                "content": [
+                  { "text": "Midland Coffee Co. saw a 40% drop in mobile visitors after launching a site that wasn’t responsive.", "bold": true },
+                  { "text": "After redesigning their website to be mobile-friendly,", "bold": true, "suffix": " they experienced a 25% increase in mobile orders within three months. Customers loved the clean design and easy-to-use interface." }
+                ]
+              },
+              {
+                "title": "How Mobile Optimization Helps",
+                "content": [
+                  { "text": "Responsive Design:", "bold": true, "suffix": " Ensures your website adjusts seamlessly to any screen size." },
+                  { "text": "Fast Loading:", "bold": true, "suffix": " Compress images and use efficient code to reduce loading times." },
+                  { "text": "Simplified Navigation:", "bold": true, "suffix": " Clear menus and clickable buttons improve the overall experience." }
+                ]
+              }
+            ]
+          },
+          {
+            "heading": "SEO Benefits",
+            "subsections": [
+              {
+                "title": "What Is Mobile-First Indexing?",
+                "content": [
+                  { "text": "Google primarily evaluates the mobile version of your site when determining rankings.", "bold": true },
+                  "If your website isn’t mobile-friendly, you could be invisible to potential customers."
+                ]
+              },
+              {
+                "title": "Local SEO Advantages",
+                "content": [
+                  { "text": "Boost Visibility:", "bold": true, "suffix": " A mobile-optimized site improves your ranking in local searches. For example, when someone searches for 'best gym in Midland,' a mobile-friendly site increases your chances of appearing at the top." },
+                  { "text": "Drive In-Store Visits:", "bold": true, "suffix": " According to Google, 76% of people who search for something nearby visit a business within a day." }
+                ]
+              },
+              {
+                "title": "Customer Pain Points",
+                "content": [
+                  { "text": "Frustration with Slow Loading Times:", "bold": true, "suffix": " 'I was looking for a local plumber on my phone, but the site took forever to load. I gave up and called someone else.'" },
+                  { "text": "Difficulty Finding Contact Info:", "bold": true, "suffix": " 'A bakery’s website didn’t work well on my phone. I couldn’t find their phone number without scrolling everywhere.'" },
+                  { "text": "Non-Clickable Features:", "bold": true, "suffix": " 'I tried to book an appointment on a salon’s website, but the button didn’t work on mobile.'" }
+                ]
+              },
+              {
+                "title": "Practical Tips for Mobile SEO",
+                "content": [
+                  { "text": "Use local keywords in your meta tags and headings", "bold": true, "suffix": " (e.g., 'Midland ice cream')." },
+                  { "text": "Optimize your Google Business Profile with mobile-friendly features", "bold": true, "suffix": " like directions and click-to-call buttons." },
+                  { "text": "Regularly test your website’s mobile performance using tools", "bold": true, "suffix": " like Google’s Mobile-Friendly Test." }
+                ]
+              }
+            ]
+          },
+          {
+            "heading": "Why Midland-Odessa Businesses Should Act Now",
+            "subsections": [
+              {
+                "title": "Industry Examples",
+                "content": [
+                  { "text": "Restaurant Websites:", "bold": true, "suffix": " Customers searching for menus or locations expect fast, clear navigation." },
+                  { "text": "Service Providers:", "bold": true, "suffix": " Whether it’s plumbing or cooking classes, easy contact forms and click-to-call features are vital." },
+                  { "text": "Retail Stores:", "bold": true, "suffix": " E-commerce sites with mobile-friendly product pages see higher conversions." }
+                ]
+              },
+              {
+                "title": "Case Study: Odessa Hardware",
+                "content": [
+                  { "text": "Odessa Hardware increased in-store visits by 30% after optimizing their website for mobile users.", "bold": true },
+                  "Customers appreciated the ability to browse inventory and call directly from their phones."
+                ]
+              }
+            ]
           }
-        },
-        {
-          "heading": "Why Midland-Odessa Businesses Should Act Now",
-          "subsections": [
-            {
-              "title": "Industry Examples",
-              "content": [
-                "Restaurant Websites: Customers searching for menus or locations expect fast, clear navigation.",
-                "Service Providers: Whether it’s plumbing or cooking classes, easy contact forms and click-to-call features are vital.",
-                "Retail Stores: E-commerce sites with mobile-friendly product pages see higher conversions."
-              ]
-            },
-            {
-              "title": "Case Study: Odessa Hardware",
-              "content": [
-                "Odessa Hardware increased in-store visits by 30% after optimizing their website for mobile users. Customers appreciated the ability to browse inventory and call directly from their phones."
-              ]
-            }
-          ]
-        }
-      ],
-      "conclusion": "A mobile-friendly website isn’t just a technical upgrade—it’s an investment in the future of your business. From enhancing the user experience to improving search rankings, the benefits are clear. Don’t let your competitors capture your audience because your site isn’t up to par.",
-      "cta": "Ready to transform your website? Contact NextWave | Web Studio today for a free mobile optimization consultation. Let us help you create a site that drives traffic, engages customers, and grows your business."
+        ],
+        "conclusion": "A mobile-friendly website isn’t just a technical upgrade—it’s an investment in the future of your business. From enhancing the user experience to improving search rankings, the benefits are clear. Don’t let your competitors capture your audience because your site isn’t up to par.",
+        "cta": "Ready to transform your website? Contact NextWave | Web Studio today for a free mobile optimization consultation. Let us help you create a site that drives traffic, engages customers, and grows your business."
     },
     {
         "id": 2,
@@ -107,8 +105,8 @@
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
         "titleImg": {
-            "heroImg": "/images/blogs/optimization.png",
-            "heroAlt": "optimization-img"
+          "heroImg": "/images/blogs/optimization.png",
+          "heroAlt": "optimization-img"
         },
         "content": {
           "introduction": "Imagine searching for 'coffee shop near me' or 'emergency plumber in Midland.' In both cases, the results you see are powered by Local SEO. For small businesses in Midland-Odessa, being visible in local search results can mean the difference between thriving and being overlooked. Local SEO focuses on optimizing your online presence to attract more customers from relevant local searches."
@@ -120,9 +118,9 @@
               {
                 "title": "Key Components of Local SEO",
                 "content": [
-                  "Google Business Profile (GBP): Your GBP is the foundation of Local SEO. This free tool lets you control how your business appears on Google Search and Maps. Features like reviews, hours, directions, and photos play a critical role in customer decisions.",
-                  "Local Keywords: Phrases like '24-hour locksmith in Odessa' or 'Mexican restaurant near Permian Basin' are examples of localized keywords that help businesses appear in the right searches.",
-                  "Reviews and Citations: Online reviews signal trust to potential customers and Google. Citations (mentions of your business name, address, and phone number on other websites) improve your local credibility."
+                  { "text": "Google Business Profile (GBP):", "bold": true, "suffix": " Your GBP is the foundation of Local SEO. This free tool lets you control how your business appears on Google Search and Maps. Features like reviews, hours, directions, and photos play a critical role in customer decisions." },
+                  { "text": "Local Keywords:", "bold": true, "suffix": " Phrases like '24-hour locksmith in Odessa' or 'Mexican restaurant near Permian Basin' are examples of localized keywords that help businesses appear in the right searches." },
+                  { "text": "Reviews and Citations:", "bold": true, "suffix": " Online reviews signal trust to potential customers and Google. Citations (mentions of your business name, address, and phone number on other websites) improve your local credibility." }
                 ]
               }
             ]
@@ -133,20 +131,20 @@
               {
                 "title": "Increased Visibility",
                 "content": [
-                  "Local SEO positions your business at the top of search results, especially in the Local Pack—the box of businesses shown prominently on Google Maps. For example, if someone searches 'family-owned bakery in Midland,' your optimized business profile could land you in this prime spot."
+                  { "text": "Local SEO positions your business at the top of search results,", "bold": true, "suffix": " especially in the Local Pack—the box of businesses shown prominently on Google Maps. For example, if someone searches 'family-owned bakery in Midland,' your optimized business profile could land you in this prime spot." }
                 ]
               },
               {
                 "title": "Customer Behavior",
                 "content": [
-                  "76% of people who search for something nearby visit a business within a day.",
-                  "28% of local searches result in a purchase. When your business is optimized for local searches, you meet customers exactly when they’re ready to buy."
+                  { "text": "76% of people who search for something nearby visit a business within a day.", "bold": true },
+                  { "text": "28% of local searches result in a purchase.", "bold": true, "suffix": " When your business is optimized for local searches, you meet customers exactly when they’re ready to buy." }
                 ]
               },
               {
                 "title": "Competitive Advantage",
                 "content": [
-                  "Many small businesses in Midland-Odessa haven’t fully embraced Local SEO. By taking simple steps like optimizing your GBP and gathering reviews, you can outperform competitors who rely solely on traditional advertising."
+                  { "text": "Many small businesses in Midland-Odessa haven’t fully embraced Local SEO.", "bold": true, "suffix": " By taking simple steps like optimizing your GBP and gathering reviews, you can outperform competitors who rely solely on traditional advertising." }
                 ]
               }
             ]
@@ -157,36 +155,36 @@
               {
                 "title": "1. Optimize Your Google Business Profile",
                 "content": [
-                  "Ensure your GBP is claimed, verified, and complete.",
-                  "Add accurate business details: hours, location, phone number, and website.",
-                  "Use high-quality images to showcase your business.",
-                  "Update regularly with posts, promotions, or special events."
+                  { "text": "Ensure your GBP is claimed, verified, and complete.", "bold": true },
+                  { "text": "Add accurate business details:", "bold": true, "suffix": " hours, location, phone number, and website." },
+                  { "text": "Use high-quality images to showcase your business.", "bold": true },
+                  { "text": "Update regularly with posts, promotions, or special events.", "bold": true }
                 ]
               },
               {
                 "title": "2. Use Local Keywords",
                 "content": [
-                  "Include keywords that reflect your location and services in your website content, meta descriptions, and blog posts.",
-                  "Examples: 'Custom cowboy boots in Odessa,' 'Authentic barbecue catering in Midland.'"
+                  { "text": "Include keywords that reflect your location and services in your website content, meta descriptions, and blog posts.", "bold": true },
+                  { "text": "Examples:", "bold": true, "suffix": " 'Custom cowboy boots in Odessa,' 'Authentic barbecue catering in Midland.'" }
                 ]
               },
               {
                 "title": "3. Consistent NAP (Name, Address, Phone) Information",
                 "content": [
-                  "Ensure your NAP information is consistent across all platforms, including your website, GBP, and directories like Yelp or TripAdvisor."
+                  { "text": "Ensure your NAP information is consistent across all platforms,", "bold": true, "suffix": " including your website, GBP, and directories like Yelp or TripAdvisor." }
                 ]
               },
               {
                 "title": "4. Gather and Manage Reviews",
                 "content": [
-                  "Ask happy customers to leave reviews on Google.",
-                  "Respond to every review—both positive and negative—to show you value feedback."
+                  { "text": "Ask happy customers to leave reviews on Google.", "bold": true },
+                  { "text": "Respond to every review—both positive and negative—to show you value feedback.", "bold": true }
                 ]
               },
               {
                 "title": "5. Ensure Mobile-Friendliness",
                 "content": [
-                  "Many local searches are conducted on mobile devices. A mobile-friendly website ensures potential customers can easily navigate, contact you, or place an order."
+                  { "text": "Many local searches are conducted on mobile devices.", "bold": true, "suffix": " A mobile-friendly website ensures potential customers can easily navigate, contact you, or place an order." }
                 ]
               }
             ]
@@ -197,13 +195,15 @@
               {
                 "title": "Plumbing Services in Odessa",
                 "content": [
-                  "A local plumbing company optimized their GBP by adding photos of completed jobs and responding to customer reviews. Within six months, they appeared in the top 3 results for 'emergency plumber in Odessa,' resulting in a 35% increase in call volume."
+                  { "text": "A local plumbing company optimized their GBP by adding photos of completed jobs and responding to customer reviews.", "bold": true },
+                  { "text": "Within six months,", "bold": true, "suffix": " they appeared in the top 3 results for 'emergency plumber in Odessa,' resulting in a 35% increase in call volume." }
                 ]
               },
               {
                 "title": "Craft Breweries in Midland",
                 "content": [
-                  "A Midland brewery focused on adding location-specific keywords to their website and encouraging customers to leave reviews. This strategy increased their walk-in traffic by 20% after their business began ranking for 'local brewery near me.'"
+                  { "text": "A Midland brewery focused on adding location-specific keywords to their website and encouraging customers to leave reviews.", "bold": true },
+                  { "text": "This strategy increased their walk-in traffic by 20% after their business began ranking for 'local brewery near me.'", "bold": true }
                 ]
               }
             ]
@@ -218,8 +218,8 @@
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
         "titleImg": {
-            "heroImg": "/images/blogs/redesign.png",
-            "heroAlt": "redesign-img"
+          "heroImg": "/images/blogs/redesign.png",
+          "heroAlt": "redesign-img"
         },
         "content": {
           "introduction": "Your website is your digital storefront—it’s often the first impression potential customers have of your business. But as technology evolves and user expectations shift, even the best websites can become outdated. A clunky design, slow load times, or poor mobile compatibility might be costing you customers without you even realizing it. In this blog, we’ll cover the top five signs it’s time to give your website a makeover and how a redesign can boost your business."
@@ -231,15 +231,16 @@
               {
                 "title": "How to Spot Outdated Design",
                 "content": [
-                  "Non-Responsive Layout: If your site doesn’t adapt to different screen sizes, it’s time for an upgrade.",
-                  "Clunky Navigation: Hard-to-find menus or inconsistent layouts frustrate users.",
-                  "Old-Fashioned Styles: Overused gradients, drop shadows, or stocky fonts scream 'early 2010s.'"
+                  { "text": "Non-Responsive Layout:", "bold": true, "suffix": " If your site doesn’t adapt to different screen sizes, it’s time for an upgrade." },
+                  { "text": "Clunky Navigation:", "bold": true, "suffix": " Hard-to-find menus or inconsistent layouts frustrate users." },
+                  { "text": "Old-Fashioned Styles:", "bold": true, "suffix": " Overused gradients, drop shadows, or stocky fonts scream 'early 2010s.'" }
                 ]
               },
               {
                 "title": "The Impact of Outdated Design",
                 "content": [
-                  "A study by Stanford University found that 75% of users judge a company’s credibility based on their website design. If your site looks old, potential customers might question the quality of your services."
+                  { "text": "A study by Stanford University found that 75% of users judge a company’s credibility based on their website design.", "bold": true },
+                  "If your site looks old, potential customers might question the quality of your services."
                 ]
               }
             ]
@@ -250,15 +251,16 @@
               {
                 "title": "Why Your Website Might Be Slow",
                 "content": [
-                  "Outdated Code: Older platforms or poorly written code can bog down your site.",
-                  "Unoptimized Images: Large, uncompressed files significantly impact load speed.",
-                  "Excessive Plugins: Overloaded third-party tools can drag performance."
+                  { "text": "Outdated Code:", "bold": true, "suffix": " Older platforms or poorly written code can bog down your site." },
+                  { "text": "Unoptimized Images:", "bold": true, "suffix": " Large, uncompressed files significantly impact load speed." },
+                  { "text": "Excessive Plugins:", "bold": true, "suffix": " Overloaded third-party tools can drag performance." }
                 ]
               },
               {
                 "title": "The Cost of a Slow Site",
                 "content": [
-                  "Google reports that 53% of mobile users abandon a site if it takes longer than 3 seconds to load. Every extra second costs you potential sales and increases your bounce rate."
+                  { "text": "Google reports that 53% of mobile users abandon a site if it takes longer than 3 seconds to load.", "bold": true },
+                  "Every extra second costs you potential sales and increases your bounce rate."
                 ]
               }
             ]
@@ -269,15 +271,15 @@
               {
                 "title": "Signs of a Bad Mobile Experience",
                 "content": [
-                  "Visitors have to pinch and zoom to read text.",
-                  "Buttons or links are too small to tap easily.",
-                  "Images and layouts break on smaller screens."
+                  { "text": "Visitors have to pinch and zoom to read text.", "bold": true },
+                  { "text": "Buttons or links are too small to tap easily.", "bold": true },
+                  { "text": "Images and layouts break on smaller screens.", "bold": true }
                 ]
               },
               {
                 "title": "Why Mobile Optimization Matters",
                 "content": [
-                  "Mobile users are less patient than desktop users. A seamless mobile experience not only keeps them engaged but also improves your search engine rankings, thanks to Google’s mobile-first indexing."
+                  { "text": "Mobile users are less patient than desktop users.", "bold": true, "suffix": " A seamless mobile experience not only keeps them engaged but also improves your search engine rankings, thanks to Google’s mobile-first indexing." }
                 ]
               }
             ]
@@ -288,15 +290,15 @@
               {
                 "title": "Common Causes of Low Engagement",
                 "content": [
-                  "Dated Features: Users expect interactive elements like chatbots, dynamic CTAs, and personalized recommendations.",
-                  "Confusing Navigation: Poorly structured menus or unclear calls-to-action lead to user frustration.",
-                  "Lack of Trust Signals: Missing testimonials, reviews, or secure payment badges can drive users away."
+                  { "text": "Dated Features:", "bold": true, "suffix": " Users expect interactive elements like chatbots, dynamic CTAs, and personalized recommendations." },
+                  { "text": "Confusing Navigation:", "bold": true, "suffix": " Poorly structured menus or unclear calls-to-action lead to user frustration." },
+                  { "text": "Lack of Trust Signals:", "bold": true, "suffix": " Missing testimonials, reviews, or secure payment badges can drive users away." }
                 ]
               },
               {
                 "title": "The Numbers Don’t Lie",
                 "content": [
-                  "Research shows that websites with modern features like chatbots and video CTAs see 2x higher engagement rates compared to static sites."
+                  { "text": "Research shows that websites with modern features like chatbots and video CTAs see 2x higher engagement rates compared to static sites.", "bold": true }
                 ]
               }
             ]
@@ -307,14 +309,14 @@
               {
                 "title": "Why Updates Are Important",
                 "content": [
-                  "Businesses evolve, and your website should reflect that. Whether it’s new services, fresh content, or promotions, regular updates are essential.",
-                  "Older platforms or custom-built systems can make simple changes a hassle."
+                  { "text": "Businesses evolve, and your website should reflect that.", "bold": true, "suffix": " Whether it’s new services, fresh content, or promotions, regular updates are essential." },
+                  { "text": "Older platforms or custom-built systems can make simple changes a hassle.", "bold": true }
                 ]
               },
               {
                 "title": "The Solution",
                 "content": [
-                  "Modern CMS platforms like WordPress or dynamic frameworks like React allow for easy updates and integrations, ensuring your site evolves with your business."
+                  { "text": "Modern CMS platforms like WordPress or dynamic frameworks like React allow for easy updates and integrations,", "bold": true, "suffix": " ensuring your site evolves with your business." }
                 ]
               }
             ]
@@ -329,8 +331,8 @@
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
         "titleImg": {
-            "heroImg": "/images/blogs/businessProfile.png",
-            "heroAlt": "businessProfile-img"
+          "heroImg": "/images/blogs/businessProfile.png",
+          "heroAlt": "businessProfile-img"
         },
         "content": {
           "introduction": "For local businesses, visibility is everything. If customers can’t find you online, they’ll find your competitors instead. That’s where Google Business Profile (GBP) comes in. This free tool lets you showcase your business, appear in local search results, and engage with customers—all from one platform. In this blog, we’ll explore why Google Business Profile is so essential for local businesses and how optimizing it can drive more traffic, leads, and sales for your business."
@@ -342,10 +344,10 @@
               {
                 "title": "Key Features",
                 "content": [
-                  "Business Details: Share your address, phone number, hours of operation, and website link.",
-                  "Customer Reviews: Collect and respond to feedback from customers.",
-                  "Photos and Videos: Showcase your location, products, and services.",
-                  "Posts and Offers: Highlight promotions, updates, or events."
+                  { "text": "Business Details:", "bold": true, "suffix": " Share your address, phone number, hours of operation, and website link." },
+                  { "text": "Customer Reviews:", "bold": true, "suffix": " Collect and respond to feedback from customers." },
+                  { "text": "Photos and Videos:", "bold": true, "suffix": " Showcase your location, products, and services." },
+                  { "text": "Posts and Offers:", "bold": true, "suffix": " Highlight promotions, updates, or events." }
                 ]
               }
             ]
@@ -356,19 +358,19 @@
               {
                 "title": "Improved Visibility",
                 "content": [
-                  "A well-optimized Google Business Profile helps your business appear in Google Maps and the Local Pack—the list of top three local results on Google Search. Businesses in these spots get significantly more clicks and calls."
+                  { "text": "A well-optimized Google Business Profile helps your business appear in Google Maps and the Local Pack,", "bold": true, "suffix": " the list of top three local results on Google Search. Businesses in these spots get significantly more clicks and calls." }
                 ]
               },
               {
                 "title": "Builds Trust",
                 "content": [
-                  "Accurate business details, positive reviews, and regular updates show customers that your business is professional and reliable. According to BrightLocal, 88% of customers trust online reviews as much as personal recommendations."
+                  { "text": "Accurate business details, positive reviews, and regular updates show customers that your business is professional and reliable.", "bold": true, "suffix": " According to BrightLocal, 88% of customers trust online reviews as much as personal recommendations." }
                 ]
               },
               {
                 "title": "Drives Traffic and Conversions",
                 "content": [
-                  "An optimized GBP encourages customers to:",
+                  { "text": "An optimized GBP encourages customers to:", "bold": true },
                   "Visit your store by providing clear directions.",
                   "Call you directly with a single tap.",
                   "Click on your website to learn more or make a purchase."
@@ -382,50 +384,43 @@
               {
                 "title": "Claim and Verify Your Profile",
                 "content": [
-                  {
-                    "text": "Visit the",
-                    "link": {
-                      "text": "Google Business Profile Manager",
-                      "url": "https://www.google.com/business/"
-                    },
-                    "end": "and search for your business. Claim ownership and follow Google’s steps to verify your listing (via phone, email, or mail)."
-                  }
+                  { "text": "Visit the", "link": { "text": "Google Business Profile Manager", "url": "https://www.google.com/business/" }, "end": " and search for your business. Claim ownership and follow Google’s steps to verify your listing (via phone, email, or mail)." }
                 ]
               },
               {
                 "title": "Complete All Business Information",
                 "content": [
-                  "Include your address, phone number, and hours of operation.",
-                  "Add special hours for holidays to avoid confusing customers.",
-                  "Write a clear, engaging description that highlights your unique offerings."
+                  { "text": "Include your address, phone number, and hours of operation.", "bold": true },
+                  { "text": "Add special hours for holidays to avoid confusing customers.", "bold": true },
+                  { "text": "Write a clear, engaging description that highlights your unique offerings.", "bold": true }
                 ]
               },
               {
                 "title": "Add High-Quality Photos",
                 "content": [
-                  "Include photos of your storefront, interior, and products.",
-                  "Use professional images where possible—profiles with high-quality photos get 42% more requests for directions, according to Google."
+                  { "text": "Include photos of your storefront, interior, and products.", "bold": true },
+                  { "text": "Use professional images where possible—profiles with high-quality photos get 42% more requests for directions, according to Google.", "bold": true }
                 ]
               },
               {
                 "title": "Use Keywords in Your Profile Description",
                 "content": [
-                  "Research local keywords relevant to your business and incorporate them naturally.",
-                  "Examples: 'Freshly baked pastries in downtown Odessa,' '24/7 fitness center near Permian Basin.'"
+                  { "text": "Research local keywords relevant to your business and incorporate them naturally.", "bold": true },
+                  { "text": "Examples:", "bold": true, "suffix": " 'Freshly baked pastries in downtown Odessa,' '24/7 fitness center near Permian Basin.'" }
                 ]
               },
               {
                 "title": "Respond to Reviews",
                 "content": [
-                  "Reply to all reviews—positive and negative. This shows customers that you value their feedback.",
-                  "Example response to a negative review: 'Thank you for your feedback. We’re sorry to hear about your experience and would love the opportunity to make it right. Please reach out to us at [email].'"
+                  { "text": "Reply to all reviews—positive and negative. This shows customers that you value their feedback.", "bold": true },
+                  { "text": "Example response to a negative review:", "bold": true, "suffix": " 'Thank you for your feedback. We’re sorry to hear about your experience and would love the opportunity to make it right. Please reach out to us at [email].'" }
                 ]
               },
               {
                 "title": "Regularly Post Updates and Offers",
                 "content": [
-                  "Use the 'Posts' feature to share updates, events, or promotions.",
-                  "Example: 'Join us this Friday for our grand opening! Free coffee for the first 50 visitors.'"
+                  { "text": "Use the 'Posts' feature to share updates, events, or promotions.", "bold": true },
+                  { "text": "Example:", "bold": true, "suffix": " 'Join us this Friday for our grand opening! Free coffee for the first 50 visitors.'" }
                 ]
               }
             ]
@@ -436,25 +431,25 @@
               {
                 "title": "Leaving Profiles Incomplete",
                 "content": [
-                  "Missing details like your address or hours can frustrate potential customers."
+                  { "text": "Missing details like your address or hours can frustrate potential customers.", "bold": true }
                 ]
               },
               {
                 "title": "Ignoring Customer Reviews",
                 "content": [
-                  "Unacknowledged reviews (especially negative ones) leave a bad impression."
+                  { "text": "Unacknowledged reviews (especially negative ones) leave a bad impression.", "bold": true }
                 ]
               },
               {
                 "title": "Using Poor-Quality Photos",
                 "content": [
-                  "Blurry or irrelevant images make your profile look unprofessional."
+                  { "text": "Blurry or irrelevant images make your profile look unprofessional.", "bold": true }
                 ]
               },
               {
                 "title": "Failing to Update Holiday Hours",
                 "content": [
-                  "Many businesses lose customers by not updating special hours during holidays, leading to confusion and lost opportunities."
+                  { "text": "Many businesses lose customers by not updating special hours during holidays,", "bold": true, "suffix": " leading to confusion and lost opportunities." }
                 ]
               }
             ]
