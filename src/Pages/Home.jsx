@@ -1,5 +1,6 @@
 import React from 'react'
 import { CaseStudy, Hero, ServicesSection, PricingTable, Contact, Signup } from '../Components'
+import FeaturedPosts from '../Components/Blogs/FeaturedPosts'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
         <ServicesSection />
         <PricingTable />
         <Signup />
+        <FeaturedPosts />
     </div>
   )
 }
