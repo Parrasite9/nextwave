@@ -97,7 +97,8 @@
           }
         ],
         "conclusion": "A mobile-friendly website isn’t just a technical upgrade—it’s an investment in the future of your business. From enhancing the user experience to improving search rankings, the benefits are clear. Don’t let your competitors capture your audience because your site isn’t up to par.",
-        "cta": "Ready to transform your website? Contact NextWave | Web Studio today for a free mobile optimization consultation. Let us help you create a site that drives traffic, engages customers, and grows your business."
+        "cta": "Ready to transform your website? Contact NextWave | Web Studio today for a free mobile optimization consultation. Let us help you create a site that drives traffic, engages customers, and grows your business.",
+        "ctaButton": "Schedule A Free Consultation"
     },
     {
         "id": 2,
@@ -210,7 +211,8 @@
           }
         ],
         "conclusion": "Local SEO is one of the most powerful tools for small businesses in Midland-Odessa to increase visibility, attract customers, and stay competitive. By optimizing your Google Business Profile, using local keywords, and gathering reviews, you position your business as the go-to choice for customers searching for services near them.",
-        "cta": "Want to make your business the top choice in local searches? Contact NextWave | Web Studio today for a free Local SEO audit. Let us help you rank higher, attract more customers, and grow your business."
+        "cta": "Want to make your business the top choice in local searches? Contact NextWave | Web Studio today for a free Local SEO audit. Let us help you rank higher, attract more customers, and grow your business.",
+        "ctaButton": "Schedule A Free SEO Audit"
     },
     {
         "id": 3,
@@ -323,7 +325,8 @@
           }
         ],
         "conclusion": "If your website shows any of these signs, it’s likely time for a redesign. An updated, modern website can improve user experience, boost engagement, and help your business stand out in today’s competitive market.",
-        "cta": "Think your website might need a refresh? Contact NextWave | Web Studio today for a free website audit. Let’s create a site that not only looks great but drives results for your business."
+        "cta": "Think your website might need a refresh? Contact NextWave | Web Studio today for a free website audit. Let’s create a site that not only looks great but drives results for your business.",
+        "ctaButton": "Schedule A Free Website Audit"
     },
     {
         "id": 4,
@@ -456,7 +459,8 @@
           }
         ],
         "conclusion": "A well-optimized Google Business Profile is one of the most effective tools for boosting your local business. By taking the time to claim your profile, provide accurate information, and engage with customers, you’ll not only increase your visibility but also build trust and drive more traffic.",
-        "cta": "Need help optimizing your Google Business Profile? Contact NextWave | Web Studio today for a free consultation. Let us help you stand out in local searches and connect with more customers."
+        "cta": "Need help optimizing your Google Business Profile? Contact NextWave | Web Studio today for a free consultation. Let us help you stand out in local searches and connect with more customers.",
+        "ctaButton": "Schedule A Free Consultation"
     },
     {
         "id": 5,
@@ -541,7 +545,7 @@
         "cta": "Need help preparing your website for 2025? Contact NextWave | Web Studio today for a free consultation. Let us bring these trends to life and set your business apart.",
         "ctaButton": "Schedule A Free Consultation"
     }
-      
+    
       
       
       
