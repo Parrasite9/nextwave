@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import blogsData from "../Blogs/Blogs.json";
+import blogsData from "./Blogs.json";
 import { generateSlug } from "../../Globals/Utils";
 import { Link } from "react-router-dom";
+import RecommendedPosts from "./RecommendedPosts";
 
 const BlogPost = () => {
+    console.log('blogsData:', blogsData);
   const { slug } = useParams();
   const blog = blogsData.find((b) => generateSlug(b.title) === slug);
-
   const [activeSection, setActiveSection] = useState("");
   const detailsRef = useRef(null);
 
@@ -147,8 +148,14 @@ const BlogPost = () => {
           {/* Call-to-Action */}
           <p className="mt-6 text-lg font-bold">{blog.cta}</p>
           <Link to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call"><button className="py-2 px-4 mt-4 rounded-md bg-bright-teal text-cool-white border-2 border-bright-teal hover:opacity-90 transition-opacity duration-300">{blog.ctaButton}</button></Link>
+              {/* <RecommendedPosts currentPostId={blog.id} recommended={blog.recommended} /> */}
+
         </div>
+        {/* <RecommendedPosts currentPostId={blog.id} recommended={blog.recommended} /> */}
+
       </div>
+      <RecommendedPosts currentPostId={blog.id} />
+
     </div>
   );
 };

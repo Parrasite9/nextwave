@@ -4,6 +4,8 @@
         "title": "Why Every Midland Business Needs a Mobile-Friendly Website",
         "author": "NextWave | Web Studio",
         "date": "2024-11-20",
+        "tags": ["Mobile Optimization", "User Experience", "Local Business", "Midland-Odessa"],
+        "featured": true,
         "titleImg": {
           "heroImg": "/images/blogs/responsive.png",
           "heroAlt": "responsive-img"
@@ -105,6 +107,8 @@
         "title": "How Local SEO Can Help Your Midland-Odessa Business Rank Higher on Google",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "tags": ["Local SEO", "Google Ranking", "SEO", "Midland-Odessa"],
+        "featured": true,
         "titleImg": {
           "heroImg": "/images/blogs/optimization.png",
           "heroAlt": "optimization-img"
@@ -219,6 +223,8 @@
         "title": "Top 5 Signs It’s Time to Redesign Your Website",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "tags": ["Website Redesign", "User Experience", "Web Design", "Website Performance"],
+        "featured": true,
         "titleImg": {
           "heroImg": "/images/blogs/redesign.png",
           "heroAlt": "redesign-img"
@@ -333,6 +339,8 @@
         "title": "How to Boost Your Local Business with Google Business Profile Optimization",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "tags": ["Google Business Profile", "Local Business", "Optimization", "Midland-Odessa"],
+        "featured": false,
         "titleImg": {
           "heroImg": "/images/blogs/businessProfile.png",
           "heroAlt": "businessProfile-img"
@@ -467,6 +475,8 @@
         "title": "Top 5 Web Design Trends to Watch for in 2025",
         "author": "NextWave | Web Studio",
         "date": "2024-11-22",
+        "tags": ["Web Design Trends", "Web Development", "UI/UX Design", "2025"],
+        "featured": false,
         "titleImg": {
             "heroImg": "/images/blogs/webDesign.png",
             "heroAlt": "webDesign-img"
@@ -550,6 +560,8 @@
         "title": "5 Effective Strategies to Boost Your Online Presence Without Breaking the Bank",
         "author": "NextWave | Web Studio",
         "date": "2024-11-26",
+        "tags": ["Website Redesign", "Website Maintenance", "User Experience", "Business Growth"],
+        "featured": true,
         "titleImg": {
             "heroImg": "/images/blogs/savings.png",
             "heroAlt": "onlinePresence-img"
@@ -671,6 +683,8 @@
         "title": "The Hidden Costs of NOT Updating Your Website: Is It Time for a Redesign?",
         "author": "NextWave | Web Studio",
         "date": "2024-11-26",
+        "tags": ["Professional Website", "Business Credibility", "Trust", "Online Presence"],
+        "featured": false,
         "titleImg": {
             "heroImg": "/images/blogs/bear_market.png",
             "heroAlt": "hiddenCosts-img"
@@ -784,6 +798,8 @@
         "title": "Building Trust Online: How a Professional Website Boosts Your Business Credibility",
         "author": "NextWave | Web Studio",
         "date": "2024-11-26",
+        "tags": ["Professional Website", "Business Credibility", "Web Design", "User Experience", "Conversion Optimization"],
+        "featured": false,
         "titleImg": {
             "heroImg": "/images/blogs/approve.png",
             "heroAlt": "trustCredibility-img"
