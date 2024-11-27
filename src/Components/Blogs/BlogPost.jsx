@@ -15,6 +15,9 @@ const BlogPost = () => {
   useEffect(() => {
     if (!blog) return;
 
+    // Scroll to the top when the blog changes
+    window.scrollTo(0, 0);
+
     const handleScroll = () => {
       const sections = document.querySelectorAll(".blog-section");
       let current = "";
