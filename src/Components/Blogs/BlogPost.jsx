@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import blogsData from "../Blogs/Blogs.json";
 import { generateSlug } from "../../Globals/Utils";
+import { Link } from "react-router-dom";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -144,6 +145,7 @@ const BlogPost = () => {
 
           {/* Call-to-Action */}
           <p className="mt-6 text-lg font-bold">{blog.cta}</p>
+          <Link to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call"><button className="border-2 border-bright-teal py-2 px-4 mt-4 rounded-md hover:bg-bright-teal hover:text-cool-white">{blog.ctaButton}</button></Link>
         </div>
       </div>
     </div>
