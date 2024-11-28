@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import SharedLayout from './Globals/SharedLayout';
-import { CaseStudyDetails, CollectWebsiteURL, Contact, GetWebsite } from './Components';
+import { CaseStudyDetails, CollectWebsiteURL, Contact, GetWebsite, Cookies, Privacy, Terms } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import NotFound from './Pages/NotFound';
 import { CaseStudyProvider } from './Components/Data/CaseStudyContext';
@@ -25,12 +25,22 @@ function App() {
             <Route path="/free-google-report" element={<CollectWebsiteURL />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/404" element={<NotFound />} />
-            <Route path="*" element={<NotFound />} />
             <Route path='/get-website' element={<GetWebsite />} />
 
             {/* BLOGS  */}
             <Route path='/blogs' element={<BlogList />} />
             <Route path='/blog/:slug' element={<BlogPost />} />
+
+            {/* POLICIES  */}
+            <Route path="/cookies-policy" element={<Cookies />} />
+            <Route path="/privacy-policy" element={<Privacy />} />
+            <Route path="/terms-and-conditions" element={<Terms />} />
+  
+
+
+            {/* WILDCARD */}
+            <Route path="*" element={<NotFound />} />
+
           </Routes>
         </SharedLayout>
       </CaseStudyProvider>

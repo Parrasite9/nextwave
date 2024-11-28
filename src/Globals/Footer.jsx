@@ -12,12 +12,13 @@ const navLinks = [
   { name: 'Case Studies', path: '/#casestudy' },
   { name: 'Services', path: '/#services' },
   { name: 'Pricing', path: '/#pricing' },
+  { name: 'Blogs', path: '/blogs' },
   {
     name: 'Legal',
     subLinks: [
       { name: 'Terms and Conditions', path: '/terms-and-conditions' },
       { name: 'Privacy Policy', path: '/privacy-policy' },
-      { name: 'Cookie Policy', path: '/cookie-policy' },
+      { name: 'Cookies Policy', path: '/cookies-policy' },
     ],
   },
   { name: 'Contact', path: '/#contact' },
