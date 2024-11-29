@@ -1,4 +1,5 @@
 import React from 'react'
+import VoomlyEmbed from '../Video/Voomly/VoomlyEmbed'
 
 const Hero = () => {
   return (
@@ -29,9 +30,11 @@ const Hero = () => {
         </div>
 
         {/* IMAGE SECTION */}
-        <div className="image__section flex justify-center">
+        {/* <div className="image__section flex justify-center">
           <img className='w-full h-auto' src="/images/hero/herosvg3.gif" alt="mobile_hero" />
-        </div>
+        </div> */}
+
+        <VoomlyEmbed />
       </div>
 
       {/* SVG Wave */}
