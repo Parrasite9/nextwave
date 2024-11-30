@@ -4,6 +4,7 @@ import blogsData from "./Blogs.json";
 import { generateSlug } from "../../Globals/Utils";
 import { Link } from "react-router-dom";
 import RecommendedPosts from "./RecommendedPosts";
+import { Helmet } from "react-helmet";
 
 const BlogPost = () => {
     console.log('blogsData:', blogsData);
@@ -42,6 +43,17 @@ const BlogPost = () => {
 
   return (
     <div>
+
+      <Helmet>
+        <title>{blog.title} | NextWave | Web Studio</title>
+        <meta name="description" content={blog.content.introduction} />
+        <meta name="keywords" content={blog.tags.join(", ")} />
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:description" content={blog.content.introduction} />
+        <meta property="og:image" content={blog.titleImg.heroImg} />
+        <meta property="og:url" content={`https://nextwavewebstudio.com/blog/${slug}`} />
+      </Helmet>
+
       {/* Hero Section */}
       <div className="hero bg-gray-100 px-8 py-12 text-center lg:text-left lg:grid lg:grid-cols-2 lg:gap-4">
         <div className="lg:flex lg:flex-col lg:justify-center">
