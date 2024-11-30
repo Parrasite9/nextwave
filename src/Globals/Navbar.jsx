@@ -51,7 +51,9 @@ function Navbar() {
         // Mobile Navbar
         <div className="p-4 flex justify-between items-center">
           <Link to='/'>
-            <img src="/images/logo/logoDark.png" alt="Logo" className="h-auto w-1/3" />
+            <div className="h-auto w-2/3">
+              <img src="/images/logo/logoDark.png" alt="Logo"  />
+            </div>
           </Link>
 
           {/* Menu Toggle Button */}
