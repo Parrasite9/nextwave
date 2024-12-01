@@ -10,6 +10,7 @@ export { default as Services2 } from './Home/Services/Services2';
 export { default as ServicesSection } from './Home/Services/ServiceSection';
 export { default as Services3 } from './Home/Services/Services3';
 export { default as PricingTable } from './Home/PricingTable';
+export { default as Pricing2 } from './Home/Pricing2';
 export { default as Contact } from '../Pages/Contact';
 export { default as Signup } from './Home/Klaviyo/Signup';
 export { default as CollectWebsiteURL } from '../Pages/Klaviyo/CollectWebsiteURL';

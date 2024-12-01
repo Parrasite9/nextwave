@@ -6,10 +6,10 @@ import {
 	PricingTable,
 	Contact,
 	Signup,
+	Pricing2,
 } from '../Components';
 import FeaturedPosts from '../Components/Blogs/FeaturedPosts';
 import { Helmet } from 'react-helmet';
-import Pricing2 from '../Components/Home/Pricing2';
 
 function Home() {
 	return (
@@ -40,7 +40,6 @@ function Home() {
 			<Hero />
 			<CaseStudy />
 			<ServicesSection />
-			<PricingTable />
 			<Pricing2 />
 			<Signup />
 			<FeaturedPosts />
