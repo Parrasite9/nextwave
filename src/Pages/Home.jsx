@@ -2,6 +2,7 @@ import React from 'react'
 import { CaseStudy, Hero, ServicesSection, PricingTable, Contact, Signup } from '../Components'
 import FeaturedPosts from '../Components/Blogs/FeaturedPosts'
 import { Helmet } from 'react-helmet'
+import Pricing2 from '../Components/Home/Pricing2'
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         <CaseStudy />
         <ServicesSection />
         <PricingTable />
+        <Pricing2 />
         <Signup />
         <FeaturedPosts />
     </div>
