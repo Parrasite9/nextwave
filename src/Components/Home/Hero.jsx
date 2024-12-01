@@ -1,44 +1,59 @@
-import React from 'react'
-import VoomlyEmbed from '../Video/Voomly/VoomlyEmbed'
+import React from 'react';
+import VoomlyEmbed from '../Video/Voomly/VoomlyEmbed';
 
 const Hero = () => {
-  return (
-    <div className='hero-container relative px-8'>
-      {/* TEXT AND IMAGE SECTION  */}
-      <div className="hero grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-        {/* TEXT SECTION */}
-        <div className="text__section text-center md:text-left pt-8">
-          <h3 className='subheader font-bold text-xl py-4 md:text-2xl xl:text-3xl'>
-            A New Wave Of Online Success
-          </h3>
-          <h1 className='header font-extrabold text-4xl pb-4 md:text-5xl xl:text-6xl'>
-            Websites That Increase Your Revenue
-          </h1>
-          <p className='pb-4 md:text-xl'>
-            Maximize your ROI with websites designed to convert.
-          </p>
-          <button id='text-us-button' className='btn-cta mb-4 md:text-2xl md:py-3'>Text Us About A Project</button>
+	return (
+		<div className="hero-container relative px-8">
+			{/* TEXT AND IMAGE SECTION  */}
+			<div className="hero grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+				{/* TEXT SECTION */}
+				<div className="text__section text-center md:text-left pt-8">
+					<h3 className="subheader font-bold text-xl py-4 md:text-2xl xl:text-3xl">
+						A New Wave Of Online Success
+					</h3>
+					<h1 className="header font-extrabold text-4xl pb-4 md:text-5xl xl:text-6xl">
+						Websites That Increase Your Revenue
+					</h1>
+					<p className="pb-4 md:text-xl">
+						Maximize your ROI with websites designed to convert.
+					</p>
+					<button
+						id="text-us-button"
+						className="btn-cta mb-4 md:text-2xl md:py-3"
+					>
+						Text Us About A Project
+					</button>
 
-          {/* TRUST BADGES */}
-          <div className="hidden trustbadges grid grid-cols-2 gap-4 place-items-center
-                          lg:block lg:flex">
-            <img name="trustseal" alt="Moneyback Guarantee" src="https://trustlock.co/wp-content/uploads/2019/01/money-back-guarantee-badge-RECTANGLE-3.png" 
-                className='w-4/5 h-auto md:w-2/3 lg:w-1/3 xl:w-1/5' />
-            <img name="trustseal" alt="SSL Checkout" src="https://trustlock.co/wp-content/uploads/2019/01/ssl-checkout-trust-seal.png" 
-                className='w-4/5 h-auto md:w-2/3 lg:w-1/3 xl:w-1/5' />
-          </div>
-        </div>
+					{/* TRUST BADGES */}
+					<div
+						className="hidden trustbadges grid grid-cols-2 gap-4 place-items-center
+                          lg:block lg:flex"
+					>
+						<img
+							name="trustseal"
+							alt="Moneyback Guarantee"
+							src="https://trustlock.co/wp-content/uploads/2019/01/money-back-guarantee-badge-RECTANGLE-3.png"
+							className="w-4/5 h-auto md:w-2/3 lg:w-1/3 xl:w-1/5"
+						/>
+						<img
+							name="trustseal"
+							alt="SSL Checkout"
+							src="https://trustlock.co/wp-content/uploads/2019/01/ssl-checkout-trust-seal.png"
+							className="w-4/5 h-auto md:w-2/3 lg:w-1/3 xl:w-1/5"
+						/>
+					</div>
+				</div>
 
-        {/* IMAGE SECTION */}
-        {/* <div className="image__section flex justify-center">
+				{/* IMAGE SECTION */}
+				{/* <div className="image__section flex justify-center">
           <img className='w-full h-auto' src="/images/hero/herosvg3.gif" alt="mobile_hero" />
         </div> */}
 
-        <VoomlyEmbed />
-      </div>
+				<VoomlyEmbed />
+			</div>
 
-      {/* SVG Wave */}
-      {/* <div className="wave-container absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
+			{/* SVG Wave */}
+			{/* <div className="wave-container absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
         <svg
           className="wave-svg relative block w-full h-24"
           viewBox="0 0 1440 320"
@@ -50,9 +65,8 @@ const Hero = () => {
           ></path>
         </svg>
       </div> */}
+		</div>
+	);
+};
 
-    </div>
-  )
-}
-
-export default Hero
+export default Hero;

@@ -8,94 +8,121 @@ import ClearIcon from '@mui/icons-material/Clear';
 
 // Navigation links
 const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'Case Studies', path: '/#casestudy' },
-  { name: 'Services', path: '/#services' },
-  { name: 'Pricing', path: '/#pricing' },
-  { name: 'Contact', path: '/contact' },
+	{ name: 'Home', path: '/' },
+	{ name: 'Case Studies', path: '/#casestudy' },
+	{ name: 'Services', path: '/#services' },
+	{ name: 'Pricing', path: '/#pricing' },
+	{ name: 'Contact', path: '/contact' },
 ];
 
 function Navbar() {
-  const isMobile = useIsMobile();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const isMobile = useIsMobile();
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle menu and lock body scroll on mobile when menu is open
-  useEffect(() => {
-    document.body.style.overflow = isMenuOpen && isMobile ? 'hidden' : 'auto';
-  }, [isMenuOpen, isMobile]);
+	// Toggle menu and lock body scroll on mobile when menu is open
+	useEffect(() => {
+		document.body.style.overflow =
+			isMenuOpen && isMobile ? 'hidden' : 'auto';
+	}, [isMenuOpen, isMobile]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 
-  const renderNavLinks = (links) => (
-    <ul className={`flex ${isMobile ? 'flex-col space-y-4' : 'flex-row space-x-6'} items-center`}>
-      {links.map((link, index) => (
-        <li key={index} className="py-2 md:py-0">
-          <Link
-            smooth
-            to={link.path}
-            onClick={() => isMobile && setIsMenuOpen(false)}
-            className="hover:text-bright-teal transition duration-300"
-          >
-            {link.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
+	const renderNavLinks = (links) => (
+		<ul
+			className={`flex ${isMobile ? 'flex-col space-y-4' : 'flex-row space-x-6'} items-center`}
+		>
+			{links.map((link, index) => (
+				<li key={index} className="py-2 md:py-0">
+					<Link
+						smooth
+						to={link.path}
+						onClick={() => isMobile && setIsMenuOpen(false)}
+						className="hover:text-bright-teal transition duration-300"
+					>
+						{link.name}
+					</Link>
+				</li>
+			))}
+		</ul>
+	);
 
-  return (
-    <div className="mobile_navbar_container">
-      {isMobile ? (
-        // Mobile Navbar
-        <div className="p-4 flex justify-between items-center">
-          <Link to='/'>
-            <div className="h-auto w-2/3">
-              <img src="/images/logo/logoDark.png" alt="Logo"  />
-            </div>
-          </Link>
+	return (
+		<div className="mobile_navbar_container">
+			{isMobile ? (
+				// Mobile Navbar
+				<div className="p-4 flex justify-between items-center">
+					<Link to="/">
+						<div className="h-auto w-2/3">
+							<img src="/images/logo/logoDark.png" alt="Logo" />
+						</div>
+					</Link>
 
-          {/* Menu Toggle Button */}
-          {isMenuOpen ? (
-            <>
-              <ClearIcon onClick={toggleMenu} className="absolute text-yale-blue top-4 right-4 z-50" />
-              
-              {/* Mobile menu modal */}
-              <div className="fixed top-16 left-0 w-full h-full bg-cool-white z-40 flex flex-col justify-center items-center py-8 space-y-6">
-                {renderNavLinks(navLinks)}
-                <button className="btn-cta"
-                    onClick={() => window.open('https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card', '_blank')}>
-                      Request A Proposal
-                </button>
-              </div>
-            </>
-          ) : (
-            <MenuIcon onClick={toggleMenu} className="text-yale-blue" />
-          )}
-        </div>
-      ) : (
-        // Desktop Navbar
-        <div className="mx-auto px-10">
-          <nav className="flex items-center py-4 justify-between">
-            {/* Logo */}
-            <Link to="/">
-              <img src="/images/logo/logoDark.png" alt="Logo" className="h-auto w-full" />
-            </Link>
+					{/* Menu Toggle Button */}
+					{isMenuOpen ? (
+						<>
+							<ClearIcon
+								onClick={toggleMenu}
+								className="absolute text-yale-blue top-4 right-4 z-50"
+							/>
 
-            {/* Nav Links */}
-            {renderNavLinks(navLinks)}
+							{/* Mobile menu modal */}
+							<div className="fixed top-16 left-0 w-full h-full bg-cool-white z-40 flex flex-col justify-center items-center py-8 space-y-6">
+								{renderNavLinks(navLinks)}
+								<button
+									className="btn-cta"
+									onClick={() =>
+										window.open(
+											'https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card',
+											'_blank',
+										)
+									}
+								>
+									Request A Proposal
+								</button>
+							</div>
+						</>
+					) : (
+						<MenuIcon
+							onClick={toggleMenu}
+							className="text-yale-blue"
+						/>
+					)}
+				</div>
+			) : (
+				// Desktop Navbar
+				<div className="mx-auto px-10">
+					<nav className="flex items-center py-4 justify-between">
+						{/* Logo */}
+						<Link to="/">
+							<img
+								src="/images/logo/logoDark.png"
+								alt="Logo"
+								className="h-auto w-full"
+							/>
+						</Link>
 
-            {/* CTA  Button */}
-            <button className="btn-cta"
-                    onClick={() => window.open('https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card', '_blank')}>
-                      Request A Proposal
-            </button>
-          </nav>
-        </div>
-      )}
-    </div>
-  );
+						{/* Nav Links */}
+						{renderNavLinks(navLinks)}
+
+						{/* CTA  Button */}
+						<button
+							className="btn-cta"
+							onClick={() =>
+								window.open(
+									'https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card',
+									'_blank',
+								)
+							}
+						>
+							Request A Proposal
+						</button>
+					</nav>
+				</div>
+			)}
+		</div>
+	);
 }
 
 export default Navbar;

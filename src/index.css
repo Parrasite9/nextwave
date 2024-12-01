@@ -6,10 +6,10 @@
 @tailwind components;
 
 /* Import custom components before utilities */
-@import "./Styles/styles.css";
+@import './Styles/styles.css';
 
 @tailwind utilities;
 
 html {
-    @apply scroll-smooth;
+	@apply scroll-smooth;
 }

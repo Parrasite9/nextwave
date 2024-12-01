@@ -2,110 +2,107 @@
 
 /* Root Color Variables */
 :root {
-    --soft-navy: #19375f;          /* Dark blue for primary text */
-    --cool-white: #f7f9fb;         /* Softer white background */
-    --warm-gray: #e6e9ed;          /* Light gray for borders, backgrounds */
-    --yale-blue: #0D3B66;          /* Primary blue for buttons and text accents */
-    --bright-teal: #4A90E2;
-    --sky-blue: #5BC0EB;
-    --lemon-chiffon: #FAF0CA;      /* Light cream for sections */
-    --sandy-brown: #EE964B;        /* Warm orange for CTAs */
-    --naples-yellow: #F4D35E;      /* Soft yellow for secondary accents */
-    --tomato: #F95738;             /* Reserved red-orange for errors or alerts */
+	--soft-navy: #19375f; /* Dark blue for primary text */
+	--cool-white: #f7f9fb; /* Softer white background */
+	--warm-gray: #e6e9ed; /* Light gray for borders, backgrounds */
+	--yale-blue: #0d3b66; /* Primary blue for buttons and text accents */
+	--bright-teal: #4a90e2;
+	--sky-blue: #5bc0eb;
+	--lemon-chiffon: #faf0ca; /* Light cream for sections */
+	--sandy-brown: #ee964b; /* Warm orange for CTAs */
+	--naples-yellow: #f4d35e; /* Soft yellow for secondary accents */
+	--tomato: #f95738; /* Reserved red-orange for errors or alerts */
 }
 
 /* Custom divider with text */
 .divider {
-    @apply flex justify-center items-center my-4 md:my-8 lg:my-10 2xl:my-12;
-  }
-  
+	@apply flex justify-center items-center my-4 md:my-8 lg:my-10 2xl:my-12;
+}
+
 .divider-line {
-    @apply h-px bg-sandy-brown w-1/5 md:w-1/3;
+	@apply h-px bg-sandy-brown w-1/5 md:w-1/3;
 }
 
 .divider-text {
-    @apply px-4 text-2xl md:text-3xl font-bold text-center;
+	@apply px-4 text-2xl md:text-3xl font-bold text-center;
 }
-  
-  
 
 /* General Styles */
 body {
-    @apply bg-cool-white text-soft-navy; /* Softer white background and primary text */
+	@apply bg-cool-white text-soft-navy; /* Softer white background and primary text */
 }
 
 /* Buttons */
 .btn {
-    @apply px-6 py-2 rounded-md font-semibold transition-colors duration-300;
+	@apply px-6 py-2 rounded-md font-semibold transition-colors duration-300;
 }
 
 .btn-primary {
-    @apply bg-sky-blue text-cool-white hover:bg-sandy-brown;
+	@apply bg-sky-blue text-cool-white hover:bg-sandy-brown;
 }
 
 .btn-secondary {
-    @apply bg-naples-yellow text-soft-navy hover:bg-sandy-brown;
+	@apply bg-naples-yellow text-soft-navy hover:bg-sandy-brown;
 }
 
 /* CTA Button */
 .btn-cta {
-    @apply bg-sandy-brown text-white hover:bg-naples-yellow hover:text-black px-8 py-2 rounded-md;
+	@apply bg-sandy-brown text-white hover:bg-naples-yellow hover:text-black px-8 py-2 rounded-md;
 }
 
 /* Navbar Links */
 .nav-link {
-    @apply text-soft-navy hover:text-yale-blue px-4 py-2;
+	@apply text-soft-navy hover:text-yale-blue px-4 py-2;
 }
 
 /* Headers */
 .header {
-    @apply text-soft-navy font-bold;
+	@apply text-soft-navy font-bold;
 }
 
 .subheader {
-    @apply text-bright-teal font-semibold;
+	@apply text-bright-teal font-semibold;
 }
 
 .caseStudyHeader {
-    @apply font-bold text-2xl;
-    color: var(--soft-navy); /* Default fallback color */
+	@apply font-bold text-2xl;
+	color: var(--soft-navy); /* Default fallback color */
 }
 
 /* Section Backgrounds */
 .section-primary {
-    @apply bg-cool-white text-soft-navy;
+	@apply bg-cool-white text-soft-navy;
 }
 
 .section-secondary {
-    @apply bg-lemon-chiffon text-soft-navy;
+	@apply bg-lemon-chiffon text-soft-navy;
 }
 
 /* Accent Text */
 .text-accent {
-    @apply text-sandy-brown;
+	@apply text-sandy-brown;
 }
 
 /* Accent Backgrounds */
 .bg-accent {
-    @apply bg-sandy-brown text-cool-white;
+	@apply bg-sandy-brown text-cool-white;
 }
 
 /* Borders */
 .border-secondary {
-    @apply border border-warm-gray;
+	@apply border border-warm-gray;
 }
 
 /* Error Text */
 .text-error {
-    @apply text-tomato;
+	@apply text-tomato;
 }
 
 /* Small Accents */
 .small-accent {
-    color: var(--tomato); /* Reserved for small visual accents */
+	color: var(--tomato); /* Reserved for small visual accents */
 }
 
 .card-bg {
-    @apply bg-lemon-chiffon hover:bg-warm-gray;
-  }
-  
+	@apply bg-lemon-chiffon hover:bg-warm-gray;
+}
