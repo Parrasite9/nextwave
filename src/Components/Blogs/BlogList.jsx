@@ -14,19 +14,25 @@ const BlogList = () => {
 	}, [location]);
 
 	return (
-		<section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28">
+		<section
+			id="relume"
+			className="flex justify-center px-[5%] py-16 md:py-24 lg:py-28"
+		>
 			<div className="container">
 				{/* Section Header */}
 				<div className="mb-12 grid grid-cols-1 items-start justify-start gap-y-8 md:mb-18 md:grid-cols-[1fr_max-content] md:items-end md:justify-between md:gap-x-12 md:gap-y-4 lg:mb-20 lg:gap-x-20">
 					<div className="md:mr-12 lg:mr-0">
 						<div className="w-full max-w-lg">
-							<p className="mb-3 font-semibold md:mb-4">Blog</p>
+							<p className="mb-3 font-semibold md:mb-4 text-bright-teal">
+								Blogs
+							</p>
 							<h2 className="mb-3 text-5xl font-bold md:mb-4 md:text-7xl lg:text-8xl">
-								Our Blog
+								Smart Solutions{' '}
 							</h2>
 							<p className="md:text-md">
-								Discover insights, tips, and stories from our
-								team.
+								Learn how to maximize your online potential with
+								our expert-driven articles, tailored for
+								business growth.{' '}
 							</p>
 						</div>
 					</div>
@@ -37,7 +43,7 @@ const BlogList = () => {
 					{blogs.map((blog) => (
 						<div
 							key={blog.id}
-							className="border-2 border-sandy-brown transition-transform duration-300 hover:shadow-lg hover:scale-105"
+							className="border-2 border-sandy-brown rounded-xl transition-transform duration-300 hover:shadow-lg hover:scale-105"
 						>
 							{/* Blog Card */}
 							<Link
@@ -47,7 +53,7 @@ const BlogList = () => {
 								<div className="w-full overflow-hidden">
 									<img
 										src={
-											blog.image ||
+											blog.titleImg.heroImg ||
 											'https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg'
 										}
 										alt={blog.title}

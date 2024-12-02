@@ -48,7 +48,7 @@ const FeaturedPosts = () => {
 					{featuredBlogs.map((blog) => (
 						<div
 							key={blog.id}
-							className="border-2 border-sandy-brown transition-transform duration-300 hover:shadow-lg hover:scale-105"
+							className="border-2 border-sandy-brown rounded-xl transition-transform duration-300 hover:shadow-lg hover:scale-105"
 						>
 							{/* Blog Card */}
 							<Link
@@ -58,7 +58,7 @@ const FeaturedPosts = () => {
 								<div className="w-full overflow-hidden">
 									<img
 										src={
-											blog.image ||
+											blog.titleImg.heroImg ||
 											'https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg'
 										}
 										alt={blog.title}
