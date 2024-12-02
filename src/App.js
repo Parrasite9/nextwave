@@ -10,6 +10,7 @@ import {
 	Cookies,
 	Privacy,
 	Terms,
+	MidlandWebDesign,
 } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import NotFound from './Pages/NotFound';
@@ -49,6 +50,12 @@ function App() {
 						<Route
 							path="/terms-and-conditions"
 							element={<Terms />}
+						/>
+
+						{/* SEO DEDICATED  */}
+						<Route
+							path="/web-design-midland-tx"
+							element={<MidlandWebDesign />}
 						/>
 
 						{/* WILDCARD */}
