@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 function MidlandWebDesign() {
 	return (
@@ -243,9 +244,12 @@ function MidlandWebDesign() {
 						presence— it should be a powerful tool that drives
 						growth for your business. Let’s make it happen!
 					</p>
-					<button className="btn-primary bg-white text-blue-600 px-6 py-3 rounded-lg shadow hover:bg-gray-200">
-						Contact Us Today
-					</button>
+					<Link
+						to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call"
+						className="btn-primary bg-white text-blue-600 px-6 py-3 rounded-lg shadow hover:bg-gray-200"
+					>
+						<button>Contact Us Today</button>
+					</Link>
 				</section>
 			</div>
 		</>
