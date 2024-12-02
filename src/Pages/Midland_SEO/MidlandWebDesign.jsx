@@ -97,7 +97,7 @@ function MidlandWebDesign() {
 						</div>
 						<div className="feature-card text-center p-6 bg-white rounded-lg shadow">
 							<img
-								src="/images/midland/mobile_apps.png"
+								src="/images/midland/Mobile_apps.png"
 								alt="Mobile Friendly"
 								className="w-1/2 mx-auto mb-4"
 							/>
@@ -186,7 +186,7 @@ function MidlandWebDesign() {
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 						<div>
 							<img
-								src="/images/midland/in_progress.png"
+								src="/images/midland/In_progress.png"
 								alt="Work Process"
 								className="rounded-lg shadow-lg"
 							/>
