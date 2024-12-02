@@ -8,6 +8,10 @@ function MidlandWebDesign() {
 			<Helmet>
 				<title>Web Design in Midland TX | NextWave Web Studio</title>
 				<meta
+					name="google-site-verification"
+					content="MyRjKPtOfeszXcgCw-kKr0wDQ1v9jnwpqjVFOlPH2yU"
+				/>
+				<meta
 					name="description"
 					content="Looking for professional web design in Midland TX? NextWave Web Studio creates custom websites that drive results. Contact us today to grow your business!"
 				/>
