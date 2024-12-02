@@ -16,15 +16,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nextwavewebstudio.com/case-studies</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nextwavewebstudio.com/case-studies/details</loc>
+    <loc>https://nextwavewebstudio.com/casestudy/theorangerv</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+<url>
+  <loc>https://nextwavewebstudio.com/casestudy/studio-no-1</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://nextwavewebstudio.com/casestudy/seductivebox</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://nextwavewebstudio.com/casestudy/wayout-kids</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
   <url>
     <loc>https://nextwavewebstudio.com/midland-web-design</loc>
     <changefreq>monthly</changefreq>
