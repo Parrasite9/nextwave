@@ -4,7 +4,7 @@ import blogsData from './Blogs.json';
 import { generateSlug } from '../../Globals/Utils';
 import { Link } from 'react-router-dom';
 import RecommendedPosts from './RecommendedPosts';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const BlogPost = () => {
 	console.log('blogsData:', blogsData);

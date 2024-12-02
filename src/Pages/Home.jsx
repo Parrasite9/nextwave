@@ -9,7 +9,7 @@ import {
 	Pricing2,
 } from '../Components';
 import FeaturedPosts from '../Components/Blogs/FeaturedPosts';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
 	return (
