@@ -52,11 +52,17 @@ const BlogPost = () => {
 					property="og:description"
 					content={blog.content.introduction}
 				/>
+				<meta property="og:type" content="article" />
 				<meta property="og:image" content={blog.titleImg.heroImg} />
 				<meta
 					property="og:url"
 					content={`https://nextwavewebstudio.com/blog/${slug}`}
 				/>
+				<link
+					rel="canonical"
+					href={`https://nextwavewebstudio.com/blog/${slug}`}
+				/>
+				<meta name="robots" content="index, follow" />
 			</Helmet>
 
 			{/* Hero Section */}

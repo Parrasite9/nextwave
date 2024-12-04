@@ -31,6 +31,7 @@ function MidlandWebDesign() {
 					property="og:url"
 					content="https://nextwavewebstudio.com/web-design-midland-tx"
 				/>
+				<meta property="og:type" content="website" />
 				<meta name="robots" content="index, follow" />
 				<meta
 					name="keywords"

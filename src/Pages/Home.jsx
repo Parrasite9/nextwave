@@ -30,11 +30,14 @@ function Home() {
 					property="og:description"
 					content="Looking for professional web design in Midland TX? NextWave creates modern websites tailored to grow your business. Let’s build your success—start now!"
 				/>
+				<meta property="og:type" content="website" />
 				<meta property="og:image" content="/path/to/your-image.jpg" />
 				<meta
 					property="og:url"
 					content="https://nextwavewebstudio.com"
 				/>
+				<link rel="canonical" href="https://nextwavewebstudio.com" />
+				<meta name="robots" content="index, follow" />
 			</Helmet>
 
 			<Hero />

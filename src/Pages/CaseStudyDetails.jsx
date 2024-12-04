@@ -139,11 +139,17 @@ function CaseStudyDetails() {
 						property="og:description"
 						content={caseStudy.teaser}
 					/>
+					<meta property="og:type" content="website" />
 					<meta property="og:image" content={caseStudy.poster} />
 					<meta
 						property="og:url"
 						content={`https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}`}
 					/>
+					<link
+						rel="canonical"
+						href={`https://nextwavewebstudio.com/casestudy/${caseStudy.slug}`}
+					/>
+					<meta name="robots" content="index, follow" />
 				</Helmet>
 
 				<div className="caseStudy__hero mb-8 lg:w-2/3 lg:pt-16">
