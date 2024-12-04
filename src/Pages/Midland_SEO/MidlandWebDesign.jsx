@@ -7,6 +7,17 @@ function MidlandWebDesign() {
 	return (
 		<>
 			<Helmet>
+				<script type="application/ld+json">
+					{`
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "WebPage",
+                        "name": "Web Design in Midland TX | NextWave Web Studio",
+                        "description": "NextWave Web Studio creates custom websites for Midland TX businesses, driving results and improving online presence.",
+                        "url": "https://nextwavewebstudio.com/web-design-midland-tx"
+                        }
+                    `}
+				</script>
 				<title>Web Design in Midland TX | NextWave Web Studio</title>
 				<meta
 					name="google-site-verification"
