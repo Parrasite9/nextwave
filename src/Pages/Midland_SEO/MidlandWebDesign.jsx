@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import FeaturedPosts from '../../Components/Blogs/FeaturedPosts';
 
 function MidlandWebDesign() {
 	return (
@@ -33,10 +34,6 @@ function MidlandWebDesign() {
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="robots" content="index, follow" />
-				<meta
-					name="keywords"
-					content="Web Design Midland TX, Midland TX Web Design, Website Design Midland TX, Custom Websites Midland TX, Midland Web Development"
-				/>
 				<link
 					rel="canonical"
 					href="https://nextwavewebstudio.com/web-design-midland-tx"
@@ -70,7 +67,7 @@ function MidlandWebDesign() {
 						<div className="feature-card text-center p-6 bg-white rounded-lg shadow">
 							<img
 								src="/images/midland/current_location.png"
-								alt="Local Expertise"
+								alt="Midland web design services for local businesses"
 								className="w-1/2 mx-auto mb-4"
 							/>
 							<h3 className="text-xl font-bold mb-2">
@@ -253,9 +250,11 @@ function MidlandWebDesign() {
 						to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call"
 						className="btn-primary bg-white text-blue-600 px-6 py-3 rounded-lg shadow hover:bg-gray-200"
 					>
-						<button>Contact Us Today</button>
+						Contact Us Today
 					</Link>
 				</section>
+
+				<FeaturedPosts />
 			</div>
 		</>
 	);
