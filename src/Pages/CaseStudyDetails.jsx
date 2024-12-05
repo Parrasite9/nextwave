@@ -155,10 +155,17 @@ function CaseStudyDetails() {
 						{`
 							{
 								"@context": "https://schema.org",
-								"@type": "WebPage",
+								"@type": "CreativeWork",
 								"name": "${caseStudy.title}",
 								"description": "${caseStudy.teaser}",
-								"url": "https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}"
+								"url": "https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}",
+								"author": {
+									"@type": "Organization",
+									"name": "NextWave Web Studio"
+								},
+								"datePublished": "${caseStudy.datePublished}",
+								"image": "${caseStudy.poster}",
+								"keywords": "${caseStudy.seo}"
 							}
 						`}
 					</script>
