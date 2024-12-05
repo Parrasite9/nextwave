@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet-async';
 
 function Contact() {
 	const [phone, setPhone] = useState('');
