@@ -10,11 +10,20 @@ function MidlandWebDesign() {
 				<script type="application/ld+json">
 					{`
                         {
-                        "@context": "https://schema.org",
-                        "@type": "WebPage",
-                        "name": "Web Design in Midland TX | NextWave Web Studio",
-                        "description": "NextWave Web Studio creates custom websites for Midland TX businesses, driving results and improving online presence.",
-                        "url": "https://nextwavewebstudio.com/web-design-midland-tx"
+                            "@context": "https://schema.org",
+                            "@type": "LocalBusiness",
+                            "name": "NextWave Web Studio",
+                            "description": "Custom web design and development services for Midland TX businesses.",
+                            "url": "https://nextwavewebstudio.com/web-design-midland-tx",
+                            "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Midland",
+                            "addressRegion": "TX",
+                            "postalCode": "79701",
+                            "addressCountry": "US"
+                            },
+                            "telephone": "+1-555-555-5555",
+                            "image": "https://nextwavewebstudio.com/images/midland/midland.png"
                         }
                     `}
 				</script>

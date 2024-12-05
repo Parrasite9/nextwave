@@ -150,6 +150,18 @@ function CaseStudyDetails() {
 						href={`https://nextwavewebstudio.com/casestudy/${caseStudy.slug}`}
 					/>
 					<meta name="robots" content="index, follow" />
+					{/* Structured data */}
+					<script type="application/ld+json">
+						{`
+							{
+								"@context": "https://schema.org",
+								"@type": "WebPage",
+								"name": "${caseStudy.title}",
+								"description": "${caseStudy.teaser}",
+								"url": "https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}"
+							}
+						`}
+					</script>
 				</Helmet>
 
 				<div className="caseStudy__hero mb-8 lg:w-2/3 lg:pt-16">
