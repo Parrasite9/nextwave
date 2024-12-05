@@ -151,23 +151,31 @@ function CaseStudyDetails() {
 					/>
 					<meta name="robots" content="index, follow" />
 					{/* Structured data */}
+					{/* Dynamic Structured Data for Case Study */}
 					<script type="application/ld+json">
-						{`
-							{
-								"@context": "https://schema.org",
-								"@type": "CreativeWork",
-								"name": "${caseStudy.title}",
-								"description": "${caseStudy.teaser}",
-								"url": "https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}",
-								"author": {
-									"@type": "Organization",
-									"name": "NextWave Web Studio"
+						{JSON.stringify({
+							'@context': 'https://schema.org',
+							'@type': 'CreativeWork',
+							name: caseStudy.title,
+							description: caseStudy.teaser,
+							url: `https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}`,
+							author: {
+								'@type': 'Organization',
+								name: 'NextWave Web Studio',
+							},
+							publisher: {
+								'@type': 'Organization',
+								name: 'NextWave Web Studio',
+								logo: {
+									'@type': 'ImageObject',
+									url: 'https://nextwavewebstudio.com/images/logo.png',
 								},
-								"datePublished": "${caseStudy.datePublished}",
-								"image": "${caseStudy.poster}",
-								"keywords": "${caseStudy.seo}"
-							}
-						`}
+							},
+							datePublished: caseStudy.datePublished,
+							image: caseStudy.poster,
+							keywords: caseStudy.seo,
+							mainEntityOfPage: `https://www.nextwavewebstudio.com/casestudy/${caseStudy.slug}`,
+						})}
 					</script>
 				</Helmet>
 
