@@ -13,6 +13,7 @@ const navLinks = [
 	{ name: 'Services', path: '/#services' },
 	{ name: 'Pricing', path: '/#pricing' },
 	{ name: 'Blogs', path: '/blogs' },
+	{ name: 'Midland Web Design', path: '/web-design-midland-tx' },
 	{
 		name: 'Legal',
 		subLinks: [
@@ -21,7 +22,7 @@ const navLinks = [
 			{ name: 'Cookies Policy', path: '/cookies-policy' },
 		],
 	},
-	{ name: 'Contact', path: '/#contact' },
+	{ name: 'Contact', path: '/contact' },
 ];
 
 const getCurrentYear = () => {
