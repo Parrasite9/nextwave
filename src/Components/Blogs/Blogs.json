@@ -12,7 +12,7 @@
 		],
 		"featured": true,
 		"titleImg": {
-			"heroImg": "/images/blogs/responsive.png",
+			"heroImg": "/images/blogs/responsive.webp",
 			"heroAlt": "responsive-img"
 		},
 		"content": {
@@ -196,7 +196,7 @@
 		"tags": ["Local SEO", "Google Ranking", "SEO", "Midland-Odessa"],
 		"featured": true,
 		"titleImg": {
-			"heroImg": "/images/blogs/optimization.png",
+			"heroImg": "/images/blogs/optimization.webp",
 			"heroAlt": "optimization-img"
 		},
 		"content": {
@@ -391,7 +391,7 @@
 		],
 		"featured": true,
 		"titleImg": {
-			"heroImg": "/images/blogs/redesign.png",
+			"heroImg": "/images/blogs/redesign.webp",
 			"heroAlt": "redesign-img"
 		},
 		"content": {
@@ -581,7 +581,7 @@
 		],
 		"featured": false,
 		"titleImg": {
-			"heroImg": "/images/blogs/businessProfile.png",
+			"heroImg": "/images/blogs/businessProfile.webp",
 			"heroAlt": "businessProfile-img"
 		},
 		"content": {
@@ -805,7 +805,7 @@
 		],
 		"featured": false,
 		"titleImg": {
-			"heroImg": "/images/blogs/webDesign.png",
+			"heroImg": "/images/blogs/webDesign.webp",
 			"heroAlt": "webDesign-img"
 		},
 		"content": {
@@ -955,7 +955,7 @@
 		],
 		"featured": true,
 		"titleImg": {
-			"heroImg": "/images/blogs/savings.png",
+			"heroImg": "/images/blogs/savings.webp",
 			"heroAlt": "onlinePresence-img"
 		},
 		"content": {
@@ -1195,7 +1195,7 @@
 		],
 		"featured": false,
 		"titleImg": {
-			"heroImg": "/images/blogs/bear_market.png",
+			"heroImg": "/images/blogs/bear_market.webp",
 			"heroAlt": "hiddenCosts-img"
 		},
 		"content": {
@@ -1394,7 +1394,7 @@
 		],
 		"featured": false,
 		"titleImg": {
-			"heroImg": "/images/blogs/approve.png",
+			"heroImg": "/images/blogs/approve.webp",
 			"heroAlt": "trustCredibility-img"
 		},
 		"content": {
