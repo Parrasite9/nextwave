@@ -101,7 +101,7 @@ const Services2 = () => {
 								loading="lazy"
 								className="w-full object-cover my-2 md:my-0"
 								src="/images/services/design.svg"
-								alt="Image 1"
+								alt="Design"
 							/>
 						</div>
 
@@ -111,7 +111,7 @@ const Services2 = () => {
 								loading="lazy"
 								className="w-full object-cover mb-2 md:mb-0"
 								src="/images/services/landingPage.svg"
-								alt="Image 2"
+								alt="LandingPage"
 							/>
 						</div>
 
@@ -121,7 +121,7 @@ const Services2 = () => {
 								loading="lazy"
 								className="w-full object-cover mb-2 md:mb-0"
 								src="/images/services/mobileDev.svg"
-								alt="Image 3"
+								alt="MobileDev"
 							/>
 						</div>
 					</div>

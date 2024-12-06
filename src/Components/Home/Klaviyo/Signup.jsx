@@ -334,8 +334,8 @@ function Signup({ onFormSubmit }) {
 						<input
 							type="text"
 							name="website"
-							aria-label="Last Name"
-							aria-describedby="Last Name-helper"
+							aria-label="Website URL"
+							aria-describedby="Website URL-helper"
 							value={formData.website}
 							onChange={handleChange}
 							placeholder="Business Website (e.g., example.com)"
