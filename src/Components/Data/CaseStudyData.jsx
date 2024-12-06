@@ -3,13 +3,13 @@ import { generateSlug } from '../../Globals/Utils';
 const CaseStudyData = [
 	// WAYOUT KIDS
 	{
-		poster: '/images/casestudy/wayoutkids/wayout_mockup.jpg',
-		lgPoster: '/images/casestudy/wayoutkids/wayoutlg.jpg',
+		poster: '/images/casestudy/wayoutkids/wayout_mockup.webp',
+		lgPoster: '/images/casestudy/wayoutkids/wayoutlg.webp',
 		image: [
-			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D1.png' },
-			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D2.png' },
-			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D3.png' },
-			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D4.png' },
+			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D1.webp' },
+			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D2.webp' },
+			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D3.webp' },
+			{ image: '/images/casestudy/wayoutkids/Desktop/Home_D4.webp' },
 		],
 		colors: {
 			primary: '#FFA500', // Example color inspired by children's themes
@@ -47,7 +47,7 @@ const CaseStudyData = [
 						'With no clear layout or calls-to-action, the website failed to direct users toward supporting the mission, donating, or getting involved.',
 					mediaType: 'image',
 					mediaUrl:
-						'/images/casestudy/wayoutkids/CaseStudy/problem.jpg',
+						'/images/casestudy/wayoutkids/CaseStudy/problem.webp',
 				},
 			],
 		},
@@ -105,7 +105,8 @@ const CaseStudyData = [
 					subHeaderDetail:
 						'Designed to receive future feedback, the prototype was structured to easily incorporate stakeholder input and user testing.',
 					mediaType: 'image',
-					mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/hero.jpg',
+					mediaUrl:
+						'/images/casestudy/wayoutkids/CaseStudy/hero.webp',
 				},
 			],
 		},
@@ -115,7 +116,7 @@ const CaseStudyData = [
 			headerDetail:
 				'The ideation phase focused on a playful, colorful layout inspired by childhood school memories, such as multi-colored school supplies, aligning with the mission’s child focus.',
 			mediaType: 'image',
-			mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/earlyDesign.jpg',
+			mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/earlyDesign.webp',
 			subheaders: [
 				{
 					subheader: 'Multi-Colored Layout',
@@ -148,7 +149,7 @@ const CaseStudyData = [
 			headerDetail:
 				'The final homepage prototype delivered a visually organized, bold design that aligned with the organization’s mission and engaged visitors with clear calls-to-action.',
 			mediaType: 'image',
-			mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/finalDesign.jpg',
+			mediaUrl: '/images/casestudy/wayoutkids/CaseStudy/finalDesign.webp',
 			subheaders: [
 				{
 					subheader: 'Complete Visual Overhaul',
@@ -194,20 +195,20 @@ const CaseStudyData = [
 
 	// SEDUCTIVEBOX
 	{
-		poster: '/images/casestudy/seductivebox/seductivebox_mockup.jpg',
-		lgPoster: '/images/casestudy/seductivebox/seductiveboxlg.jpg',
+		poster: '/images/casestudy/seductivebox/seductivebox_mockup.webp',
+		lgPoster: '/images/casestudy/seductivebox/seductiveboxlg.webp',
 		image: [
 			{
-				image: '/images/casestudy/seductivebox/Desktop/Home_D1.png',
+				image: '/images/casestudy/seductivebox/Desktop/Home_D1.webp',
 			},
 			{
-				image: '/images/casestudy/seductivebox/Desktop/Home_D2.png',
+				image: '/images/casestudy/seductivebox/Desktop/Home_D2.webp',
 			},
 			{
-				image: '/images/casestudy/seductivebox/Desktop/Home_D3.png',
+				image: '/images/casestudy/seductivebox/Desktop/Home_D3.webp',
 			},
 			{
-				image: '/images/casestudy/seductivebox/Desktop/Home_D4.png',
+				image: '/images/casestudy/seductivebox/Desktop/Home_D4.webp',
 			},
 		],
 		colors: {
@@ -278,9 +279,9 @@ const CaseStudyData = [
 			headerDetail:
 				'The results of the redesign were immediately evident, as SeductiveBox saw a 733% increase in monthly revenue due to improved user engagement and conversion rates.',
 			mediaType: 'image',
-			mediaUrl: '/images/casestudy/seductivebox/CaseStudy/impact.jpg',
+			mediaUrl: '/images/casestudy/seductivebox/CaseStudy/impact.webp',
 			// image: true,
-			// mediaType: '/images/casestudy/seductivebox/CaseStudy/impact.jpg',
+			// mediaType: '/images/casestudy/seductivebox/CaseStudy/impact.webp',
 			subheaders: [
 				{
 					subheader: 'Significant boost in conversions.',
@@ -372,20 +373,20 @@ const CaseStudyData = [
 
 	// STUDIO NO 1
 	{
-		poster: '/images/casestudy/studioone/studioone_mockup.jpg',
-		lgPoster: '/images/casestudy/studioone/studioonelg.jpg',
+		poster: '/images/casestudy/studioone/studioone_mockup.webp',
+		lgPoster: '/images/casestudy/studioone/studioonelg.webp',
 		image: [
 			{
-				image: '/images/casestudy/studioone/Desktop/Home_D1.png',
+				image: '/images/casestudy/studioone/Desktop/Home_D1.webp',
 			},
 			{
-				image: '/images/casestudy/studioone/Desktop/Home_D2.png',
+				image: '/images/casestudy/studioone/Desktop/Home_D2.webp',
 			},
 			{
-				image: '/images/casestudy/studioone/Desktop/Home_D3.png',
+				image: '/images/casestudy/studioone/Desktop/Home_D3.webp',
 			},
 			{
-				image: '/images/casestudy/studioone/Desktop/Home_D4.png',
+				image: '/images/casestudy/studioone/Desktop/Home_D4.webp',
 			},
 		],
 		colors: {
@@ -472,7 +473,7 @@ const CaseStudyData = [
 			headerDetail:
 				'Early planning focused on how to organize each contractor’s page and ensure an intuitive user experience that emphasized Studio No. 1’s team approach.',
 			mediaType: 'image',
-			mediaUrl: '/images/casestudy/studioone/CaseStudy/earlyDesign.jpg',
+			mediaUrl: '/images/casestudy/studioone/CaseStudy/earlyDesign.webp',
 			subheaders: [
 				{
 					subheader: 'Centralized Navigation',
@@ -513,7 +514,7 @@ const CaseStudyData = [
 			headerDetail:
 				'The final product delivered an easy-to-navigate website with a strong, cohesive design that provided quick access to each contractor’s booking page.',
 			mediaType: 'image',
-			mediaUrl: '/images/casestudy/studioone/CaseStudy/final.jpg',
+			mediaUrl: '/images/casestudy/studioone/CaseStudy/final.webp',
 			subheaders: [
 				{
 					subheader: 'Unified Team Presentation',
@@ -556,13 +557,13 @@ const CaseStudyData = [
 
 	// THE ORANGE RV
 	{
-		poster: '/images/casestudy/theorangerv/theorangerv_mockup.jpg',
-		lgPoster: '/images/casestudy/theorangerv/orangelg.jpg',
+		poster: '/images/casestudy/theorangerv/theorangerv_mockup.webp',
+		lgPoster: '/images/casestudy/theorangerv/orangelg.webp',
 		image: [
-			{ image: '/images/casestudy/theorangerv/Desktop/Home_D1.png' },
-			{ image: '/images/casestudy/theorangerv/Desktop/Home_D2.jpg' },
-			{ image: '/images/casestudy/theorangerv/Desktop/Home_D3.jpg' },
-			{ image: '/images/casestudy/theorangerv/Desktop/Home_D4.jpg' },
+			{ image: '/images/casestudy/theorangerv/Desktop/Home_D1.webp' },
+			{ image: '/images/casestudy/theorangerv/Desktop/Home_D2.webp' },
+			{ image: '/images/casestudy/theorangerv/Desktop/Home_D3.webp' },
+			{ image: '/images/casestudy/theorangerv/Desktop/Home_D4.webp' },
 		],
 		colors: {
 			primary: '#fe4500', // Example color inspired by Orange Dreamsicle
@@ -647,7 +648,7 @@ const CaseStudyData = [
 			headerDetail:
 				'To align with the name TheOrangeRV, the color palette was inspired by the bright, memorable orange hues of the Orange Dreamsicle.',
 			// mediaType: 'image',
-			// mediaUrl: '/images/casestudy/theorangerv/CaseStudy/earlyDesign.jpg',
+			// mediaUrl: '/images/casestudy/theorangerv/CaseStudy/earlyDesign.webp',
 			subheaders: [
 				{
 					subheader: 'Unique Color Palette',
@@ -655,7 +656,7 @@ const CaseStudyData = [
 						'The orange color scheme provided a memorable and visually cohesive experience aligned with the brand name.',
 					mediaType: 'image',
 					mediaUrl:
-						'/images/casestudy/theorangerv/CaseStudy/colorPallete.jpg',
+						'/images/casestudy/theorangerv/CaseStudy/colorPallete.webp',
 				},
 				{
 					subheader: 'Inventory Filters',
@@ -663,7 +664,7 @@ const CaseStudyData = [
 						'Integrated filters based on price, year, and sleeping capacity to make browsing easier and more relevant for customers.',
 					mediaType: 'image',
 					mediaUrl:
-						'/images/casestudy/theorangerv/CaseStudy/filter.jpg',
+						'/images/casestudy/theorangerv/CaseStudy/filter.webp',
 				},
 			],
 		},
@@ -691,7 +692,7 @@ const CaseStudyData = [
 			headerDetail:
 				'The final prototype provided a visually cohesive and easy-to-navigate platform for viewing RV inventory, fully showcasing the brand potential for TheOrangeRV.',
 			mediaType: 'image',
-			mediaUrl: '/images/casestudy/theorangerv/CaseStudy/final.jpg',
+			mediaUrl: '/images/casestudy/theorangerv/CaseStudy/final.webp',
 			subheaders: [
 				{
 					subheader: 'Consistent Brand Presentation',
@@ -746,7 +747,7 @@ export default CaseStudyData;
 // TEMPLATE
 // {
 //     poster: '',
-// lgPoster: '/images/casestudy/123/456.jpg',//
+// lgPoster: '/images/casestudy/123/456.webp',//
 // image: [
 //         { image: '' },
 //         { image: '' },
