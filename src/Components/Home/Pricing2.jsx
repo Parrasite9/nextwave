@@ -32,9 +32,9 @@ function Pricing2() {
 			>
 				<div className="container">
 					<div className="mb-8 w-full max-w-lg lg:mb-20">
-						<p className="mb-3 text-bright-teal font-semibold md:mb-4">
+						<h6 className="mb-3 text-bright-teal font-semibold md:mb-4">
 							Professional Web Services Tailored to Your Needs
-						</p>
+						</h6>
 						<h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
 							Pricing plan
 						</h2>

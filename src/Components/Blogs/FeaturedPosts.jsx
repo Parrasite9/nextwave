@@ -19,9 +19,9 @@ const FeaturedPosts = () => {
 				<div className="mb-12 grid grid-cols-1 items-start justify-start gap-y-8 md:mb-18 md:grid-cols-[1fr_max-content] md:items-end md:justify-between md:gap-x-12 md:gap-y-4 lg:mb-20 lg:gap-x-20">
 					<div className="md:mr-12 lg:mr-0">
 						<div className="w-full max-w-lg">
-							<p className="text-bright-teal mb-3 font-semibold md:mb-4">
+							<h6 className="text-bright-teal mb-3 font-semibold md:mb-4">
 								Featured Articles
-							</p>
+							</h6>
 							<h2 className="mb-3 text-5xl font-bold md:mb-4 md:text-7xl lg:text-8xl">
 								Highlights for You
 							</h2>

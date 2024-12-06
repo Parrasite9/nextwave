@@ -130,10 +130,11 @@ function Footer() {
 							</h4>
 							<div className="flex space-x-6">
 								<a
-									href="https://www.facebook.com/WayOutKids/"
+									href="https://www.facebook.com/NextWaveWebStudio/"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="hover:text-blue-400"
+									aria-label="Visit NextWave Web Studio's Facebook page (opens in a new tab)"
 								>
 									<FacebookIcon />
 								</a>
@@ -228,9 +229,10 @@ function Footer() {
 							</h4>
 							<div className="flex space-x-6">
 								<a
-									href="https://www.facebook.com/WayOutKids/"
+									href="https://www.facebook.com/NextWaveWebStudio/"
 									target="_blank"
 									rel="noopener noreferrer"
+									aria-label="Visit NextWave Web Studio's Facebook page (opens in a new tab)"
 									className="hover:text-blue-400"
 								>
 									<FacebookIcon />

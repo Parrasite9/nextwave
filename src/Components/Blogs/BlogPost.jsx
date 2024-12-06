@@ -175,6 +175,7 @@ const BlogPost = () => {
 															}
 															target="_blank"
 															rel="noopener noreferrer"
+															aria-label={`Visit ${point.link.url}. Opens in a new tab.`}
 															className="text-blue-500 underline"
 														>
 															{point.link.text}
