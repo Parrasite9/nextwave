@@ -54,7 +54,7 @@ function Home() {
 								"name": "NextWave Web Studio",
 								"logo": {
 									"@type": "ImageObject",
-									"url": "https://nextwavewebstudio.com/images/logo.png"
+									"url": "https://nextwavewebstudio.com/images/logo.webp"
 								}
 							}
 						}

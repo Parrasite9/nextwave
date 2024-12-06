@@ -49,7 +49,7 @@ function Footer() {
 						<div className="w-full mb-6">
 							<Link to="/">
 								<img
-									src="/images/logo/logoLight.png"
+									src="/images/logo/logoLight.webp"
 									alt="Logo"
 									className="w-1/2 h-1/2"
 								/>
@@ -147,7 +147,7 @@ function Footer() {
 						<div className="w-1/5 mb-6">
 							<Link to="/">
 								<img
-									src="/images/logo/logoLight.png"
+									src="/images/logo/logoLight.webp"
 									alt="Logo"
 									className="w-4/5 h-auto"
 								/>

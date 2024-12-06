@@ -55,7 +55,7 @@ function Navbar() {
 				<div className="p-4 flex justify-between items-center">
 					<Link to="/">
 						<div className="h-auto w-2/3">
-							<img src="/images/logo/logoDark.png" alt="Logo" />
+							<img src="/images/logo/logoDark.webp" alt="Logo" />
 						</div>
 					</Link>
 
@@ -97,7 +97,7 @@ function Navbar() {
 						{/* Logo */}
 						<Link to="/">
 							<img
-								src="/images/logo/logoDark.png"
+								src="/images/logo/logoDark.webp"
 								alt="Logo"
 								className="h-auto w-full"
 							/>
