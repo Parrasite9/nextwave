@@ -23,7 +23,7 @@ function MidlandWebDesign() {
                             "addressCountry": "US"
                             },
                             "telephone": "+1-555-555-5555",
-                            "image": "https://nextwavewebstudio.com/images/midland/midland.png"
+                            "image": "https://nextwavewebstudio.com/images/midland/midland.webp"
                         }
                     `}
 				</script>
@@ -46,7 +46,7 @@ function MidlandWebDesign() {
 				/>
 				<meta
 					property="og:image"
-					content="/images/midland/midland.png"
+					content="/images/midland/midland.webp"
 				/>
 				<meta
 					property="og:url"
@@ -72,7 +72,7 @@ function MidlandWebDesign() {
 						your brand and grow your business.
 					</p>
 					<img
-						src="/images/midland/midland.png"
+						src="/images/midland/midland.webp"
 						alt="Midland TX Web Design"
 						className="mt-8 mx-auto rounded-lg shadow-lg w-full max-w-4xl md:w-2/3 lg:w-1/2 xl:w-1/3"
 					/>
@@ -86,7 +86,7 @@ function MidlandWebDesign() {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div className="feature-card text-center p-6 bg-white rounded-lg shadow">
 							<img
-								src="/images/midland/current_location.png"
+								src="/images/midland/current_location.webp"
 								alt="Midland web design services for local businesses"
 								className="w-1/2 mx-auto mb-4"
 							/>
@@ -101,7 +101,7 @@ function MidlandWebDesign() {
 						</div>
 						<div className="feature-card text-center p-6 bg-white rounded-lg shadow">
 							<img
-								src="/images/midland/instant_analysis.png"
+								src="/images/midland/instant_analysis.webp"
 								alt="Results Driven Design"
 								className="w-1/2 mx-auto mb-4"
 							/>
@@ -115,7 +115,7 @@ function MidlandWebDesign() {
 						</div>
 						<div className="feature-card text-center p-6 bg-white rounded-lg shadow">
 							<img
-								src="/images/midland/Mobile_apps.png"
+								src="/images/midland/Mobile_apps.webp"
 								alt="Mobile Friendly"
 								className="w-1/2 mx-auto mb-4"
 							/>
@@ -167,7 +167,7 @@ function MidlandWebDesign() {
 						</div>
 						<div className="service-card p-6 bg-white rounded-lg shadow">
 							<img
-								src="/images/midland/ecommerce.png"
+								src="/images/midland/ecommerce.webp"
 								alt="E-Commerce Solutions"
 								className="w-3/5 mb-4"
 							/>
@@ -181,7 +181,7 @@ function MidlandWebDesign() {
 						</div>
 						<div className="service-card p-6 bg-white rounded-lg shadow">
 							<img
-								src="/images/blogs/approve.png"
+								src="/images/blogs/approve.webp"
 								alt="Fast & Secure Hosting"
 								className="w-1/2 mb-4"
 							/>
@@ -204,7 +204,7 @@ function MidlandWebDesign() {
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 						<div>
 							<img
-								src="/images/midland/In_progress.png"
+								src="/images/midland/In_progress.webp"
 								alt="Work Process"
 								className="rounded-lg shadow-lg"
 							/>
