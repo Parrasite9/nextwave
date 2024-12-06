@@ -7,7 +7,7 @@ const FORM_VARIANTS = [
 		description:
 			'Discover insights to optimize your Google Business profile and drive more traffic.',
 		cta: 'Get My Free Report',
-		image: '/images/form/analytics.png',
+		image: '/images/form/analytics.webp',
 	},
 	{
 		id: 2,
@@ -15,7 +15,7 @@ const FORM_VARIANTS = [
 		description:
 			'Sign up to receive a personalized report on how to boost your online presence.',
 		cta: 'Show Me the Insights',
-		image: '/images/form/metric.png',
+		image: '/images/form/metric.webp',
 	},
 	{
 		id: 3,
@@ -31,7 +31,7 @@ const FORM_VARIANTS = [
 		description:
 			'Receive a tailored report to optimize your online visibility.',
 		cta: 'Get My Free Report',
-		image: '/images/form/searching.png',
+		image: '/images/form/searching.webp',
 	},
 	{
 		id: 5,
@@ -39,7 +39,7 @@ const FORM_VARIANTS = [
 		description:
 			'Get a custom Google report to enhance your online strategy.',
 		cta: 'Show Me the Insights',
-		image: '/images/form/progress.png',
+		image: '/images/form/progress.webp',
 	},
 ];
 
