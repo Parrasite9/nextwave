@@ -231,6 +231,7 @@ function Signup({ onFormSubmit }) {
 						{variant.image && (
 							<div className="flex items-center justify-center">
 								<img
+									loading="lazy"
 									src={variant.image}
 									alt="Form Image"
 									className="w-full h-auto object-cover rounded-lg"

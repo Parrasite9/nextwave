@@ -52,6 +52,7 @@ const BlogList = () => {
 							>
 								<div className="w-full overflow-hidden">
 									<img
+										loading="lazy"
 										src={
 											blog.titleImg.heroImg ||
 											'https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg'
@@ -90,6 +91,7 @@ const BlogList = () => {
 								<div className="mt-6 flex items-center">
 									<div className="mr-4 shrink-0">
 										<img
+											loading="lazy"
 											src={
 												blog.authorImage ||
 												'/android-chrome-512x512.png'

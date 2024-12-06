@@ -95,6 +95,7 @@ const Services3 = () => {
 						{/* Image 1 */}
 						<div className="hidden md:block md:flex md:items-center md:justify-center md:row-start-5 md:row-end-8 md:col-start-1 md:col-end-5 lg:col-start-3 lg:col-end-8 lg:row-start-4 lg:row-end-7">
 							<img
+								loading="lazy"
 								className="w-2/3 object-cover my-2 md:my-0"
 								src="/images/services/cloud2.svg"
 								alt="Image 1"
@@ -104,6 +105,7 @@ const Services3 = () => {
 						{/* Image 2 */}
 						<div className="md:flex md:items-center md:justify-center md:row-start-1 md:row-end-5 md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-5 lg:row-start-2 lg:row-end-4">
 							<img
+								loading="lazy"
 								className="w-full object-cover mb-2 md:mb-0"
 								src="/images/services/ai.svg"
 								alt="Image 2"
@@ -113,6 +115,7 @@ const Services3 = () => {
 						{/* Image 3 */}
 						<div className="hidden md:block md:row-start-2 md:row-end-5 md:col-start-3 md:col-end-5 lg:col-start-5 lg:col-end-9 lg:row-start-1 lg:row-end-4 lg:flex lg:items-center lg:justify-center">
 							<img
+								loading="lazy"
 								className="w-2/3 object-cover mb-2 md:mb-0"
 								src="/images/services/email.svg"
 								alt="Image 3"

@@ -28,6 +28,7 @@ function CaseStudy() {
 								<div className="relative">
 									{/* Image for Small Devices */}
 									<img
+										loading="lazy"
 										className="cursor-pointer lg:hidden"
 										src={casestudy.poster}
 										alt={casestudy.title}
@@ -35,6 +36,7 @@ function CaseStudy() {
 
 									{/* Image for Large Devices */}
 									<img
+										loading="lazy"
 										className="hidden lg:block cursor-pointer lg:transition-transform lg:duration-300 lg:transform lg:hover:-translate-y-2"
 										src={casestudy.lgPoster}
 										alt={casestudy.title}

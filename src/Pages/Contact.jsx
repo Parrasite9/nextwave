@@ -155,7 +155,7 @@ function Contact() {
                     </blockquote> */}
 							{/* Reviewer Details */}
 							{/* <div className="mt-6 flex items-center">
-                    <img
+                    <img loading="lazy"
                         className="w-12 h-12 rounded-full"
                         src="https://landingfoliocom.imgix.net/store/collection/saasui/images/sign-in/3/avatar-male.png"
                         alt="Devon Lane"
@@ -170,6 +170,7 @@ function Contact() {
 
 							<div className="contact__img__container">
 								<img
+									loading="lazy"
 									src="/images/contact/programming.svg"
 									alt="Contact Us"
 								/>

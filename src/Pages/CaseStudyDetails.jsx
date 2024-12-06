@@ -80,6 +80,7 @@ function CaseStudyDetails() {
 		if (mediaType === 'image') {
 			return (
 				<img
+					loading="lazy"
 					className="mb-8"
 					src={mediaUrl}
 					alt={`${sectionData.header} Image`}
@@ -168,7 +169,7 @@ function CaseStudyDetails() {
 								name: 'NextWave Web Studio',
 								logo: {
 									'@type': 'ImageObject',
-									url: 'https://nextwavewebstudio.com/images/logo.png',
+									url: 'https://nextwavewebstudio.com/images/logo.webp',
 								},
 							},
 							datePublished: caseStudy.datePublished,

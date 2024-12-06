@@ -49,6 +49,7 @@ function Pricing2() {
 							<div className="flex self-start">
 								<div className="mr-6 flex-none self-start">
 									<img
+										loading="lazy"
 										src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
 										className="size-8"
 										alt="Relume logo 1"
@@ -69,6 +70,7 @@ function Pricing2() {
 							<div className="flex self-start">
 								<div className="mr-6 flex-none self-start">
 									<img
+										loading="lazy"
 										src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
 										className="size-8"
 										alt="Relume logo 2"
@@ -89,6 +91,7 @@ function Pricing2() {
 							<div className="flex self-start">
 								<div className="mr-6 flex-none self-start">
 									<img
+										loading="lazy"
 										src="https://d22po4pjz3o32e.cloudfront.net/relume-icon.svg"
 										className="size-8"
 										alt="Relume logo 3"

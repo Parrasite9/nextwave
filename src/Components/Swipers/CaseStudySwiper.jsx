@@ -19,6 +19,7 @@ const CaseStudySwiper = ({ caseStudy }) => {
 	const imageData = caseStudy.image.map((img, index) => ({
 		content: (
 			<img
+				loading="lazy"
 				key={`slide-image-${index}`}
 				className="w-full mb-8 border-2"
 				src={img.image}

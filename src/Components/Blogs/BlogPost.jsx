@@ -87,6 +87,7 @@ const BlogPost = () => {
 				</div>
 				<div className="blog__hero__img">
 					<img
+						loading="lazy"
 						src={blog.titleImg.heroImg}
 						alt={blog.titleImg.heroAlt}
 					/>
@@ -199,6 +200,7 @@ const BlogPost = () => {
 							{section.image && (
 								<div className="mt-4">
 									<img
+										loading="lazy"
 										src={section.image.src}
 										alt={section.image.alt}
 										className="w-full"
