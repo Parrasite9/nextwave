@@ -109,6 +109,8 @@ function CollectWebsiteURL() {
 					<input
 						type="text"
 						name="firstName"
+						aria-label="First Name"
+						aria-describedby="First Name-helper"
 						value={formData.firstName}
 						onChange={handleChange}
 					/>
@@ -122,6 +124,8 @@ function CollectWebsiteURL() {
 					<input
 						type="text"
 						name="lastName"
+						aria-label="Last Name"
+						aria-describedby="Last Name-helper"
 						value={formData.lastName}
 						onChange={handleChange}
 					/>
@@ -135,6 +139,8 @@ function CollectWebsiteURL() {
 					<input
 						type="text"
 						name="businessName"
+						aria-label="Business Name"
+						aria-describedby="Business Name-helper"
 						value={formData.businessName}
 						onChange={handleChange}
 					/>
@@ -148,6 +154,8 @@ function CollectWebsiteURL() {
 					<input
 						type="url"
 						name="website"
+						aria-label="Website URL"
+						aria-describedby="Website URL-helper"
 						value={formData.website}
 						onChange={handleChange}
 					/>

@@ -12,9 +12,9 @@ const VoomlyEmbed = () => {
 			<iframe
 				src="https://embed.voomly.com/embed/assets/embed.html?videoId=IYiDnbXNi&amp;videoRatio=1.7777777777777777&amp;type=f&amp;skinColor=%23008EFF"
 				title="Voomly Home Page"
-				frameborder="0"
+				frameBorder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen=""
+				allowFullScreen=""
 				width="100%"
 				height="100%"
 			></iframe>

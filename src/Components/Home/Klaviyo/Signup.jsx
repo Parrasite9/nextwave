@@ -251,6 +251,8 @@ function Signup({ onFormSubmit }) {
 							<input
 								type="email"
 								name="email"
+								aria-label="Email"
+								aria-describedby="email-helper"
 								value={formData.email}
 								onChange={handleChange}
 								placeholder="Your Email Address"
@@ -286,6 +288,8 @@ function Signup({ onFormSubmit }) {
 							<input
 								type="text"
 								name="fname"
+								aria-label="First Name"
+								aria-describedby="First Name-helper"
 								value={formData.fname}
 								onChange={handleChange}
 								placeholder="First Name"
@@ -299,6 +303,8 @@ function Signup({ onFormSubmit }) {
 							<input
 								type="text"
 								name="lname"
+								aria-label="Last Name"
+								aria-describedby="Last Name-helper"
 								value={formData.lname}
 								onChange={handleChange}
 								placeholder="Last Name"
@@ -313,6 +319,8 @@ function Signup({ onFormSubmit }) {
 						<input
 							type="text"
 							name="businessName"
+							aria-label="Business Name"
+							aria-describedby="Business Name-helper"
 							value={formData.businessName}
 							onChange={handleChange}
 							placeholder="Business Name"
@@ -326,6 +334,8 @@ function Signup({ onFormSubmit }) {
 						<input
 							type="text"
 							name="website"
+							aria-label="Last Name"
+							aria-describedby="Last Name-helper"
 							value={formData.website}
 							onChange={handleChange}
 							placeholder="Business Website (e.g., example.com)"

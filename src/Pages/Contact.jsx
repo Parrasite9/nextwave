@@ -194,6 +194,8 @@ function Contact() {
 									<input
 										required
 										type="text"
+										aria-label="First Name"
+										aria-describedby="First Name-helper"
 										name="user_name"
 										id="name"
 										placeholder="Your name"
@@ -213,6 +215,8 @@ function Contact() {
 										required
 										type="email"
 										name="user_email"
+										aria-label="Email"
+										aria-describedby="Email-helper"
 										id="email"
 										placeholder="Email address"
 										className="pl-2 py-1 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
@@ -229,6 +233,8 @@ function Contact() {
 									<input
 										type="tel"
 										name="user_phone"
+										aria-label="Phone number"
+										aria-describedby="Phone number-helper"
 										id="phone"
 										value={phone}
 										onChange={handlePhoneChange}
