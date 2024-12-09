@@ -69,11 +69,35 @@ function RequestGBP() {
 	// Handle step 2 submission
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
 		if (validateStep2()) {
 			setIsSubmitting(true);
 			try {
-				// Simulate updating profile
+				// Identify the user in Klaviyo
+				window._learnq.push([
+					'identify',
+					{
+						$email: formData.email,
+						$first_name: formData.fname,
+						$last_name: formData.lname,
+						'Business Name': formData.businessName,
+						Website: formData.website,
+						initial_zoom_booking_status: 'not_booked_yet',
+					},
+				]);
+
+				// Track the form submission
+				window._learnq.push([
+					'track',
+					'Form Submitted',
+					{
+						'Form Name': 'RequestGBP',
+					},
+				]);
+
+				// Send data to Klaviyo
 				await subscribeToKlaviyoList('step2');
+
 				console.log('Form Submitted:', formData);
 				setStep(3);
 			} catch (error) {
@@ -84,23 +108,47 @@ function RequestGBP() {
 		}
 	};
 
-	// Simulated Klaviyo subscription
+	// Subscribe to Klaviyo subscription
 	const subscribeToKlaviyoList = async (step) => {
-		const payload = {
-			email: formData.email,
-			initial_zoom_booking_status: 'not_booked_yet',
-		};
+		try {
+			// Payload for Klaviyo
+			let payload = {
+				email: formData.email,
+				initial_zoom_booking_status: 'not_booked_yet',
+			};
 
-		if (step === 'step2') {
-			payload.firstName = formData.fname;
-			payload.lastName = formData.lname;
-			payload.businessName = formData.businessName;
-			payload.website = formData.website;
+			if (step === 'step2') {
+				payload.firstName = formData.fname;
+				payload.lastName = formData.lname;
+				payload.businessName = formData.businessName;
+				payload.website = formData.website;
+			}
+
+			// Make the API request
+			const response = await fetch(
+				'https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe',
+				{
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(payload),
+				},
+			);
+
+			const data = await response.json();
+
+			if (response.ok) {
+				console.log('Successfully subscribed:', data);
+			} else {
+				console.error(
+					'Error subscribing:',
+					data.error || 'Unknown error',
+				);
+			}
+		} catch (error) {
+			console.error('Error subscribing:', error.message);
 		}
-
-		// Simulating an API call
-		console.log(`Simulated API Payload (${step}):`, payload);
-		return new Promise((resolve) => setTimeout(resolve, 1000));
 	};
 
 	return (
