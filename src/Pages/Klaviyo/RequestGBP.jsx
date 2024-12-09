@@ -17,7 +17,7 @@ function RequestGBP() {
 
 	const validateWebsite = (website) => {
 		const websiteRegex =
-			/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+\.(com|org|net|gov|edu|info|biz|name|xyz|online|tech|site|store|website|app|io|me|co|nyc|us)$/i;
+			/^((https?:\/\/)?(www\.)?)[a-zA-Z0-9-]+\.(com|org|net|gov|edu|info|biz|name|xyz|online|tech|site|store|website|app|io|me|co|nyc|us)$/i;
 		return websiteRegex.test(website);
 	};
 
@@ -187,6 +187,8 @@ function RequestGBP() {
 											name="email"
 											placeholder="Enter your email"
 											type="email"
+											aria-label="Email"
+											aria-describedby="Email-helper"
 											value={formData.email}
 											onChange={handleChange}
 											required
@@ -221,6 +223,8 @@ function RequestGBP() {
 											name="fname"
 											placeholder="First Name"
 											type="text"
+											aria-label="First Name"
+											aria-describedby="First Name-helper"
 											value={formData.fname}
 											onChange={handleChange}
 											required
@@ -235,6 +239,8 @@ function RequestGBP() {
 											name="lname"
 											placeholder="Last Name"
 											type="text"
+											aria-label="Last Name"
+											aria-describedby="Last Name-helper"
 											value={formData.lname}
 											onChange={handleChange}
 											required
@@ -249,6 +255,8 @@ function RequestGBP() {
 											name="businessName"
 											placeholder="Business Name"
 											type="text"
+											aria-label="Business Name"
+											aria-describedby="Business Name-helper"
 											value={formData.businessName}
 											onChange={handleChange}
 											required
@@ -262,7 +270,9 @@ function RequestGBP() {
 											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
 											name="website"
 											placeholder="Website (e.g., example.com)"
-											type="url"
+											type="text"
+											aria-label="Website URL"
+											aria-describedby="Website URL-helper"
 											value={formData.website}
 											onChange={handleChange}
 											required
@@ -279,6 +289,8 @@ function RequestGBP() {
 													? 'Submitting...'
 													: 'Submit'
 											}
+											aria-label="Submit Button"
+											aria-describedby="Submit Button-helper"
 											className="button bg-green-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-700"
 											disabled={isSubmitting}
 										/>
