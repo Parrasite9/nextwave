@@ -13,6 +13,7 @@ export { default as PricingTable } from './Home/PricingTable';
 export { default as Pricing2 } from './Home/Pricing2';
 export { default as Contact } from '../Pages/Contact';
 export { default as Signup } from './Home/Klaviyo/Signup';
+export { default as RequestGBP } from '../Pages/Klaviyo/RequestGBP';
 export { default as CollectWebsiteURL } from '../Pages/Klaviyo/CollectWebsiteURL';
 export { default as GetWebsite } from '../Pages/GetWebsite';
 export { default as Cookies } from '../Pages/Policies/Cookies';

@@ -6,6 +6,7 @@ import VideoPlayer from '../Components/Video/VideoPlayer';
 import CaseStudySwiper from '../Components/Swipers/CaseStudySwiper';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { generateSlug } from '../Globals/Utils';
+import { Link } from 'react-router-dom';
 
 function CaseStudyDetails() {
 	const { slug } = useParams();

@@ -11,6 +11,7 @@ import {
 	Privacy,
 	Terms,
 	MidlandWebDesign,
+	RequestGBP,
 } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import NotFound from './Pages/NotFound';
@@ -57,6 +58,9 @@ function App() {
 							path="/web-design-midland-tx"
 							element={<MidlandWebDesign />}
 						/>
+
+						{/* REQUEST GBP */}
+						<Route path="/requestGBP" element={<RequestGBP />} />
 
 						{/* WILDCARD */}
 						<Route path="*" element={<NotFound />} />
