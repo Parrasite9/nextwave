@@ -1,6 +1,127 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const RequestGBP = () => {
+	const [step, setStep] = useState(1);
+	const [formData, setFormData] = useState({
+		email: '',
+		firstName: '',
+		lastName: '',
+		businessName: '',
+		website: '',
+	});
+	const [errors, setErrors] = useState({});
+	const [isSubmitting, setIsSubmitting] = useState(false);
+
+	// Validation functions
+	const validateEmail = (email) => {
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		return emailRegex.test(email);
+	};
+
+	const validateWebsite = (website) => {
+		const websiteRegex =
+			/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/;
+		return websiteRegex.test(website);
+	};
+
+	// Step 1 Validation
+	const validateStep1 = () => {
+		const newErrors = {};
+		if (!formData.email || !validateEmail(formData.email)) {
+			newErrors.email = 'Please enter a valid email address';
+		}
+		setErrors(newErrors);
+		return Object.keys(newErrors).length === 0;
+	};
+
+	// Step 2 Validation
+	const validateStep2 = () => {
+		const newErrors = {};
+		if (!formData.firstName) newErrors.firstName = 'First Name is required';
+		if (!formData.lastName) newErrors.lastName = 'Last Name is required';
+		if (!formData.businessName)
+			newErrors.businessName = 'Business Name is required';
+		if (!formData.website || !validateWebsite(formData.website)) {
+			newErrors.website =
+				'Please enter a valid website (e.g., example.com)';
+		}
+		setErrors(newErrors);
+		return Object.keys(newErrors).length === 0;
+	};
+
+	// Handle input changes
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	// Handle Step 1 Submission
+	const handleNextStep = async (e) => {
+		e.preventDefault();
+		if (validateStep1()) {
+			setIsSubmitting(true);
+			try {
+				// Check if the email exists in Klaviyo
+				const response = await fetch(
+					`<API_INVOKE_URL>/check-email?email=${encodeURIComponent(
+						formData.email,
+					)}`,
+				);
+
+				const data = await response.json();
+
+				if (!data.success) {
+					// If email doesn't exist, create a new profile
+					await fetch('<API_INVOKE_URL>/create-profile', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify({
+							email: formData.email,
+							initial_zoom_booking_status: 'not_booked_yet',
+						}),
+					});
+				}
+
+				// Proceed to Step 2
+				setStep(2);
+			} catch (error) {
+				console.error('Error checking/creating profile:', error);
+			} finally {
+				setIsSubmitting(false);
+			}
+		}
+	};
+
+	// Handle Step 2 Submission
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		if (validateStep2()) {
+			setIsSubmitting(true);
+			try {
+				// Update Klaviyo profile
+				await fetch('<API_INVOKE_URL>/update-profile', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						email: formData.email,
+						firstName: formData.firstName,
+						lastName: formData.lastName,
+						businessName: formData.businessName,
+						website: formData.website,
+					}),
+				});
+				console.log('Profile successfully updated');
+			} catch (error) {
+				console.error('Error updating profile:', error);
+			} finally {
+				setIsSubmitting(false);
+			}
+		}
+	};
+
 	return (
 		<div className="RequestGBP__container bg-gray-50 py-8">
 			<div className="RequestGBP__content px-8">
@@ -20,28 +141,115 @@ const RequestGBP = () => {
 						</p>
 						<div className="mt-6">
 							<div className="header4_form-block">
-								<form
-									id="email-form"
-									name="email-form"
-									method="get"
-									className="header4_form"
-									aria-label="Email Form"
-								>
-									<input
-										className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-										maxLength="256"
-										name="email-5"
-										placeholder="Enter your email"
-										type="email"
-										id="email-5"
-										required
-									/>
-									<input
-										type="submit"
-										value="Sign up"
-										className="button bg-green-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-700"
-									/>
-								</form>
+								{step === 1 && (
+									<form
+										id="email-form"
+										name="email-form"
+										onSubmit={handleNextStep}
+										className="header4_form"
+										aria-label="Email Form"
+									>
+										<input
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											maxLength="256"
+											name="email"
+											placeholder="Enter your email"
+											type="email"
+											value={formData.email}
+											onChange={handleChange}
+											required
+										/>
+										{errors.email && (
+											<p className="text-red-500 text-sm mt-1">
+												{errors.email}
+											</p>
+										)}
+										<input
+											type="submit"
+											value={
+												isSubmitting
+													? 'Processing...'
+													: 'Sign up'
+											}
+											className="button bg-green-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-700"
+											disabled={isSubmitting}
+										/>
+									</form>
+								)}
+								{step === 2 && (
+									<form
+										onSubmit={handleSubmit}
+										className="header4_form"
+										aria-label="Additional Details Form"
+									>
+										<input
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											name="firstName"
+											placeholder="First Name"
+											type="text"
+											value={formData.firstName}
+											onChange={handleChange}
+											required
+										/>
+										{errors.firstName && (
+											<p className="text-red-500 text-sm mt-1">
+												{errors.firstName}
+											</p>
+										)}
+										<input
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											name="lastName"
+											placeholder="Last Name"
+											type="text"
+											value={formData.lastName}
+											onChange={handleChange}
+											required
+										/>
+										{errors.lastName && (
+											<p className="text-red-500 text-sm mt-1">
+												{errors.lastName}
+											</p>
+										)}
+										<input
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											name="businessName"
+											placeholder="Business Name"
+											type="text"
+											value={formData.businessName}
+											onChange={handleChange}
+											required
+										/>
+										{errors.businessName && (
+											<p className="text-red-500 text-sm mt-1">
+												{errors.businessName}
+											</p>
+										)}
+										<input
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											name="website"
+											placeholder="Website (e.g., example.com)"
+											type="url"
+											value={formData.website}
+											onChange={handleChange}
+											required
+										/>
+										{errors.website && (
+											<p className="text-red-500 text-sm mt-1">
+												{errors.website}
+											</p>
+										)}
+										<input
+											type="submit"
+											value={
+												isSubmitting
+													? 'Submitting...'
+													: 'Submit'
+											}
+											className="button bg-green-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-700"
+											disabled={isSubmitting}
+										/>
+									</form>
+								)}
 								<div className="text-sm text-gray-600 mt-2">
 									By clicking Sign Up you're confirming that
 									you agree with our{' '}
