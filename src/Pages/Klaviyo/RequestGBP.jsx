@@ -11,6 +11,7 @@ function RequestGBP() {
 	});
 	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [showBooking, setShowBooking] = useState(false); // Add state for showing booking iframe
 
 	// Validation functions
 	const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -103,6 +104,7 @@ function RequestGBP() {
 
 				console.log('Form Submitted:', formData);
 				setStep(3);
+				setShowBooking(true); // Show booking iframe in Step 3
 			} catch (error) {
 				console.error('Error submitting form:', error.message);
 			} finally {
@@ -295,6 +297,42 @@ function RequestGBP() {
 											disabled={isSubmitting}
 										/>
 									</form>
+								)}
+
+								{/* Step 3 */}
+								{step === 3 && (
+									<div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 mt-8">
+										{/* Success Message */}
+										<div className="flex-1 text-center lg:text-left bg-white p-6 rounded-lg shadow-lg">
+											<h2 className="text-2xl font-bold text-bright-teal">
+												Empowering Your Next Move 🌐
+											</h2>
+											<p className="mt-4 text-gray-700">
+												You’re one step closer to
+												gaining the insights needed to
+												drive real growth. Please check
+												your email and confirm your
+												subscription to receive your
+												report. If you don’t see it,
+												check your spam folder!
+											</p>
+										</div>
+
+										{/* Booking Iframe */}
+										{showBooking && (
+											<div className="flex-1 mt-8 lg:mt-0 text-center">
+												<p className="text-xl mb-4">
+													Book your FREE strategy call
+													below!
+												</p>
+												<iframe
+													src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
+													frameBorder="0"
+													className="w-full h-[700px] rounded-lg shadow-lg"
+												/>
+											</div>
+										)}
+									</div>
 								)}
 
 								<div className="text-sm text-gray-600 mt-2">
