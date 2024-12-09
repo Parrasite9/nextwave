@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const RequestGBP = () => {
+function RequestGBP() {
 	const [step, setStep] = useState(1);
 	const [formData, setFormData] = useState({
 		email: '',
-		firstName: '',
-		lastName: '',
+		fname: '',
+		lname: '',
 		businessName: '',
 		website: '',
 	});
@@ -13,18 +13,11 @@ const RequestGBP = () => {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	// Validation functions
-	const validateEmail = (email) => {
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		return emailRegex.test(email);
-	};
+	const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-	const validateWebsite = (website) => {
-		const websiteRegex =
-			/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/;
-		return websiteRegex.test(website);
-	};
+	const validateWebsite = (website) =>
+		/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/.test(website);
 
-	// Step 1 Validation
 	const validateStep1 = () => {
 		const newErrors = {};
 		if (!formData.email || !validateEmail(formData.email)) {
@@ -34,11 +27,10 @@ const RequestGBP = () => {
 		return Object.keys(newErrors).length === 0;
 	};
 
-	// Step 2 Validation
 	const validateStep2 = () => {
 		const newErrors = {};
-		if (!formData.firstName) newErrors.firstName = 'First Name is required';
-		if (!formData.lastName) newErrors.lastName = 'Last Name is required';
+		if (!formData.fname) newErrors.fname = 'First Name is required';
+		if (!formData.lname) newErrors.lname = 'Last Name is required';
 		if (!formData.businessName)
 			newErrors.businessName = 'Business Name is required';
 		if (!formData.website || !validateWebsite(formData.website)) {
@@ -54,72 +46,61 @@ const RequestGBP = () => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
-	// Handle Step 1 Submission
+	// Handle step 1 submission
 	const handleNextStep = async (e) => {
 		e.preventDefault();
 		if (validateStep1()) {
 			setIsSubmitting(true);
 			try {
-				// Check if the email exists in Klaviyo
-				const response = await fetch(
-					`<API_INVOKE_URL>/check-email?email=${encodeURIComponent(
-						formData.email,
-					)}`,
-				);
-
-				const data = await response.json();
-
-				if (!data.success) {
-					// If email doesn't exist, create a new profile
-					await fetch('<API_INVOKE_URL>/create-profile', {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/json',
-						},
-						body: JSON.stringify({
-							email: formData.email,
-							initial_zoom_booking_status: 'not_booked_yet',
-						}),
-					});
-				}
-
-				// Proceed to Step 2
+				// Simulate email check and profile creation
+				await subscribeToKlaviyoList('step1');
 				setStep(2);
 			} catch (error) {
-				console.error('Error checking/creating profile:', error);
+				console.error(
+					'Error checking/creating profile:',
+					error.message,
+				);
 			} finally {
 				setIsSubmitting(false);
 			}
 		}
 	};
 
-	// Handle Step 2 Submission
+	// Handle step 2 submission
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (validateStep2()) {
 			setIsSubmitting(true);
 			try {
-				// Update Klaviyo profile
-				await fetch('<API_INVOKE_URL>/update-profile', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						email: formData.email,
-						firstName: formData.firstName,
-						lastName: formData.lastName,
-						businessName: formData.businessName,
-						website: formData.website,
-					}),
-				});
-				console.log('Profile successfully updated');
+				// Simulate updating profile
+				await subscribeToKlaviyoList('step2');
+				console.log('Form Submitted:', formData);
+				setStep(3);
 			} catch (error) {
-				console.error('Error updating profile:', error);
+				console.error('Error submitting form:', error.message);
 			} finally {
 				setIsSubmitting(false);
 			}
 		}
+	};
+
+	// Simulated Klaviyo subscription
+	const subscribeToKlaviyoList = async (step) => {
+		const payload = {
+			email: formData.email,
+			initial_zoom_booking_status: 'not_booked_yet',
+		};
+
+		if (step === 'step2') {
+			payload.firstName = formData.fname;
+			payload.lastName = formData.lname;
+			payload.businessName = formData.businessName;
+			payload.website = formData.website;
+		}
+
+		// Simulating an API call
+		console.log(`Simulated API Payload (${step}):`, payload);
+		return new Promise((resolve) => setTimeout(resolve, 1000));
 	};
 
 	return (
@@ -141,6 +122,7 @@ const RequestGBP = () => {
 						</p>
 						<div className="mt-6">
 							<div className="header4_form-block">
+								{/* Step 1 */}
 								{step === 1 && (
 									<form
 										id="email-form"
@@ -151,7 +133,6 @@ const RequestGBP = () => {
 									>
 										<input
 											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-											maxLength="256"
 											name="email"
 											placeholder="Enter your email"
 											type="email"
@@ -176,6 +157,8 @@ const RequestGBP = () => {
 										/>
 									</form>
 								)}
+
+								{/* Step 2 */}
 								{step === 2 && (
 									<form
 										onSubmit={handleSubmit}
@@ -184,30 +167,30 @@ const RequestGBP = () => {
 									>
 										<input
 											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-											name="firstName"
+											name="fname"
 											placeholder="First Name"
 											type="text"
-											value={formData.firstName}
+											value={formData.fname}
 											onChange={handleChange}
 											required
 										/>
-										{errors.firstName && (
+										{errors.fname && (
 											<p className="text-red-500 text-sm mt-1">
-												{errors.firstName}
+												{errors.fname}
 											</p>
 										)}
 										<input
 											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-											name="lastName"
+											name="lname"
 											placeholder="Last Name"
 											type="text"
-											value={formData.lastName}
+											value={formData.lname}
 											onChange={handleChange}
 											required
 										/>
-										{errors.lastName && (
+										{errors.lname && (
 											<p className="text-red-500 text-sm mt-1">
-												{errors.lastName}
+												{errors.lname}
 											</p>
 										)}
 										<input
@@ -250,6 +233,7 @@ const RequestGBP = () => {
 										/>
 									</form>
 								)}
+
 								<div className="text-sm text-gray-600 mt-2">
 									By clicking Sign Up you're confirming that
 									you agree with our{' '}
@@ -260,20 +244,6 @@ const RequestGBP = () => {
 										Terms and Conditions
 									</a>
 									.
-								</div>
-								<div
-									className="success-message hidden text-green-600 mt-2"
-									role="alert"
-								>
-									Thank you! Your submission has been
-									received!
-								</div>
-								<div
-									className="error-message hidden text-red-600 mt-2"
-									role="alert"
-								>
-									Oops! Something went wrong while submitting
-									the form.
 								</div>
 							</div>
 						</div>
@@ -311,6 +281,6 @@ const RequestGBP = () => {
 			</div>
 		</div>
 	);
-};
+}
 
 export default RequestGBP;
