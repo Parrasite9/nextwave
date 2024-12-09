@@ -163,15 +163,15 @@ function RequestGBP() {
 					<div className="header4_content">
 						<div className="mb-4">
 							<h1 className="text-4xl font-bold text-gray-800">
-								Medium length hero heading goes here
+								Optimize Your Business for Google Rankings and
+								Visibility
 							</h1>
 						</div>
 						<p className="text-lg text-gray-600">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit. Suspendisse varius enim in eros elementum
-							tristique. Duis cursus, mi quis viverra ornare, eros
-							dolor interdum nulla, ut commodo diam libero vitae
-							erat.
+							Ready to attract more customers in your local area?
+							We provide actionable strategies to improve your
+							Google Business Profile, enhance local SEO, and
+							drive organic traffic to your business.
 						</p>
 						<div className="mt-6">
 							<div className="header4_form-block">
@@ -339,7 +339,7 @@ function RequestGBP() {
 									By clicking Sign Up you're confirming that
 									you agree with our{' '}
 									<a
-										href="#"
+										href="/terms-and-conditions"
 										className="text-green-600 underline hover:text-green-700"
 									>
 										Terms and Conditions

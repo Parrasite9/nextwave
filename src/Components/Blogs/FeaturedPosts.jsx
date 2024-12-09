@@ -130,7 +130,7 @@ const FeaturedPosts = () => {
 				<div className="flex justify-center mt-10 md:hidden">
 					<Link to="/blogs">
 						<button
-							className="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3"
+							className="focus-visible:ring-border-primary inline-flex gap-3 items-center justify-center whitespace-nowrap ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border-primary text-text-primary bg-background-primary px-6 py-3 border-2 bg-blue-600 text-white rounded-md"
 							title="View all"
 						>
 							View All Blogs

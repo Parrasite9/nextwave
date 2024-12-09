@@ -75,7 +75,7 @@ function Navbar() {
 									aria-label="Schedule a Zoom call. Opens in a new tab."
 									onClick={() =>
 										window.open(
-											'https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card',
+											'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call',
 											'_blank',
 										)
 									}
@@ -113,7 +113,7 @@ function Navbar() {
 							aria-label="Schedule a Zoom call. Opens in a new tab."
 							onClick={() =>
 								window.open(
-									'https://scheduler.zoom.us/isaiah-johnson-c45fbx/hello-i-am-an-event-card',
+									'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call',
 									'_blank',
 								)
 							}
