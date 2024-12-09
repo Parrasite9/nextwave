@@ -232,15 +232,17 @@ function CaseStudyDetails() {
 					</div>
 
 					<div className="build__button lg:pb-20">
-						<button
-							className="py-3 px-8 mt-4 rounded-xl text-white xl:text-xl"
-							style={{
-								backgroundColor: caseStudy.colors.ctaButton,
-								color: caseStudy.colors.ctaButtonText,
-							}}
-						>
-							Build Me One!
-						</button>
+						<Link to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call">
+							<button
+								className="py-3 px-8 mt-4 rounded-xl text-white xl:text-xl"
+								style={{
+									backgroundColor: caseStudy.colors.ctaButton,
+									color: caseStudy.colors.ctaButtonText,
+								}}
+							>
+								Build Me One!
+							</button>
+						</Link>
 					</div>
 				</div>
 
