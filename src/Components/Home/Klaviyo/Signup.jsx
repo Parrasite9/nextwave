@@ -95,7 +95,7 @@ function Signup({ onFormSubmit }) {
 	// Updated website validation to accept domains like "testing.com" or "www.example.org"
 	const validateWebsite = (website) => {
 		const websiteRegex =
-			/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/;
+			/^[a-zA-Z0-9-]+\.(com|org|net|gov|edu|info|biz|name|xyz|online|tech|site|store|website|app|io|me|co|nyc|us)$/i;
 		return websiteRegex.test(website);
 	};
 

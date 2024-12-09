@@ -15,8 +15,12 @@ function RequestGBP() {
 	// Validation functions
 	const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-	const validateWebsite = (website) =>
-		/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+(\.[a-zA-Z]{2,})+$/.test(website);
+	const validateWebsite = (website) => {
+		// Regex to validate only the allowed TLDs without requiring protocols or "www"
+		const websiteRegex =
+			/^[a-zA-Z0-9-]+\.(com|org|net|gov|edu|info|biz|name|xyz|online|tech|site|store|website|app|io|me|co|nyc|us)$/i;
+		return websiteRegex.test(website);
+	};
 
 	const validateStep1 = () => {
 		const newErrors = {};
