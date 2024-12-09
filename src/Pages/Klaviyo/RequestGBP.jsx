@@ -156,6 +156,10 @@ function RequestGBP() {
 		}
 	};
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<div className="RequestGBP__container bg-gray-50 py-8">
 			<div className="RequestGBP__content px-8">
