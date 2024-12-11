@@ -189,7 +189,7 @@ function RequestGBP() {
 										aria-label="Email Form"
 									>
 										<input
-											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
 											name="email"
 											placeholder="Enter your email"
 											type="email"
@@ -209,9 +209,9 @@ function RequestGBP() {
 											value={
 												isSubmitting
 													? 'Processing...'
-													: 'Sign up'
+													: 'Request Google Business Profile Report'
 											}
-											className="button bg-green-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-700"
+											className="button bg-blue-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-blue-700"
 											disabled={isSubmitting}
 										/>
 									</form>
@@ -225,7 +225,7 @@ function RequestGBP() {
 										aria-label="Additional Details Form"
 									>
 										<input
-											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
 											name="fname"
 											placeholder="First Name"
 											type="text"
@@ -241,7 +241,7 @@ function RequestGBP() {
 											</p>
 										)}
 										<input
-											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
 											name="lname"
 											placeholder="Last Name"
 											type="text"
@@ -257,7 +257,7 @@ function RequestGBP() {
 											</p>
 										)}
 										<input
-											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
 											name="businessName"
 											placeholder="Business Name"
 											type="text"
@@ -273,7 +273,7 @@ function RequestGBP() {
 											</p>
 										)}
 										<input
-											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
+											className="form_input p-2 border-2 border-gray-300 rounded-lg w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
 											name="website"
 											placeholder="Website (e.g., example.com)"
 											type="text"
@@ -297,7 +297,7 @@ function RequestGBP() {
 											}
 											aria-label="Submit Button"
 											aria-describedby="Submit Button-helper"
-											className="button bg-green-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-green-700"
+											className="button bg-blue-600 text-white py-2 px-4 rounded-lg cursor-pointer hover:bg-blue-700"
 											disabled={isSubmitting}
 										/>
 									</form>
@@ -340,11 +340,12 @@ function RequestGBP() {
 								)}
 
 								<div className="text-sm text-gray-600 mt-2">
-									By clicking Sign Up you're confirming that
-									you agree with our{' '}
+									By submitting this request you're
+									subscribing to our email list and confirming
+									that you agree with our{' '}
 									<a
 										href="/terms-and-conditions"
-										className="text-green-600 underline hover:text-green-700"
+										className="text-blue-600 underline hover:text-blue-700"
 									>
 										Terms and Conditions
 									</a>
