@@ -20,3 +20,4 @@ export { default as Cookies } from '../Pages/Policies/Cookies';
 export { default as Terms } from '../Pages/Policies/Terms';
 export { default as Privacy } from '../Pages/Policies/Privacy';
 export { default as MidlandWebDesign } from '../Pages/Midland_SEO/MidlandWebDesign';
+export { default as ThankYou } from '../Pages/ThankYou';

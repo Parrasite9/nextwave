@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function RequestGBP() {
 	const [step, setStep] = useState(1);
@@ -12,6 +13,7 @@ function RequestGBP() {
 	const [errors, setErrors] = useState({});
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [showBooking, setShowBooking] = useState(false); // Add state for showing booking iframe
+	const navigate = useNavigate();
 
 	// Validation functions
 	const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -103,13 +105,19 @@ function RequestGBP() {
 				await subscribeToKlaviyoList('step2');
 
 				console.log('Form Submitted:', formData);
-				setStep(3);
-				setShowBooking(true); // Show booking iframe in Step 3
+				navigate('/thank-you');
 			} catch (error) {
 				console.error('Error submitting form:', error.message);
 			} finally {
 				setIsSubmitting(false);
 			}
+			// 	setStep(3);
+			// 	setShowBooking(true); // Show booking iframe in Step 3
+			// } catch (error) {
+			// 	console.error('Error submitting form:', error.message);
+			// } finally {
+			// 	setIsSubmitting(false);
+			// }
 		}
 	};
 

@@ -12,6 +12,7 @@ import {
 	Terms,
 	MidlandWebDesign,
 	RequestGBP,
+	ThankYou,
 } from './Components';
 import GoogleAnalytics from './Components/Google/GoogleAnalytics';
 import NotFound from './Pages/NotFound';
@@ -40,6 +41,7 @@ function App() {
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/404" element={<NotFound />} />
 						<Route path="/get-website" element={<GetWebsite />} />
+						<Route path="/thank-you" element={<ThankYou />} />
 
 						{/* BLOGS  */}
 						<Route path="/blogs" element={<BlogList />} />
