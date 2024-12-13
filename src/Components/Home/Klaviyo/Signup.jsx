@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const FORM_VARIANTS = [
 	{
@@ -53,8 +54,8 @@ function Signup({ onFormSubmit }) {
 		businessName: '',
 		website: '',
 	});
-	const [showBooking, setShowBooking] = useState(false);
 	const [errors, setErrors] = useState({});
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		// Randomly select a form variant
@@ -166,8 +167,7 @@ function Signup({ onFormSubmit }) {
 			subscribeToKlaviyoList('step2');
 
 			console.log('Form Submitted:', formData);
-			setStep(3);
-			setShowBooking(true); // Added this line to display the booking iframe
+			navigate('/thank-you');
 		}
 	};
 
@@ -353,61 +353,6 @@ function Signup({ onFormSubmit }) {
 							Submit
 						</button>
 					</form>
-				)}
-
-				{/* Success Message */}
-				{/* {step === 3 && (
-          <div className="text-center">
-            <h2 className="text-2xl font-bold text-bright-teal">Empowering Your Next Move 🌐</h2>
-            <p className="mt-4 text-gray-700">
-              You’re one step closer to gaining the insights needed to drive real growth. Just a bit more info, and we'll get your custom report ready!
-            </p>
-          </div>
-        )}
-
-        {showBooking && (
-        <div className="mt-8 text-center">
-            <p className="text-xl">Book your FREE strategy call below!</p>
-            <iframe
-            src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
-            frameBorder="0"
-            style={{ width: '750px', height: '560px' }}
-            className="mt-4"
-            />
-        </div>
-        )} */}
-
-				{/* Success Message and Booking Iframe */}
-				{step === 3 && (
-					<div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8 mt-8">
-						{/* Success Message */}
-						<div className="flex-1 text-center lg:text-left bg-white p-6 rounded-lg shadow-lg">
-							<h2 className="text-2xl font-bold text-bright-teal">
-								Empowering Your Next Move 🌐
-							</h2>
-							<p className="mt-4 text-gray-700">
-								You’re one step closer to gaining the insights
-								needed to drive real growth. Please check your
-								email and confirm your subscription to receive
-								your report. If you don’t see it, check your
-								spam folder!
-							</p>
-						</div>
-
-						{/* Booking Iframe */}
-						{showBooking && (
-							<div className="flex-1 mt-8 lg:mt-0 text-center">
-								<p className="text-xl mb-4">
-									Book your FREE strategy call below!
-								</p>
-								<iframe
-									src="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call?embed=true"
-									frameBorder="0"
-									className="w-full h-[700px] rounded-lg shadow-lg"
-								/>
-							</div>
-						)}
-					</div>
 				)}
 			</div>
 		</div>
