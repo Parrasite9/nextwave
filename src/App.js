@@ -19,12 +19,14 @@ import NotFound from './Pages/NotFound';
 import { CaseStudyProvider } from './Components/Data/CaseStudyContext';
 import BlogPost from './Components/Blogs/BlogPost';
 import BlogList from './Components/Blogs/BlogList';
+import FacebookPixel from './Components/Facebook/FacebookPixel';
 
 function App() {
 	// Move the hook inside the Router
 	return (
 		<Router>
 			<GoogleAnalytics />
+			<FacebookPixel />
 			<CaseStudyProvider>
 				<SharedLayout>
 					<Routes>
