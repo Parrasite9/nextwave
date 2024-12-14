@@ -27,7 +27,7 @@ function Pricing2() {
 	return (
 		<div className="px-8">
 			<section
-				id="relume"
+				id="pricing"
 				className="px-[5%] py-16 flex justify-center md:py-24 lg:py-28"
 			>
 				<div className="container">

@@ -1,5 +1,6 @@
 import React from 'react';
 import VoomlyEmbed from '../Video/Voomly/VoomlyEmbed';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
 	return (
@@ -17,12 +18,15 @@ const Hero = () => {
 					<p className="pb-4 md:text-xl">
 						Maximize your ROI with websites designed to convert.
 					</p>
-					<button
-						id="text-us-button"
-						className="btn-cta mb-4 md:text-2xl md:py-3"
-					>
-						Text Us About A Project
-					</button>
+					<Link to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call">
+						<button
+							id="text-us-button"
+							className="btn-cta mb-4 md:text-2xl md:py-3"
+						>
+							{/* Text Us About A Project */}
+							Discuss Your Project
+						</button>
+					</Link>
 
 					{/* TRUST BADGES */}
 					<div
