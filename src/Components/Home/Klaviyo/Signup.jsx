@@ -271,8 +271,9 @@ function Signup({ onFormSubmit }) {
 								{variant.cta}
 							</button>
 							<p className="text-sm text-gray-500 mt-4">
-								By signing up, you agree to receive marketing
-								emails from us. You can unsubscribe at any time.
+								By submitting this form, you agree to receive
+								marketing emails from us. You can unsubscribe at
+								any time.
 							</p>
 						</form>
 					</div>

@@ -36,10 +36,10 @@ function App() {
 							path="/casestudy/:slug"
 							element={<CaseStudyDetails />}
 						/>
-						<Route
+						{/* <Route
 							path="/free-google-report"
 							element={<CollectWebsiteURL />}
-						/>
+						/> */}
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/404" element={<NotFound />} />
 						<Route path="/get-website" element={<GetWebsite />} />

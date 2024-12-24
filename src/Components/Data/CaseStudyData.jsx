@@ -232,7 +232,7 @@ const CaseStudyData = [
 		price: '$$',
 		intro: 'SeductiveBox was a lingerie subscription service facing major conversion challenges. Their website was not effectively communicating with their target female audience, which led to low subscription rates. We set out to revamp the user experience, leading to incredible results in just 4 weeks.',
 		role: 'We led the entire project, handling both the design and development. The redesign was focused on creating a seamless and intuitive user experience for the target audience. We used React for the frontend and deployed the final product on AWS Cloud. Heatmap tracking allowed us to optimize the user journey further.',
-		hasVideo: true,
+		hasVideo: false,
 		videoPath: '',
 		problem: {
 			header: 'SeductiveBox\’s website was not converting traffic into subscriptions effectively.',

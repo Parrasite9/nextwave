@@ -732,60 +732,65 @@ function CaseStudyDetails() {
 							}}
 						>
 							{/* style={{ background: caseStudy.colors.customGradient }} */}
-							<video controls className="w-full">
-								<source
-									src={caseStudy.videoPath}
-									type="video/mp4"
-								/>
-							</video>
+							<div className="desktop__video__container hidden lg:block">
+								<video controls className="w-full">
+									<source
+										src={caseStudy.videoPath}
+										type="video/mp4"
+									/>
+								</video>
 
-							<div className="videoDetails__container pb-8 flex flex-col justify-center items-center">
-								<h2
-									className="mt-4 pb-4 font-bold text-center xl:text-2xl"
-									style={{ color: caseStudy.colors.white }}
-								>
-									Let's Talk About Your Website Project!
-								</h2>
-								<button
-									className="py-3 px-8 mt-4 rounded-xl text-white border-2 border-white transition-colors duration-300"
-									style={{
-										backgroundColor:
-											caseStudy.colors.ctaButton,
-										color: caseStudy.colors.ctaButtonText,
-									}}
-									onMouseEnter={(e) => {
-										e.target.style.backgroundColor =
-											'white';
-										e.target.style.color =
-											caseStudy.colors.primary;
-									}}
-									onMouseLeave={(e) => {
-										e.target.style.backgroundColor =
-											caseStudy.colors.ctaButton;
-										e.target.style.color =
-											caseStudy.colors.ctaButtonText;
-									}}
-								>
-									Book A Zoom Call
-								</button>
-								<div className="icons__and__text__container">
-									<div className="icon__and__text flex mt-4">
-										<CheckCircleIcon className="mr-4 text-green-400" />
-										<p className="text-white">
-											No Pressure
-										</p>
-									</div>
-									<div className="icon__and__text flex mt-4">
-										<CheckCircleIcon className="mr-4 text-green-400" />
-										<p className="text-white">
-											Get Pricing Quote
-										</p>
-									</div>
-									<div className="icon__and__text flex mt-4">
-										<CheckCircleIcon className="mr-4 text-green-400" />
-										<p className="text-white">
-											See More Site Examples
-										</p>
+								<div className="videoDetails__container pb-8 flex flex-col justify-center items-center">
+									<h2
+										className="mt-4 pb-4 font-bold text-center xl:text-2xl"
+										style={{
+											color: caseStudy.colors.white,
+										}}
+									>
+										Let's Talk About Your Website Project!
+									</h2>
+									<button
+										className="py-3 px-8 mt-4 rounded-xl text-white border-2 border-white transition-colors duration-300"
+										style={{
+											backgroundColor:
+												caseStudy.colors.ctaButton,
+											color: caseStudy.colors
+												.ctaButtonText,
+										}}
+										onMouseEnter={(e) => {
+											e.target.style.backgroundColor =
+												'white';
+											e.target.style.color =
+												caseStudy.colors.primary;
+										}}
+										onMouseLeave={(e) => {
+											e.target.style.backgroundColor =
+												caseStudy.colors.ctaButton;
+											e.target.style.color =
+												caseStudy.colors.ctaButtonText;
+										}}
+									>
+										Book A Zoom Call
+									</button>
+									<div className="icons__and__text__container">
+										<div className="icon__and__text flex mt-4">
+											<CheckCircleIcon className="mr-4 text-green-400" />
+											<p className="text-white">
+												No Pressure
+											</p>
+										</div>
+										<div className="icon__and__text flex mt-4">
+											<CheckCircleIcon className="mr-4 text-green-400" />
+											<p className="text-white">
+												Get Pricing Quote
+											</p>
+										</div>
+										<div className="icon__and__text flex mt-4">
+											<CheckCircleIcon className="mr-4 text-green-400" />
+											<p className="text-white">
+												See More Site Examples
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
