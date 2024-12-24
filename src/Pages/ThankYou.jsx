@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 
 function ThankYou() {
 	const [showBooking, setShowBooking] = useState(false); // Add state for showing booking iframe
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<div className="thankYou__container">
@@ -16,8 +20,11 @@ function ThankYou() {
 					<p className="mt-4 text-gray-700 lg xl:text-lg">
 						You’re one step closer to gaining the insights needed to
 						drive real growth. Please check your email and confirm
-						your subscription to receive your report. If you don’t
-						see it, check your spam folder!
+						your subscription to receive your report.
+						<strong className="text-tomato font-extrabold">
+							If you don’t see it in your inbox, be sure to check
+							your spam or junk folder!
+						</strong>
 					</p>
 					<div className="img__container">
 						<img
