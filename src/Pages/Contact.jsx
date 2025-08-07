@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 function Contact() {
 	const [phone, setPhone] = useState('');
@@ -285,19 +286,19 @@ function Contact() {
 									frequency may vary. Reply STOP to
 									unsubscribe. Message & data rates may apply.
 									View our{' '}
-									<a
-										href="/privacy"
+									<Link
+										to="/privacy-policy"
 										className="underline text-blue-600 hover:text-blue-800"
 									>
 										Privacy Policy
-									</a>{' '}
+									</Link>{' '}
 									and{' '}
-									<a
-										href="/terms"
+									<Link
+										to="/terms-and-conditions"
 										className="underline text-blue-600 hover:text-blue-800"
 									>
 										Terms of Service
-									</a>
+									</Link>
 									.
 								</p>
 							</form>
