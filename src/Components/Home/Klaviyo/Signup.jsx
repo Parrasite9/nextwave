@@ -167,7 +167,8 @@ function Signup({ onFormSubmit }) {
 			subscribeToKlaviyoList('step2');
 
 			console.log('Form Submitted:', formData);
-			navigate('/thank-you');
+			// navigate('/thank-you');
+			window.location.href = '/thank-you';
 		}
 	};
 

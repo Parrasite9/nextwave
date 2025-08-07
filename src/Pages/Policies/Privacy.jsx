@@ -43,6 +43,14 @@ const Privacy = () => {
 					quotes, deliver services, and send marketing communications
 					relevant to your business needs.
 				</p>
+				<p className="mt-4">
+					Users who call our business line or submit their phone
+					number may receive automated SMS messages related to
+					appointment reminders, missed call follow-ups, service
+					confirmations, or feedback requests. Message frequency may
+					vary. Reply STOP to unsubscribe. Message and data rates may
+					apply.
+				</p>
 			</section>
 
 			<section className="mb-8">

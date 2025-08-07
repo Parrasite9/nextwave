@@ -276,6 +276,30 @@ function Contact() {
 								>
 									Send message
 								</button>
+								<p className="text-xs text-gray-500 mt-4">
+									By submitting this form or calling our
+									business line, you consent to receive
+									automated text messages from NextWave Web
+									Studio related to your inquiry, appointment
+									reminders, and service updates. Message
+									frequency may vary. Reply STOP to
+									unsubscribe. Message & data rates may apply.
+									View our{' '}
+									<a
+										href="/privacy"
+										className="underline text-blue-600 hover:text-blue-800"
+									>
+										Privacy Policy
+									</a>{' '}
+									and{' '}
+									<a
+										href="/terms"
+										className="underline text-blue-600 hover:text-blue-800"
+									>
+										Terms of Service
+									</a>
+									.
+								</p>
 							</form>
 						</div>
 					</div>
