@@ -51,6 +51,14 @@ const Privacy = () => {
 					vary. Reply STOP to unsubscribe. Message and data rates may
 					apply.
 				</p>
+				<p className="mt-4">
+					We do not share end-user mobile information with third
+					parties or affiliates for marketing or promotional purposes.
+					End-user opt-in data and consent will not be shared with any
+					third parties, except with subcontractors or service
+					providers solely for the purpose of providing the services
+					on our behalf.
+				</p>
 			</section>
 
 			<section className="mb-8">
