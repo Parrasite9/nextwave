@@ -23,8 +23,8 @@ import BlogList from './Components/Blogs/BlogList';
 
 import AIAutomationPage from './Pages/ServicePage/AIAutomationPage';
 import DigitalMarketingPage from './Pages/ServicePage/DigitalMarketingPage';
-// import LocalSEOPage from './Pages/ServicePage/LocalSEOPage';
-// import DashboardsPage from './Pages/ServicePage/DashboardsPage';
+import LocalSEOPage from './Pages/ServicePage/LocalSEOPage';
+import DashboardsPage from './Pages/ServicePage/DashboardsPage';
 // import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage';
 // import MidlandOdessaSEOPage from './Pages/ServicePage/MidlandOdessaSEOPage';
 
@@ -82,14 +82,14 @@ function App() {
 							path="/services/digital-marketing"
 							element={<DigitalMarketingPage />}
 						/>
-						{/* <Route
+						<Route
 							path="/services/local-seo"
 							element={<LocalSEOPage />}
-						/> */}
-						{/* <Route
+						/>
+						<Route
 							path="/services/dashboards"
 							element={<DashboardsPage />}
-						/> */}
+						/>
 						{/* <Route
 							path="/web-design-odessa-tx"
 							element={<OdessaWebDesignPage />}
