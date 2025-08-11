@@ -21,6 +21,13 @@ import BlogPost from './Components/Blogs/BlogPost';
 import BlogList from './Components/Blogs/BlogList';
 // import FacebookPixel from './Components/Facebook/FacebookPixel';
 
+import AIAutomationPage from './Pages/ServicePage/AIAutomationPage';
+import DigitalMarketingPage from './Pages/ServicePage/DigitalMarketingPage';
+// import LocalSEOPage from './Pages/ServicePage/LocalSEOPage';
+// import DashboardsPage from './Pages/ServicePage/DashboardsPage';
+// import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage';
+// import MidlandOdessaSEOPage from './Pages/ServicePage/MidlandOdessaSEOPage';
+
 function App() {
 	// Move the hook inside the Router
 	return (
@@ -65,6 +72,32 @@ function App() {
 
 						{/* REQUEST GBP */}
 						<Route path="/requestGBP" element={<RequestGBP />} />
+
+						{/* NEW SERVICE PAGES */}
+						<Route
+							path="/services/ai-automation"
+							element={<AIAutomationPage />}
+						/>
+						<Route
+							path="/services/digital-marketing"
+							element={<DigitalMarketingPage />}
+						/>
+						{/* <Route
+							path="/services/local-seo"
+							element={<LocalSEOPage />}
+						/> */}
+						{/* <Route
+							path="/services/dashboards"
+							element={<DashboardsPage />}
+						/> */}
+						{/* <Route
+							path="/web-design-odessa-tx"
+							element={<OdessaWebDesignPage />}
+						/> */}
+						{/* <Route
+							path="/seo-midland-odessa"
+							element={<MidlandOdessaSEOPage />}
+						/> */}
 
 						{/* WILDCARD */}
 						<Route path="*" element={<NotFound />} />

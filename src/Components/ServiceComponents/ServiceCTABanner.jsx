@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ServiceCTA = ({
+const ServiceCTABanner = ({
 	title = 'Find Out What You Can Automate in 30 Minutes',
 	subtitle = 'Free strategy session — no strings attached.',
 	cta = { label: 'Book My Free Consultation', to: '/book' },
@@ -23,4 +23,4 @@ const ServiceCTA = ({
 	);
 };
 
-export default ServiceCTA;
+export default ServiceCTABanner;

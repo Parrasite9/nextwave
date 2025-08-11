@@ -77,7 +77,7 @@ const Services3 = () => {
 					</div>
 
 					<div className="services2__button justify-center items-center mb-5">
-						<Link to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call">
+						<Link to="/services/ai-automation">
 							<button
 								id="free-quote-service-button"
 								className="btn-primary text-white mt-5 py-2 rounded-md flex justify-center w-full
