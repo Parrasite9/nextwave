@@ -1,8 +1,5 @@
-// src/Pages/Services/DashboardsPage.jsx
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-
 import ServiceHero from '../../Components/ServiceComponents/ServiceHero';
 import ServicePainPoints from '../../Components/ServiceComponents/ServicePainPoints';
 import ServiceGrid from '../../Components/ServiceComponents/ServiceGrid';
@@ -13,7 +10,11 @@ import ServiceFAQ from '../../Components/ServiceComponents/ServiceFAQ';
 import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA';
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
 
-const DashboardsPage = () => {
+function Dashboards() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Helmet>
@@ -21,188 +22,154 @@ const DashboardsPage = () => {
 					{`
             {
               "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "name": "NextWave Web Studio",
-              "description": "Custom business dashboards and tool integrations that turn scattered data into decisions for Midland–Odessa businesses.",
-              "url": "https://nextwavewebstudio.com/services/dashboards",
-              "image": "https://nextwavewebstudio.com/images/services/dashboards.webp",
-              "areaServed": {
-                "@type": "City",
-                "name": "Midland–Odessa"
+              "@type": "Service",
+              "serviceType": "Custom Dashboards & Business Intelligence",
+              "provider": {
+                "@type": "Organization",
+                "name": "NextWave Web Studio",
+                "url": "https://nextwavewebstudio.com",
+                "logo": "https://nextwavewebstudio.com/images/logo.webp",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Midland–Odessa",
+                  "addressRegion": "TX",
+                  "addressCountry": "US"
+                }
               },
-              "telephone": "+1-432-555-0199"
+              "areaServed": {
+                "@type": "Place",
+                "name": "Midland–Odessa TX"
+              },
+              "description": "We design and build fully custom business dashboards to centralize data, track KPIs, and automate workflows for small to medium-sized businesses in Midland–Odessa."
             }
           `}
 				</script>
-
 				<title>
-					Custom Dashboards & Tool Integrations | NextWave Web Studio
+					Custom Business Dashboards in Midland–Odessa TX | NextWave
+					Web Studio
 				</title>
 				<meta
 					name="description"
-					content="See the numbers that matter. NextWave builds custom dashboards and integrations so Midland–Odessa teams can act faster and grow smarter."
+					content="Centralize your business data, automate reports, and make faster decisions with custom dashboards by NextWave Web Studio. Serving Midland–Odessa TX businesses."
 				/>
 				<meta
 					property="og:title"
-					content="Custom Dashboards & Tool Integrations | NextWave Web Studio"
+					content="Custom Business Dashboards in Midland–Odessa TX"
 				/>
 				<meta
 					property="og:description"
-					content="From lead tracking to revenue KPIs, NextWave connects your tools and visualizes what drives growth."
+					content="Stop wasting hours on manual data entry and report prep. Get a dashboard that does it all for you. Built for Midland–Odessa businesses."
 				/>
 				<meta
 					property="og:image"
-					content="https://nextwavewebstudio.com/images/services/dashboards.webp"
+					content="/images/services/dashboard.webp"
 				/>
 				<meta
 					property="og:url"
-					content="https://nextwavewebstudio.com/services/dashboards"
+					content="https://nextwavewebstudio.com/dashboards"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="robots" content="index, follow" />
 				<link
 					rel="canonical"
-					href="https://nextwavewebstudio.com/services/dashboards"
+					href="https://nextwavewebstudio.com/dashboards"
 				/>
 			</Helmet>
 
-			{/* HERO (neutral/slate emphasis; data-forward vibe) */}
 			<ServiceHero
-				eyebrow="Decisions Powered by Clarity"
-				headline="Custom Dashboards & Integrations Built for Your Business"
-				subheadline="NextWave connects your systems and visualizes the metrics that matter — so your team knows what to do next, every day."
-				primaryCta={{
-					label: 'Request a Dashboard Demo',
-					to: '/contact',
-				}}
-				secondaryCta={{ label: 'See Real Outcomes', to: '/casestudy' }}
-				stickyMobileCTA
+				title="Custom Business Dashboards"
+				subtitle="Centralize your data, track performance, and automate decision-making."
+				buttonText="Book a Free Consultation"
+				buttonLink="/contact"
 			/>
 
-			{/* PAIN POINTS */}
 			<ServicePainPoints
-				title="Why Most Teams Fly Blind"
+				points={[
+					'Wasting hours pulling data from multiple systems.',
+					'No single source of truth for KPIs and performance metrics.',
+					'Delayed decision-making due to slow reporting.',
+					'Opportunities slipping away because no one is tracking them in real time.',
+				]}
+			/>
+
+			<ServiceGrid
+				title="What Our Dashboards Can Do"
 				items={[
 					{
-						title: 'Scattered Data',
+						title: 'Centralized Data Hub',
 						description:
-							'Leads, sales, and operations live in different tools — no single source of truth.',
+							'Pull in sales, marketing, and operational data into one clean, live view.',
 					},
 					{
-						title: 'Slow Reporting',
+						title: 'Automated Reporting',
 						description:
-							'Manual spreadsheets delay decisions and hide problems until it’s too late.',
+							'Reports generate and send automatically, so you’re always in the loop.',
 					},
 					{
-						title: 'No Actionable KPIs',
+						title: 'Forecasting & Alerts',
 						description:
-							'Numbers without context don’t drive behavior — teams need clear, daily signals.',
+							'Spot trends early with predictive insights and timely notifications.',
+					},
+					{
+						title: 'Role-Based Access',
+						description:
+							'Give your team access to exactly what they need—nothing more, nothing less.',
 					},
 				]}
 			/>
 
-			{/* SERVICE GRID */}
-			<ServiceGrid
-				title="What Your Dashboard Can Do"
-				services={[
-					{
-						title: 'Lead & Pipeline Visibility',
-						description:
-							'Track sources, speed to lead, and stage conversion in one place.',
-						to: '/services/dashboards',
-					},
-					{
-						title: 'Revenue & Forecast KPIs',
-						description:
-							'Monitor MRR, close rates, and projections to hit targets with confidence.',
-						to: '/services/dashboards',
-					},
-					{
-						title: 'Ops & Service Metrics',
-						description:
-							'SLAs, ticket volume, completion times, and customer satisfaction.',
-						to: '/services/dashboards',
-					},
-					{
-						title: 'Executive Scorecards',
-						description:
-							'Daily/weekly snapshots with only the signals leaders need.',
-						to: '/services/dashboards',
-					},
-				]}
-			/>
-
-			{/* TRUST STRIP */}
 			<ServiceTrustStrip
-				title="Trusted by Teams That Run on Numbers"
-				logos={[
-					{ src: '/images/logos/client1.svg', alt: 'Client 1' },
-					{ src: '/images/logos/client2.svg', alt: 'Client 2' },
-					{ src: '/images/logos/client3.svg', alt: 'Client 3' },
-				]}
-				testimonials={[
-					{
-						quote: 'We finally stopped guessing. The dashboard tells us exactly where to focus each morning.',
-						author: 'C. Nguyen',
-						role: 'General Manager',
-					},
-					{
-						quote: 'Reporting time went from hours to seconds — and our weekly meetings are 50% shorter.',
-						author: 'T. Lewis',
-						role: 'Operations',
-					},
-				]}
-			/>
-
-			{/* CASE STUDY TEASER */}
-			<ServiceCaseStudyTeaser
-				imageSrc="/images/case-studies/dashboard-kpis.png"
-				imageAlt="Custom dashboard KPI view"
-				title="From Spreadsheets to Real-Time KPIs"
-				summary="Sales, service, and finance were disconnected. We unified the stack and delivered a role-based dashboard to drive action."
 				stats={[
-					{ label: 'Reporting Time', value: '-85%' },
-					{ label: 'Win Rate', value: '+22%' },
+					{ number: '50%', label: 'Faster project delivery' },
+					{ number: '100%', label: 'New revenue stream generated' },
+					{ number: '100s', label: 'Hours saved annually' },
 				]}
-				cta={{ label: 'Read Full Case Study', to: '/casestudy' }}
 			/>
 
-			{/* CTA BANNER */}
+			<ServiceCaseStudyTeaser
+				title="Case Study: Centralized Operations Platform"
+				description="We built an internal platform for a client that reduced hours of work per week to just seconds. This solution integrated customer data, automated expiration tracking, and added real-time messaging tools — enabling the business to manage customer relationships with unmatched efficiency."
+				buttonText="See More Results"
+				buttonLink="/case-studies"
+			/>
+
 			<ServiceCTABanner
-				title="See Your Most Important Numbers in One Place"
-				subtitle="We’ll map your KPIs and deliver a live demo tailored to your business."
-				cta={{ label: 'Request My Demo', to: '/contact' }}
+				text="Your data should be working harder for you."
+				buttonText="Let's Build Your Dashboard"
+				buttonLink="/contact"
 			/>
 
-			{/* FAQ */}
 			<ServiceFAQ
-				title="Dashboards & Integrations FAQs"
 				faqs={[
 					{
-						q: 'Can you connect to our existing tools?',
-						a: 'Yes — we integrate with your current CRM, forms, email, and ops systems, no rip-and-replace required.',
+						q: 'Can you integrate with my existing systems?',
+						a: 'Yes — we can connect with CRMs, e-commerce platforms, POS systems, and custom databases.',
 					},
 					{
-						q: 'How fast can we launch?',
-						a: 'A focused MVP dashboard typically launches in 2–4 weeks, with iterations as we learn from usage.',
+						q: 'How long does it take to build a dashboard?',
+						a: 'Most dashboards are ready in 2–6 weeks depending on complexity.',
 					},
 					{
-						q: 'Who will maintain it?',
-						a: 'We can maintain and enhance your dashboards, or hand off with documentation and training.',
+						q: 'Do I need technical skills to use it?',
+						a: 'No. We design interfaces that are easy for non-technical teams to navigate.',
 					},
 				]}
 			/>
 
-			{/* FINAL CTA */}
 			<ServiceFinalCTA
-				phone="(432) 555-0199"
-				cta={{ label: 'Discuss Your Dashboard', to: '/contact' }}
+				title="Stop Guessing. Start Knowing."
+				subtitle="Get a dashboard that gives you real-time clarity."
+				buttonText="Book Your Free Consultation"
+				buttonLink="/contact"
 			/>
 
-			{/* MOBILE STICKY CTA */}
-			<ServiceStickyCTA label="Request a Dashboard Demo" to="/contact" />
+			<ServiceStickyCTA
+				text="Book Your Free Consultation"
+				link="/contact"
+				mobileOnly={true}
+			/>
 		</>
 	);
-};
+}
 
-export default DashboardsPage;
+export default Dashboards;
