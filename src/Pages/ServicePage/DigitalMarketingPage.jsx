@@ -1,6 +1,6 @@
 // src/Pages/Services/DigitalMarketingPage.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import ServiceHero from '../../Components/ServiceComponents/ServiceHero';
@@ -14,6 +14,10 @@ import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA'
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
 
 const DigitalMarketingPage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Helmet>
@@ -23,30 +27,29 @@ const DigitalMarketingPage = () => {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "NextWave Web Studio",
-              "description": "Digital marketing and SEO services that help Midland–Odessa businesses get found, convert more visitors, and grow revenue.",
+              "description": "Digital marketing & SEO engineered for lead generation and measurable ROI for Midland–Odessa small businesses.",
               "url": "https://nextwavewebstudio.com/services/digital-marketing",
               "image": "https://nextwavewebstudio.com/images/services/digital-marketing.webp",
-              "areaServed": {
-                "@type": "City",
-                "name": "Midland–Odessa"
-              },
+              "areaServed": { "@type": "City", "name": "Midland–Odessa" },
               "telephone": "+1-432-555-0199"
             }
           `}
 				</script>
 
-				<title>Digital Marketing & SEO | NextWave Web Studio</title>
+				<title>
+					Digital Marketing & SEO for Leads | NextWave Web Studio
+				</title>
 				<meta
 					name="description"
-					content="Get found and grow with NextWave’s digital marketing & SEO. We drive qualified traffic and conversions for Midland–Odessa businesses."
+					content="Get found and convert more with NextWave’s ROI‑tracked SEO, local SEO, and campaigns for Midland–Odessa businesses. Book a free marketing audit."
 				/>
 				<meta
 					property="og:title"
-					content="Digital Marketing & SEO | NextWave Web Studio"
+					content="Digital Marketing & SEO for Leads | NextWave Web Studio"
 				/>
 				<meta
 					property="og:description"
-					content="NextWave helps Midland–Odessa businesses rank higher, convert better, and grow faster with strategic SEO and digital marketing."
+					content="Lead generation over vanity metrics. NextWave aligns SEO, local, and campaigns to revenue—tracked end‑to‑end."
 				/>
 				<meta
 					property="og:image"
@@ -64,129 +67,129 @@ const DigitalMarketingPage = () => {
 				/>
 			</Helmet>
 
-			{/* HERO — warmer/high-energy emphasis using your palette */}
+			{/* HERO — lead gen + ROI framing */}
 			<ServiceHero
-				eyebrow="Digital Marketing That Actually Moves the Needle"
-				headline="Get Found. Get Clicks. Get Clients."
-				subheadline="NextWave builds search visibility and high-converting campaigns for Midland–Odessa businesses — turning attention into revenue."
+				eyebrow="Lead Generation Over Vanity Metrics"
+				headline="Digital Marketing & SEO That Turns Clicks Into Clients"
+				subheadline="We align search visibility, landing pages, and follow‑up so you can track revenue—not just traffic."
 				primaryCta={{
-					label: 'Request a Free Marketing Audit',
+					label: 'Request a Free Marketing & SEO Audit',
 					to: '/contact',
 				}}
 				secondaryCta={{ label: 'See Local Results', to: '/casestudy' }}
 				stickyMobileCTA
 			/>
 
-			{/* PAIN POINTS */}
+			{/* PAIN POINTS — why marketing underperforms */}
 			<ServicePainPoints
-				title="Why Your Marketing Isn’t Converting Yet"
+				title="Why Most Marketing Doesn’t Move the Needle"
 				items={[
 					{
-						title: 'Low Search Visibility',
+						title: 'Traffic With No Intent',
 						description:
-							'If ideal buyers can’t find you, they can’t hire you. We fix discoverability first.',
-					},
-					{
-						title: 'Unfocused Traffic',
-						description:
-							'The wrong visitors waste ad spend. We align keywords, pages, and offers with intent.',
+							'Wrong keywords attract the wrong visitors. We target buying intent first.',
 					},
 					{
 						title: 'Leaky Conversion Path',
 						description:
-							'Weak CTAs and slow pages kill leads. We tighten every step from click to contact.',
+							'Slow pages + weak CTAs = money left on the table. We tighten the journey.',
+					},
+					{
+						title: 'No ROI Visibility',
+						description:
+							'If you can’t see what generated the lead, you can’t scale it. We track end‑to‑end.',
 					},
 				]}
 			/>
 
-			{/* SERVICE GRID */}
+			{/* SERVICE GRID — ROI-centric offers */}
 			<ServiceGrid
-				title="NextWave Digital Growth System"
+				title="NextWave Growth System"
 				services={[
 					{
-						title: 'Search Engine Optimization',
+						title: 'Revenue‑Keyword SEO',
 						description:
-							'Technical fixes, on-page optimization, and content that ranks for revenue keywords.',
-						to: '/seo-midland-odessa',
+							'On‑page, internal links, and content built around buyer intent—not vanity terms.',
+						to: '/services/digital-marketing',
 					},
 					{
-						title: 'Local SEO & Business Profiles',
+						title: 'Local SEO & Profiles',
 						description:
-							'Map Pack visibility, reviews, and profile optimization for Midland–Odessa searches.',
+							'Map Pack optimization, reviews, and city/service pages for Midland–Odessa searches.',
 						to: '/services/local-seo',
 					},
 					{
-						title: 'Paid Traffic Campaigns',
+						title: 'High‑Intent Landing Pages',
 						description:
-							'High-intent ads with landing pages engineered to convert.',
+							'Fast, focused pages with clear CTAs to turn ad/search clicks into inquiries.',
 						to: '/services/digital-marketing',
 					},
 					{
-						title: 'Conversion Optimization',
+						title: 'Attribution & ROI Tracking',
 						description:
-							'A/B testing, page speed, and CTA strategy to turn visits into inquiries.',
+							'From click to call to closed—so you know exactly what to scale.',
 						to: '/services/digital-marketing',
 					},
 				]}
 			/>
 
-			{/* TRUST STRIP */}
+			{/* TRUST STRIP — anonymized, believable outcomes */}
 			<ServiceTrustStrip
-				title="Trusted by West Texas Businesses"
+				title="What Businesses Like Yours Experience"
 				logos={[
-					{ src: '/images/logos/client1.svg', alt: 'Client 1' },
-					{ src: '/images/logos/client2.svg', alt: 'Client 2' },
-					{ src: '/images/logos/client3.svg', alt: 'Client 3' },
+					{ src: '/images/logos/client1.svg', alt: 'Client' },
+					{ src: '/images/logos/client2.svg', alt: 'Client' },
+					{ src: '/images/logos/client3.svg', alt: 'Client' },
 				]}
 				testimonials={[
 					{
-						quote: 'NextWave helped us dominate local search and our inbound leads doubled within a quarter.',
-						author: 'Kelly D.',
-						role: 'Owner',
+						quote: 'They refocused our keywords, rebuilt our landing page, and qualified inquiries jumped—same spend, better leads.',
+						author: 'General Manager',
+						role: 'Home Services',
 					},
 					{
-						quote: 'Our ads finally made sense — fewer clicks, more calls, lower cost per lead.',
-						author: 'R. Alvarez',
-						role: 'General Manager',
+						quote: 'We finally see what’s working and what isn’t. Easy decisions, better results.',
+						author: 'Owner',
+						role: 'Local SMB',
 					},
 				]}
 			/>
 
-			{/* CASE STUDY TEASER */}
+			{/* CASE STUDY TEASER — framed to emphasize ROI tracking */}
 			<ServiceCaseStudyTeaser
 				imageSrc="/images/case-studies/seo-local-pack.png"
-				imageAlt="Local pack results preview"
-				title="From Invisible to Top 3 in the Local Pack"
-				summary="We realigned keyword targeting, fixed site structure, and optimized the business profile — resulting in more calls from local buyers."
+				imageAlt="Local visibility improvements"
+				title="From Invisible to Booked: Local Visibility That Converts"
+				summary="We aligned search intent, fixed the conversion path, and implemented ROI tracking—so every channel could be optimized against revenue, not just clicks."
 				stats={[
 					{ label: 'Local Impressions', value: '+145%' },
-					{ label: 'Inbound Calls', value: '+78%' },
+					{ label: 'Qualified Calls', value: '+78%' },
 				]}
 				cta={{ label: 'Read Full Case Study', to: '/casestudy' }}
 			/>
 
-			{/* CTA BANNER — use a bright accent background for energy */}
+			{/* MID OFFER — no-brainer audit */}
 			<ServiceCTABanner
-				title="Get a Free Marketing & SEO Audit"
-				subtitle="We’ll show you where you’re losing opportunities — and exactly how to fix it."
+				title="Free Marketing & SEO Audit"
+				subtitle="We’ll show you exactly where leads are leaking—and how to fix it fast."
 				cta={{ label: 'Request My Audit', to: '/contact' }}
 			/>
 
-			{/* FAQ */}
+			{/* FAQ — use q/a keys */}
 			<ServiceFAQ
-				title="Digital Marketing & SEO FAQs"
+				title="Digital Marketing & SEO — FAQs"
 				faqs={[
 					{
-						q: 'How long until I see SEO results?',
-						a: 'Most clients see early movement in 4–8 weeks, with meaningful gains by 3–6 months depending on competition.',
+						q: 'Can you work with our existing website?',
+						a: 'Yes. We can optimize your current site or deploy focused landing pages without a full rebuild.',
 					},
 					{
-						q: 'Can you work with our existing site?',
-						a: 'Yes. We can optimize your current site or build high-converting landing pages without a full redesign.',
+						q: 'How do you track ROI?',
+						a: 'We connect campaigns to calls/forms, then map those to outcomes so you can see cost per qualified lead and cost per acquisition.',
 					},
 					{
-						q: 'Do you handle ads too?',
-						a: 'Yes. We run targeted campaigns and link them to pages designed to convert — so spend works harder.',
+						q: 'How fast will we see results?',
+						a: 'Paid + landing pages can improve in days; SEO momentum typically builds over 4–12 weeks depending on competition.',
 					},
 				]}
 			/>
@@ -194,7 +197,7 @@ const DigitalMarketingPage = () => {
 			{/* FINAL CTA */}
 			<ServiceFinalCTA
 				phone="(432) 555-0199"
-				cta={{ label: 'Discuss Your Project', to: '/contact' }}
+				cta={{ label: 'Discuss Your Growth Plan', to: '/contact' }}
 			/>
 
 			{/* MOBILE STICKY CTA */}
