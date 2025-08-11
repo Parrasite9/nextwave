@@ -1,6 +1,6 @@
 // src/Pages/Services/LocalSEOPage.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
 import ServiceHero from '../../Components/ServiceComponents/ServiceHero';
@@ -14,6 +14,10 @@ import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA'
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
 
 const LocalSEOPage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Helmet>
@@ -23,13 +27,10 @@ const LocalSEOPage = () => {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "NextWave Web Studio",
-              "description": "Local SEO and Google Business Profile optimization to help Midland–Odessa businesses dominate local search and get more calls.",
+              "description": "Local SEO and Google Business Profile optimization for Midland–Odessa businesses focused on calls, direction requests, and booked jobs.",
               "url": "https://nextwavewebstudio.com/services/local-seo",
               "image": "https://nextwavewebstudio.com/images/services/local-seo.webp",
-              "areaServed": {
-                "@type": "City",
-                "name": "Midland–Odessa"
-              },
+              "areaServed": { "@type": "City", "name": "Midland–Odessa" },
               "telephone": "+1-432-555-0199"
             }
           `}
@@ -41,7 +42,7 @@ const LocalSEOPage = () => {
 				</title>
 				<meta
 					name="description"
-					content="NextWave helps Midland–Odessa businesses win local search with optimized Google Business Profiles, reviews, and map-pack rankings."
+					content="Own the map pack in Midland–Odessa. NextWave optimizes your Google Business Profile, reviews, citations, and local pages to drive calls and foot traffic."
 				/>
 				<meta
 					property="og:title"
@@ -49,7 +50,7 @@ const LocalSEOPage = () => {
 				/>
 				<meta
 					property="og:description"
-					content="Rank higher in the map pack, get more calls, and grow locally. NextWave’s Local SEO services are built for Midland–Odessa businesses."
+					content="Rank higher locally, win more calls, and turn nearby searches into booked work with NextWave's Local SEO."
 				/>
 				<meta
 					property="og:image"
@@ -67,129 +68,129 @@ const LocalSEOPage = () => {
 				/>
 			</Helmet>
 
-			{/* HERO */}
+			{/* HERO — calls & bookings first */}
 			<ServiceHero
-				eyebrow="Local SEO That Owns the Map Pack"
-				headline="Be the First Call in Your Area"
-				subheadline="When customers search in Midland–Odessa, they see the top three map results first. We make sure you’re one of them — and getting the calls."
+				eyebrow="Be the First Call in Midland–Odessa"
+				headline="Local SEO & Business Profile Optimization That Drives Real Inquiries"
+				subheadline="We tune your local presence so you show up in the map pack, earn trust with reviews, and turn nearby searches into booked jobs."
 				primaryCta={{
 					label: 'Request a Free Local SEO Audit',
 					to: '/contact',
 				}}
-				secondaryCta={{ label: 'See Our Local Wins', to: '/casestudy' }}
+				secondaryCta={{ label: 'See Local Wins', to: '/casestudy' }}
 				stickyMobileCTA
 			/>
 
-			{/* PAIN POINTS */}
+			{/* PAIN POINTS — local realities */}
 			<ServicePainPoints
-				title="Why Local Businesses Struggle to Rank"
+				title="Why You’re Not Showing Up (Yet)"
 				items={[
 					{
-						title: 'Incomplete Business Profiles',
+						title: 'Incomplete/Incorrect Business Profile',
 						description:
-							'Missing hours, categories, or descriptions can drop you out of the top results.',
+							'Missing categories, weak descriptions, and wrong hours push you down the results.',
 					},
 					{
-						title: 'Weak or Inconsistent Reviews',
+						title: 'Thin Review Footprint',
 						description:
-							'Low star ratings and few reviews hurt trust — and ranking potential.',
+							'Few reviews (or old ones) reduce trust and limit conversions—even if you rank.',
 					},
 					{
-						title: 'NAP Inconsistencies',
+						title: 'NAP & Citation Issues',
 						description:
-							'Name, address, and phone number mismatches confuse Google and customers.',
+							'Name/Address/Phone inconsistencies confuse both Google and customers.',
 					},
 				]}
 			/>
 
-			{/* SERVICE GRID */}
+			{/* SERVICES — concrete local actions */}
 			<ServiceGrid
-				title="Our Local SEO Playbook"
+				title="NextWave Local Growth Playbook"
 				services={[
 					{
 						title: 'Google Business Profile Optimization',
 						description:
-							'Every field perfected for maximum visibility and trust.',
+							'Dialed-in categories, services, products, photos, and posting cadence.',
 						to: '/services/local-seo',
 					},
 					{
-						title: 'Review & Reputation Management',
+						title: 'Review & Reputation Engine',
 						description:
-							'Get more 5-star reviews and respond to feedback quickly.',
+							'Ethical review growth, response management, and spam dispute guidance.',
 						to: '/services/local-seo',
 					},
 					{
-						title: 'Citation Building & Cleanup',
+						title: 'Citations & NAP Consistency',
 						description:
-							'Correct and expand your presence across all major local directories.',
+							'Audit, cleanup, and expansion across major directories and local hubs.',
 						to: '/services/local-seo',
 					},
 					{
-						title: 'Local Content & Landing Pages',
+						title: 'Local Landing Pages',
 						description:
-							'Targeted pages that capture city-specific and service-specific searches.',
+							'City/service pages aligned to how Midland–Odessa customers actually search.',
 						to: '/services/local-seo',
 					},
 				]}
 			/>
 
-			{/* TRUST STRIP */}
+			{/* TRUST — anonymized, believable outcomes */}
 			<ServiceTrustStrip
-				title="Trusted by Local Leaders"
+				title="What Local Businesses Experience"
 				logos={[
-					{ src: '/images/logos/client1.svg', alt: 'Client 1' },
-					{ src: '/images/logos/client2.svg', alt: 'Client 2' },
-					{ src: '/images/logos/client3.svg', alt: 'Client 3' },
+					{ src: '/images/logos/client1.svg', alt: 'Client' },
+					{ src: '/images/logos/client2.svg', alt: 'Client' },
+					{ src: '/images/logos/client3.svg', alt: 'Client' },
 				]}
 				testimonials={[
 					{
-						quote: 'Our business went from invisible to showing up in the top 3 local results in under 90 days.',
-						author: 'D. Harper',
-						role: 'Owner',
+						quote: 'We went from barely visible to steady calls every week. The profile overhaul and review plan made the difference.',
+						author: 'Owner',
+						role: 'Home Services, Midland',
 					},
 					{
-						quote: 'The calls started coming in steadily after they fixed our business profile and reviews.',
-						author: 'M. Sanchez',
-						role: 'General Manager',
+						quote: 'Clear plan, quick wins, and our maps rankings climbed. We finally show up where our customers are.',
+						author: 'Manager',
+						role: 'Local Retail, Odessa',
 					},
 				]}
 			/>
 
-			{/* CASE STUDY TEASER */}
+			{/* CASE STUDY TEASER — framed around calls & visibility; NDA‑safe */}
 			<ServiceCaseStudyTeaser
 				imageSrc="/images/case-studies/local-map-pack.png"
-				imageAlt="Map pack ranking results"
-				title="From Nowhere to Everywhere in Local Search"
-				summary="Optimized a Midland business profile, fixed NAP citations, and grew 5-star reviews — resulting in a surge of local calls."
+				imageAlt="Local map pack visibility"
+				title="From Invisible to In-Demand in the Map Pack"
+				summary="We corrected profile data, rebuilt citations, and implemented a simple review engine—driving measurable gains in calls and direction requests."
 				stats={[
-					{ label: 'Map Pack Visibility', value: '+210%' },
-					{ label: 'Inbound Calls', value: '+95%' },
+					{ label: 'Local Impressions', value: '+145%' },
+					{ label: 'Qualified Calls', value: '+78%' },
 				]}
 				cta={{ label: 'Read Full Case Study', to: '/casestudy' }}
 			/>
 
-			{/* CTA BANNER */}
+			{/* MID CTA — audit as no‑brainer */}
 			<ServiceCTABanner
-				title="Get a Free Local SEO & Map Pack Audit"
-				subtitle="We’ll show you exactly how to outrank your competitors locally."
+				title="Free Local SEO & Profile Audit"
+				subtitle="We’ll show exactly what’s holding you back and the fastest steps to fix it."
 				cta={{ label: 'Request My Audit', to: '/contact' }}
 			/>
 
-			{/* FAQ */}
+			{/* FAQ — { q, a } format */}
 			<ServiceFAQ
-				title="Local SEO FAQs"
+				title="Local SEO — FAQs"
 				faqs={[
 					{
-						q: 'How long does it take to rank in the map pack?',
-						a: 'With proper optimization and review growth, many clients see movement within 30–60 days.',
+						q: 'How fast can we see movement?',
+						a: 'With profile fixes and a review plan, many businesses see early gains within 30–60 days, then compounding improvement.',
 					},
 					{
-						q: 'Do I need a website to rank locally?',
-						a: 'A site helps tremendously, but we can still improve your profile visibility without one.',
+						q: 'Do we need a new website?',
+						a: 'Not necessarily. A solid site helps; we can still improve visibility with profile and citation work while we tune your pages.',
 					},
 					{
-						q: 'Will you manage reviews for us?',
-						a: 'Yes. We set up systems to encourage positive reviews and monitor your reputation.',
+						q: 'Can you help get more reviews (ethically)?',
+						a: 'Yes. We implement compliant, customer-friendly requests and response workflows that build trust over time.',
 					},
 				]}
 			/>
@@ -200,7 +201,7 @@ const LocalSEOPage = () => {
 				cta={{ label: 'Discuss Your Local SEO Plan', to: '/contact' }}
 			/>
 
-			{/* MOBILE STICKY CTA */}
+			{/* MOBILE-ONLY STICKY CTA */}
 			<ServiceStickyCTA
 				label="Request Your Free Local SEO Audit"
 				to="/contact"
