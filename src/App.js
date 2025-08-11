@@ -25,7 +25,7 @@ import AIAutomationPage from './Pages/ServicePage/AIAutomationPage';
 import DigitalMarketingPage from './Pages/ServicePage/DigitalMarketingPage';
 import LocalSEOPage from './Pages/ServicePage/LocalSEOPage';
 import DashboardsPage from './Pages/ServicePage/DashboardsPage';
-// import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage';
+import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage.jsx';
 // import MidlandOdessaSEOPage from './Pages/ServicePage/MidlandOdessaSEOPage';
 
 function App() {
@@ -90,10 +90,10 @@ function App() {
 							path="/services/dashboards"
 							element={<DashboardsPage />}
 						/>
-						{/* <Route
+						<Route
 							path="/web-design-odessa-tx"
 							element={<OdessaWebDesignPage />}
-						/> */}
+						/>
 						{/* <Route
 							path="/seo-midland-odessa"
 							element={<MidlandOdessaSEOPage />}
