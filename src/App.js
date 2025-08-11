@@ -26,7 +26,6 @@ import DigitalMarketingPage from './Pages/ServicePage/DigitalMarketingPage';
 import LocalSEOPage from './Pages/ServicePage/LocalSEOPage';
 import DashboardsPage from './Pages/ServicePage/DashboardsPage';
 import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage.jsx';
-// import MidlandOdessaSEOPage from './Pages/ServicePage/MidlandOdessaSEOPage';
 
 function App() {
 	// Move the hook inside the Router
@@ -94,10 +93,6 @@ function App() {
 							path="/web-design-odessa-tx"
 							element={<OdessaWebDesignPage />}
 						/>
-						{/* <Route
-							path="/seo-midland-odessa"
-							element={<MidlandOdessaSEOPage />}
-						/> */}
 
 						{/* WILDCARD */}
 						<Route path="*" element={<NotFound />} />

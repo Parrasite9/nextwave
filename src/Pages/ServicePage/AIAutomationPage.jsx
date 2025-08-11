@@ -1,6 +1,8 @@
 // src/Pages/Services/AIAutomationPage.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
+
 import ServiceHero from '../../Components/ServiceComponents/ServiceHero';
 import ServicePainPoints from '../../Components/ServiceComponents/ServicePainPoints';
 import ServiceGrid from '../../Components/ServiceComponents/ServiceGrid';
@@ -10,46 +12,41 @@ import ServiceCTABanner from '../../Components/ServiceComponents/ServiceCTABanne
 import ServiceFAQ from '../../Components/ServiceComponents/ServiceFAQ';
 import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA';
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
-import { Helmet } from 'react-helmet-async';
 
 const AIAutomationPage = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<Helmet>
-				{/* Structured Data */}
 				<script type="application/ld+json">
 					{`
-                {
-                    "@context": "https://schema.org",
-                    "@type": "ProfessionalService",
-                    "name": "NextWave Web Studio",
-                    "description": "NextWave delivers AI automation solutions that streamline workflows, boost efficiency, and drive measurable ROI for businesses nationwide.",
-                    "url": "https://nextwavewebstudio.com/ai-automation",
-                    "telephone": "+1-555-555-5555",
-                    "image": "https://nextwavewebstudio.com/images/services/ai-automation.webp",
-                    "areaServed": {
-                        "@type": "Country",
-                        "name": "United States"
-                    }
-                }
-                `}
+            {
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "NextWave Web Studio",
+              "description": "NextWave builds AI-driven automations that eliminate manual work, reconcile data across systems, and create new revenue opportunities for SMBs.",
+              "url": "https://nextwavewebstudio.com/ai-automation",
+              "image": "https://nextwavewebstudio.com/images/services/ai-automation.webp",
+              "areaServed": { "@type": "Country", "name": "United States" },
+              "telephone": "+1-432-555-0199"
+            }
+          `}
 				</script>
-
-				{/* Page Title & Meta */}
 				<title>AI Automation Solutions | NextWave Web Studio</title>
 				<meta
 					name="description"
-					content="Cut admin time, respond faster, and scale operations with NextWave's AI automation solutions. Streamline workflows and boost ROI."
+					content="Cut admin time, reconcile messy data, and scale operations with NextWave’s AI automation. Real outcomes: 30 hrs/mo → ~3 min; 50% faster launch; new revenue channels."
 				/>
-
-				{/* Open Graph for Social Sharing */}
 				<meta
 					property="og:title"
 					content="AI Automation Solutions | NextWave Web Studio"
 				/>
 				<meta
 					property="og:description"
-					content="Cut admin time, respond faster, and scale operations with NextWave's AI automation solutions. Streamline workflows and boost ROI."
+					content="NextWave automates intake, follow-up, data reconciliation, and reporting—freeing teams and unlocking revenue. Book a free strategy session."
 				/>
 				<meta
 					property="og:image"
@@ -60,8 +57,6 @@ const AIAutomationPage = () => {
 					content="https://nextwavewebstudio.com/ai-automation"
 				/>
 				<meta property="og:type" content="website" />
-
-				{/* SEO Directives */}
 				<meta name="robots" content="index, follow" />
 				<link
 					rel="canonical"
@@ -69,11 +64,11 @@ const AIAutomationPage = () => {
 				/>
 			</Helmet>
 
-			{/* HERO */}
+			{/* HERO (NextWave-first; outcome-forward; no platform names) */}
 			<ServiceHero
-				eyebrow="AI Automation for Real Business Growth"
-				headline="Cut Admin Time, Respond Faster, and Scale Operations with NextWave Integrations"
-				subheadline="Our tailored automation solutions eliminate bottlenecks, improve client response, and free you to focus on growth — without adding headcount."
+				eyebrow="AI Automation for Real-World ROI"
+				headline="Cut Admin Time and Unlock New Revenue with NextWave Automations"
+				subheadline="We replace repetitive work, reconcile messy data across systems, and systematize follow‑up—so your team moves faster with fewer mistakes."
 				primaryCta={{
 					label: 'Book a Free Automation Strategy Session',
 					to: '/contact',
@@ -85,116 +80,138 @@ const AIAutomationPage = () => {
 				stickyMobileCTA
 			/>
 
-			{/* PAIN POINTS */}
+			{/* PAIN → we anchor on manual work, slow follow-up, fragmented data */}
 			<ServicePainPoints
-				title="The Hidden Costs of Doing It All Manually"
+				title="What’s Slowing Growth Right Now"
 				items={[
 					{
-						title: 'Time-Draining Admin Work',
+						title: 'Manual, Repetitive Tasks',
 						description:
-							'Manual processes slow your team down, eat into profits, and distract from revenue-generating tasks.',
+							'Hours disappear into copy/paste, spreadsheet work, and status updates—none of which grow revenue.',
 					},
 					{
-						title: 'Slow Lead Response',
+						title: 'Slow or Missed Follow‑Ups',
 						description:
-							'Minutes matter — slow replies mean lost deals. Automation ensures you’re first to respond, every time.',
+							'Every minute counts. Without systemized responses and reminders, hot opportunities go cold.',
 					},
 					{
-						title: 'Inconsistent Client Experience',
+						title: 'Fragmented, Inaccurate Data',
 						description:
-							'Without streamlined systems, customer journeys vary — making it harder to build loyalty.',
+							'Multiple tools = conflicting numbers. Decisions stall when data can’t be trusted.',
 					},
 				]}
 			/>
 
-			{/* SERVICE GRID */}
+			{/* SERVICES → renamed as proprietary NextWave capabilities */}
 			<ServiceGrid
-				title="NextWave Automation Solutions"
+				title="NextWave Automation Capabilities"
 				services={[
 					{
-						title: 'Lead Intake & Routing',
+						title: 'NextWave Data Match Engine',
 						description:
-							'Automatically capture, score, and send leads to the right place without lifting a finger.',
+							'Automatically reconciles transactions across sources and “finds the truth” in blended data—no manual combing.',
 						to: '/casestudy',
 					},
 					{
-						title: 'Client Onboarding',
+						title: 'Lead Intake & Smart Routing',
 						description:
-							'Welcome new clients with personalized workflows that handle paperwork, scheduling, and more.',
+							'Capture, qualify, and auto‑assign leads with instant alerts—be first to respond, every time.',
 						to: '/casestudy',
 					},
 					{
-						title: 'Follow-Up & Nurture',
+						title: 'Lifecycle Messaging & Follow‑Up',
 						description:
-							'Keep prospects engaged with timed messages, reminders, and targeted offers.',
+							'Personalized sequences for outreach, reminders, and nurturing that run reliably in the background.',
 						to: '/casestudy',
 					},
 					{
-						title: 'Reporting Dashboards',
+						title: 'Ops Dashboards & Alerts',
 						description:
-							'Real-time metrics so you always know what’s working — and what’s not.',
-						to: '/casestudy',
+							'Real‑time KPIs, role‑based views, and change logs so leaders can act in minutes—not weeks.',
+						to: '/services/dashboards',
 					},
 				]}
 			/>
 
-			{/* TRUST STRIP */}
+			{/* TRUST – keep generic but confident; no brand names; NDA-safe */}
 			<ServiceTrustStrip
-				title="Trusted by Businesses Across Midland–Odessa"
+				title="Built for Teams That Value Speed and Accuracy"
 				logos={[
-					{ src: '/images/logos/client1.svg', alt: 'Client 1' },
-					{ src: '/images/logos/client2.svg', alt: 'Client 2' },
-					{ src: '/images/logos/client3.svg', alt: 'Client 3' },
+					{ src: '/images/logos/client1.svg', alt: 'Client' },
+					{ src: '/images/logos/client2.svg', alt: 'Client' },
+					{ src: '/images/logos/client3.svg', alt: 'Client' },
 				]}
 				testimonials={[
 					{
-						quote: 'NextWave automated our intake process and freed up 15 hours a week for our sales team.',
-						author: 'Sarah M.',
-						role: 'Operations Manager',
+						quote: 'We eliminated hours of manual reconciliation and finally trust our numbers. Decisions are faster and clearer.',
+						author: 'Operations Lead',
+						role: 'Multi‑Location Enterprise',
 					},
 					{
-						quote: 'We went from missing follow-ups to closing deals faster than ever — automation changed everything.',
-						author: 'James R.',
-						role: 'Business Owner',
+						quote: 'Response time dropped, follow‑ups improved, and our team spends time on revenue—not admin.',
+						author: 'Owner',
+						role: 'Service Business',
 					},
 				]}
 			/>
 
-			{/* CASE STUDY TEASER */}
+			{/* CASE TEASER – anonymized, specific metrics (from your experience) */}
 			<ServiceCaseStudyTeaser
 				imageSrc="/images/case-studies/automation-intake.png"
 				imageAlt="Automation workflow preview"
-				title="How a Midland Firm Reduced Admin Time by 60%"
-				summary="We mapped their sales process, identified bottlenecks, and implemented automations that saved over 20 hours per week."
+				title="Data Reconciliation: ~30 Hours/Month → ~3 Minutes"
+				summary="We implemented a reconciliation flow that ingested transactions from multiple sources, auto‑matched blended records, and produced a trusted report—removing a recurring 20–30 hours of manual work each month."
 				stats={[
-					{ label: 'Admin Time', value: '-60%' },
-					{ label: 'Lead Response', value: '3x Faster' },
+					{ label: 'Manual Hours', value: '−95%+' },
+					{ label: 'Time‑to‑Report', value: 'Minutes' },
 				]}
-				cta={{ label: 'Read Full Case Study', to: '/casestudy' }}
+				cta={{ label: 'Explore Automation Examples', to: '/casestudy' }}
 			/>
 
-			{/* CTA BANNER */}
+			{/* SECONDARY PROOF (concise outcomes snapshot using “pain” component for visual parity) */}
+			<ServicePainPoints
+				title="Recent Outcomes from NextWave Automations"
+				items={[
+					{
+						title: '50% Faster Launch than Initial Estimates',
+						description:
+							'Delivered a production system in under 30 days (original scope 60+), accelerating time‑to‑value.',
+					},
+					{
+						title: 'New Revenue Channel—Zero Extra Headcount',
+						description:
+							'Automated opportunity identification and outreach created a recurring revenue stream with existing staff.',
+					},
+					{
+						title: 'One FTE Equivalent Unlocked',
+						description:
+							'Workflow consolidation and automation freed “hundreds of hours annually” across roles.',
+					},
+				]}
+			/>
+
+			{/* CTA BANNER – strong promise, low risk */}
 			<ServiceCTABanner
-				title="See Exactly What You Can Automate in 30 Minutes"
-				subtitle="Book your free strategy session — walk away with at least 3 custom automation ideas tailored to your business."
-				cta={{ label: 'Book My Free Session', to: '/contact' }}
+				title="In 30 Minutes, We’ll Map the 3 Fastest Automations for Your Business"
+				subtitle="No tech talk—just clear wins and how to implement them. If it’s not valuable, we’ll tell you straight."
+				cta={{ label: 'Book My Free Strategy Session', to: '/contact' }}
 			/>
 
-			{/* FAQ */}
+			{/* FAQ – address NDA, platform‑agnostic approach, and speed-to-value */}
 			<ServiceFAQ
-				title="AI Automation FAQs"
+				title="AI Automation — FAQs"
 				faqs={[
 					{
-						q: 'Do I need to change the tools I’m already using?',
-						a: 'Not at all — we design solutions that integrate seamlessly with your current systems.',
+						q: 'Do we need to switch tools to work with you?',
+						a: 'No. We integrate with your existing stack and design automations that meet you where you are.',
 					},
 					{
-						q: 'How quickly can I see results?',
-						a: 'Most clients see time savings and improved responsiveness within the first month.',
+						q: 'Can you work under NDA and keep details private?',
+						a: 'Yes. We routinely anonymize client data and outcomes while protecting confidential information.',
 					},
 					{
-						q: 'What industries do you specialize in?',
-						a: 'We work with service-based businesses, professional firms, and local companies across Midland–Odessa.',
+						q: 'How soon will we see value?',
+						a: 'Many wins can be delivered within the first 2–4 weeks—starting with the highest‑leverage tasks.',
 					},
 				]}
 			/>
@@ -202,10 +219,10 @@ const AIAutomationPage = () => {
 			{/* FINAL CTA */}
 			<ServiceFinalCTA
 				phone="(432) 555-0199"
-				cta={{ label: 'Discuss Your Project', to: '/contact' }}
+				cta={{ label: 'Discuss Your Automation Plan', to: '/contact' }}
 			/>
 
-			{/* STICKY CTA for mobile */}
+			{/* MOBILE STICKY CTA */}
 			<ServiceStickyCTA
 				label="Book a Free Automation Session"
 				to="/contact"
