@@ -46,6 +46,7 @@ function App() {
 							path="/free-google-report"
 							element={<CollectWebsiteURL />}
 						/> */}
+						<Route path="/case-studies" element={<Contact />} />
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/404" element={<NotFound />} />
 						<Route path="/get-website" element={<GetWebsite />} />

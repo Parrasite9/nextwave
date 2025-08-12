@@ -70,6 +70,16 @@ function CaseStudy() {
 						</div>
 					))}
 				</div>
+				{/* View All Button */}
+				{caseStudies.length > 4 && (
+					<div className="flex justify-center mt-8">
+						<Link to="/case-studies">
+							<button className="px-6 py-3 bg-yale-blue text-white font-semibold rounded hover:bg-sky-blue transition-colors duration-300">
+								View All Case Studies
+							</button>
+						</Link>
+					</div>
+				)}
 			</div>
 		</div>
 	);
