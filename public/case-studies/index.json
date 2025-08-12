@@ -1,0 +1,72 @@
+[
+	{
+		"slug": "project-boost",
+		"name": "Project Boost",
+		"title": "Project Boost — Loyalty & Rewards Automation Dashboard",
+		"poster": "/images/casestudy/projectboost/Mockup.jpg",
+		"lgPoster": "/images/casestudy/projectboost/PGDesktopMockup.jpg",
+		"shortDescription": "Enterprise-grade loyalty & rewards dashboard with forecasting, automation, and real-time logging.",
+		"datePublished": "2025-08-10",
+		"serviceCategories": ["Dashboards & Data", "AI Automation"],
+		"industryCategories": ["Automotive"],
+		"outcomeCategories": ["Revenue Growth", "Efficiency Gains"],
+		"featured": true,
+		"order": 1
+	},
+	{
+		"slug": "seductivebox",
+		"name": "SeductiveBox",
+		"title": "Subscription Website Redesign | 733% Revenue Growth with SeductiveBox",
+		"poster": "/images/casestudy/seductivebox/seductivebox_mockup.webp",
+		"lgPoster": "/images/casestudy/seductivebox/seductiveboxlg.webp",
+		"shortDescription": "Female-focused UX + streamlined checkout that drove a 733% revenue lift.",
+		"datePublished": "2024-05-01",
+		"serviceCategories": ["Web Design & Dev", "Digital Marketing"],
+		"industryCategories": ["Retail & E‑com"],
+		"outcomeCategories": ["Revenue Growth", "UX Conversion Lift"],
+		"featured": true,
+		"order": 2
+	},
+	{
+		"slug": "studio-no-1",
+		"name": "Studio No. 1",
+		"title": "Salon Website Design | Unified Booking Platform for Studio No. 1",
+		"poster": "/images/casestudy/studioone/studioone_mockup.webp",
+		"lgPoster": "/images/casestudy/studioone/studioonelg.webp",
+		"shortDescription": "Centralized booking hub replacing 15+ scattered links; cleaner brand, easier scheduling.",
+		"datePublished": "2024-03-15",
+		"serviceCategories": ["Web Design & Dev"],
+		"industryCategories": ["Beauty & Wellness"],
+		"outcomeCategories": ["Lead Growth", "Brand Refresh"],
+		"featured": false,
+		"order": 3
+	},
+	{
+		"slug": "theorangerv",
+		"name": "TheOrangeRV",
+		"title": "RV Website Design | Professional Online Inventory for TheOrangeRV",
+		"poster": "/images/casestudy/theorangerv/theorangerv_mockup.webp",
+		"lgPoster": "/images/casestudy/theorangerv/orangelg.webp",
+		"shortDescription": "Inventory-first site replacing Marketplace listings with a credible browsing experience.",
+		"datePublished": "2024-02-10",
+		"serviceCategories": ["Web Design & Dev"],
+		"industryCategories": ["Automotive"],
+		"outcomeCategories": ["Lead Growth", "Brand Refresh"],
+		"featured": false,
+		"order": 4
+	},
+	{
+		"slug": "wayout-kids",
+		"name": "WayOut Kids",
+		"title": "Nonprofit Website Redesign | WayOut Kids Homepage Design",
+		"poster": "/images/casestudy/wayoutkids/wayout_mockup.webp",
+		"lgPoster": "/images/casestudy/wayoutkids/wayoutlg.webp",
+		"shortDescription": "Cleaner nonprofit homepage for credibility, clarity, and donation-focused CTAs.",
+		"datePublished": "2023-11-20",
+		"serviceCategories": ["Web Design & Dev"],
+		"industryCategories": ["Nonprofit"],
+		"outcomeCategories": ["Brand Refresh", "Lead Growth"],
+		"featured": false,
+		"order": 5
+	}
+]
