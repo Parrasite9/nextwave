@@ -1,0 +1,141 @@
+{
+	"poster": "/images/casestudy/studioone/studioone_mockup.webp",
+	"lgPoster": "/images/casestudy/studioone/studioonelg.webp",
+	"image": [
+		{ "image": "/images/casestudy/studioone/Desktop/Home_D1.webp" },
+		{ "image": "/images/casestudy/studioone/Desktop/Home_D2.webp" },
+		{ "image": "/images/casestudy/studioone/Desktop/Home_D3.webp" },
+		{ "image": "/images/casestudy/studioone/Desktop/Home_D4.webp" }
+	],
+	"colors": {
+		"primary": "#163c5d",
+		"secondary": "#0074b7",
+		"ctaButton": "#163c5d",
+		"ctaButtonText": "#f2f2f2"
+	},
+	"seo": "salon website design, booking platform for salons, Studio No. 1 website",
+	"name": "Studio No. 1",
+	"shortDescription": "Learn how we unified Studio No. 1's booking system into a seamless platform, simplifying client bookings and strengthening their brand.",
+	"timeline": "2 Weeks",
+	"slug": "studio-no-1",
+	"title": "Salon Website Design | Unified Booking Platform for Studio No. 1",
+	"teaser": "Our salon website design for Studio No. 1 streamlined booking and created a cohesive brand, enhancing the client experience. See the results now!",
+	"price": "$$",
+	"intro": "Studio No. 1, a beauty salon housing independent contractors, needed a unified platform to streamline the booking process and create a professional, team-oriented online presence.",
+	"role": "We were responsible for the full project design and development.",
+	"hasVideo": false,
+	"videoPath": "",
+	"problem": {
+		"header": "Decentralized Booking & Lack of Team Cohesion",
+		"headerDetail": "Studio No. 1 had 15+ independent booking sites for each contractor, creating confusion for clients and making it difficult to maintain a professional, cohesive online presence.",
+		"subheaders": [
+			{
+				"subheader": "Multiple Independent Booking Sites",
+				"subHeaderDetail": "Each contractor managed their own booking system, making it hard for clients to locate and book services in one place."
+			},
+			{
+				"subheader": "Inconsistent Branding",
+				"subHeaderDetail": "Without a unified site, the brand appeared fragmented, reducing the salon’s overall professional image."
+			}
+		]
+	},
+	"goal": {
+		"header": "Build a Centralized Booking Hub for All Team Members",
+		"headerDetail": "Our primary goal was to feature all team members prominently and allow clients to easily book services from their preferred contractor or discover new services from others.",
+		"subheaders": [
+			{
+				"subheader": "Feature All Contractors in One Place",
+				"subHeaderDetail": "Create a website where clients can view all team members and their services without leaving the main site."
+			},
+			{
+				"subheader": "Simplify Booking Process",
+				"subHeaderDetail": "Redirect clients seamlessly to each contractor’s personal booking page for a smooth and efficient experience."
+			},
+			{
+				"subheader": "Foster a Unified Brand",
+				"subHeaderDetail": "Promote a professional image by representing all contractors under the Studio No. 1 brand."
+			}
+		]
+	},
+	"impact": {
+		"header": "Enhanced Client Experience & Improved Professional Image",
+		"headerDetail": "The new platform improved client satisfaction by making it easy to book with preferred contractors and strengthened Studio No. 1’s brand image.",
+		"subheaders": [
+			{
+				"subheader": "Increased Booking Efficiency",
+				"subHeaderDetail": "Clients now have quick access to all team members, streamlining booking and improving satisfaction."
+			},
+			{
+				"subheader": "Strengthened Brand Cohesion",
+				"subHeaderDetail": "The unified platform presented a cohesive, professional image that represented all contractors as part of a team."
+			}
+		]
+	},
+	"ideation": {
+		"header": "Developing the Platform Layout & Features",
+		"headerDetail": "Planning focused on organizing contractor pages and ensuring an intuitive user experience that emphasized Studio No. 1’s team approach.",
+		"mediaType": "image",
+		"mediaUrl": "/images/casestudy/studioone/CaseStudy/earlyDesign.webp",
+		"subheaders": [
+			{
+				"subheader": "Centralized Navigation",
+				"subHeaderDetail": "Designed navigation so users could find each contractor quickly from the homepage.",
+				"mediaType": "video",
+				"mediaUrl": "/images/casestudy/studioone/CaseStudy/ideation.mp4"
+			},
+			{
+				"subheader": "Consistent Design for Independent Pages",
+				"subHeaderDetail": "Maintained cohesive branding across all contractor pages to enhance the sense of unity."
+			}
+		]
+	},
+	"testing": {
+		"header": "User Feedback & Interface Adjustments",
+		"headerDetail": "Gathered feedback from clients and contractors to ensure ease of use and smooth navigation across the platform.",
+		"subheaders": [
+			{
+				"subheader": "Client Feedback on Navigation",
+				"subHeaderDetail": "Tested with real clients to confirm navigation to contractor pages was intuitive."
+			},
+			{
+				"subheader": "Contractor Feedback on Booking Redirects",
+				"subHeaderDetail": "Verified that booking redirects worked correctly for each contractor’s page."
+			}
+		]
+	},
+	"final": {
+		"header": "Polished, User-Friendly Platform Launch",
+		"headerDetail": "The final product delivered an easy-to-navigate website with cohesive design and direct booking access.",
+		"mediaType": "image",
+		"mediaUrl": "/images/casestudy/studioone/CaseStudy/final.webp",
+		"subheaders": [
+			{
+				"subheader": "Unified Team Presentation",
+				"subHeaderDetail": "Each contractor’s profile is prominently displayed, creating a professional team atmosphere."
+			},
+			{
+				"subheader": "Streamlined Booking Process",
+				"subHeaderDetail": "Clients can book directly from the Studio No. 1 website, avoiding multiple sites."
+			}
+		]
+	},
+	"development": {
+		"header": "Building & Deploying the Website",
+		"headerDetail": "Developed from scratch, focusing on creating a centralized platform with each contractor’s booking link.",
+		"subheaders": [
+			{
+				"subheader": "Full-Stack Development",
+				"subHeaderDetail": "Handled both front-end and back-end development for a functional, visually consistent platform."
+			},
+			{
+				"subheader": "Smooth Integration of Booking Links",
+				"subHeaderDetail": "Integrated each contractor’s personal booking link seamlessly."
+			}
+		]
+	},
+	"future": {
+		"header": "Potential for Additional Features",
+		"headerDetail": "Future updates could include service descriptions, promotions, or client loyalty features.",
+		"subheaders": []
+	}
+}
