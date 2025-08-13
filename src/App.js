@@ -26,6 +26,7 @@ import DigitalMarketingPage from './Pages/ServicePage/DigitalMarketingPage';
 import LocalSEOPage from './Pages/ServicePage/LocalSEOPage';
 import DashboardsPage from './Pages/ServicePage/DashboardsPage';
 import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage.jsx';
+import CaseStudies from './Pages/CaseStudies.jsx';
 
 function App() {
 	// Move the hook inside the Router
@@ -46,7 +47,7 @@ function App() {
 							path="/free-google-report"
 							element={<CollectWebsiteURL />}
 						/> */}
-						<Route path="/case-studies" element={<Contact />} />
+						<Route path="/case-studies" element={<CaseStudies />} />
 						<Route path="/contact" element={<Contact />} />
 						<Route path="/404" element={<NotFound />} />
 						<Route path="/get-website" element={<GetWebsite />} />
