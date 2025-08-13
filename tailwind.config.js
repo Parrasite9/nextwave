@@ -34,6 +34,18 @@ module.exports = {
 				xl: '1280px',
 				'2xl': '1600px',
 			},
+			keyframes: {
+				blob: {
+					'0%': { transform: 'translate(0px, 0px) scale(1)' },
+					'33%': { transform: 'translate(120px, -120px) scale(1.2)' },
+					'66%': { transform: 'translate(-100px, 80px) scale(0.85)' },
+					'100%': { transform: 'translate(0px, 0px) scale(1)' },
+				},
+			},
+			animation: {
+				blob: 'blob 12s ease-in-out infinite',
+				blob2: 'blob 16s ease-in-out infinite',
+			},
 		},
 	},
 	plugins: [],
