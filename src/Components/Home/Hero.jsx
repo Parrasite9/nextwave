@@ -16,8 +16,9 @@ export default function Hero() {
 	return (
 		<section className="relative overflow-hidden">
 			{/* animated background accents */}
-			<div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 animate-blob rounded-full bg-gradient-to-tr from-indigo-500 via-sky-400 to-cyan-300 opacity-20 blur-3xl" />
-			<div className="pointer-events-none absolute right-20 top-1/2 h-80 w-80 animate-blob2 rounded-full bg-gradient-to-tr from-fuchsia-500 via-rose-400 to-orange-300 opacity-20 blur-3xl" />
+			<div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 animate-blob rounded-full bg-gradient-to-tr from-indigo-500 via-sky-400 to-cyan-300 opacity-25 blur-3xl md:opacity-20" />
+			{/* NOTE: fixed class to animate-blob-2 */}
+			<div className="pointer-events-none absolute right-20 top-1/2 h-80 w-80 animate-blob-2 rounded-full bg-gradient-to-tr from-fuchsia-500 via-rose-400 to-orange-300 opacity-25 blur-3xl md:opacity-20" />
 
 			<div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 md:px-8 lg:grid-cols-2 lg:py-24">
 				{/* Left: Copy */}
@@ -50,14 +51,17 @@ export default function Hero() {
 					</ul>
 
 					<div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:items-start">
-						<Link to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call">
-							<button className="rounded-xl bg-gray-900 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-black/90">
+						<Link
+							to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call"
+							aria-label="Discuss your project on a Zoom discovery call"
+						>
+							<button className="rounded-xl bg-gray-900 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2">
 								Discuss Your Project
 							</button>
 						</Link>
 						<Link
 							to="/contact"
-							className="text-sm font-semibold text-gray-700 underline-offset-4 hover:underline"
+							className="inline-flex items-center rounded-xl border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
 						>
 							Get a quick estimate →
 						</Link>
@@ -69,6 +73,7 @@ export default function Hero() {
 							href="https://trustlock.co/verify/your-link"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Verify money-back guarantee"
 						>
 							<img
 								src="/images/trust/moneyback.png"
@@ -81,6 +86,7 @@ export default function Hero() {
 							href="https://trustlock.co/verify/your-ssl-link"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Verify SSL security"
 						>
 							<img
 								src="/images/trust/ssl.png"
@@ -92,7 +98,7 @@ export default function Hero() {
 					</div>
 				</div>
 
-				{/* Right: Premium credibility card (no inflated stats) */}
+				{/* Right: Premium credibility card */}
 				<div className="relative">
 					<div className="rounded-3xl border border-white/40 bg-white/70 p-6 shadow-lg backdrop-blur-md md:p-8">
 						<p className="text-sm font-semibold uppercase tracking-wider text-gray-500">
@@ -128,7 +134,6 @@ export default function Hero() {
 
 						<hr className="my-6 border-gray-200/70" />
 
-						{/* Authority bar (logos) */}
 						<div className="space-y-3">
 							<div className="flex items-center gap-3">
 								<img
@@ -156,7 +161,6 @@ export default function Hero() {
 							</p>
 						</div>
 
-						{/* Availability + micro‑testimonial */}
 						<div className="mt-6 grid gap-3 sm:grid-cols-2">
 							<div className="rounded-xl bg-emerald-50 p-4">
 								<p className="text-xs font-semibold uppercase text-emerald-700">
@@ -179,6 +183,13 @@ export default function Hero() {
 					</div>
 				</div>
 			</div>
+
+			{/* Reduce motion preference */}
+			<style>{`
+    @media (prefers-reduced-motion: reduce) {
+      .animate-blob, .animate-blob-2 { animation: none !important; }
+    }
+  `}</style>
 		</section>
 	);
 }
