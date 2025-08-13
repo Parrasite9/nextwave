@@ -1,0 +1,141 @@
+{
+	"poster": "/images/casestudy/theorangerv/theorangerv_mockup.webp",
+	"lgPoster": "/images/casestudy/theorangerv/orangelg.webp",
+	"image": [
+		{ "image": "/images/casestudy/theorangerv/Desktop/Home_D1.webp" },
+		{ "image": "/images/casestudy/theorangerv/Desktop/Home_D2.webp" },
+		{ "image": "/images/casestudy/theorangerv/Desktop/Home_D3.webp" },
+		{ "image": "/images/casestudy/theorangerv/Desktop/Home_D4.webp" }
+	],
+	"colors": {
+		"primary": "#fe4500",
+		"secondary": "#3b82f6",
+		"ctaButton": "#34a853",
+		"ctaButtonText": "#f2f2f2"
+	},
+	"seo": "RV website design, RV inventory platform, professional RV site",
+	"name": "TheOrangeRV",
+	"shortDescription": "Explore how we elevated TheOrangeRV's brand with a professional website showcasing their inventory and improving customer experience.",
+	"timeline": "2 weeks",
+	"slug": "the-orange-rv",
+	"title": "RV Website Design | Professional Online Inventory for TheOrangeRV",
+	"price": "$$",
+	"intro": "TheOrangeRV is an RV business that previously relied on Facebook Marketplace for advertisements and inventory display. This prototype was developed to show the business how an online platform could improve their brand and provide a streamlined inventory experience for customers.",
+	"role": "Handled all aspects of design, development, and deployment as the sole developer and designer.",
+	"hasVideo": false,
+	"videoPath": "",
+	"teaser": "Explore our RV website design for TheOrangeRV, showcasing inventory and elevating brand presence with a professional, user-friendly platform.",
+	"problem": {
+		"header": "No Dedicated Online Platform",
+		"headerDetail": "TheOrangeRV previously relied on Facebook Marketplace for all advertising and inventory displays, which limited its professional appeal and customer engagement.",
+		"subheaders": [
+			{
+				"subheader": "Lack of Professional Website",
+				"subHeaderDetail": "Without a website, the business relied on third-party platforms that limited their ability to customize their brand presentation."
+			},
+			{
+				"subheader": "Fragmented Brand Image",
+				"subHeaderDetail": "Using a marketplace didn’t allow for a cohesive and distinctive brand image, making it harder to build credibility with customers."
+			}
+		]
+	},
+	"goal": {
+		"header": "Create a Professional Inventory Showcase Platform",
+		"headerDetail": "The main objective was to design a prototype website that showcased TheOrangeRV’s inventory, boosted brand credibility, and streamlined customer browsing.",
+		"subheaders": [
+			{
+				"subheader": "Centralized Inventory Showcase",
+				"subHeaderDetail": "Develop a website where all RVs could be displayed professionally, providing detailed views of each item for potential buyers."
+			},
+			{
+				"subheader": "Enhance Brand Credibility",
+				"subHeaderDetail": "Create a unified and professional-looking platform to represent TheOrangeRV as a credible, established business."
+			},
+			{
+				"subheader": "Provide a Streamlined User Experience",
+				"subHeaderDetail": "Offer a clean and organized layout, allowing potential customers to easily browse and filter available RVs by key criteria."
+			}
+		]
+	},
+	"impact": {
+		"header": "Prototype Delivered to Demonstrate Brand Potential",
+		"headerDetail": "The self-initiated prototype showed the potential for improved branding and customer engagement, providing a foundational concept for an official website.",
+		"subheaders": [
+			{
+				"subheader": "Enhanced Professional Image",
+				"subHeaderDetail": "The site demonstrated how a professional online presence could strengthen brand identity and attract more customers."
+			},
+			{
+				"subheader": "Streamlined Customer Browsing",
+				"subHeaderDetail": "By showcasing the RVs in a central and organized platform, the prototype illustrated a clear, user-friendly browsing experience."
+			}
+		]
+	},
+	"ideation": {
+		"header": "Design Inspired by Orange Dreamsicle",
+		"headerDetail": "To align with the name TheOrangeRV, the color palette was inspired by the bright, memorable orange hues of the Orange Dreamsicle.",
+		"subheaders": [
+			{
+				"subheader": "Unique Color Palette",
+				"subHeaderDetail": "The orange color scheme provided a memorable and visually cohesive experience aligned with the brand name.",
+				"mediaType": "image",
+				"mediaUrl": "/images/casestudy/theorangerv/CaseStudy/colorPallete.webp"
+			},
+			{
+				"subheader": "Inventory Filters",
+				"subHeaderDetail": "Integrated filters based on price, year, and sleeping capacity to make browsing easier and more relevant for customers.",
+				"mediaType": "image",
+				"mediaUrl": "/images/casestudy/theorangerv/CaseStudy/filter.webp"
+			}
+		]
+	},
+	"testing": {
+		"header": "Internal Testing & Assessment",
+		"headerDetail": "While cloud-deployed, the prototype was tested internally due to the need for client approval before wider testing could occur.",
+		"subheaders": [
+			{
+				"subheader": "Cloud Deployment for Accessibility",
+				"subHeaderDetail": "Deployed to AWS Cloud to allow for easy access and functionality testing from various devices."
+			},
+			{
+				"subheader": "No External User Testing",
+				"subHeaderDetail": "Full external testing was not conducted, as approval was not secured from the business owner."
+			}
+		]
+	},
+	"final": {
+		"header": "Polished Prototype Launch",
+		"headerDetail": "The final prototype provided a visually cohesive and easy-to-navigate platform for viewing RV inventory, fully showcasing the brand potential for TheOrangeRV.",
+		"mediaType": "image",
+		"mediaUrl": "/images/casestudy/theorangerv/CaseStudy/final.webp",
+		"subheaders": [
+			{
+				"subheader": "Consistent Brand Presentation",
+				"subHeaderDetail": "The cohesive orange theme helped establish a unique brand identity tied to the name TheOrangeRV."
+			},
+			{
+				"subheader": "Functional Inventory Display",
+				"subHeaderDetail": "The organized inventory and filtering options made it easy for users to find relevant RVs quickly."
+			}
+		]
+	},
+	"development": {
+		"header": "React and AWS for Core Development",
+		"headerDetail": "The project was developed in React for a responsive frontend and deployed on AWS Cloud to ensure scalability and accessibility.",
+		"subheaders": [
+			{
+				"subheader": "React for Dynamic Frontend",
+				"subHeaderDetail": "Used React to build a fast, responsive interface that would scale easily for future functionality."
+			},
+			{
+				"subheader": "AWS Cloud Deployment",
+				"subHeaderDetail": "Deployed the prototype on AWS, making it accessible from various devices and locations."
+			}
+		]
+	},
+	"future": {
+		"header": "Potential Next Steps",
+		"headerDetail": "If the owner decides to proceed, the prototype can be enhanced with updated inventory, high-quality images, and improved product display features.",
+		"subheaders": []
+	}
+}
