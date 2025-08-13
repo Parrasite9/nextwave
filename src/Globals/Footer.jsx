@@ -9,7 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 // Navigation links array
 const navLinks = [
 	{ name: 'Home', path: '/' },
-	{ name: 'Case Studies', path: '/#casestudy' },
+	{ name: 'Case Studies', path: '/case-studies' },
 	{ name: 'Services', path: '/#services' },
 	{ name: 'Pricing', path: '/#pricing' },
 	{ name: 'Blogs', path: '/blogs' },

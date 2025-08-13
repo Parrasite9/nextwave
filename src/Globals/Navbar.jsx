@@ -9,7 +9,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 // Navigation links
 const navLinks = [
 	{ name: 'Home', path: '/' },
-	{ name: 'Case Studies', path: '/#casestudy' },
+	{ name: 'Case Studies', path: '/case-studies' },
 	{ name: 'Services', path: '/#services' },
 	{ name: 'Pricing', path: '/#pricing' },
 	{ name: 'Contact', path: '/contact' },
