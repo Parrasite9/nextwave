@@ -1,0 +1,143 @@
+{
+	"poster": "/images/casestudy/projectboost/Mockup.jpg",
+	"lgPoster": "/images/casestudy/projectboost/PGDesktopMockup.jpg",
+	"image": [
+		{
+			"image": "/images/casestudy/projectboost/Desktop/Home_D1.jpg",
+			"alt": "Project Boost dashboard view 1"
+		},
+		{
+			"image": "/images/casestudy/projectboost/Desktop/Home_D2.jpg",
+			"alt": "Project Boost dashboard view 2"
+		},
+		{
+			"image": "/images/casestudy/projectboost/Desktop/Home_D3.jpg",
+			"alt": "Project Boost dashboard view 3"
+		},
+		{
+			"image": "/images/casestudy/projectboost/Desktop/Home_D4.jpg",
+			"alt": "Project Boost dashboard view 4"
+		}
+	],
+	"colors": {
+		"primary": "#0F4C81",
+		"secondary": "#00B3B0",
+		"ctaButton": "#0F4C81",
+		"ctaButtonText": "#FFFFFF"
+	},
+	"seo": "customer loyalty dashboard, rewards automation, enterprise points platform, data reconciliation",
+	"name": "Project Boost",
+	"shortDescription": "An enterprise-grade loyalty & rewards dashboard with automated points conversion, forecasting, and real-time activity logging—built to turn unused points into revenue.",
+	"timeline": "4 weeks (MVP)",
+	"slug": "project-boost",
+	"title": "Project Boost — Loyalty & Rewards Automation Dashboard",
+	"teaser": "How a multi-location enterprise transformed unused points into consistent revenue with a custom dashboard, automated workflows, and real-time insights.",
+	"price": "$$$",
+	"intro": "Project Boost is a custom-built loyalty and rewards platform that identifies expiring points, automates redemptions, and tracks outcomes in one place. The system consolidates fragmented data sources, provides role-based access, and surfaces actionable KPIs for leadership and frontline teams.",
+	"role": "Led strategy, architecture, design, and full-stack development; delivered end-to-end MVP and analytics.",
+	"hasVideo": false,
+	"videoPath": "",
+	"problem": {
+		"header": "Untapped Value & Manual, Error-Prone Processes",
+		"headerDetail": "Millions in customer points were nearing expiration with no systematic way to convert them into value. Teams relied on spreadsheets and manual lookups across disconnected systems—slow, inconsistent, and difficult to audit.",
+		"subheaders": [
+			{
+				"subheader": "Expiring Value, No Conversion Engine",
+				"subHeaderDetail": "Points were lost each month due to lack of timely identification and outreach."
+			},
+			{
+				"subheader": "Fragmented Data",
+				"subHeaderDetail": "Customer and transaction data lived in several sources with no single source of truth."
+			}
+		]
+	},
+	"goal": {
+		"header": "Turn Expiring Points into Predictable Revenue",
+		"headerDetail": "Build an automated, auditable system that identifies opportunities, executes redemptions, and reports results in real time—without adding headcount.",
+		"subheaders": [
+			{
+				"subheader": "Automate Opportunity Detection",
+				"subHeaderDetail": "Flag customers nearing expiration and estimate conversion value with forecasting."
+			},
+			{
+				"subheader": "One Dashboard, Role-Based",
+				"subHeaderDetail": "Provide executives, managers, and staff with tailored views and permissions."
+			}
+		]
+	},
+	"impact": {
+		"header": "New Revenue Stream, Faster Decisions",
+		"headerDetail": "Projected to generate ~$250k in year-one revenue at scale, while cutting manual effort and improving data trust.",
+		"subheaders": [
+			{
+				"subheader": "From Hours to Seconds",
+				"subHeaderDetail": "Recurring reporting and reconciliation automated; decisions made from live data."
+			},
+			{
+				"subheader": "Auditability & Accountability",
+				"subHeaderDetail": "Every action is logged (who/what/when), improving compliance and oversight."
+			}
+		]
+	},
+	"ideation": {
+		"header": "MVP First, Expandable Architecture",
+		"headerDetail": "Designed as a modular platform: ingestion, rules engine, redemption workflow, notifications, reporting.",
+		"mediaType": "image",
+		"mediaUrl": "/images/casestudy/projectboost/Desktop/Home_D2.jpg",
+		"subheaders": [
+			{
+				"subheader": "Forecasting Logic",
+				"subHeaderDetail": "Projected monthly conversions to guide outreach and inventory planning."
+			},
+			{
+				"subheader": "Data Model for Scale",
+				"subHeaderDetail": "Built to add new sources and programs without rewrites."
+			}
+		]
+	},
+	"testing": {
+		"header": "Internal QA & Stakeholder Demos",
+		"headerDetail": "Validated data reconciliation and redemption flows against historical samples; iterated UI for speed and clarity.",
+		"subheaders": [
+			{
+				"subheader": "Reconciliation Accuracy",
+				"subHeaderDetail": "Cross-checked multi-source records to ensure consistent totals and statuses."
+			}
+		]
+	},
+	"final": {
+		"header": "Live KPIs, Alerts, and Activity Feed",
+		"headerDetail": "The dashboard ships with real-time KPIs, opportunity queues, redemption workflows, and an immutable activity log.",
+		"mediaType": "image",
+		"mediaUrl": "/images/casestudy/projectboost/Desktop/Home_D3.jpg",
+		"subheaders": [
+			{
+				"subheader": "Role-Based Views",
+				"subHeaderDetail": "Leaders see forecasts and outcomes; staff see prioritized actions."
+			},
+			{
+				"subheader": "Notifications & Escalations",
+				"subHeaderDetail": "Automatic reminders keep opportunities from expiring."
+			}
+		]
+	},
+	"development": {
+		"header": "Full-Stack Build with Secure Auth & Logging",
+		"headerDetail": "Delivered an MVP in under 30 days (initial scope 60+), with secure authentication and centralized logging.",
+		"subheaders": [
+			{
+				"subheader": "Data Ingestion & Matching",
+				"subHeaderDetail": "Automated pipelines unify customer and transaction data, eliminating manual spreadsheet work."
+			},
+			{
+				"subheader": "Observability",
+				"subHeaderDetail": "Real-time logs and metrics for fast troubleshooting and confidence."
+			}
+		]
+	},
+	"future": {
+		"header": "Expand to Multi-Program Rewards & Offers",
+		"headerDetail": "Next steps include per-segment offers, A/B outreach tests, and deeper attribution to revenue.",
+		"subheaders": []
+	}
+}
