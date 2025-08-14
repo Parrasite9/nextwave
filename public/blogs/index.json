@@ -1,0 +1,142 @@
+[
+	{
+		"id": 1,
+		"slug": "mobile-friendly-websites-midland-2025",
+		"title": "Mobile-Friendly Websites: Why They’re Essential for Midland Businesses in 2025",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-20",
+		"tags": [
+			"Mobile Optimization",
+			"User Experience",
+			"Local Business",
+			"Midland-Odessa"
+		],
+		"featured": true,
+		"heroImg": "/images/blogs/responsive.webp",
+		"heroAlt": "responsive-img",
+		"contentPath": "/data/blogs/content/mobile-friendly-websites-midland-2025.md",
+		"ctaButton": "Schedule A Free Consultation"
+	},
+	{
+		"id": 2,
+		"slug": "local-seo-guide-midland-odessa",
+		"title": "Boost your Midland-Odessa business's visibility with proven Local SEO strategies. Rank higher on Google and attract more local customers today!",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-22",
+		"tags": ["Local SEO", "Google Ranking", "SEO", "Midland-Odessa"],
+		"featured": true,
+		"heroImg": "/images/blogs/optimization.webp",
+		"heroAlt": "optimization-img",
+		"contentPath": "/data/blogs/content/local-seo-guide-midland-odessa.md",
+		"ctaButton": "Schedule A Free SEO Audit"
+	},
+	{
+		"id": 3,
+		"slug": "website-redesign-signs-2025",
+		"title": "5 Clear Signs Your Website Needs a Redesign Today",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-22",
+		"tags": [
+			"Website Redesign",
+			"User Experience",
+			"Web Design",
+			"Website Performance"
+		],
+		"featured": true,
+		"heroImg": "/images/blogs/redesign.webp",
+		"heroAlt": "redesign-img",
+		"contentPath": "/data/blogs/content/website-redesign-signs-2025.md",
+		"ctaButton": "Schedule A Free Website Audit"
+	},
+	{
+		"id": 4,
+		"slug": "google-business-profile-optimization-midland",
+		"title": "Google Business Profile Optimization for Midland Businesses: A Complete Guide",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-22",
+		"tags": [
+			"Google Business Profile",
+			"Local Business",
+			"Optimization",
+			"Midland-Odessa"
+		],
+		"featured": false,
+		"heroImg": "/images/blogs/businessProfile.webp",
+		"heroAlt": "businessProfile-img",
+		"contentPath": "/data/blogs/content/google-business-profile-optimization-midland.md",
+		"ctaButton": "Schedule A Free Consultation"
+	},
+	{
+		"id": 5,
+		"slug": "web-design-trends-2025-midland",
+		"title": "Web Design Trends 2025: What Midland Businesses Need to Know",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-22",
+		"tags": [
+			"Web Design Trends",
+			"Web Development",
+			"UI/UX Design",
+			"2025"
+		],
+		"featured": false,
+		"heroImg": "/images/blogs/webDesign.webp",
+		"heroAlt": "webDesign-img",
+		"contentPath": "/data/blogs/content/web-design-trends-2025-midland.md",
+		"ctaButton": "Schedule A Free Consultation"
+	},
+	{
+		"id": 6,
+		"slug": "low-cost-online-growth-midland",
+		"title": "Boost Your Online Presence: 5 Low-Cost Strategies for Midland Businesses",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-26",
+		"tags": [
+			"Website Redesign",
+			"Website Maintenance",
+			"User Experience",
+			"Business Growth"
+		],
+		"featured": true,
+		"heroImg": "/images/blogs/savings.webp",
+		"heroAlt": "onlinePresence-img",
+		"contentPath": "/data/blogs/content/low-cost-online-growth-midland.md",
+		"ctaButton": "Schedule A Free Consultation"
+	},
+	{
+		"id": 7,
+		"slug": "hidden-costs-outdated-websites",
+		"title": "Outdated Websites: The Hidden Costs & Why Redesigning Saves Money",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-26",
+		"tags": [
+			"Professional Website",
+			"Business Credibility",
+			"Trust",
+			"Online Presence"
+		],
+		"featured": false,
+		"heroImg": "/images/blogs/bear_market.webp",
+		"heroAlt": "hiddenCosts-img",
+		"contentPath": "/data/blogs/content/hidden-costs-outdated-websites.md",
+		"ctaButton": "Schedule A Free Website Audit"
+	},
+	{
+		"id": 8,
+		"slug": "build-trust-professional-website-midland",
+		"title": "Build Trust Online: How a Professional Website Impacts Midland Businesses",
+		"author": "NextWave | Web Studio",
+		"date": "2024-11-26",
+		"tags": [
+			"Professional Website",
+			"Business Credibility",
+			"Web Design",
+			"User Experience",
+			"Conversion Optimization"
+		],
+		"featured": false,
+		"heroImg": "/images/blogs/approve.webp",
+		"heroAlt": "trustCredibility-img",
+		"contentPath": "/data/blogs/content/build-trust-professional-website-midland.md",
+		"ctaButton": "Schedule A Free Consultation"
+	}
+]
