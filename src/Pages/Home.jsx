@@ -66,6 +66,7 @@ function Home() {
 			<CaseStudy />
 			<ServicesSection />
 			<Pricing2 />
+			<PricingTable />
 			<Signup />
 			<FeaturedPosts />
 		</div>
