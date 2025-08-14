@@ -65,9 +65,8 @@ function Home() {
 			<Hero />
 			<CaseStudy />
 			<ServicesSection />
-			<Pricing2 />
-			<PricingTable />
 			<Signup />
+			<PricingTable />
 			<FeaturedPosts />
 		</div>
 	);
