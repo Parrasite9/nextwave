@@ -415,11 +415,11 @@ export default function FeaturedPosts() {
 	if (!items.length) return null;
 
 	return (
-		<section className="relative flex justify-center px-[5%] py-16 md:py-24 lg:py-28">
+		<section className="relative flex justify-center overflow-hidden px-[5%] py-16 md:py-24 lg:py-28">
 			{/* Soft ambient background */}
 			<div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white via-[#f7fafc] to-white" />
-			<div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full bg-gradient-to-br from-sky-300/30 to-cyan-200/30 blur-3xl" />
-			<div className="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-gradient-to-tr from-emerald-300/30 to-sky-200/30 blur-3xl" />
+			<div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 max-w-none rounded-full bg-gradient-to-br from-sky-300/30 to-cyan-200/30 blur-3xl" />
+			<div className="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 max-w-none rounded-full bg-gradient-to-tr from-emerald-300/30 to-sky-200/30 blur-3xl" />
 
 			<div className="container">
 				<SectionHeader />
