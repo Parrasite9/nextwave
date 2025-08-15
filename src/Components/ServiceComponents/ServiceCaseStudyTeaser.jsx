@@ -12,6 +12,7 @@ const ServiceCaseStudyTeaser = ({
 	],
 	cta = { label: 'Read Full Case Study', to: '/casestudy/example' },
 }) => {
+	const isExternal = cta?.to?.startsWith('http');
 	return (
 		<section className="px-8 py-10" aria-label="Case study teaser">
 			<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -47,13 +48,23 @@ const ServiceCaseStudyTeaser = ({
 						</div>
 					)}
 
-					{cta?.to && (
-						<Link to={cta.to}>
-							<button className="btn-primary text-white px-6 py-2 rounded-md">
+					{cta?.to &&
+						(isExternal ? (
+							<a
+								href={cta.to}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="btn-primary text-white px-6 py-2 rounded-md inline-block"
+							>
 								{cta.label}
-							</button>
-						</Link>
-					)}
+							</a>
+						) : (
+							<Link to={cta.to}>
+								<button className="btn-primary text-white px-6 py-2 rounded-md">
+									{cta.label}
+								</button>
+							</Link>
+						))}
 				</div>
 			</div>
 		</section>

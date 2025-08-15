@@ -73,10 +73,10 @@ export default function Services2() {
 					</Link>
 
 					<Link
-						to="/case-studies?svc=Web%20Design%20%26%20Dev"
+						to="/services/web-design"
 						className="text-sm font-semibold text-white/90 underline-offset-4 hover:text-white hover:underline"
 					>
-						See recent examples →
+						Design That Works →
 					</Link>
 				</div>
 			</div>

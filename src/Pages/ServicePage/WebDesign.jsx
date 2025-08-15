@@ -13,6 +13,9 @@ import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA'
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
 
 export default function WebDesignPage() {
+	const zoomLink =
+		'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call';
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -71,11 +74,12 @@ export default function WebDesignPage() {
 				subheadline="Clean UX, fast load times, and conversion‑focused pages—designed to win trust and turn visitors into customers."
 				primaryCta={{
 					label: 'Request a Web Design Proposal',
-					to: '/contact',
+					to: zoomLink,
+					target: '_blank',
 				}}
 				secondaryCta={{
 					label: 'See Web Design Work',
-					to: '/case-studies?svc=web',
+					to: '/case-studies',
 				}}
 				stickyMobileCTA
 			/>
@@ -178,7 +182,10 @@ export default function WebDesignPage() {
 					{ label: 'Bounce Rate', value: 'Improved' },
 					{ label: 'Form Submissions', value: 'Upward Trend' },
 				]}
-				cta={{ label: 'See Our Approach', to: '/case-studies' }}
+				cta={{
+					label: 'Free Consultation',
+					to: 'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call',
+				}}
 			/>
 
 			{/* MID CTA */}
@@ -193,20 +200,24 @@ export default function WebDesignPage() {
 				title="Web Design — FAQs"
 				faqs={[
 					{
-						q: 'How long does a site take?',
-						a: 'Most MVP builds ship in 3–6 weeks depending on scope, integrations, and content readiness.',
+						q: 'How much does a website cost?',
+						a: 'Every business is different, but we’ll give you a clear, upfront price before we start—no hidden fees. We’ll also tailor a plan to fit your budget and goals.',
 					},
 					{
-						q: 'Do you provide copy and images?',
-						a: 'Yes. We handle conversion copy and can source or art‑direct photography/illustration that fits your brand.',
+						q: 'How long before my new site is live?',
+						a: 'Most sites are live in just 3–6 weeks. We handle the heavy lifting so you can stay focused on running your business.',
 					},
 					{
-						q: 'What platforms do you build on?',
-						a: 'We build React/Next, headless CMS, or WordPress depending on needs. We’ll recommend the best fit for editing and performance.',
+						q: 'Will this actually help me get more customers?',
+						a: 'Yes! We design every page to guide visitors toward contacting you or buying—so your site becomes a sales tool, not just an online brochure.',
 					},
 					{
-						q: 'Do you maintain the site after launch?',
-						a: 'We offer ongoing care plans for updates, monitoring, and incremental improvements.',
+						q: 'How much time will I need to spend on this?',
+						a: 'We make it easy. We’ll guide you through a simple process, handle the tech, and keep things moving without taking you away from your day-to-day.',
+					},
+					{
+						q: 'Can I trust that my site will look great?',
+						a: 'Absolutely. We’ll create a professional, modern design that reflects your brand and builds trust with potential customers.',
 					},
 				]}
 			/>
@@ -214,7 +225,7 @@ export default function WebDesignPage() {
 			{/* FINAL CTA */}
 			<ServiceFinalCTA
 				phone="(432) 555-0199"
-				cta={{ label: 'Discuss Your Website Project', to: '/contact' }}
+				cta={{ label: 'Discuss Your Website Project', to: zoomLink }}
 			/>
 
 			{/* MOBILE STICKY CTA */}
