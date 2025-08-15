@@ -1,5 +1,4 @@
 // src/Pages/Services/AIAutomationPage.jsx
-
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 
@@ -13,7 +12,10 @@ import ServiceFAQ from '../../Components/ServiceComponents/ServiceFAQ';
 import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA';
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
 
-const AIAutomationPage = () => {
+export default function AIAutomationPage() {
+	const zoomLink =
+		'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call';
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -23,212 +25,250 @@ const AIAutomationPage = () => {
 			<Helmet>
 				<script type="application/ld+json">
 					{`
-            {
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "name": "NextWave Web Studio",
-              "description": "NextWave builds AI-driven automations that eliminate manual work, reconcile data across systems, and create new revenue opportunities for SMBs.",
-              "url": "https://nextwavewebstudio.com/ai-automation",
-              "image": "https://nextwavewebstudio.com/images/services/ai-automation.webp",
-              "areaServed": { "@type": "Country", "name": "United States" },
-              "telephone": "+1-432-555-0199"
-            }
-          `}
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "NextWave Web Studio",
+            "description": "AI & automation services for everyday businesses—faster replies, fewer missed steps, and lower overhead.",
+            "url": "https://nextwavewebstudio.com/services/ai-automation",
+            "image": "https://nextwavewebstudio.com/images/services/automation.webp",
+            "areaServed": { "@type": "City", "name": "Midland–Odessa" },
+            "telephone": "+1-432-555-0199"
+          }
+        `}
 				</script>
-				<title>AI Automation Solutions | NextWave Web Studio</title>
+
+				<title>
+					AI & Automation for Everyday Businesses | NextWave Web
+					Studio
+				</title>
 				<meta
 					name="description"
-					content="Cut admin time, reconcile messy data, and scale operations with NextWave’s AI automation. Real outcomes: 30 hrs/mo → ~3 min; 50% faster launch; new revenue channels."
+					content="Answer faster, miss less, and lower overhead with practical AI & automation. We find 2–3 quick wins and get them running fast."
 				/>
 				<meta
 					property="og:title"
-					content="AI Automation Solutions | NextWave Web Studio"
+					content="AI & Automation for Everyday Businesses | NextWave Web Studio"
 				/>
 				<meta
 					property="og:description"
-					content="NextWave automates intake, follow-up, data reconciliation, and reporting—freeing teams and unlocking revenue. Book a free strategy session."
+					content="From lead intake to follow‑ups and admin—let smart systems handle the busywork so your team can focus on customers."
 				/>
 				<meta
 					property="og:image"
-					content="https://nextwavewebstudio.com/images/services/ai-automation.webp"
+					content="https://nextwavewebstudio.com/images/services/automation.webp"
 				/>
 				<meta
 					property="og:url"
-					content="https://nextwavewebstudio.com/ai-automation"
+					content="https://nextwavewebstudio.com/services/ai-automation"
 				/>
 				<meta property="og:type" content="website" />
 				<meta name="robots" content="index, follow" />
 				<link
 					rel="canonical"
-					href="https://nextwavewebstudio.com/ai-automation"
+					href="https://nextwavewebstudio.com/services/ai-automation"
 				/>
 			</Helmet>
 
-			{/* HERO (NextWave-first; outcome-forward; no platform names) */}
+			{/* HERO — benefit-first */}
 			<ServiceHero
-				eyebrow="AI Automation for Real-World ROI"
-				headline="Cut Admin Time and Unlock New Revenue with NextWave Automations"
-				subheadline="We replace repetitive work, reconcile messy data across systems, and systematize follow‑up—so your team moves faster with fewer mistakes."
+				eyebrow="Work Smarter, Not Harder"
+				headline="AI & Automation that Answers Faster, Misses Less, and Lowers Overhead"
+				subheadline="We spot your quickest wins and set up simple automations that save time from day one—without changing how you do business."
 				primaryCta={{
-					label: 'Book a Free Automation Strategy Session',
-					to: '/contact',
+					label: 'Find 2–3 Quick Wins',
+					to: zoomLink,
+					target: '_blank',
 				}}
 				secondaryCta={{
-					label: 'See Automation Examples',
-					to: '/casestudy',
+					label: 'See Use Cases',
+					to: '/case-studies?svc=automation',
 				}}
 				stickyMobileCTA
 			/>
 
-			{/* PAIN → we anchor on manual work, slow follow-up, fragmented data */}
+			{/* PAIN POINTS — framed as losses */}
 			<ServicePainPoints
-				title="What’s Slowing Growth Right Now"
+				title="Where Time (and Money) Slips Away"
 				items={[
 					{
-						title: 'Manual, Repetitive Tasks',
+						title: 'Slow Response Times',
 						description:
-							'Hours disappear into copy/paste, spreadsheet work, and status updates—none of which grow revenue.',
+							'Leads wait for a reply or get missed entirely—lost bookings and frustrated customers.',
 					},
 					{
-						title: 'Slow or Missed Follow‑Ups',
+						title: 'Manual Follow‑Ups',
 						description:
-							'Every minute counts. Without systemized responses and reminders, hot opportunities go cold.',
+							'Quotes, no‑shows, and overdue invoices depend on memory—things fall through the cracks.',
 					},
 					{
-						title: 'Fragmented, Inaccurate Data',
+						title: 'Repetitive Admin',
 						description:
-							'Multiple tools = conflicting numbers. Decisions stall when data can’t be trusted.',
+							'Copy‑paste, filing, and status updates eat into service time and payroll.',
 					},
 				]}
 			/>
 
-			{/* SERVICES → renamed as proprietary NextWave capabilities */}
+			{/* Mobile inline CTA (keeps momentum early) */}
+			<div className="sm:hidden mt-4">
+				<ServiceCTABanner
+					title="Free Automation Plan"
+					subtitle="We’ll pinpoint 2–3 tasks to automate first."
+					cta={{ label: 'Show Me Quick Wins', to: zoomLink }}
+				/>
+			</div>
+
+			{/* SERVICES — benefit-first, no “learn more” links */}
 			<ServiceGrid
-				title="NextWave Automation Capabilities"
+				title="NextWave Automation Playbook"
 				services={[
 					{
-						title: 'NextWave Data Match Engine',
+						title: 'Lead Intake & Routing',
 						description:
-							'Automatically reconciles transactions across sources and “finds the truth” in blended data—no manual combing.',
-						to: '/casestudy',
+							'Every lead gets answered fast—without you babysitting the inbox.',
+						details: {
+							intro: 'Make it effortless for the right person to jump in first time.',
+							bullets: [
+								'No lead slips through—calls, forms, and chats in one place',
+								'Instant hand‑off to the right teammate',
+								'After‑hours auto‑replies keep conversations warm',
+								'Calendar hand‑off to reduce back‑and‑forth',
+							],
+						},
 					},
 					{
-						title: 'Lead Intake & Smart Routing',
+						title: 'Follow‑Ups That Don’t Forget',
 						description:
-							'Capture, qualify, and auto‑assign leads with instant alerts—be first to respond, every time.',
-						to: '/casestudy',
+							'Quotes get answered and jobs get scheduled—without manual reminders.',
+						details: {
+							intro: 'Keep momentum with polite, timely nudges customers appreciate.',
+							bullets: [
+								'On‑time follow‑ups for quotes & estimates',
+								'No‑show rebooking flows',
+								'Dormant lead re‑engagement',
+								'Seasonal check‑ins to fill slow weeks',
+							],
+						},
 					},
 					{
-						title: 'Lifecycle Messaging & Follow‑Up',
+						title: 'Admin & Back‑Office',
 						description:
-							'Personalized sequences for outreach, reminders, and nurturing that run reliably in the background.',
-						to: '/casestudy',
+							'Paperwork runs itself—your team serves customers.',
+						details: {
+							intro: 'Reduce repetitive work while improving accuracy and visibility.',
+							bullets: [
+								'Auto‑file docs and update job statuses',
+								'Clean hand‑offs between tools (CRM, email, spreadsheets)',
+								'Light approvals for edge cases (you stay in control)',
+								'Simple dashboards to see what’s done',
+							],
+						},
 					},
 					{
-						title: 'Ops Dashboards & Alerts',
+						title: 'AI Assist for Frontline Teams',
 						description:
-							'Real‑time KPIs, role‑based views, and change logs so leaders can act in minutes—not weeks.',
-						to: '/services/dashboards',
+							'Quality replies in seconds, not minutes—still in your voice.',
+						details: {
+							intro: 'Speed up routine writing while keeping your tone and judgment.',
+							bullets: [
+								'Drafts for common questions & service info',
+								'Faster quote & scope templates',
+								'Friendly reminders with your brand voice',
+								'Human‑in‑the‑loop for final send',
+							],
+						},
 					},
 				]}
 			/>
 
-			{/* TRUST – keep generic but confident; no brand names; NDA-safe */}
+			{/* TRUST — you can swap logos/testimonials later */}
 			<ServiceTrustStrip
-				title="Built for Teams That Value Speed and Accuracy"
+				title="Trusted by Busy Local Teams"
 				logos={[
-					{ src: '/images/logos/client1.svg', alt: 'Client' },
-					{ src: '/images/logos/client2.svg', alt: 'Client' },
-					{ src: '/images/logos/client3.svg', alt: 'Client' },
+					{
+						src: '/images/business_logos/seductivebox.png',
+						alt: 'Client',
+					},
+					{ src: '/images/business_logos/rap.png', alt: 'Client' },
+					{
+						src: '/images/business_logos/studio2.png',
+						alt: 'Client',
+					},
 				]}
 				testimonials={[
 					{
-						quote: 'We eliminated hours of manual reconciliation and finally trust our numbers. Decisions are faster and clearer.',
-						author: 'Operations Lead',
-						role: 'Multi‑Location Enterprise',
+						quote: 'We stopped losing leads after hours—now every inquiry gets a helpful reply and a next step.',
+						author: 'Owner',
+						role: 'Home Services',
 					},
 					{
-						quote: 'Response time dropped, follow‑ups improved, and our team spends time on revenue—not admin.',
-						author: 'Owner',
-						role: 'Service Business',
+						quote: 'Our team spends less time chasing paperwork and more time helping customers.',
+						author: 'Manager',
+						role: 'Retail',
 					},
 				]}
+				logoCell={{ w: 128, h: 64, grayscale: false, dim: false }}
 			/>
 
-			{/* CASE TEASER – anonymized, specific metrics (from your experience) */}
+			{/* CASE STUDY TEASER — ethical, no hard metrics */}
 			<ServiceCaseStudyTeaser
 				imageSrc="/images/services/ai_automations.jpg"
-				imageAlt="Automation workflow preview"
-				title="Data Reconciliation: ~30 Hours/Month → ~3 Minutes"
-				summary="We implemented a reconciliation flow that ingested transactions from multiple sources, auto‑matched blended records, and produced a trusted report—removing a recurring 20–30 hours of manual work each month."
+				imageAlt="Automation workflow overview"
+				title="Less Busywork, Faster Replies"
+				summary="We mapped the intake bottlenecks, set up simple automations, and added gentle follow‑ups—freeing up team time and improving customer response."
 				stats={[
-					{ label: 'Manual Hours', value: '−95%+' },
-					{ label: 'Time‑to‑Report', value: 'Minutes' },
+					{ label: 'Manual Steps', value: 'Reduced' },
+					{ label: 'Response Time', value: 'Faster' },
 				]}
-				cta={{ label: 'Explore Automation Examples', to: '/casestudy' }}
+				cta={{
+					label: 'Find My Quick Wins',
+					to: zoomLink,
+				}}
 			/>
 
-			{/* SECONDARY PROOF (concise outcomes snapshot using “pain” component for visual parity) */}
-			<ServicePainPoints
-				title="Recent Outcomes from NextWave Automations"
-				items={[
-					{
-						title: '50% Faster Launch than Initial Estimates',
-						description:
-							'Delivered a production system in under 30 days (original scope 60+), accelerating time‑to‑value.',
-					},
-					{
-						title: 'New Revenue Channel—Zero Extra Headcount',
-						description:
-							'Automated opportunity identification and outreach created a recurring revenue stream with existing staff.',
-					},
-					{
-						title: 'One FTE Equivalent Unlocked',
-						description:
-							'Workflow consolidation and automation freed “hundreds of hours annually” across roles.',
-					},
-				]}
-			/>
-
-			{/* CTA BANNER – strong promise, low risk */}
+			{/* MID CTA */}
 			<ServiceCTABanner
-				title="In 30 Minutes, We’ll Map the 3 Fastest Automations for Your Business"
-				subtitle="No tech talk—just clear wins and how to implement them. If it’s not valuable, we’ll tell you straight."
-				cta={{ label: 'Book My Free Strategy Session', to: '/contact' }}
+				title="Get a Free Automation Plan"
+				subtitle="See exactly what to automate first for impact this month."
+				cta={{ label: 'Plan My First Automations', to: zoomLink }}
 			/>
 
-			{/* FAQ – address NDA, platform‑agnostic approach, and speed-to-value */}
+			{/* FAQ — customer-friendly, benefit-first */}
 			<ServiceFAQ
-				title="AI Automation — FAQs"
+				title="AI & Automation — FAQs"
 				faqs={[
 					{
-						q: 'Do we need to switch tools to work with you?',
-						a: 'No. We integrate with your existing stack and design automations that meet you where you are.',
+						q: 'What will this actually do for my business?',
+						a: 'Faster replies, fewer missed steps, and less repeat admin. Most owners feel it as time back and fewer “Did we follow up on that?” moments.',
 					},
 					{
-						q: 'Can you work under NDA and keep details private?',
-						a: 'Yes. We routinely anonymize client data and outcomes while protecting confidential information.',
+						q: 'How fast can we get results?',
+						a: 'We usually start with 2–3 high‑impact tasks. You’ll see time savings and smoother hand‑offs within weeks, sometimes days.',
 					},
 					{
-						q: 'How soon will we see value?',
-						a: 'Many wins can be delivered within the first 2–4 weeks—starting with the highest‑leverage tasks.',
+						q: 'Is this complicated for my team?',
+						a: 'No. We keep your current tools and add simple, reliable steps. Your team still approves anything sensitive.',
+					},
+					{
+						q: 'How will I know it’s working?',
+						a: 'We track simple checkpoints like faster response times, fewer manual steps, and more completed follow‑ups—and review them with you.',
+					},
+					{
+						q: 'Do I need to change platforms?',
+						a: 'Not unless you want to. We integrate with what you already use (email, calendars, CRM, forms) and improve from there.',
 					},
 				]}
 			/>
 
 			{/* FINAL CTA */}
 			<ServiceFinalCTA
+				className="flex sm:flex-col"
 				phone="(432) 555-0199"
-				cta={{ label: 'Discuss Your Automation Plan', to: '/contact' }}
+				cta={{ label: 'Plan My First Automations', to: zoomLink }}
 			/>
 
-			{/* MOBILE STICKY CTA */}
-			<ServiceStickyCTA
-				label="Book a Free Automation Session"
-				to="/contact"
-			/>
+			{/* MOBILE-ONLY STICKY CTA */}
+			<ServiceStickyCTA label="Find 2–3 Quick Wins" to={zoomLink} />
 		</>
 	);
-};
-
-export default AIAutomationPage;
+}

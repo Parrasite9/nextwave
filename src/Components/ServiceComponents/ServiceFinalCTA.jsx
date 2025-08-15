@@ -29,7 +29,7 @@ const ServiceFinalCTA = ({
 	return (
 		<section className="px-8 py-10" aria-label="Final call to action">
 			<div className="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
-				<div>
+				<div className="text-center lg:text-left">
 					<h3 className="header font-bold text-2xl">
 						Ready to Start?
 					</h3>
@@ -38,7 +38,7 @@ const ServiceFinalCTA = ({
 					</p>
 				</div>
 
-				<div className="flex items-center gap-3">
+				<div className="flex items-center gap-3 flex-col lg:flex-row">
 					<CtaButton cta={cta} />
 					{phone && (
 						<a
