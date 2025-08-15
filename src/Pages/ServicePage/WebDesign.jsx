@@ -183,7 +183,7 @@ export default function WebDesignPage() {
 					{ label: 'Form Submissions', value: 'Upward Trend' },
 				]}
 				cta={{
-					label: 'Free Consultation',
+					label: 'Book Your Free Consultation',
 					to: 'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call',
 				}}
 			/>
