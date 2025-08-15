@@ -157,7 +157,7 @@ const AIAutomationPage = () => {
 
 			{/* CASE TEASER – anonymized, specific metrics (from your experience) */}
 			<ServiceCaseStudyTeaser
-				imageSrc="/images/case-studies/automation-intake.png"
+				imageSrc="/images/services/ai_automations.jpg"
 				imageAlt="Automation workflow preview"
 				title="Data Reconciliation: ~30 Hours/Month → ~3 Minutes"
 				summary="We implemented a reconciliation flow that ingested transactions from multiple sources, auto‑matched blended records, and produced a trusted report—removing a recurring 20–30 hours of manual work each month."

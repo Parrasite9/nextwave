@@ -138,9 +138,15 @@ const LocalSEOPage = () => {
 			<ServiceTrustStrip
 				title="What Local Businesses Experience"
 				logos={[
-					{ src: '/images/logos/client1.svg', alt: 'Client' },
-					{ src: '/images/logos/client2.svg', alt: 'Client' },
-					{ src: '/images/logos/client3.svg', alt: 'Client' },
+					{
+						src: '/images/business_logos/seductivebox.png',
+						alt: 'Client',
+					},
+					{ src: '/images/business_logos/rap.png', alt: 'Client' },
+					{
+						src: '/images/business_logos/studio2.png',
+						alt: 'Client',
+					},
 				]}
 				testimonials={[
 					{
@@ -157,7 +163,7 @@ const LocalSEOPage = () => {
 			/>
 
 			{/* CASE STUDY TEASER — framed around calls & visibility; NDA‑safe */}
-			<ServiceCaseStudyTeaser
+			{/* <ServiceCaseStudyTeaser
 				imageSrc="/images/case-studies/local-map-pack.png"
 				imageAlt="Local map pack visibility"
 				title="From Invisible to In-Demand in the Map Pack"
@@ -167,6 +173,21 @@ const LocalSEOPage = () => {
 					{ label: 'Qualified Calls', value: '+78%' },
 				]}
 				cta={{ label: 'Read Full Case Study', to: '/casestudy' }}
+			/> */}
+
+			<ServiceCaseStudyTeaser
+				imageSrc="/images/services/seo.jpg"
+				imageAlt="Local map pack visibility"
+				title="Fixing a Broken Local Presence"
+				summary="We audited a local business's Google profile, corrected outdated contact details, rebuilt missing citations, and added fresh photos—helping them reappear for key local searches."
+				stats={[
+					{ label: 'Profile Accuracy', value: '100%' },
+					{ label: 'Citations Rebuilt', value: '20+' },
+				]}
+				cta={{
+					label: 'See Our Local SEO Process',
+					to: '/services/local-seo',
+				}}
 			/>
 
 			{/* MID CTA — audit as no‑brainer */}
