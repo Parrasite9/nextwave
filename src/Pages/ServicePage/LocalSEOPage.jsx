@@ -14,6 +14,9 @@ import ServiceFinalCTA from '../../Components/ServiceComponents/ServiceFinalCTA'
 import ServiceStickyCTA from '../../Components/ServiceComponents/ServiceStickyCTA';
 
 const LocalSEOPage = () => {
+	const zoomLink =
+		'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call';
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -75,9 +78,12 @@ const LocalSEOPage = () => {
 				subheadline="We tune your local presence so you show up in the map pack, earn trust with reviews, and turn nearby searches into booked jobs."
 				primaryCta={{
 					label: 'Request a Free Local SEO Audit',
-					to: '/contact',
+					to: zoomLink,
 				}}
-				secondaryCta={{ label: 'See Local Wins', to: '/casestudy' }}
+				secondaryCta={{
+					label: 'See Local Wins',
+					to: '/casestudy/seductivebox',
+				}}
 				stickyMobileCTA
 			/>
 
@@ -103,8 +109,16 @@ const LocalSEOPage = () => {
 				]}
 			/>
 
+			<div className="sm:hidden mt-4">
+				<ServiceCTABanner
+					title="Free Local SEO & Profile Audit"
+					subtitle="Know exactly what to fix first."
+					cta={{ label: 'Request My Audit', to: zoomLink }}
+				/>
+			</div>
+
 			{/* SERVICES — concrete local actions */}
-			<ServiceGrid
+			{/* <ServiceGrid
 				title="NextWave Local Growth Playbook"
 				services={[
 					{
@@ -130,6 +144,69 @@ const LocalSEOPage = () => {
 						description:
 							'City/service pages aligned to how Midland–Odessa customers actually search.',
 						to: '/services/local-seo',
+					},
+				]}
+			/> */}
+
+			{/* SERVICES — concrete local actions */}
+			<ServiceGrid
+				title="NextWave Local Growth Playbook"
+				services={[
+					{
+						title: 'Google Business Profile Optimization',
+						description:
+							'Dialed‑in categories, services, products, photos, and posting cadence.',
+						details: {
+							intro: 'Make it easy for nearby customers to choose you at a glance.',
+							bullets: [
+								'Correct categories & attributes',
+								'Service/product setup with photos',
+								'Profile description & Q&A updates',
+								'Weekly posting cadence & photo strategy',
+							],
+						},
+					},
+					{
+						title: 'Review & Reputation Engine',
+						description:
+							'Ethical review growth, response management, and spam dispute guidance.',
+						details: {
+							intro: 'Build trust with a steady stream of real, recent customer feedback.',
+							bullets: [
+								'Compliant review request flows',
+								'Templates for fast replies',
+								'Flagging/disputing policy‑violating reviews',
+								'Simple dashboard to track progress',
+							],
+						},
+					},
+					{
+						title: 'Citations & NAP Consistency',
+						description:
+							'Audit, cleanup, and expansion across major directories and local hubs.',
+						details: {
+							intro: 'Consistency across the web helps customers (and Google) trust your info.',
+							bullets: [
+								'Full NAP audit (Name/Address/Phone)',
+								'Duplicate suppression & cleanup',
+								'Core + niche directory submissions',
+								'Ongoing monitoring for changes',
+							],
+						},
+					},
+					{
+						title: 'Local Landing Pages',
+						description:
+							'City/service pages aligned to how Midland–Odessa customers actually search.',
+						details: {
+							intro: 'Help people find the exact service they need in their area—fast.',
+							bullets: [
+								'Keyword & intent mapping',
+								'Clear, benefit‑led copywriting',
+								'Fast, mobile‑first layouts',
+								'Conversion elements (CTA, trust, FAQs)',
+							],
+						},
 					},
 				]}
 			/>
@@ -202,16 +279,16 @@ const LocalSEOPage = () => {
 				title="Local SEO — FAQs"
 				faqs={[
 					{
-						q: 'How fast can we see movement?',
-						a: 'With profile fixes and a review plan, many businesses see early gains within 30–60 days, then compounding improvement.',
+						q: 'How long before I notice more calls or customers?',
+						a: 'Most businesses see early improvements in 30–60 days once we fix profiles and start a review plan. Results often compound over time.',
 					},
 					{
-						q: 'Do we need a new website?',
-						a: 'Not necessarily. A solid site helps; we can still improve visibility with profile and citation work while we tune your pages.',
+						q: 'Will I need to rebuild my website?',
+						a: 'Not always. If your site is already decent, we can improve your visibility through profile updates, citations, and on-page tuning.',
 					},
 					{
-						q: 'Can you help get more reviews (ethically)?',
-						a: 'Yes. We implement compliant, customer-friendly requests and response workflows that build trust over time.',
+						q: 'Can you help me get more 5-star reviews?',
+						a: 'Yes — we use ethical, customer-friendly methods to request and respond to reviews, helping you build trust and stand out locally.',
 					},
 				]}
 			/>
@@ -219,13 +296,13 @@ const LocalSEOPage = () => {
 			{/* FINAL CTA */}
 			<ServiceFinalCTA
 				phone="(432) 555-0199"
-				cta={{ label: 'Discuss Your Local SEO Plan', to: '/contact' }}
+				cta={{ label: 'Discuss Your Local SEO Plan', to: zoomLink }}
 			/>
 
 			{/* MOBILE-ONLY STICKY CTA */}
 			<ServiceStickyCTA
 				label="Request Your Free Local SEO Audit"
-				to="/contact"
+				to={zoomLink}
 			/>
 		</>
 	);
