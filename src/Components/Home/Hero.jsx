@@ -69,7 +69,7 @@ export default function Hero() {
 					<div
 						role="group"
 						aria-labelledby="trust-badges-title"
-						className="mt-6 flex flex-wrap items-center justify-center gap-4"
+						className="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-4"
 					>
 						{/* Invisible label for SR users */}
 						<h3 id="trust-badges-title" className="sr-only">
@@ -80,7 +80,7 @@ export default function Hero() {
 							<img
 								src="/images/hero/moneyback.png"
 								alt="100% money‑back guarantee"
-								className="h-[125px] lg:h-[225px] w-auto"
+								className="h-[100px] md:h-[125px] lg:h-[150px] w-auto"
 								width="200"
 								height="40"
 								loading="lazy"
@@ -96,7 +96,22 @@ export default function Hero() {
 							<img
 								src="/images/hero/trustedby.png"
 								alt="Trusted by Midland and Odessa businesses"
-								className="h-[125px] lg:h-[225px] w-auto"
+								className="h-[100px] md:h-[125px] lg:h-[150px] w-auto"
+								width="220"
+								height="40"
+								loading="lazy"
+								decoding="async"
+							/>
+							<figcaption className="sr-only">
+								Trusted by businesses in Midland and Odessa.
+							</figcaption>
+						</figure>
+
+						<figure className="flex items-center">
+							<img
+								src="/images/hero/roi.png"
+								alt="ROI Badge"
+								className="h-[100px] md:h-[125px] lg:h-[150px] w-auto"
 								width="220"
 								height="40"
 								loading="lazy"

@@ -43,54 +43,113 @@ export default function PricingCTASection() {
 				</div>
 
 				{/* Trust strip */}
-				<div className="mt-8 flex flex-wrap items-center justify-center gap-6 opacity-90">
-					{/* Host these locally; swap to your actual verification links if required */}
-					<a
-						href="https://trustlock.co/verify/your-link"
-						target="_blank"
-						rel="noreferrer"
-						aria-label="Money-back guarantee verification"
-					>
-						<img
-							src="/images/trust/moneyback.png"
-							alt="Money-back guarantee"
-							className="h-10 w-auto"
-							loading="lazy"
-						/>
-					</a>
-					<a
-						href="https://trustlock.co/verify/your-ssl-link"
-						target="_blank"
-						rel="noreferrer"
-						aria-label="SSL secure verification"
-					>
-						<img
-							src="/images/trust/ssl.png"
-							alt="Secure SSL"
-							className="h-10 w-auto"
-							loading="lazy"
-						/>
-					</a>
+				{/* Trust / reassurance strip */}
+				<div
+					role="group"
+					aria-labelledby="trust-badges-title"
+					className="mt-8"
+				>
+					<h3 id="trust-badges-title" className="sr-only">
+						Trust and reassurance badges
+					</h3>
 
-					{/* Add a few partner logos for subtle authority (keep them small) */}
-					<img
-						src="/images/logos/google-partner.png"
-						alt="Google Partner"
-						className="h-6 w-auto opacity-80"
-						loading="lazy"
-					/>
-					<img
-						src="/images/logos/klaviyo.png"
-						alt="Klaviyo"
-						className="h-6 w-auto opacity-80"
-						loading="lazy"
-					/>
-					<img
-						src="/images/logos/stripe.png"
-						alt="Stripe"
-						className="h-6 w-auto opacity-80"
-						loading="lazy"
-					/>
+					{/* Grid layout prevents “Trusted by” and “Data Privacy” from being adjacent */}
+					{/* Trust / reassurance strip */}
+					<div
+						role="group"
+						aria-labelledby="trust-badges-title"
+						className="mt-8"
+					>
+						<h3 id="trust-badges-title" className="sr-only">
+							Trust and reassurance badges
+						</h3>
+
+						<div className="grid grid-cols-2 place-items-center gap-6 sm:grid-cols-3 lg:grid-cols-5">
+							{/* 1. Money-back guarantee */}
+							<figure className="flex items-center">
+								<img
+									src="/images/pricing_table/moneyback.png"
+									alt="100% money-back guarantee"
+									className="h-[125px] lg:h-[150px] lg:gap-8 w-auto "
+									width="280"
+									height="80"
+									loading="lazy"
+									decoding="async"
+								/>
+								<figcaption className="sr-only">
+									We stand behind our work with a 100%
+									money-back guarantee.
+								</figcaption>
+							</figure>
+
+							{/* 2. Dedicated support (keeps spacing on lg) */}
+							<figure className="flex items-center">
+								<img
+									src="/images/pricing_table/trustedby.png"
+									alt="Dedicated support"
+									className="h-[125px] lg:h-[150px] lg:gap-8 w-auto "
+									width="280"
+									height="80"
+									loading="lazy"
+									decoding="async"
+								/>
+								<figcaption className="sr-only">
+									Dedicated support from kickoff through
+									launch.
+								</figcaption>
+							</figure>
+
+							{/* 3. Trusted by local businesses */}
+							<figure className="flex items-center">
+								<img
+									src="/images/pricing_table/support.png"
+									alt="Trusted by Midland & Odessa businesses"
+									className="h-[125px] lg:h-[150px] lg:gap-8 w-auto "
+									width="280"
+									height="80"
+									loading="lazy"
+									decoding="async"
+								/>
+								<figcaption className="sr-only">
+									Trusted by local businesses in Midland and
+									Odessa.
+								</figcaption>
+							</figure>
+
+							{/* 4. ROI focus */}
+							<figure className="flex items-center">
+								<img
+									src="/images/pricing_table/data_privacy.png"
+									alt="ROI-driven results"
+									className="h-[125px] lg:h-[150px] lg:gap-8 w-auto "
+									width="280"
+									height="80"
+									loading="lazy"
+									decoding="async"
+								/>
+								<figcaption className="sr-only">
+									ROI-driven approach to design and growth.
+								</figcaption>
+							</figure>
+
+							{/* 5. Data privacy — hidden on mobile/tablet; shown on lg+ */}
+							<figure className="hidden items-center lg:flex">
+								<img
+									src="/images/pricing_table/roi.png"
+									alt="Data privacy respected"
+									className="h-[125px] lg:h-[150px] lg:gap-8 w-auto "
+									width="280"
+									height="80"
+									loading="lazy"
+									decoding="async"
+								/>
+								<figcaption className="sr-only">
+									Your data and customer information are
+									handled with care.
+								</figcaption>
+							</figure>
+						</div>
+					</div>
 				</div>
 
 				{/* CTA Block */}
