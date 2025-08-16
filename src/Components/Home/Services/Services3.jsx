@@ -46,6 +46,9 @@ function IconShield(props) {
 }
 
 export default function ServicesAI() {
+	const zoomLink =
+		'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call';
+
 	return (
 		<section className="relative overflow-hidden bg-[#0b1f36] text-white">
 			{/* soft animated accents (uses your .animate-blob classes) */}
@@ -201,15 +204,15 @@ export default function ServicesAI() {
 					</div>
 
 					{/* CTA */}
-					<div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+					<div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
 						<Link to="/services/ai-automation">
 							<button className="rounded-xl bg-sky-blue px-5 py-3 text-sm font-semibold text-black shadow hover:brightness-95">
 								Explore automation services
 							</button>
 						</Link>
 						<Link
-							to="/contact"
-							className="text-sm font-semibold text-sky-200 underline-offset-4 hover:text-white hover:underline"
+							to={zoomLink}
+							className="text-sm font-semibold text-sky-200 underline-offset-4 hover:text-white hover:underline sm:py-3"
 						>
 							Book a quick consult →
 						</Link>

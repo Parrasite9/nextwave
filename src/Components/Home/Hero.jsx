@@ -34,7 +34,6 @@ export default function Hero() {
 						Maximize ROI with sites designed to convert—fast,
 						accessible, and built to grow with you.
 					</p>
-
 					<ul className="mt-6 space-y-2 text-sm text-gray-700">
 						<li className="flex items-center gap-2">
 							<Check className="h-5 w-5 text-emerald-500" />{' '}
@@ -49,7 +48,6 @@ export default function Hero() {
 							Launched on time, every time
 						</li>
 					</ul>
-
 					<div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:items-start">
 						<Link
 							to="https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call"
@@ -66,35 +64,48 @@ export default function Hero() {
 							Get a quick estimate →
 						</Link>
 					</div>
-
 					{/* Trust badges */}
-					<div className="mt-6 flex flex-wrap items-center gap-4">
-						<a
-							href="https://trustlock.co/verify/your-link"
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Verify money-back guarantee"
-						>
+
+					<div
+						role="group"
+						aria-labelledby="trust-badges-title"
+						className="mt-6 flex flex-wrap items-center justify-center gap-4"
+					>
+						{/* Invisible label for SR users */}
+						<h3 id="trust-badges-title" className="sr-only">
+							Trust badges
+						</h3>
+
+						<figure className="flex items-center">
 							<img
-								src="/images/trust/moneyback.png"
-								alt="Money-back guarantee"
-								className="h-10 w-auto"
+								src="/images/hero/moneyback.png"
+								alt="100% money‑back guarantee"
+								className="h-[125px] lg:h-[225px] w-auto"
+								width="200"
+								height="40"
 								loading="lazy"
+								decoding="async"
 							/>
-						</a>
-						<a
-							href="https://trustlock.co/verify/your-ssl-link"
-							target="_blank"
-							rel="noreferrer"
-							aria-label="Verify SSL security"
-						>
+							<figcaption className="sr-only">
+								We stand behind our work with a 100% money‑back
+								guarantee.
+							</figcaption>
+						</figure>
+
+						<figure className="flex items-center">
 							<img
-								src="/images/trust/ssl.png"
-								alt="Secure SSL"
-								className="h-10 w-auto"
+								src="/images/hero/trustedby.png"
+								alt="Trusted by Midland and Odessa businesses"
+								className="h-[125px] lg:h-[225px] w-auto"
+								width="220"
+								height="40"
 								loading="lazy"
+								decoding="async"
 							/>
-						</a>
+							<figcaption className="sr-only">
+								Trusted by businesses in Midland and Odessa.
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 
@@ -135,29 +146,48 @@ export default function Hero() {
 						<hr className="my-6 border-gray-200/70" />
 
 						<div className="space-y-3">
-							<div className="flex items-center gap-3">
+							<div className="flex items-center gap-6 flex-wrap">
 								<img
-									src="/images/logos/google-partner.png"
+									src="/images/hero/google.png"
 									alt="Google Partner"
-									className="h-7 w-auto opacity-80"
+									className="h-12 sm:h-14 md:h-16 w-auto opacity-80"
 									loading="lazy"
 								/>
 								<img
-									src="/images/logos/klaviyo.png"
+									src="/images/hero/meta.png"
+									alt="Facebook"
+									className="h-12 sm:h-14 md:h-16 w-auto opacity-80"
+									loading="lazy"
+								/>
+								<img
+									src="/images/hero/openAI.png"
+									alt="OpenAI"
+									className="h-12 sm:h-14 md:h-16 w-auto opacity-80"
+									loading="lazy"
+								/>
+								<img
+									src="/images/hero/microsoft.png"
+									alt="Microsoft"
+									className="h-12 sm:h-14 md:h-16 w-auto opacity-80"
+									loading="lazy"
+								/>
+								<img
+									src="/images/hero/aws.png"
+									alt="AWS"
+									className="h-12 sm:h-14 md:h-16 w-auto opacity-80 hidden md:block"
+									loading="lazy"
+								/>
+								<img
+									src="/images/hero/klaviyo.png"
 									alt="Klaviyo"
-									className="h-7 w-auto opacity-80"
-									loading="lazy"
-								/>
-								<img
-									src="/images/logos/stripe.png"
-									alt="Stripe"
-									className="h-7 w-auto opacity-80"
+									className="h-12 sm:h-14 md:h-16 w-auto opacity-80 hidden md:block"
 									loading="lazy"
 								/>
 							</div>
+
 							<p className="text-sm text-gray-600">
-								Trusted by growth‑minded teams across ecommerce,
-								services, and SaaS.
+								Built on the world’s most trusted platforms in
+								search, social, AI, and business solutions.
 							</p>
 						</div>
 

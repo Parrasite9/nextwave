@@ -124,7 +124,7 @@ export default function ServicesSEO() {
 					</div>
 
 					{/* CTA */}
-					<div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+					<div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
 						<Link to="/services/local-seo">
 							<button className="rounded-xl bg-sky-blue px-5 py-3 text-sm font-semibold text-black shadow hover:brightness-95">
 								See SEO packages
@@ -132,7 +132,7 @@ export default function ServicesSEO() {
 						</Link>
 						<Link
 							to="/contact"
-							className="text-sm font-semibold text-sky-600 underline-offset-4 hover:text-sky-800 hover:underline"
+							className="text-sm font-semibold text-sky-600 underline-offset-4 hover:text-sky-800 hover:underline sm:py-3"
 						>
 							Get a free audit →
 						</Link>
