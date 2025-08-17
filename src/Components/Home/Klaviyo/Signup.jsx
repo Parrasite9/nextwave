@@ -277,24 +277,34 @@ export default function Signup({ onFormSubmit }) {
 
 						<div className="rounded-2xl border border-gray-200 bg-white/70 p-5 shadow-sm backdrop-blur">
 							<p className="text-xs font-semibold uppercase tracking-wider text-gray-500">
-								Trusted by local teams
+								Built on industry leaders
 							</p>
 							<div className="mt-3 flex items-center gap-4 opacity-80">
 								{/* Replace with real logos */}
 								<img
-									src="/images/logos/google-partner.png"
+									src="/images/hero/google.png"
 									alt="Google"
-									className="h-7 w-auto"
+									className="h-12 md:h-15 w-auto"
 								/>
 								<img
-									src="/images/logos/klaviyo.png"
+									src="/images/hero/klaviyo.png"
 									alt="Klaviyo"
-									className="h-7 w-auto"
+									className="h-12 md:h-15 w-auto"
 								/>
 								<img
-									src="/images/logos/stripe.png"
+									src="/images/hero/aws.png"
 									alt="Stripe"
-									className="h-7 w-auto"
+									className="h-12 md:h-15 w-auto"
+								/>
+								<img
+									src="/images/hero/microsoft.png"
+									alt="Microsoft"
+									className="h-12 md:h-15 w-auto"
+								/>
+								<img
+									src="/images/hero/meta.png"
+									alt="Meta"
+									className="h-12 md:h-15 w-auto"
 								/>
 							</div>
 						</div>
