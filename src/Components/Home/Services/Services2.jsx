@@ -49,8 +49,8 @@ export default function Services2() {
 						desc="Performance best practices baked in: Core Web Vitals, semantic HTML."
 					/>
 					<Benefit
-						title="Scale & edit easily"
-						desc="Flexible sections and CMS options so you’re never stuck waiting."
+						title="Built to grow with you"
+						desc="Your site won’t need a rebuild every time you level up — we design with future growth in mind."
 					/>
 				</div>
 
