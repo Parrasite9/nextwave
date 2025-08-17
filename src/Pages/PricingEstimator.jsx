@@ -38,6 +38,8 @@ export default function PricingEstimator() {
 	});
 
 	const stepsCount = 6; // 0..5 are the questionnaire; 6 is "result"
+	const formCompleted = step === 6;
+
 	const progress = useMemo(() => {
 		const capped = Math.min(step, stepsCount - 1);
 		return ((capped + 1) / stepsCount) * 100;
@@ -168,15 +170,17 @@ export default function PricingEstimator() {
 				)}
 
 				{/* Header */}
-				<div className="mb-6 text-center">
-					<h1 className="text-3xl font-extrabold md:text-4xl">
-						Get a quick estimate
-					</h1>
-					<p className="mx-auto mt-2 max-w-2xl text-gray-600">
-						It takes ~2 minutes. You’ll see a ballpark range and a
-						simple plan—no email until the last step.
-					</p>
-				</div>
+				{!formCompleted && (
+					<div className="mb-6 text-center">
+						<h1 className="text-3xl font-extrabold md:text-4xl">
+							Get a quick estimate
+						</h1>
+						<p className="mx-auto mt-2 max-w-2xl text-gray-600">
+							It takes ~2 minutes. You’ll see a ballpark range and
+							a simple plan—no email until the last step.
+						</p>
+					</div>
+				)}
 
 				{/* Card */}
 				<div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm md:p-6">
@@ -611,6 +615,23 @@ function ResultScreen({ form, estimate }) {
 
 			{/* Reassurance strip: your badges */}
 			<ReassuranceStrip />
+
+			<div className="mt-6 text-left text-sm text-gray-700 space-y-2 max-w-md mx-auto">
+				<p>
+					✅ <strong>100% Satisfaction Guarantee:</strong> If you’re
+					not happy with the initial delivery, we’ll keep working
+					until you are.
+				</p>
+				<p>
+					✅ <strong>ROI Commitment:</strong> Every project is
+					designed to deliver measurable value — whether it’s more
+					leads, time saved, or stronger credibility.
+				</p>
+				<p>
+					✅ <strong>Transparent Pricing:</strong> No surprise fees.
+					Your estimate is the ballpark, your proposal is the plan.
+				</p>
+			</div>
 
 			{/* Starter / phased option */}
 			<div className="mx-auto mt-6 max-w-lg rounded-xl border border-gray-200 bg-white p-5 text-left">
