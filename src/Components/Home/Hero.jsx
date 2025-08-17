@@ -193,7 +193,7 @@ export default function Hero() {
 									loading="lazy"
 								/>
 								<img
-									src="/images/hero/klaviyo.png"
+									src="/images/hero/Klaviyo.png"
 									alt="Klaviyo"
 									className="h-12 sm:h-14 md:h-16 w-auto opacity-80 hidden md:block"
 									loading="lazy"
