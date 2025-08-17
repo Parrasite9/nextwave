@@ -144,6 +144,7 @@ export default function PricingEstimator() {
 
 	function klaviyoIdentifyAndTrack(phase, extra = {}) {
 		if (!window._learnq) return;
+
 		// identify
 		window._learnq.push([
 			'identify',
@@ -152,6 +153,8 @@ export default function PricingEstimator() {
 				$first_name: form.name?.split(' ')[0] || undefined,
 				$last_name:
 					form.name?.split(' ').slice(1).join(' ') || undefined,
+				$consent: ['email'], // mark as opted in
+				signup_source: 'pricing_estimator', // easy segmentation
 				'Business Name': form.bizName || undefined,
 				Industry: form.industry || undefined,
 				Location: form.location || undefined,
@@ -164,6 +167,7 @@ export default function PricingEstimator() {
 				Timeline: form.timeline || undefined,
 			},
 		]);
+
 		// track
 		window._learnq.push([
 			'track',
@@ -188,6 +192,7 @@ export default function PricingEstimator() {
 			// required
 			email: form.email,
 			source: 'pricing_estimator',
+			consent: ['email'],
 			// useful attributes (names are flexible — your Lambda can map them to Klaviyo profile props)
 			name: form.name,
 			businessName: form.bizName,
