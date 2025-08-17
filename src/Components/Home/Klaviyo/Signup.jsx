@@ -287,13 +287,13 @@ export default function Signup({ onFormSubmit }) {
 									className="h-12 md:h-15 w-auto"
 								/>
 								<img
-									src="/images/hero/klaviyo.png"
+									src="/images/hero/Klaviyo.png"
 									alt="Klaviyo"
 									className="h-12 md:h-15 w-auto"
 								/>
 								<img
 									src="/images/hero/aws.png"
-									alt="Stripe"
+									alt="AWS"
 									className="h-12 md:h-15 w-auto"
 								/>
 								<img
