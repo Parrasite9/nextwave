@@ -130,6 +130,7 @@ export default function Signup({ onFormSubmit }) {
 				$email: form.email,
 				$first_name: form.fname || undefined,
 				$last_name: form.lname || undefined,
+				$consent: ['email'],
 				'Business Name': form.businessName || undefined,
 				Website: form.website || undefined,
 				initial_zoom_booking_status: 'not_booked_yet',
@@ -158,6 +159,7 @@ export default function Signup({ onFormSubmit }) {
 		const payload = {
 			email: form.email,
 			initial_zoom_booking_status: 'not_booked_yet',
+			consent: ['email'],
 			...(phase === 'submitted'
 				? {
 						firstName: form.fname,
@@ -373,8 +375,11 @@ export default function Signup({ onFormSubmit }) {
 									</button>
 
 									<p className="mt-3 text-[11px] leading-relaxed text-gray-500">
-										By submitting, you agree to receive
-										occasional emails. Unsubscribe anytime.
+										By submitting this form, you confirm you
+										want to receive marketing emails from
+										NextWave Web Studio. You can unsubscribe
+										at any time via a link in our emails.
+										See our Privacy Policy for details.
 									</p>
 								</form>
 							)}
