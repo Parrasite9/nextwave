@@ -139,6 +139,93 @@ export default function PricingEstimator() {
 		}
 	}, [step, form]);
 
+	// ---------- NEW: Klaviyo wiring ----------
+	const [sending, setSending] = useState(false);
+
+	function klaviyoIdentifyAndTrack(phase, extra = {}) {
+		if (!window._learnq) return;
+		// identify
+		window._learnq.push([
+			'identify',
+			{
+				$email: form.email,
+				$first_name: form.name?.split(' ')[0] || undefined,
+				$last_name:
+					form.name?.split(' ').slice(1).join(' ') || undefined,
+				'Business Name': form.bizName || undefined,
+				Industry: form.industry || undefined,
+				Location: form.location || undefined,
+				Goal: form.goal || undefined,
+				ROI_Preference: form.roiPreference || undefined,
+				Has_Site: form.hasSite || undefined,
+				Monthly_Visitors: form.monthlyVisitors || undefined,
+				Priorities: form.priorities.join(', ') || undefined,
+				Budget_Band: form.budget || undefined,
+				Timeline: form.timeline || undefined,
+			},
+		]);
+		// track
+		window._learnq.push([
+			'track',
+			'Estimator',
+			{
+				phase, // 'email_captured' | 'completed'
+				...extra,
+			},
+		]);
+	}
+
+	async function subscribeToKlaviyoEstimate({ estimate }) {
+		// Reuse the same API + UTM pattern as your working signup form
+		const utm = new URLSearchParams({
+			utm_source: 'klaviyo',
+			utm_medium: 'form',
+			utm_campaign: 'pricing_estimator',
+			utm_content: 'estimate_submit',
+		});
+
+		const payload = {
+			// required
+			email: form.email,
+			source: 'pricing_estimator',
+			// useful attributes (names are flexible — your Lambda can map them to Klaviyo profile props)
+			name: form.name,
+			businessName: form.bizName,
+			industry: form.industry,
+			location: form.location,
+			goal: form.goal,
+			roiPreference: form.roiPreference,
+			hasSite: form.hasSite,
+			monthlyVisitors: form.monthlyVisitors,
+			priorities: form.priorities,
+			budget: form.budget,
+			timeline: form.timeline,
+
+			// estimator outputs
+			estimateLow: estimate.low,
+			estimateHigh: estimate.high,
+			estimateMonthly: estimate.showMonthly ? estimate.monthly : null,
+
+			// optional: keep this consistent with your other flow
+			initial_zoom_booking_status: 'not_booked_yet',
+		};
+
+		const res = await fetch(
+			`https://g59t3yegkl.execute-api.us-east-1.amazonaws.com/production/subscribe?${utm.toString()}`,
+			{
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(payload),
+			},
+		);
+
+		if (!res.ok) {
+			console.warn('Klaviyo subscribe failed', await res.text());
+		}
+	}
+
+	// -----------------------------------------
+
 	return (
 		<>
 			<Helmet>
@@ -446,9 +533,66 @@ export default function PricingEstimator() {
 							</Field>
 							<Nav
 								onBack={back}
-								onNext={() => setStep(6)}
-								nextLabel="View my estimate"
-								canNext={canNext}
+								onNext={async () => {
+									// guard also lives in canNext, but keep here for safety
+									if (
+										!/\S+@\S+\.\S+/.test(form.email) ||
+										!form.name
+									)
+										return;
+
+									// OPTIONAL: GTM/GA event
+									try {
+										window.dataLayer =
+											window.dataLayer || [];
+										window.dataLayer.push({
+											event: 'estimator_email_step',
+											label: 'email_captured',
+										});
+									} catch {}
+
+									try {
+										setSending(true);
+										// Identify + track email capture
+										klaviyoIdentifyAndTrack(
+											'email_captured',
+										);
+										// Subscribe to list with full payload + estimate
+										await subscribeToKlaviyoEstimate({
+											estimate,
+										});
+									} catch (e) {
+										console.warn(
+											'Estimator subscribe error',
+											e,
+										);
+									} finally {
+										setSending(false);
+										setStep(6);
+										// Track completion (belt & suspenders)
+										setTimeout(
+											() =>
+												klaviyoIdentifyAndTrack(
+													'completed',
+													{
+														estimate_low:
+															estimate.low,
+														estimate_high:
+															estimate.high,
+														estimate_monthly:
+															estimate.showMonthly
+																? estimate.monthly
+																: null,
+													},
+												),
+											0,
+										);
+									}
+								}}
+								nextLabel={
+									sending ? 'One moment…' : 'View my estimate'
+								}
+								canNext={canNext && !sending}
 							/>
 						</StepWrap>
 					)}
