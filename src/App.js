@@ -29,6 +29,8 @@ import OdessaWebDesignPage from './Pages/ServicePage/OdessaWebDesignPage.jsx';
 import CaseStudies from './Pages/CaseStudies.jsx';
 import WebDesignPage from './Pages/ServicePage/WebDesign.jsx';
 import PricingEstimator from './Pages/PricingEstimator.jsx';
+import BottleneckLanding from './Pages/BottleneckLanding.jsx';
+import BottleneckQuiz from './Pages/BottleneckQuiz.jsx';
 
 function App() {
 	// Move the hook inside the Router
@@ -59,11 +61,9 @@ function App() {
 						<Route path="/404" element={<NotFound />} />
 						<Route path="/get-website" element={<GetWebsite />} />
 						<Route path="/thank-you" element={<ThankYou />} />
-
 						{/* BLOGS  */}
 						<Route path="/blogs" element={<BlogList />} />
 						<Route path="/blog/:slug" element={<BlogPost />} />
-
 						{/* POLICIES  */}
 						<Route path="/cookies-policy" element={<Cookies />} />
 						<Route path="/privacy-policy" element={<Privacy />} />
@@ -71,16 +71,23 @@ function App() {
 							path="/terms-and-conditions"
 							element={<Terms />}
 						/>
+						{/* BOTTLENECK QUIZ  */}
+						<Route
+							path="/bottleneck"
+							element={<BottleneckLanding />}
+						/>
+						<Route
+							path="/bottleneck/quiz"
+							element={<BottleneckQuiz />}
+						/>
 
 						{/* SEO DEDICATED  */}
 						<Route
 							path="/web-design-midland-tx"
 							element={<MidlandWebDesign />}
 						/>
-
 						{/* REQUEST GBP */}
 						<Route path="/requestGBP" element={<RequestGBP />} />
-
 						{/* NEW SERVICE PAGES */}
 						<Route
 							path="/services/ai-automation"

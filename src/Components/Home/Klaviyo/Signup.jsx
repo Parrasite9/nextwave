@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const EXP_KEY = 'exp_signup_premium_v2';
+const KLAVIYO_LIST_ID = 'UcEVbg';
 const VARIANTS = [
 	{
 		id: 'A',
@@ -160,6 +161,8 @@ export default function Signup({ onFormSubmit }) {
 			email: form.email,
 			initial_zoom_booking_status: 'not_booked_yet',
 			consent: ['email'],
+			listId: KLAVIYO_LIST_ID,
+			signup_source: 'homepage_signup',
 			...(phase === 'submitted'
 				? {
 						firstName: form.fname,

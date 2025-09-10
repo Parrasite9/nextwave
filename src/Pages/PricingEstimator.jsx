@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 // Zoom link used in the final CTA
 const ZOOM_LINK =
 	'https://scheduler.zoom.us/isaiah-johnson-c45fbx/discovery-call';
+const KLAVIYO_LIST_ID = 'UcEVbg';
 
 /**
  * Steps:
@@ -191,8 +192,9 @@ export default function PricingEstimator() {
 		const payload = {
 			// required
 			email: form.email,
-			source: 'pricing_estimator',
+			signup_source: 'pricing_estimator',
 			consent: ['email'],
+			listId: KLAVIYO_LIST_ID,
 			// useful attributes (names are flexible — your Lambda can map them to Klaviyo profile props)
 			name: form.name,
 			businessName: form.bizName,
