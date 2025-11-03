@@ -31,6 +31,9 @@ import WebDesignPage from './Pages/ServicePage/WebDesign.jsx';
 import PricingEstimator from './Pages/PricingEstimator.jsx';
 import BottleneckLanding from './Pages/BottleneckLanding.jsx';
 import BottleneckQuiz from './Pages/BottleneckQuiz.jsx';
+import { QuoteConfigProvider } from './Features/Quotes/QuoteConfigProvider.jsx';
+import QuoteSuccess from './Features/Quotes/QuoteSuccess.tsx';
+import QuotePage from './Features/Quotes/QuotePage.tsx';
 
 function App() {
 	// Move the hook inside the Router
@@ -108,6 +111,24 @@ function App() {
 						<Route
 							path="/web-design-odessa-tx"
 							element={<OdessaWebDesignPage />}
+						/>
+
+						{/* QUOTE FEATURE */}
+						<Route
+							path="/quote"
+							element={
+								<QuoteConfigProvider>
+									<QuotePage />
+								</QuoteConfigProvider>
+							}
+						/>
+						<Route
+							path="/quote/success/:id"
+							element={
+								<QuoteConfigProvider>
+									<QuoteSuccess />
+								</QuoteConfigProvider>
+							}
 						/>
 
 						{/* WILDCARD */}
