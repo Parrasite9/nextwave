@@ -33,7 +33,7 @@ import BottleneckLanding from './Pages/BottleneckLanding.jsx';
 import BottleneckQuiz from './Pages/BottleneckQuiz.jsx';
 import { QuoteConfigProvider } from './Features/Quotes/QuoteConfigProvider.jsx';
 import QuoteSuccess from './Features/Quotes/QuoteSuccess.tsx';
-import QuotePage from './Features/Quotes/QuotePage.tsx';
+import QuotePage from './Features/Quotes/QuotePage.jsx';
 
 function App() {
 	// Move the hook inside the Router
