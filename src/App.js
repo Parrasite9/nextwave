@@ -31,6 +31,7 @@ import WebDesignPage from './Pages/ServicePage/WebDesign.jsx';
 import PricingEstimator from './Pages/PricingEstimator.jsx';
 import BottleneckLanding from './Pages/BottleneckLanding.jsx';
 import BottleneckQuiz from './Pages/BottleneckQuiz.jsx';
+import CRMPage from './Features/CRM/CRMPage.jsx';
 
 function App() {
 	// Move the hook inside the Router
@@ -108,6 +109,11 @@ function App() {
 						<Route
 							path="/web-design-odessa-tx"
 							element={<OdessaWebDesignPage />}
+						/>
+
+						<Route
+							path="/customer/dashboard"
+							element={<CRMPage />}
 						/>
 
 						{/* WILDCARD */}
