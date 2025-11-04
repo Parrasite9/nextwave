@@ -1,18 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { createFormHook, createFormHookContexts } from '@tanstack/react-form';
-// Form components that pre-bind events from the form hook; check our "Form Composition" guide for more
-import { TextField, NumberField, SubmitButton } from '~our-app/ui-library';
+
 // We also support Valibot, ArkType, and any other standard schema library
 import { z } from 'zod';
-import SelectField from '../Components/Tanstack/SelectField';
+import SelectField from '../Components/Tanstack/SelectField.tsx';
+import ErrorMessage from './ErrorMessage';
+import TextField from '../Components/Tanstack/TextField.tsx';
+import NumberField from '../Components/Tanstack/NumberField.tsx';
+import SubmitButton from '../Components/Tanstack/SubmitButton.tsx';
 
 export const { fieldContext, formContext, useFieldContext, useFormContext } =
 	createFormHookContexts();
 
 // Allow us to bind components to the form to keep type safety but reduce production boilerplate
 // Define this once to have a generator of consistent form instances throughout your app
-const { useAppForm } = createFormHook({
+export const { useAppForm } = createFormHook({
 	fieldComponents: {
 		TextField,
 		NumberField,
@@ -20,6 +21,7 @@ const { useAppForm } = createFormHook({
 	},
 	formComponents: {
 		SubmitButton,
+		ErrorMessage,
 	},
 	fieldContext,
 	formContext,

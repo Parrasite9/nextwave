@@ -1,5 +1,4 @@
-import { useForm } from '@tanstack/react-form';
-import React from 'react';
+import { useAppForm } from '../../Form/hooks';
 import z from 'zod';
 import ErrorMessage from '../../Form/ErrorMessage';
 
@@ -24,7 +23,7 @@ function FieldError({ field }) {
 }
 
 export default function ClientForm({ initialValues, onSubmit, onCancel }) {
-	const form = useForm({
+	const form = useAppForm({
 		defaultValues: initialValues ?? {
 			name: '',
 			company: '',
@@ -47,36 +46,54 @@ export default function ClientForm({ initialValues, onSubmit, onCancel }) {
 			className="space-y-3"
 		>
 			<form.AppField name="name">
-				{(field) => <field.TextField label="Name" placeholder="Name" />}
-				<ErrorMessage error={field.state.meta.errors?.[0]} />
+				{(field) => (
+					<>
+						<field.TextField label="Name" placeholder="Name" />
+						<ErrorMessage error={field.state.meta.errors?.[0]} />
+					</>
+				)}
 			</form.AppField>
 
 			<form.AppField name="company">
 				{(field) => (
-					<field.TextField label="Company" placeholder="Company" />
+					<>
+						<field.TextField
+							label="Company"
+							placeholder="Company"
+						/>
+						<ErrorMessage error={field.state.meta.errors?.[0]} />
+					</>
 				)}
-				<ErrorMessage error={field.state.meta.errors?.[0]} />
 			</form.AppField>
 
 			<form.AppField name="email">
 				{(field) => (
-					<field.TextField label="Email" placeholder="Email" />
+					<>
+						<field.TextField label="Email" placeholder="Email" />
+						<ErrorMessage error={field.state.meta.errors?.[0]} />
+					</>
 				)}
-				<ErrorMessage error={field.state.meta.errors?.[0]} />
 			</form.AppField>
 
 			<form.AppField name="status">
 				{(field) => (
-					<field.SelectField label="Status" options={status} />
+					<>
+						<field.SelectField label="Status" options={status} />
+						<ErrorMessage error={field.state.meta.errors?.[0]} />
+					</>
 				)}
-				<ErrorMessage error={field.state.meta.errors?.[0]} />
 			</form.AppField>
 
 			<form.AppField name="notes">
 				{(field) => (
-					<field.TextField label="Notes" placeholder="Enter Notes" />
+					<>
+						<field.TextField
+							label="Notes"
+							placeholder="Enter Notes"
+						/>
+						<ErrorMessage error={field.state.meta.errors?.[0]} />
+					</>
 				)}
-				<ErrorMessage error={field.state.meta.errors?.[0]} />
 			</form.AppField>
 
 			<form.AppForm>
