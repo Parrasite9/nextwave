@@ -32,6 +32,7 @@ import PricingEstimator from './Pages/PricingEstimator.jsx';
 import BottleneckLanding from './Pages/BottleneckLanding.jsx';
 import BottleneckQuiz from './Pages/BottleneckQuiz.jsx';
 import CRMPage from './Features/CRM/CRMPage.jsx';
+import FreeWebsiteGiveaway from './Pages/Temporary/FreeWebsiteGiveaway.jsx';
 
 function App() {
 	// Move the hook inside the Router
@@ -115,6 +116,9 @@ function App() {
 							path="/customer/dashboard"
 							element={<CRMPage />}
 						/>
+
+						{/* TEMPORARY PAGES  */}
+						<Route path="/free-website-giveaway" element={<FreeWebsiteGiveaway />} />
 
 						{/* WILDCARD */}
 						<Route path="*" element={<NotFound />} />
