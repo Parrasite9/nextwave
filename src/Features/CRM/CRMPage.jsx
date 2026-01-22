@@ -10,24 +10,17 @@ export default function CRMPage() {
 		<div className="p-6">
 			<h1 className="text-2xl font-bold">Client Tracker (Mini-CRM)</h1>
 			<div className="flex gap-2 mb-4">
-				{/* <input
-					className="border px-3 py-2 rounded w-full"
-					placeholder="Client name..."
-					value={name}
-					onChange={(e) => setName(e.target.value)}
-				/> */}
-
 				<button
 					onClick={() => setEditing({})}
 					className="bg-blue-600 text-white px-4 py-2 rounded"
 				>
-					Add
+					+ New Client
 				</button>
 			</div>
 
-			{editing && (
-				<div className="border p-4 rounded bg-white">
-					<h2 className="text-lg font-medium mb-2">
+			{editing !== null && (
+				<div className="border rounded p-4 bg-white">
+					<h2 className="text-lg font-semibold mb-2">
 						{editing.id ? 'Edit Client' : 'New Client'}
 					</h2>
 
@@ -39,6 +32,7 @@ export default function CRMPage() {
 							} else {
 								addClient(values);
 							}
+							setEditing(null);
 						}}
 						onCancel={() => setEditing(null)}
 					/>
@@ -82,7 +76,11 @@ export default function CRMPage() {
 							</button>
 
 							<button
-								onClick={() => deleteClient(c)}
+								onClick={() => {
+									if (window.confirm(`Delete ${c.name}`)) {
+										deleteClient(c.id);
+									}
+								}}
 								className="text-red-600 border px-3 py-1.5 rounded"
 							>
 								Delete
