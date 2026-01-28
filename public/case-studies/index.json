@@ -96,5 +96,19 @@
 		"featured": true,
 		"order": 7,
 		"datePublished": "2026-01-23"
-	}
+	},
+	{
+		"slug": "kid-ready",
+		"name": "Kid Ready",
+		"title": "Designing and Deploying a Multi-Platform Student Pickup System",
+		"shortDescription": "A custom-built web and mobile application designed to streamline school pickup operations—fully deployed to the App Store and built with privacy, security, and scalability in mind.",
+		"poster": "/images/casestudy/kidready/Mockup.webp",
+		"lgPoster": "/images/casestudy/kidready/kidreadylg.webp",
+		"serviceCategories": ["Web Application", "Mobile App", "Automation"],
+		"industryCategories": ["Education", "School Operations"],
+		"outcomeCategories": ["Operational Efficiency", "Safety", "Scalability"],
+		"featured": true,
+		"order": 2,
+		"datePublished": "2026-01-23"
+	  }
 ]

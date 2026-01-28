@@ -1,0 +1,149 @@
+{
+    "poster": "/images/casestudy/kidready/Mockup.webp",
+    "lgPoster": "/images/casestudy/kidready/kidreadylg.webp",
+    "image": [
+      { "image": "/images/casestudy/kidready/Desktop/Home_D1.webp" },
+      { "image": "/images/casestudy/kidready/Desktop/Home_D2.webp" },
+      { "image": "/images/casestudy/kidready/Mobile/Home_M1.webp" },
+      { "image": "/images/casestudy/kidready/Mobile/Home_M2.webp" }
+    ],
+"colors": {
+  "primary": "#0F172A",
+  "secondary": "#1D4ED8",
+  "ctaButton": "#3B82F6",
+  "ctaButtonText": "#FFFFFF"
+},
+    "seo": "Student pickup management app deployed to the App Store for schools and districts",
+    "name": "Kid Ready",
+    "shortDescription": "A multi-platform student pickup system designed to improve safety, reduce congestion, and streamline school dismissal—fully deployed to the App Store.",
+    "timeline": "Multi-phase build and deployment over several months",
+    "title": "Building and Deploying a Secure Student Pickup Platform",
+    "teaser": "A real-world operational system built for schools—designed for safety, speed, and scale.",
+    "price": "$$$$$",
+    "intro": "Kid Ready was built to solve a real operational challenge faced by schools during daily student pickup. The platform combines a web-based administrative system with a mobile application deployed to the App Store, enabling staff to manage arrivals efficiently while maintaining strict student data privacy and security.",
+    "role": "Product strategy, system architecture, mobile and web development, deployment",
+    "hasVideo": false,
+    "videoPath": "",
+    "problem": {
+      "header": "Inefficient and Unsafe Pickup Processes",
+      "headerDetail": "Many schools rely on manual processes for student pickup leading to long lines, staff confusion, and unnecessary safety risks.",
+      "subheaders": [
+        {
+          "subheader": "Manual Coordination",
+          "subHeaderDetail": "Staff relied on walkie-talkies, paper lists, and visual confirmation, creating bottlenecks and room for error."
+        },
+        {
+          "subheader": "Safety & Accountability Gaps",
+          "subHeaderDetail": "There was limited visibility into who had arrived, which students were dismissed, and where breakdowns occurred."
+        }
+      ]
+    },
+    "goal": {
+      "header": "Create a Secure, Scalable Pickup System",
+      "headerDetail": "The goal was to build an operational platform that could handle real-world school environments while prioritizing safety, reliability, and ease of use.",
+      "subheaders": [
+        {
+          "subheader": "Mobile Accessibility",
+          "subHeaderDetail": "Enable parents and guardians to interact through a native mobile application."
+        },
+        {
+          "subheader": "Staff Visibility",
+          "subHeaderDetail": "Give school staff real-time awareness of arrivals and student status."
+        },
+        {
+          "subheader": "Privacy-First Design",
+          "subHeaderDetail": "Ensure student data was handled responsibly and securely from day one."
+        }
+      ]
+    },
+    "impact": {
+      "header": "Safer, Faster Dismissals",
+      "headerDetail": "Kid Ready transformed dismissal into a controlled, trackable process that reduced friction for staff and families.",
+      "subheaders": [
+        {
+          "subheader": "Reduced Congestion",
+          "subHeaderDetail": "Improved coordination helped shorten pickup lines and minimize confusion."
+        },
+        {
+          "subheader": "Improved Accountability",
+          "subHeaderDetail": "Schools gained clear visibility into pickup events and operational flow."
+        }
+      ]
+    },
+    "ideation": {
+      "header": "Designed for Real Environments",
+      "headerDetail": "The platform was designed with real school conditions in mind, limited time, high volume, and zero tolerance for errors.",
+      "mediaType": "image",
+      "mediaUrl": "/images/casestudy/kidready/CaseStudy/ideation.webp",
+      "subheaders": [
+        {
+          "subheader": "Mobile-First Thinking",
+          "subHeaderDetail": "The experience was optimized for quick interactions on mobile devices.",
+          "mediaType": "image",
+          "mediaUrl": "/images/casestudy/kidready/CaseStudy/mobile.webp"
+        },
+        {
+          "subheader": "Role-Based Access",
+          "subHeaderDetail": "Different user roles ensured staff only accessed what they needed."
+        }
+      ]
+    },
+    "testing": {
+      "header": "Operational Testing",
+      "headerDetail": "The system was tested against real pickup scenarios to ensure reliability under pressure.",
+      "subheaders": [
+        {
+          "subheader": "High-Volume Scenarios",
+          "subHeaderDetail": "Workflows were validated during peak dismissal times."
+        },
+        {
+          "subheader": "Permission Controls",
+          "subHeaderDetail": "Access restrictions were tested to prevent unauthorized actions."
+        }
+      ]
+    },
+    "final": {
+      "header": "Production Deployment",
+      "headerDetail": "Kid Ready launched as a fully operational platform, including a mobile application deployed to the App Store.",
+      "mediaType": "image",
+      "mediaUrl": "/images/casestudy/kidready/CaseStudy/final.webp",
+      "subheaders": [
+        {
+          "subheader": "App Store Deployment",
+          "subHeaderDetail": "The mobile app was successfully deployed and distributed through the App Store."
+        },
+        {
+          "subheader": "Scalable Architecture",
+          "subHeaderDetail": "The system was built to support multiple schools and districts over time."
+        }
+      ]
+    },
+    "development": {
+      "header": "Built for Reliability",
+      "headerDetail": "Modern frameworks and cloud infrastructure were used to ensure stability, security, and long-term maintainability.",
+      "subheaders": [
+        {
+          "subheader": "Multi-Platform Stack",
+          "subHeaderDetail": "Web and mobile applications shared a consistent backend and data model."
+        },
+        {
+          "subheader": "Security-Conscious Design",
+          "subHeaderDetail": "Data handling and authentication were designed with student privacy in mind."
+        }
+      ]
+    },
+    "future": {
+      "header": "Looking Ahead",
+      "headerDetail": "Kid Ready is positioned to expand as adoption grows across schools and districts.",
+      "subheaders": [
+        {
+          "subheader": "District-Level Rollouts",
+          "subHeaderDetail": "Support for multi-school and district-wide deployments."
+        },
+        {
+          "subheader": "Enhanced Automation",
+          "subHeaderDetail": "Further reduction of manual coordination through automation."
+        }
+      ]
+    }
+  }
