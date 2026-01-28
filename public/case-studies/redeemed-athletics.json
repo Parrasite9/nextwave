@@ -1,0 +1,153 @@
+{
+    "poster": "/images/casestudy/redeemedathletics/Mockup.webp",
+    "lgPoster": "/images/casestudy/redeemedathletics/redeemedathleticslg.webp",
+    "image": [
+      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D1.webp" },
+      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D2.webp" },
+      { "image": "/images/casestudy/redeemedathletics/Mobile/Home_M1.webp" },
+      { "image": "/images/casestudy/redeemedathletics/Mobile/Home_M2.webp" }
+    ],
+    "colors": {
+        "primary": "#1a274e",
+        "secondary": "#333",
+        "ctaButton": "#4a90cc",
+        "ctaButtonText": "#fff"
+    },
+    "seo": "Redeemed Athletics youth coaching website built from scratch | NextWave Web Studio",
+    "name": "Redeemed Athletics",
+    "shortDescription": "A brand-new website built from scratch for a startup youth coaching program—designed to establish credibility, explain offerings clearly, and make sign-ups effortless.",
+    "timeline": "From scratch build (design → development → launch)",
+    "title": "From zero online presence to a professional coaching brand",
+    "teaser": "Redeemed Athletics had no website and needed a clean, credible online presence to launch their youth coaching program with confidence. NextWave designed and built a full site from scratch focused on trust, clarity, and conversion.",
+    "price": "$",
+    "intro": "Redeemed Athletics is a startup youth coaching program focused on training, mentorship, and structured development. With no existing site, the goal was to create a professional presence that instantly communicates legitimacy and makes it easy for parents and athletes to understand the program and take action.",
+    "role": "Brand-aligned web design + full website build (from scratch), mobile-first UI, launch support",
+    "hasVideo": false,
+    "videoPath": "",
+    "problem": {
+      "header": "The Problem",
+      "headerDetail": "Redeemed Athletics was launching as a new program with no online presence. Parents and athletes had no single place to learn about training, schedules, philosophy, or how to get started—making the program harder to trust and harder to join.",
+      "subheaders": [
+        {
+          "subheader": "No digital credibility",
+          "subHeaderDetail": "Without a website, the program relied entirely on word-of-mouth and social posts, which made it difficult to establish legitimacy and answer common questions quickly."
+        },
+        {
+          "subheader": "No clear conversion path",
+          "subHeaderDetail": "Interested families had no simple flow to understand offerings, see details, and take the next step (request info, sign up, or contact)."
+        }
+      ]
+    },
+    "goal": {
+      "header": "The Goal",
+      "headerDetail": "Create a modern, trustworthy website from scratch that clearly communicates what Redeemed Athletics offers and guides visitors toward taking action.",
+      "subheaders": [
+        {
+          "subheader": "Build trust instantly",
+          "subHeaderDetail": "A clean, professional design that looks established—so parents feel confident and athletes take the program seriously."
+        },
+        {
+          "subheader": "Explain the program clearly",
+          "subHeaderDetail": "Simple structure and messaging to communicate offerings, training philosophy, and what families should expect."
+        },
+        {
+          "subheader": "Make it easy to join",
+          "subHeaderDetail": "Clear calls-to-action and contact flows so visitors can reach out or get started without friction."
+        }
+      ]
+    },
+    "impact": {
+      "header": "The Impact",
+      "headerDetail": "The site gave Redeemed Athletics a professional foundation to launch on—turning a brand-new startup into something that looks legitimate, organized, and easy to engage with.",
+      "subheaders": [
+        {
+          "subheader": "Professional online presence from day one",
+          "subHeaderDetail": "Redeemed Athletics now has a central hub for credibility, program details, and onboarding interested families."
+        },
+        {
+          "subheader": "Cleaner intake + fewer back-and-forth questions",
+          "subHeaderDetail": "Common questions are answered upfront, and visitors have a clear path to contact or take the next step."
+        }
+      ]
+    },
+    "ideation": {
+      "header": "Ideation & Direction",
+      "headerDetail": "We started by defining what the site needed to communicate in under 10 seconds: credibility, clarity, and a simple way to get started.",
+      "mediaType": "image",
+      "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/earlyDesign.webp",
+      "subheaders": [
+        {
+          "subheader": "Messaging-first structure",
+          "subHeaderDetail": "We mapped the pages and sections around how parents make decisions: trust → understanding → action.",
+          "mediaType": "image",
+          "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/problem.webp"
+        },
+        {
+          "subheader": "Mobile-first layout",
+          "subHeaderDetail": "Most parents find programs on mobile, so the entire experience was designed for speed, readability, and tap-friendly CTAs."
+        }
+      ]
+    },
+    "testing": {
+      "header": "Testing & Refinement",
+      "headerDetail": "We tested the flow from landing to contact to ensure the site felt simple and obvious—especially on mobile.",
+      "subheaders": [
+        {
+          "subheader": "CTA clarity",
+          "subHeaderDetail": "Calls-to-action were tightened to reduce decision fatigue and make next steps feel low-pressure."
+        },
+        {
+          "subheader": "Content readability",
+          "subHeaderDetail": "Sections were trimmed and reorganized to keep the experience fast, scannable, and parent-friendly."
+        }
+      ]
+    },
+    "final": {
+      "header": "Final Delivery",
+      "headerDetail": "A complete from-scratch website designed to look established and guide visitors toward taking action—without overwhelming them.",
+      "mediaType": "image",
+      "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/final.webp",
+      "subheaders": [
+        {
+          "subheader": "Modern, credible design",
+          "subHeaderDetail": "A clean visual identity and layout that immediately signals professionalism."
+        },
+        {
+          "subheader": "Built to convert, not just look good",
+          "subHeaderDetail": "Clear structure, scannable content, and a direct path to contact or enrollment."
+        }
+      ]
+    },
+    "development": {
+      "header": "Development",
+      "headerDetail": "The build focused on performance, responsiveness, and straightforward maintainability so the site can evolve as the program grows.",
+      "subheaders": [
+        {
+          "subheader": "Responsive and fast",
+          "subHeaderDetail": "Optimized media and layout behavior across devices to keep load time and usability strong."
+        },
+        {
+          "subheader": "Easy to expand",
+          "subHeaderDetail": "Structured content and reusable sections make it simple to add new offerings, seasons, or program details later."
+        }
+      ]
+    },
+    "future": {
+      "header": "What’s Next",
+      "headerDetail": "As Redeemed Athletics grows, the site can expand into deeper conversion and retention features.",
+      "subheaders": [
+        {
+          "subheader": "Seasonal sign-up flows",
+          "subHeaderDetail": "Add dedicated pages for camps/clinics and a streamlined registration process."
+        },
+        {
+          "subheader": "Testimonials & results",
+          "subHeaderDetail": "Add parent/athlete testimonials, highlights, and measurable outcomes as the program matures."
+        },
+        {
+          "subheader": "Automations",
+          "subHeaderDetail": "Automate follow-ups and onboarding emails/texts for prospects who request info."
+        }
+      ]
+    }
+  }

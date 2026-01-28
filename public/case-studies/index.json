@@ -68,5 +68,33 @@
 		"outcomeCategories": ["Brand Refresh", "Lead Growth"],
 		"featured": false,
 		"order": 5
+	},
+	{
+		"slug": "redeemed-athletics",
+		"name": "Redeemed Athletics",
+		"title": "From zero online presence to a professional coaching brand",
+		"shortDescription": "A brand-new website built from scratch for a startup youth coaching program—built to establish credibility and make sign-ups easy.",
+		"poster": "/images/casestudy/redeemedathletics/Mockup.webp",
+		"lgPoster": "/images/casestudy/redeemedathletics/redeemedathleticslg.webp",
+		"serviceCategories": ["Web Design"],
+		"industryCategories": ["Youth Sports"],
+		"outcomeCategories": ["Credibility"],
+		"featured": false,
+		"order": 6,
+		"datePublished": "2025-07-23"
+	},
+	{
+		"slug": "watchtower-bonds",
+		"name": "Watchtower Bonds",
+		"title": "Building an Operations Control Platform for Bail Bond Agencies",
+		"shortDescription": "A full-scale SaaS platform designed to centralize intake, automate workflows, and bring operational clarity to bail bond agencies.",
+		"poster": "/images/casestudy/watchtower/Mockup.webp",
+		"lgPoster": "/images/casestudy/watchtower/watchtowerlg.webp",
+		"serviceCategories": ["SaaS Development", "Automation", "Dashboards"],
+		"industryCategories": ["Bail Bonds", "Legal Services"],
+		"outcomeCategories": ["Operational Efficiency", "Risk Reduction"],
+		"featured": true,
+		"order": 7,
+		"datePublished": "2026-01-23"
 	}
 ]

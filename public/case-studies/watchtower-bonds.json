@@ -1,0 +1,149 @@
+{
+    "poster": "/images/casestudy/watchtower/Mockup.webp",
+    "lgPoster": "/images/casestudy/watchtower/watchtowerlg.webp",
+    "image": [
+      { "image": "/images/casestudy/watchtower/Desktop/Home_D1.webp" },
+      { "image": "/images/casestudy/watchtower/Desktop/Home_D2.webp" },
+      { "image": "/images/casestudy/watchtower/Mobile/Home_M1.webp" },
+      { "image": "/images/casestudy/watchtower/Mobile/Home_M2.webp" }
+    ],
+    "colors": {
+        "primary": "#111827",
+        "secondary": "#374151",
+        "ctaButton": "#2563EB",
+        "ctaButtonText": "#FFFFFF"
+    },
+    "seo": "Bail bond software platform for intake automation, risk scoring, and operational control",
+    "name": "Watchtower Bonds",
+    "shortDescription": "A purpose-built operations platform for bail bond agencies—designed to centralize intake, automate workflows, and bring clarity to high-risk decisions.",
+    "timeline": "Multi-phase build over 6+ months",
+    "title": "Building an Operations Control Platform for Bail Bond Agencies",
+    "teaser": "From fragmented tools and manual intake to a unified system built for speed, accountability, and control.",
+    "price": "$$$$$",
+    "intro": "Watchtower Bonds was developed as a full-scale SaaS platform to modernize how bail bond agencies manage intake, risk, communication, and billing. The project required deep domain understanding, strict data separation, and infrastructure-grade reliability.",
+    "role": "Product strategy, system architecture, UX design, and full-stack development",
+    "hasVideo": false,
+    "videoPath": "",
+    "problem": {
+      "header": "Fragmented Systems, High Risk",
+      "headerDetail": "Bail bond agencies often rely on disconnected tools, manual intake processes, and inconsistent decision-making—introducing risk, delays, and operational blind spots.",
+      "subheaders": [
+        {
+          "subheader": "Manual Intake & Paperwork",
+          "subHeaderDetail": "Critical information was scattered across phone calls, texts, and documents, slowing down release timelines and increasing error rates."
+        },
+        {
+          "subheader": "Lack of Visibility",
+          "subHeaderDetail": "Agencies had no centralized view of intakes, risk exposure, or operational performance across agents or locations."
+        }
+      ]
+    },
+    "goal": {
+      "header": "Create a Centralized Control System",
+      "headerDetail": "The objective was to design a platform that functioned as an operational command center—bringing order, consistency, and accountability to every stage of the intake process.",
+      "subheaders": [
+        {
+          "subheader": "Standardized Intake",
+          "subHeaderDetail": "Replace ad-hoc intake with structured, repeatable workflows."
+        },
+        {
+          "subheader": "Risk Awareness",
+          "subHeaderDetail": "Introduce configurable risk scoring and visibility into high-risk decisions."
+        },
+        {
+          "subheader": "Operational Clarity",
+          "subHeaderDetail": "Give owners and managers real-time insight into activity, volume, and exposure."
+        }
+      ]
+    },
+    "impact": {
+      "header": "Operational Leverage at Scale",
+      "headerDetail": "Watchtower Bonds enabled agencies to operate with greater consistency, speed, and confidence—without increasing staff load.",
+      "subheaders": [
+        {
+          "subheader": "Reduced Intake Friction",
+          "subHeaderDetail": "Automated workflows eliminated repetitive tasks and shortened response times."
+        },
+        {
+          "subheader": "Improved Decision Confidence",
+          "subHeaderDetail": "Centralized data and configurable rules helped teams make clearer, defensible decisions."
+        }
+      ]
+    },
+    "ideation": {
+      "header": "Designed Like Infrastructure",
+      "headerDetail": "The platform was conceptualized as operational infrastructure—not just software—with an emphasis on reliability, clarity, and control.",
+      "mediaType": "image",
+      "mediaUrl": "/images/casestudy/watchtower/CaseStudy/architecture.webp",
+      "subheaders": [
+        {
+          "subheader": "Control-Room UX",
+          "subHeaderDetail": "Interfaces were designed to surface critical information quickly, without visual noise.",
+          "mediaType": "image",
+          "mediaUrl": "/images/casestudy/watchtower/CaseStudy/dashboard.webp"
+        },
+        {
+          "subheader": "Strict Data Separation",
+          "subHeaderDetail": "Multi-tenant architecture ensured each agency’s data remained fully isolated and secure."
+        }
+      ]
+    },
+    "testing": {
+      "header": "Real-World Stress Testing",
+      "headerDetail": "Features were tested against real operational scenarios to ensure performance under pressure.",
+      "subheaders": [
+        {
+          "subheader": "Workflow Validation",
+          "subHeaderDetail": "Intake paths were tested across edge cases and incomplete data scenarios."
+        },
+        {
+          "subheader": "Permission & Role Testing",
+          "subHeaderDetail": "Access controls were validated to prevent cross-role or cross-company data exposure."
+        }
+      ]
+    },
+    "final": {
+      "header": "A Platform Built for Control",
+      "headerDetail": "The final product delivered a stable, scalable platform that agencies could rely on as a core operational system.",
+      "mediaType": "image",
+      "mediaUrl": "/images/casestudy/watchtower/CaseStudy/final.webp",
+      "subheaders": [
+        {
+          "subheader": "Unified Operations",
+          "subHeaderDetail": "Intake, activity, and reporting lived in one cohesive system."
+        },
+        {
+          "subheader": "Built to Scale",
+          "subHeaderDetail": "The architecture supports future expansion into billing, automation, and analytics without rework."
+        }
+      ]
+    },
+    "development": {
+      "header": "Enterprise-Grade Execution",
+      "headerDetail": "The platform was built with modern frameworks, secure authentication, and production-grade deployment practices.",
+      "subheaders": [
+        {
+          "subheader": "Modular Architecture",
+          "subHeaderDetail": "Components and services were designed for long-term maintainability."
+        },
+        {
+          "subheader": "Production Readiness",
+          "subHeaderDetail": "Infrastructure decisions prioritized reliability, observability, and controlled growth."
+        }
+      ]
+    },
+    "future": {
+      "header": "What’s Next",
+      "headerDetail": "Watchtower Bonds is positioned for continued evolution as agencies adopt more automation and data-driven decision-making.",
+      "subheaders": [
+        {
+          "subheader": "Advanced Risk Models",
+          "subHeaderDetail": "Expanded scoring and analytics capabilities."
+        },
+        {
+          "subheader": "Deeper Automation",
+          "subHeaderDetail": "Further reduction of manual effort through AI-assisted workflows."
+        }
+      ]
+    }
+  }
