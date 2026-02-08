@@ -1,17 +1,16 @@
 {
-    "poster": "/images/casestudy/redeemedathletics/Mockup.webp",
-    "lgPoster": "/images/casestudy/redeemedathletics/redeemedathleticslg.webp",
+    "poster": "/images/casestudy/redeemedathletics/rap_mockup.jpg",
+    "lgPoster": "/images/casestudy/redeemedathletics/raplg.jpg",
     "image": [
-      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D1.webp" },
-      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D2.webp" },
-      { "image": "/images/casestudy/redeemedathletics/Mobile/Home_M1.webp" },
-      { "image": "/images/casestudy/redeemedathletics/Mobile/Home_M2.webp" }
+      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D1.jpg", "alt": "RAP Hero Section" },
+      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D2.jpg", "alt": "RAP Content Section"  },
+      { "image": "/images/casestudy/redeemedathletics/Desktop/Home_D3.jpg", "alt": "RAP Testimonial Section"  }
     ],
     "colors": {
         "primary": "#1a274e",
-        "secondary": "#1E3A8A",
+        "secondary": "#4a90cc",
         "ctaButton": "#4a90cc",
-        "ctaButtonText": "#fff"
+        "ctaButtonText": "333"
     },
     "seo": "Redeemed Athletics youth coaching website built from scratch | NextWave Web Studio",
     "name": "Redeemed Athletics",
@@ -74,13 +73,13 @@
       "header": "Ideation & Direction",
       "headerDetail": "We started by defining what the site needed to communicate in under 10 seconds: credibility, clarity, and a simple way to get started.",
       "mediaType": "image",
-      "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/earlyDesign.webp",
+      "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/earlyDesign.jpg",
       "subheaders": [
         {
           "subheader": "Messaging-first structure",
           "subHeaderDetail": "We mapped the pages and sections around how parents make decisions: trust → understanding → action.",
           "mediaType": "image",
-          "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/problem.webp"
+          "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/problem.jpg"
         },
         {
           "subheader": "Mobile-first layout",
@@ -106,7 +105,7 @@
       "header": "Final Delivery",
       "headerDetail": "A complete from-scratch website designed to look established and guide visitors toward taking action—without overwhelming them.",
       "mediaType": "image",
-      "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/final.webp",
+      "mediaUrl": "/images/casestudy/redeemedathletics/CaseStudy/final.jpg",
       "subheaders": [
         {
           "subheader": "Modern, credible design",

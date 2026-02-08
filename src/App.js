@@ -35,6 +35,7 @@ import CRMPage from './Features/CRM/CRMPage.jsx';
 import FreeWebsiteGiveaway from './Pages/Temporary/FreeWebsiteGiveaway.jsx';
 import GiveawayApplication from './Pages/Temporary/GiveawayApplication.jsx';
 import GiveawayThankYou from './Pages/Temporary/GiveawayThankYou.jsx';
+import FreeWebsiteGiveawayLubbock from './Pages/Temporary/FreeWebsiteGiveawayLubbock.jsx';
 
 function App() {
 	// Move the hook inside the Router
@@ -121,6 +122,7 @@ function App() {
 
 						{/* TEMPORARY PAGES  */}
 						<Route path="/free-website-giveaway" element={<FreeWebsiteGiveaway />} />
+						<Route path="free-website-giveaway-lubbock" element={<FreeWebsiteGiveawayLubbock />} />
 						<Route path='/free-website-giveaway/apply' element={<GiveawayApplication />} />
 						<Route path='/free-website-giveaway/apply/thank-you' element={<GiveawayThankYou />} />
 

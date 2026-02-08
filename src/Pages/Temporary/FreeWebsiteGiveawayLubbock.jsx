@@ -1,4 +1,4 @@
-// src/Pages/FreeWebsiteGiveaway.jsx
+// src/Pages/FreeWebsiteGiveawayLubbock.jsx
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -76,7 +76,7 @@ function FAQItem({ q, a }) {
 	);
 }
 
-export default function FreeWebsiteGiveaway() {
+export default function FreeWebsiteGiveawayLubbock() {
 	const processRef = useRef(null);
 
 	const scrollToProcess = () => {
@@ -89,26 +89,10 @@ export default function FreeWebsiteGiveaway() {
 		<>
 			<Helmet>
 				<title>Free Website Giveaway | NextWave Web Studio</title>
-
 				<meta
 					name="description"
-					content="Local Midland/Odessa businesses can apply for a free website build in exchange for feedback and a review."
+					content="Three Lubbock businesses will receive a professionally built 3 page website with the build fee waived. Application only. Selected by fit and readiness."
 				/>
-
-				<meta property="og:title" content="Free Midland/Odessa Website Giveaway" />
-				<meta
-					property="og:description"
-					content="A local web developer is offering a few businesses a free website build in exchange for feedback."
-				/>
-				<meta
-					property="og:image"
-					content="https://nextwavewebstudio.com/images/og/free-website-giveaway.png"
-				/>
-				<meta
-					property="og:url"
-					content="https://nextwavewebstudio.com/free-website-giveaway"
-				/>
-				<meta property="og:type" content="website" />
 			</Helmet>
 
 			{/* HERO */}
@@ -121,7 +105,7 @@ export default function FreeWebsiteGiveaway() {
 					{/* Left: Copy */}
 					<div className="relative">
 						<p className="font-semibold tracking-tight text-sky-600 md:text-lg">
-							Serving Midland and Odessa businesses
+							Happily Serving Lubbock Businesses
 						</p>
 
 						<h1 className="mt-2 text-4xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-5xl xl:text-6xl">
