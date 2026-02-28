@@ -75,7 +75,7 @@
 		"title": "From zero online presence to a professional coaching brand",
 		"shortDescription": "A brand-new website built from scratch for a startup youth coaching program—built to establish credibility and make sign-ups easy.",
 		"poster": "/images/casestudy/redeemedathletics/rap_mockup.jpg",
-		"lgPoster": "/images/casestudy/redeemedathletics/raplg.jpg",		
+		"lgPoster": "/images/casestudy/redeemedathletics/raplg.jpg",
 		"serviceCategories": ["Web Design"],
 		"industryCategories": ["Youth Sports"],
 		"outcomeCategories": ["Credibility"],
@@ -88,8 +88,8 @@
 		"name": "Watchtower Bonds",
 		"title": "Building an Operations Control Platform for Bail Bond Agencies",
 		"shortDescription": "A full-scale SaaS platform designed to centralize intake, automate workflows, and bring operational clarity to bail bond agencies.",
-		"poster": "/images/casestudy/watchtower/Mockup.webp",
-		"lgPoster": "/images/casestudy/watchtower/watchtowerlg.webp",
+		"poster": "/images/casestudy/watchtower-bonds/Mobile_Mockup.jpg",
+		"lgPoster": "/images/casestudy/watchtower-bonds/Desktop_Mockup.jpg",
 		"serviceCategories": ["SaaS Development", "Automation", "Dashboards"],
 		"industryCategories": ["Bail Bonds", "Legal Services"],
 		"outcomeCategories": ["Operational Efficiency", "Risk Reduction"],
@@ -106,9 +106,13 @@
 		"lgPoster": "/images/casestudy/kidready/kidreadylg.webp",
 		"serviceCategories": ["Web Application", "Mobile App", "Automation"],
 		"industryCategories": ["Education", "School Operations"],
-		"outcomeCategories": ["Operational Efficiency", "Safety", "Scalability"],
+		"outcomeCategories": [
+			"Operational Efficiency",
+			"Safety",
+			"Scalability"
+		],
 		"featured": true,
 		"order": 2,
 		"datePublished": "2026-01-23"
-	  }
+	}
 ]
