@@ -8,10 +8,10 @@
 		{ "image": "/images/casestudy/watchtower-bonds/Desktop/Home_D4.jpg" }
 	],
 	"colors": {
-		"primary": "#111827",
-		"secondary": "#374151",
+		"primary": "#1D4ED8",
+		"secondary": "#D97706",
 		"ctaButton": "#2563EB",
-		"ctaButtonText": "#FFFFFF"
+		"ctaButtonText": "#F8FAFC"
 	},
 	"seo": "Bail bond software platform for intake automation, risk scoring, and operational control",
 	"name": "Watchtower Bonds",
@@ -106,7 +106,7 @@
 		"header": "A Platform Built for Control",
 		"headerDetail": "The final product delivered a stable, scalable platform that agencies could rely on as a core operational system.",
 		"mediaType": "image",
-		"mediaUrl": "/images/casestudy/watchtower-bonds/Mobile/Home_M3.jpg",
+		"mediaUrl": "/images/casestudy/watchtower-bonds/Desktop/Home_D1.jpg",
 		"subheaders": [
 			{
 				"subheader": "Unified Operations",
