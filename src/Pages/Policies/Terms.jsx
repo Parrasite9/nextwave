@@ -57,7 +57,7 @@ export default function Terms() {
 					tools (including but not limited to hosting, domains,
 					analytics, automation platforms, and marketing software).
 					Clients remain responsible for all third-party subscription
-					fees, terms, and policies—whether these accounts are housed
+					fees, terms, and policies, whether these accounts are housed
 					under NextWave or managed directly by the client. NextWave
 					is not liable for interruptions, policy changes, or failures
 					of third-party providers.
@@ -99,8 +99,8 @@ export default function Terms() {
 				</p>
 			</section>
 
-						{/* Refunds */}
-						<section className="mb-8">
+			{/* Refunds */}
+			<section className="mb-8">
 				<h2 className="text-2xl font-semibold mb-4">Refunds</h2>
 				<p>
 					Unless otherwise stated in a signed agreement, all payments
@@ -119,10 +119,11 @@ export default function Terms() {
 				</p>
 				<p>
 					The seventy-two (72) hour money-back guarantee applies only
-					if the client cancels within that window. If work has already
-					commenced within the guarantee window at the client’s request
-					(e.g., expedited start), NextWave may deduct the value of work
-					performed prior to cancellation from any refund.
+					if the client cancels within that window. If work has
+					already commenced within the guarantee window at the
+					client’s request (e.g., expedited start), NextWave may
+					deduct the value of work performed prior to cancellation
+					from any refund.
 				</p>
 			</section>
 
@@ -138,15 +139,16 @@ export default function Terms() {
 					<li>
 						<strong>ROI & Performance Guarantees:</strong> Any
 						references to “ROI” or performance improvements refer
-						exclusively to non-financial, operational, or experiential
-						metrics, which may include but are not limited to:
-						workflow efficiency, automation effectiveness, website
-						performance or usability, lead handling processes,
-						customer experience improvements, and internal operational
-						clarity. ROI guarantees apply only to businesses that are
-						already operational, revenue-generating, and demonstrably
-						self-sufficient prior to engagement. Startups, pre-revenue
-						businesses, or early-stage ventures do not qualify for ROI
+						exclusively to non-financial, operational, or
+						experiential metrics, which may include but are not
+						limited to: workflow efficiency, automation
+						effectiveness, website performance or usability, lead
+						handling processes, customer experience improvements,
+						and internal operational clarity. ROI guarantees apply
+						only to businesses that are already operational,
+						revenue-generating, and demonstrably self-sufficient
+						prior to engagement. Startups, pre-revenue businesses,
+						or early-stage ventures do not qualify for ROI
 						guarantees. All qualifying benchmarks must be defined in
 						writing and mutually agreed upon prior to project
 						commencement. Benchmarks not explicitly documented shall
@@ -157,14 +159,14 @@ export default function Terms() {
 					</li>
 					<li>
 						<strong>Data Privacy Guarantee:</strong> NextWave treats
-						all client data with strict confidentiality. Confidential
-						information includes non-public business, technical, or
-						customer information shared with NextWave in connection
-						with the services, unless the information is publicly
-						available through no fault of NextWave. NextWave will not
-						disclose confidential information outside the scope of the
-						project without the client’s consent, except as required
-						by law.
+						all client data with strict confidentiality.
+						Confidential information includes non-public business,
+						technical, or customer information shared with NextWave
+						in connection with the services, unless the information
+						is publicly available through no fault of NextWave.
+						NextWave will not disclose confidential information
+						outside the scope of the project without the client’s
+						consent, except as required by law.
 					</li>
 				</ul>
 			</section>

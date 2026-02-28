@@ -27,9 +27,9 @@
 	},
 	"seo": "customer loyalty dashboard, rewards automation, enterprise points platform, data reconciliation",
 	"name": "Project Boost",
-	"shortDescription": "An enterprise-grade loyalty & rewards dashboard with automated points conversion, forecasting, and real-time activity logging—built to turn unused points into revenue.",
+	"shortDescription": "An enterprise-grade loyalty & rewards dashboard with automated points conversion, forecasting, and real-time activity logging, built to turn unused points into revenue.",
 	"timeline": "4 weeks (MVP)",
-	"title": "Project Boost — Loyalty & Rewards Automation Dashboard",
+	"title": "Project Boost: Loyalty & Rewards Automation Dashboard",
 	"teaser": "How a multi-location enterprise transformed unused points into consistent revenue with a custom dashboard, automated workflows, and real-time insights.",
 	"price": "$$$",
 	"intro": "Project Boost is a custom-built loyalty and rewards platform that identifies expiring points, automates redemptions, and tracks outcomes in one place. The system consolidates fragmented data sources, provides role-based access, and surfaces actionable KPIs for leadership and frontline teams.",
@@ -38,7 +38,7 @@
 	"videoPath": "",
 	"problem": {
 		"header": "Untapped Value & Manual, Error-Prone Processes",
-		"headerDetail": "Millions in customer points were nearing expiration with no systematic way to convert them into value. Teams relied on spreadsheets and manual lookups across disconnected systems—slow, inconsistent, and difficult to audit.",
+		"headerDetail": "Millions in customer points were nearing expiration with no systematic way to convert them into value. Teams relied on spreadsheets and manual lookups across disconnected systems, which were slow, inconsistent, and difficult to audit.",
 		"subheaders": [
 			{
 				"subheader": "Expiring Value, No Conversion Engine",
@@ -52,7 +52,7 @@
 	},
 	"goal": {
 		"header": "Turn Expiring Points into Predictable Revenue",
-		"headerDetail": "Build an automated, auditable system that identifies opportunities, executes redemptions, and reports results in real time—without adding headcount.",
+		"headerDetail": "Build an automated, auditable system that identifies opportunities, executes redemptions, and reports results in real time while avoiding extra headcount.",
 		"subheaders": [
 			{
 				"subheader": "Automate Opportunity Detection",

@@ -15,7 +15,7 @@
 	},
 	"seo": "Bail bond software platform for intake automation, risk scoring, and operational control",
 	"name": "Watchtower Bonds",
-	"shortDescription": "A purpose-built operations platform for bail bond agencies—designed to centralize intake, automate workflows, and bring clarity to high-risk decisions.",
+	"shortDescription": "A purpose-built operations platform for bail bond agencies, designed to centralize intake, automate workflows, and bring clarity to high-risk decisions.",
 	"timeline": "Multi-phase build over 6+ months",
 	"title": "Building an Operations Control Platform for Bail Bond Agencies",
 	"teaser": "From fragmented tools and manual intake to a unified system built for speed, accountability, and control.",
@@ -26,7 +26,7 @@
 	"videoPath": "",
 	"problem": {
 		"header": "Fragmented Systems, High Risk",
-		"headerDetail": "Bail bond agencies often rely on disconnected tools, manual intake processes, and inconsistent decision-making—introducing risk, delays, and operational blind spots.",
+		"headerDetail": "Bail bond agencies often rely on disconnected tools, manual intake processes, and inconsistent decision-making. That combination introduces risk, delays, and operational blind spots.",
 		"subheaders": [
 			{
 				"subheader": "Manual Intake & Paperwork",
@@ -40,7 +40,7 @@
 	},
 	"goal": {
 		"header": "Create a Centralized Control System",
-		"headerDetail": "The objective was to design a platform that functioned as an operational command center—bringing order, consistency, and accountability to every stage of the intake process.",
+		"headerDetail": "The objective was to design a platform that functioned as an operational command center, bringing order, consistency, and accountability to every stage of the intake process.",
 		"subheaders": [
 			{
 				"subheader": "Standardized Intake",
@@ -58,7 +58,7 @@
 	},
 	"impact": {
 		"header": "Operational Leverage at Scale",
-		"headerDetail": "Watchtower Bonds enabled agencies to operate with greater consistency, speed, and confidence—without increasing staff load.",
+		"headerDetail": "Watchtower Bonds enabled agencies to operate with greater consistency, speed, and confidence while keeping staff load steady.",
 		"subheaders": [
 			{
 				"subheader": "Reduced Intake Friction",
@@ -72,7 +72,7 @@
 	},
 	"ideation": {
 		"header": "Designed Like Infrastructure",
-		"headerDetail": "The platform was conceptualized as operational infrastructure—not just software—with an emphasis on reliability, clarity, and control.",
+		"headerDetail": "The platform was conceptualized as operational infrastructure rather than just software, with an emphasis on reliability, clarity, and control.",
 		"mediaType": "image",
 		"mediaUrl": "/images/casestudy/watchtower-bonds/Desktop/Home_D3.jpg",
 		"subheaders": [
